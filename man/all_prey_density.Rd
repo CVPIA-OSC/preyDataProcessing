@@ -8,33 +8,92 @@
 a dataframe
 }
 \source{
-something
+\strong{Corline} \cr
+Corline et al. collected data from 2013-02-13 to 2016-04-18 for 12 sites. Corline collected prey density data.
+
+Corline, Nicholas J., et al. "Zooplankton ecology and trophic resources for rearing native fish on an agricultural floodplain in the
+Yolo Bypass California, USA." Wetlands Ecology and Management 25.5 (2017): 533-545.
+
+\strong{Cordoleani} \cr
+Cordoleani et al. collected data from 2019-01-07 to 2021-03-29 at 19 sites. In addition to prey density, Cordoleani et al. also collected
+environmental and fish length/mass data.
+
+Cordoleani, Flora et al. Evaluating the role(s) of the Butte sink and Sutter
+Bypass for Butte Creek spring-run Chinook Salmon and other Central Valley juvenile salmonid populations - 2020 study year (2021). Unpublished manuscript.
+
+\strong{Zeug} \cr
+Zeug provided prey density data from two rivers: San Joaquin River and Merced River.
+
+San Joaquin River: \cr
+Zeug collected data in 2016 for four sites along the San Joaquin River.
+
+Merced River: \cr
+Zeug collected data in April 2019 for four sites along the Merced River.
+
+Citation: TODO
+
+\strong{Montgomery} \cr
+Montgomery collected data from 2018-10-30 to 2019-05-07 at 41 sites. In addition to prey_density, Montgomery collected environmental and
+fish length/mass data.
+
+Montgomery, J. 2021. Fish Food on Floodplain Farm Fields 2019 ver 1.
+Environmental Data Initiative. https://doi.org/10.6073/pasta/53ab08e695503bfbbeaeee637835da0b (Accessed 2022-06-11).
+
+\strong{Zooper R library} \cr
+
+Prey density data was downloaded from the
+\href{https://github.com/CVPIA-OSC/DSMtemperature/blob/main/R/data.R}{\code{zooper library}} and integrated into
+this dataset. Data was collected from 1995-2020 for 5 Zooper sites: 20mm, EMP, FMWT, FRP, STN.
+
+Citations: \cr
+Bashevkin, S. M., R. Hartman, M. Thomas, A. Barros, C. E. Burdi, A. Hennessy, T. Tempel, and K. Kayfetz. 2022. Five decades (1972–2020) of
+zooplankton monitoring in the upper San Francisco Estuary. PLOS ONE 17: e0265402.
+doi:10.1371/journal.pone.0265402
+
+Bashevkin, S. M., R. Hartman, M. Thomas, A. Barros, C. Burdi, A. Hennessy, T. Tempel, and K. Kayfetz. 2022. Interagency Ecological Program:
+Zooplankton abundance in the Upper San Francisco Estuary from 1972-2020, an integration of 5 long-term monitoring programs. ver 3. Environmental Data Initiative.
+doi:10.6073/pasta/89dbadd9d9dbdfc804b160c81633db0d
+
+\strong{Guignard} \cr
+Guignard et al. colllected data from 2014-04-03 to 2014-06-29 at 6 sites.
+
+Citation: TODO
 }
 \usage{
 all_prey_density
 }
 \description{
-Aggregated Prey Density Data from Multiple Authors and Across Watersheds
+Prey density data was aggregated from five authors and the Zooper R library. All data was assigned a habitat type of agricultural canal,
+floodplain, perennial instream, or side channel. Data exists in the following watersheds:
+\itemize{
+\item Butte Creek
+\item Feather River
+\item Sutter Bypass
+\item Sacramento River
+\item Yolo Bypass
+\item San Joaquin
+\item North Delta
+\item South Delta
+\item Merced
+\item Stanislaus
+}
 }
 \details{
-Datasets included in final dataset are:
-
-\strong{Corline} \cr
-Something about Corline
-
-\strong{Cordoleani} \cr
-Something
-
-\strong{Zeug} \cr
-Something
-
-\strong{Montgomery} \cr
-
-\strong{Zooper R library} \cr
-Something
-\href{https://github.com/InteragencyEcologicalProgram/zooper}
-
-\strong{Guignard} \cr
-Something
+Data dictionary:
+\itemize{
+\item date; yyyy-mm-dd
+\item prey_density; numeric; total organisms/liter
+\item life_stage; categorical
+\item species; categorical
+\item habitat_type; categorical
+\item gear_type; categorical
+\item site; categorical
+\item watershed; categorical
+\item mesh_size; numeric
+\item size_class; categorical
+\item author; categorical
+\item lat; numeric
+\item lon; numeric
+}
 }
 \keyword{datasets}

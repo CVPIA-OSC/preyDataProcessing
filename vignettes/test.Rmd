@@ -1,0 +1,64 @@
+---
+title: "Data Standardization"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{test}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = TRUE, message = FALSE, warning = FALSE
+)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(readxl)
+library(sf)
+library(DT)
+# library(leaflet)
+# library(leaflet.esri)
+library(zooper)
+
+options(scipen=999)
+
+
+```
+
+
+## Final Standardized Dataset Format
+
+Formatting and data descriptions for standardized datasets.
+
+```{r, echo = FALSE}
+datasets <- system.file("extdata", "DatasetFormat.xlsx", package = "readxl")
+
+prey_desc <- datasets %>% dplyr::filter(Which == 'prey') %>% dplyr::select(-Which)
+
+DT::datatable(prey_desc, caption = 'Prey data standardized data description and presence or absence in aggregated datasets',
+          options = list(
+              pageLength = 12
+          )) %>% 
+  formatStyle(columns = c('Corline', 'Cordoleani',  'Zeug - Merced', 'Zeug - San Joaquin', 
+                          'Montgomery', 'Guignard', 'Zooper'), 
+              backgroundColor = styleEqual(c(TRUE, FALSE), c('#9FE39A', '#DB9E95')))
+
+
+fish_desc <- datasets %>% filter(Which == 'fish') %>% select(-Which)
+
+datatable(fish_desc, caption = "Fish data standardized data description and  presence or absence in aggregated datasets") %>% 
+  formatStyle(columns = c('Corline', 'Cordoleani',  'Zeug - Merced', 'Zeug - San Joaquin', 
+                          'Montgomery', 'Guignard', 'Zooper'), 
+              backgroundColor = styleEqual(c(TRUE, FALSE), c('#9FE39A', '#DB9E95')))
+
+env_desc <- datasets %>% filter(Which == 'environmental') %>% select(-Which)
+
+datatable(env_desc, caption = 'Environmental data standardized data description and  presence or absence in aggregated datasets') %>% 
+  formatStyle(columns = c('Corline', 'Cordoleani',  'Zeug - Merced', 'Zeug - San Joaquin', 
+                          'Montgomery', 'Guignard', 'Zooper'), 
+              backgroundColor = styleEqual(c(TRUE, FALSE), c('#9FE39A', '#DB9E95'))) 
+```
