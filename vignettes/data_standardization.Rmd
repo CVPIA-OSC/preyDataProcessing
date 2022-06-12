@@ -20,7 +20,6 @@ library(knitr)
 library(readxl)
 library(sf)
 library(DT)
-library(zooper)
 
 options(scipen=999)
 
@@ -760,6 +759,7 @@ locations <- locations %>%
 
 #kable(locations)
 ```
+
 #### Data Standardization
 
 ##### Prey Data Standardization
@@ -1035,8 +1035,6 @@ kable(head(zooper_temperature, 5))
 
     -   Micro (43 - 50 μm): Copepods, rotifers
 
-    -   Nets accurately sample zooplankton larger than the mesh size. Zooplankton smaller than the mesh size are still captured and often recorded in datasets, but the resulting CPUEs are not accurate. To account for this we:
-
 *Mesh size availability by dataset* to inform size class definition
 
 | Dataset                  | Mesh Size                                 | Gear Type                  | Life Stage                                                                                                       | Other Species Info                                                                                   |
@@ -1046,7 +1044,7 @@ kable(head(zooper_temperature, 5))
 | Steve Zeug - San Joaquin | 64 micron mesh                            | 10 liter Schindler-Patalas | NA                                                                                                               | species (group): Microcrustacea, Insecta-Diptera, Arachnid, Tardigrada, Insecta-Ephemeroptera        |
 | Stanislaus               | 335 micrometer mesh; 1 sqft opening       | drift net                  | NA                                                                                                               | By column, species Order: Ephemeroptera, Plecoptera, Tricoptera, Diptera, Microcrustacea, Other Taxa |
 | Montgomery               | 30-cm diameter x 150 µm mesh              | Net Tow                    | adult, sphaericus, sp, embryo, copepididte, pulex, nauplii, copepidite, mendotea, magna, insect, naulpii, larvae | species                                                                                              |
-| Steve Zeug - Merced      | 47 x 28 cm diameter; 500 micron mesh size |                            |                                                                                                                  |                                  # Combine All Datasets {.tabset .tabset-fade .tabset-pills}
+| Steve Zeug - Merced      | 47 x 28 cm diameter; 500 micron mesh size |                            |                                                                                                                  | \# Combine All Datasets {.tabset .tabset-fade .tabset-pills}                                         |
 
 ## Prey Data
 
@@ -1061,12 +1059,9 @@ all_prey <- bind_rows(cordoleani_zoop,
                       merced_steve_zeug_zoop, 
                       montgomery_zoop, 
                       stanislaus_zoop) %>%
-  #select(-geometry, -Year, -Week) %>%
   mutate(watershed = ifelse(watershed == "Feather River ", "Feather River", watershed))
 
 kable(head(all_prey, 10))
-# View(all_prey)
-# saveRDS(all_prey, '../preliminary data/aggregated_prey_data.rds')
 
 all_prey_density <- all_prey
 
@@ -1100,7 +1095,7 @@ ggplot() +
 
 ```
 
-#### Raw Data Visualization 
+#### Raw Data Visualization
 
 ```{r}
 all_prey %>%
@@ -1151,8 +1146,6 @@ all_fish <- bind_rows(cordoleani_fish,
 
 kable(head(all_fish, 10))
 
-# saveRDS(all_fish, '../preliminary data/aggregated_fish_data.rds')
-
 all_fish_data <- all_fish
 
 # usethis::use_data(all_fish_data)
@@ -1194,8 +1187,6 @@ kable(head(all_enviro, 10))
 all_enviro_data <- all_enviro
 
 # usethis::use_data(all_enviro_data)
-
-#saveRDS(all_enviro, '../preliminary data/aggregated_enviro_data.rds')
 ```
 
 ### Explore Environmental Data
@@ -1204,10 +1195,9 @@ all_enviro_data <- all_enviro
 ggplot() +
   geom_point(data = all_enviro, aes(x = date, y = temperature, color = author)) +
  facet_wrap(~author) 
-#theme(legend.position="none")
 
 do <- all_enviro %>% filter(author %in% c('Cordoleani', 'Montgomery'))
 ggplot() +
   geom_point(data = do, aes(x = date, y = do_mg_l)) +
   facet_wrap(~author, scales = 'free')
-```                                                                    |
+```
