@@ -5,12 +5,65 @@
 \alias{all_enviro_data}
 \title{All Environmental Data}
 \format{
-An object of class \code{data.frame} with 1323793 rows and 10 columns.
+a dataframe
+}
+\source{
+\strong{Cordoleani} \cr
+Cordoleani collected temperature and dissolved oxygen 2019 - 2021.
+
+Cordoleani, Flora et al. Evaluating the role(s) of the Butte sink and Sutter
+Bypass for Butte Creek spring-run Chinook Salmon and other Central Valley juvenile salmonid populations - 2020 study year (2021). Unpublished manuscript.
+
+\strong{Zeug} \cr
+Zeug collected temperature data in 2008 and 2009 aloing the Merced River.
+
+Citation: TODO
+
+\strong{Montgomery} \cr
+Montgomery collected temperature and dissolved oxygen data in 2018 and 2019.
+
+Montgomery, J. 2021. Fish Food on Floodplain Farm Fields 2019 ver 1.
+Environmental Data Initiative. https://doi.org/10.6073/pasta/53ab08e695503bfbbeaeee637835da0b (Accessed 2022-06-11).
+
+\strong{Zooper R library} \cr
+
+Temperature data was downloaded from the
+\href{https://github.com/CVPIA-OSC/DSMtemperature/blob/main/R/data.R}{\code{zooper library}} and integrated into
+this dataset. Data was collected from 1995-2020 for 5 Zooper sites: 20mm, EMP, FMWT, FRP, STN.
+
+Citations: \cr
+Bashevkin, S. M., R. Hartman, M. Thomas, A. Barros, C. E. Burdi, A. Hennessy, T. Tempel, and K. Kayfetz. 2022. Five decades (1972–2020) of
+zooplankton monitoring in the upper San Francisco Estuary. PLOS ONE 17: e0265402.
+doi:10.1371/journal.pone.0265402
+
+Bashevkin, S. M., R. Hartman, M. Thomas, A. Barros, C. Burdi, A. Hennessy, T. Tempel, and K. Kayfetz. 2022. Interagency Ecological Program:
+Zooplankton abundance in the Upper San Francisco Estuary from 1972-2020, an integration of 5 long-term monitoring programs. ver 3. Environmental Data Initiative.
+doi:10.6073/pasta/89dbadd9d9dbdfc804b160c81633db0d
+
+\strong{Guignard} \cr
+Guignard collected temperature and flow data in 2014.
+
+Citation: TODO
 }
 \usage{
 all_enviro_data
 }
 \description{
 All Environmental Data
+}
+\details{
+Data dictionary:
+\itemize{
+\item date; yyyy-mm-dd
+\item do_mg_l; numeric; dissolved oxygen (mg/L)
+\item temperature; numeric; degrees celcius
+\item flow_cfs; numeric; flow (cfs)
+\item habitat_type; categorical
+\item site; categorical
+\item watershed; categorical
+\item author; categorical
+\item lat; numeric
+\item lon; numeric
+}
 }
 \keyword{datasets}

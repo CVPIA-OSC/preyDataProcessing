@@ -5,12 +5,44 @@
 \alias{all_fish_data}
 \title{All Fish Data}
 \format{
-An object of class \code{data.frame} with 2296 rows and 10 columns.
+a dataframe
+}
+\source{
+\strong{Cordoleani} \cr
+Cordoleani collected fish mass and fork length data in 2019-2021.
+
+Cordoleani, Flora et al. Evaluating the role(s) of the Butte sink and Sutter
+Bypass for Butte Creek spring-run Chinook Salmon and other Central Valley juvenile salmonid populations - 2020 study year (2021). Unpublished manuscript.
+
+\strong{Zeug} \cr
+Zeug collected fork length and mass data without a measured date along the Merced River.
+
+Citation: TODO
+
+\strong{Montgomery} \cr
+Montgomery collected  fork length and mass data in 2019.
+
+Montgomery, J. 2021. Fish Food on Floodplain Farm Fields 2019 ver 1.
+Environmental Data Initiative. https://doi.org/10.6073/pasta/53ab08e695503bfbbeaeee637835da0b (Accessed 2022-06-11).
 }
 \usage{
 all_fish_data
 }
 \description{
-All Fish Data
+#' @description
+}
+\details{
+Data dictionary:
+\itemize{
+\item date; yyyy-mm-dd
+\item fork_length; numeric; the measured fish fork length (millimeters)
+\item mass; numeric; weight of sampled fish (grams)
+\item habitat_type; categorical
+\item site; categorical
+\item watershed; categorical
+\item author; categorical
+\item lat; numeric
+\item lon; numeric
+}
 }
 \keyword{datasets}
