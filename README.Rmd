@@ -62,22 +62,23 @@ Datasets were aggregated from multiple authors and across many watersheds. For e
 Datasets can be joined on `site`, see example below:
 
 ```{r}
+library(tidyverse)
 ## All data: 
 all_prey <- DSMprey::all_prey_density
 all_fish <- DSMprey::all_fish_data
 all_enviro <- DSMprey::all_enviro_data 
 
 # all prey density and fork length/mass data
-all_prey_and_fish <- all_prey %>% left_join(all_fish)
+all_prey_and_fish <- all_prey %>% left_join(all_fish) %>% glimpse()
 
 # join environmental data with prey density:
-all_prey_and_enviro <- all_prey %>% left_join(all_enviro)
+all_prey_and_enviro <- all_prey %>% left_join(all_enviro) %>% glimpse()
 
 ## Monthly Data:
 monthly_prey <- DSMprey::monthly_prey_density
 monthly_fish <- DSMprey::monthly_fish_data
 
-monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish)
+monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish) %>% glimpse()
 ```
 
 ### Dependencies
