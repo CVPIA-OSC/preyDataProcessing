@@ -49,7 +49,7 @@ Citation: TODO
 all_enviro_data
 }
 \description{
-All Environmental Data
+all collected environmental data from sites/authors that collected prey density and fish metric data.
 }
 \details{
 Data dictionary:

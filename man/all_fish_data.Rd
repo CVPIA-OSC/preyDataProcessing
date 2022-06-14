@@ -29,7 +29,7 @@ Environmental Data Initiative. https://doi.org/10.6073/pasta/53ab08e695503bfbbea
 all_fish_data
 }
 \description{
-#' @description
+all fork length and mass data for fish collected.
 }
 \details{
 Data dictionary:
@@ -41,8 +41,6 @@ Data dictionary:
 \item site; categorical
 \item watershed; categorical
 \item author; categorical
-\item lat; numeric
-\item lon; numeric
 }
 }
 \keyword{datasets}

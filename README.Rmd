@@ -15,25 +15,71 @@ knitr::opts_chunk$set(
 
 # DSMprey
 
-<!-- badges: start -->
-<!-- badges: end -->
+<img src="man/figures/cvpia_logo.jpg" align="right" width="40%"/>
 
-The goal of DSMprey is to ...
+### Aggregated prey density across multiple watersheds
 
-## Installation
+*This package is for sourcing prey density across multiple watersheds and habitat types. Also included in this package are fish mass and and fork length data as well as associated environmental (temperature and dissolved oxygen) data. All data can be used in the CVPIA salmon life cycle models.*
 
-You can install the development version of DSMprey like so:
+#### Installation
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("remotes")
+remotes::install_github("CVPIA-OSC/DSMprey")
 ```
 
-## Example
+#### Usage
 
-This is a basic example which shows you how to solve a common problem:
+This package provides habitat related datasets to the [`fallRunDSM,`](https://github.com/CVPIA-OSC/fallRunDSM) [`springRunDSM,`](https://github.com/CVPIA-OSC/springRunDSM) [`winterRunDSM,`](https://github.com/CVPIA-OSC/winterRunDSM) and [`latefallRunDSM`](https://github.com/CVPIA-OSC/latefallRunDSM) packages.
 
-```{r example}
-library(DSMprey)
-## basic example code
+``` r
+# datasets within the package
+data(package = 'DSMprey')
 ```
 
+#### About the Datasets
+
+Datasets were aggregated from multiple authors and across many watersheds. For each dataset, the habitat type was assigned. Specific methods and supporting documents for data aggregation and decisions in every watershed are provided on the reference tab.
+
+##### Prey Density Datasets
+
+-   `all_prey_density`
+
+-   `monthly_prey_density`
+
+##### Fish Datasets:
+
+-   `all_fish_data`
+
+-   `monthly_fish_data`
+
+##### Environmental Datasets:
+
+-   `all_enviro_data`
+
+#### Joining Datasets
+
+Datasets can be joined on `site`, see example below:
+
+```{r}
+## All data: 
+all_prey <- DSMprey::all_prey_density
+all_fish <- DSMprey::all_fish_data
+all_enviro <- DSMprey::all_enviro_data 
+
+# all prey density and fork length/mass data
+all_prey_and_fish <- all_prey %>% left_join(all_fish)
+
+# join environmental data with prey density:
+all_prey_and_enviro <- all_prey %>% left_join(all_enviro)
+
+## Monthly Data:
+monthly_prey <- DSMprey::monthly_prey_density
+monthly_fish <- DSMprey::monthly_fish_data
+
+monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish)
+```
+
+### Dependencies
+
+The `DSMprey` package provides data for several other packages within the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).

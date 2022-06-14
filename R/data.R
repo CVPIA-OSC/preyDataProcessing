@@ -94,7 +94,7 @@
 
 #' All Environmental Data
 #'
-#' @description
+#' @description all collected environmental data from sites/authors that collected prey density and fish metric data.
 
 #' @format a dataframe
 #'
@@ -156,7 +156,7 @@
 
 #' All Fish Data
 #'
-#' #' @description
+#' @description all fork length and mass data for fish collected.
 
 #' @format a dataframe
 #'
@@ -170,8 +170,6 @@
 #' \item site; categorical
 #' \item watershed; categorical
 #' \item author; categorical
-#' \item lat; numeric
-#' \item lon; numeric
 #' }
 #'
 #' @source
