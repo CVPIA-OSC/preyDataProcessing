@@ -64,7 +64,7 @@ Datasets can be joined on `site`, see example below:
 ```{r}
 library(tidyverse)
 ## All data: 
-all_prey <- DSMprey::all_prey_density
+all_prey <- DSMprey::all_prey_density 
 all_fish <- DSMprey::all_fish_data
 all_enviro <- DSMprey::all_enviro_data 
 
