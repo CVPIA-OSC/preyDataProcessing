@@ -120,7 +120,7 @@
 #' Bypass for Butte Creek spring-run Chinook Salmon and other Central Valley juvenile salmonid populations - 2020 study year (2021). Unpublished manuscript.
 #'
 #' \strong{Zeug} \cr
-#' Zeug collected temperature data in 2008 and 2009 aloing the Merced River.
+#' Zeug collected temperature data in 2008 and 2009 along the Merced River.
 #'
 #' Citation: TODO
 #'
