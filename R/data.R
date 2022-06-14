@@ -109,8 +109,6 @@
 #' \item site; categorical
 #' \item watershed; categorical
 #' \item author; categorical
-#' \item lat; numeric
-#' \item lon; numeric
 #' }
 #'
 #' @source
