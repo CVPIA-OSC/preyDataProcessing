@@ -10,8 +10,7 @@
 *This package is for sourcing prey density across multiple watersheds
 and habitat types. Also included in this package are fish mass and and
 fork length data as well as associated environmental (temperature and
-dissolved oxygen) data. All data can be used in the CVPIA salmon life
-cycle models.*
+dissolved oxygen) data.*
 
 #### Installation
 
