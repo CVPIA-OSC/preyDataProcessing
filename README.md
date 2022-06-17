@@ -89,7 +89,3 @@ monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish)
 #> Joining, by = c("watershed", "habitat_type", "year", "month")
 ```
 
-### Dependencies
-
-The `DSMprey` package provides data for several other packages within
-the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).
