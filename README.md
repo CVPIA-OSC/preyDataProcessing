@@ -22,12 +22,8 @@ remotes::install_github("CVPIA-OSC/DSMprey")
 
 #### Usage
 
-This package provides habitat related datasets to the
-[`fallRunDSM,`](https://github.com/CVPIA-OSC/fallRunDSM)
-[`springRunDSM,`](https://github.com/CVPIA-OSC/springRunDSM)
-[`winterRunDSM,`](https://github.com/CVPIA-OSC/winterRunDSM) and
-[`latefallRunDSM`](https://github.com/CVPIA-OSC/latefallRunDSM)
-packages.
+This package includes aggregated prey density data from participating
+authors.
 
 ``` r
 # datasets within the package
