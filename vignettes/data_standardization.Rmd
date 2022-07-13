@@ -67,7 +67,7 @@ DT::datatable(env_desc, caption = 'Environmental data standardized data descript
 #### Load Raw Data
 
 ```{r}
-excel_path <- system.file("extdata", "corline", "Zoop2013_2016.xlsx", package = "DSMprey")
+excel_path <- system.file("extdata", "corline", "Zoop2013_2016_NC.xlsx", package = "DSMprey")
 corline_raw_zoop <- readxl::read_excel(excel_path)
 
 kable(head(corline_raw_zoop, 5))
@@ -75,9 +75,7 @@ kable(head(corline_raw_zoop, 5))
 
 #### Data Standardization
 
--   Corline defined prey density as `Count` per `Volume subsampled (ml)`
-
--   converted volume subsampled from ml to liters
+-   Defined prey density as `Ind_per_L` which was calculated as the ratio of field volume and sample totals.
 
 -   Along with `gear_type` included in the datest are the number of throws (`n_throws`) and mesh size (`mesh_size_microns`). Mesh size is used to determine the `size_class` variable.
 
@@ -94,7 +92,7 @@ corline_zoop <- corline_raw_zoop %>%
   rename(location = Location, 
          gear_type = Method, 
          life_stage = `Life Stage`) %>%
-  mutate(prey_density = Count/(`Volume subsampled (ml)`*0.001), #convert ml to L and calculate prey density
+  mutate(prey_density = Ind_per_L,
          Date = as_date(Date)) %>%
   select(-c(`Split Fraction`:`Volume subsampled (ml)`), -Count, -c(Phylum:Genus)) %>%
   rename(sample_id = Field, 
@@ -102,7 +100,9 @@ corline_zoop <- corline_raw_zoop %>%
          n_throws = Throws, 
          mesh_size_microns = `Mesh Size (microns)`,
          date = Date) %>%
-  select(-`Total Volume (ml)`, -`Ring Size (cm)`) %>%
+  select(-`Total Volume (ml)`, -`Ring Size (cm)`, -Ind_per_m3,
+         -Ind_per_L, -...25, -...26, -Field_Volume_m3, -Inverse_Fraction, 
+         -Sample_Total_Count) %>%
   mutate(author = "Corline",
          size_class = "meso",
          species = tolower(species),
@@ -728,6 +728,10 @@ kable(head(merced_steve_zeug_temp, 5))
 path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "DSMprey")
 stanislaus_zoop_raw <- readxl::read_excel(path, sheet = 'Density by location, date,ta_MR')
 
+
+path <- system.file("extdata", 'guignard', "Honolulu Bar data_05062022.xlsx", package = "DSMprey")
+stanislaus_zoop_raw_2 <- readxl::read_excel(path, sheet = 'Raw_data')
+
 kable(head(stanislaus_zoop_raw, 5))
 ```
 
@@ -769,6 +773,30 @@ locations <- locations %>%
 -   `site` = `location`
 
 ```{r}
+# stanislaus_zoop_2 <- stanislaus_zoop_raw_2 %>%
+#   rename(site = Location,
+#          species = Order, 
+#          date = Date) %>%
+#   group_by(species, site, date, `Volume sampled`) %>%
+#   summarise(sum_count = sum(Count, na.rm = TRUE)) %>%
+#             #sum_volume = sum(`Volume sampled`)) %>%
+#   mutate(prey_density = sum_count/`Volume sampled`/28.3168,
+#          species = tolower(species),
+#          watershed = 'Stanislaus',
+#          author = 'Guignard',
+#          gear_type = "net throw",
+#          mesh_size = 335,
+#          size_class = "meso/macro") %>%
+#   mutate(site = case_when("B+M Side Channel" ~ "Top Side",
+#                           "Lower Flood Plain" ~ 'Lower Flood Plain',
+#                           "Lower Side Channel /B+M" ~ "Top Side",
+#                           'Main Channel above Side Channel'))
+#   
+# %>%
+#   select(-`...1`, -c(`Flow (mean of 2)`:`# of picked subsamples`), 
+#          -Family, -Count, -Notes)
+
+
 stanislaus_zoop <- stanislaus_zoop_raw %>%
   rename(location = Location,
          prey_density_total = `Total  Drift Density`,# units are cubic feet
@@ -842,6 +870,36 @@ stanislaus_temp_data <- stanislaus_temp_data_raw %>%
 ```{r}
 stanislaus_zoop <- merge(stanislaus_zoop, locations, by = 'site') %>% 
   select(-Description) 
+
+# stanislaus_zoop_2 <- merge(stanislaus_zoop_2, locations, by = 'site') %>% 
+#   select(-Description) 
+```
+
+```{r}
+
+# stanislaus_zoop$file <-  "old"
+# stanislaus_zoop_2$author <-  "Guignard_updated"
+# 
+# all_stanislaus <- bind_rows(stanislaus_zoop, stanislaus_zoop_2)
+# 
+# all_prey <- bind_rows(cordoleani_zoop, 
+#                       corline_zoop, 
+#                       zeug_zoop, 
+#                       zooper_prey_data,
+#                       merced_steve_zeug_zoop, 
+#                       montgomery_zoop, 
+#                       stanislaus_zoop) 
+# 
+# 
+# all_prey <- bind_rows(all_prey, stanislaus_zoop_2)
+# 
+# ggplot(data = all_prey, aes(x = author, y = prey_density)) +
+#   geom_boxplot() +
+#   ylab('log(prey density) count/L') + 
+#   coord_flip() +
+#   scale_y_continuous(trans='log10') 
+
+
 ```
 
 ### Montgomery {.tabset .tabset-fade .tabset-pills}
@@ -1061,13 +1119,13 @@ all_prey <- bind_rows(cordoleani_zoop,
                       merced_steve_zeug_zoop, 
                       montgomery_zoop, 
                       stanislaus_zoop) %>%
-  mutate(watershed = ifelse(watershed == "Feather River ", "Feather River", watershed))
+  mutate(watershed = ifelse(watershed == "Feather River ", "Feather River", watershed)) %>% select(-geometry)
 
 kable(head(all_prey, 10))
 
 all_prey_density <- all_prey
 
-# usethis::use_data(all_prey_density)
+# usethis::use_data(all_prey_density, overwrite = TRUE)
 ```
 
 ### Explore Prey Data
