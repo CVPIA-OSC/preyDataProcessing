@@ -10,8 +10,7 @@
 *This package is for sourcing prey density across multiple watersheds
 and habitat types. Also included in this package are fish mass and and
 fork length data as well as associated environmental (temperature and
-dissolved oxygen) data. All data can be used in the CVPIA salmon life
-cycle models.*
+dissolved oxygen) data.*
 
 #### Installation
 
@@ -90,7 +89,3 @@ monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish)
 #> Joining, by = c("watershed", "habitat_type", "year", "month")
 ```
 
-### Dependencies
-
-The `DSMprey` package provides data for several other packages within
-the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).
