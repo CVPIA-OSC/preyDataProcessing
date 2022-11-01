@@ -1,16 +1,16 @@
-Package: prey_data_processing
+Package: preyDataProcessing
 Title: Collected Prey Density, Fish, and Environmental Data 
 Version: 1.0
 Authors@R: c(
     person("Maddee", "Rubenson", , "mrubenson@flowwest.com", role = c("aut", "cre")),
     person("Erin", "Cain", , "ecain@flowwest.com", role = c("aut"))
     )
-Description: This data package contains aggregated prey density, fish length and mass, and environmetnal
-  data for watersheds within the CVPIA salmon life cycle model.
+Description: This data package contains aggregated prey density, fish length and mass, and environmental
+  data for watersheds within the CVPIA Science Integration Team.
 License: CCO
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 Depends: 
     R (>= 2.10)
 LazyData: true

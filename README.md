@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# prey_data_processing
+# preyDataProcessing
 
 <img src="man/figures/cvpia_logo.jpg" align="right" width="40%"/>
 
@@ -17,7 +17,7 @@ models.*
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("CVPIA-OSC/prey_data_processing")
+remotes::install_github("CVPIA-OSC/preyDataProcessing")
 ```
 
 #### Usage
@@ -27,7 +27,7 @@ authors.
 
 ``` r
 # datasets within the package
-data(package = 'prey_data_processing')
+data(package = 'preyDataProcessing')
 ```
 
 #### About the Datasets
@@ -73,12 +73,12 @@ library(tidyverse)
     ## ✖ dplyr::lag()    masks stats::lag()
 
 ``` r
-library(prey_data_processing)
+library(preyDataProcessing)
 
 ## All data: 
-all_prey <- prey_data_processing::all_prey_density 
-all_fish <- prey_data_processing::all_fish_data
-all_enviro <- prey_data_processing::all_enviro_data 
+all_prey <- preyDataProcessing::all_prey_density 
+all_fish <- preyDataProcessing::all_fish_data
+all_enviro <- preyDataProcessing::all_enviro_data 
 
 # all prey density and fork length/mass data
 all_prey_and_fish <- all_prey %>% left_join(all_fish) 
@@ -95,8 +95,8 @@ all_prey_and_enviro <- all_prey %>% left_join(all_enviro)
 
 ``` r
 ## Monthly Data:
-monthly_prey <- prey_data_processing::monthly_prey_density
-monthly_fish <- prey_data_processing::monthly_fish_data
+monthly_prey <- preyDataProcessing::monthly_prey_density
+monthly_fish <- preyDataProcessing::monthly_fish_data
 
 monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish) 
 ```
@@ -105,5 +105,5 @@ monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish)
 
 ### Dependencies
 
-The `prey_data_processing` data package provides data bioenergetic modeling within
+The `preyDataProcessing` data package provides data bioenergetic modeling within
 the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).
