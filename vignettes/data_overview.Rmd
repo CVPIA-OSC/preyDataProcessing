@@ -16,7 +16,7 @@ knitr::opts_chunk$set(
   echo = TRUE, message = FALSE, warning = FALSE
 )
 library(tidyverse)
-library(DSMprey)
+library(prey_data_processing)
 library(knitr)
 ```
 
@@ -26,7 +26,7 @@ library(knitr)
 
 
 ```{r cars}
-monthly_prey_density <- DSMprey::monthly_prey_density %>% glimpse
+monthly_prey_density <- prey_data_processing::monthly_prey_density %>% glimpse
 
 # There are two NAs associated with the month of San Joaquin data because data received was aggregated to year
 
@@ -35,14 +35,14 @@ monthly_prey_density <- DSMprey::monthly_prey_density %>% glimpse
 ## Fish Data 
 
 ```{r}
-monthly_fish <- DSMprey::monthly_fish_data %>% glimpse
+monthly_fish <- prey_data_processing::monthly_fish_data %>% glimpse
 
 ```
 
 ## Environmental Data 
 
 ```{r}
-all_enviro <- DSMprey::all_enviro_data %>% glimpse
+all_enviro <- prey_data_processing::all_enviro_data %>% glimpse
 
 ```
 
@@ -52,7 +52,7 @@ all_enviro <- DSMprey::all_enviro_data %>% glimpse
 
 ```{r}
 
-prey_agg_by_author <- DSMprey::all_prey_density %>%
+prey_agg_by_author <- prey_data_processing::all_prey_density %>%
   group_by(author) %>%
   summarise_at(vars(prey_density), .funs = c('min', 'max', 'median', 'var'), na.rm = TRUE)
 
@@ -83,7 +83,7 @@ ggplot() +
   coord_flip() +
   theme_minimal()
 
-DSMprey::all_prey_density %>%
+prey_data_processing::all_prey_density %>%
   group_by(habitat_type) %>%
   summarise(author = paste0(unique(author), collapse = ", ")) %>% kable()
 

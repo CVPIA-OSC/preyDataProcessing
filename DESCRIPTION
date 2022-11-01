@@ -1,4 +1,4 @@
-Package: DSMprey
+Package: prey_data_processing
 Title: Collected Prey Density, Fish, and Environmental Data 
 Version: 1.0
 Authors@R: c(

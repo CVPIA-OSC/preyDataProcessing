@@ -31,7 +31,7 @@ options(scipen=999)
 Formatting and data descriptions for standardized datasets.
 
 ```{r, echo = FALSE}
-excel_path <- system.file("extdata", "DatasetFormat.xlsx", package = "DSMprey")
+excel_path <- system.file("extdata", "DatasetFormat.xlsx", package = "prey_data_processing")
 datasets <- readxl::read_excel(excel_path, sheet = "Description")
 
 prey_desc <- datasets %>% filter(Which == 'prey') %>% select(-Which)
@@ -67,7 +67,7 @@ DT::datatable(env_desc, caption = 'Environmental data standardized data descript
 #### Load Raw Data
 
 ```{r}
-excel_path <- system.file("extdata", "corline", "Zoop2013_2016_NC.xlsx", package = "DSMprey")
+excel_path <- system.file("extdata", "corline", "Zoop2013_2016_NC.xlsx", package = "prey_data_processing")
 corline_raw_zoop <- readxl::read_excel(excel_path)
 
 kable(head(corline_raw_zoop, 5))
@@ -207,11 +207,11 @@ ggplot(corline_zoop, aes(habitat_type)) +
 
 ```{r message=FALSE, warning=FALSE}
 #2019
-path <- system.file("extdata", "cordoleani", "DailyCageFish_data_2019.csv", package = "DSMprey")
+path <- system.file("extdata", "cordoleani", "DailyCageFish_data_2019.csv", package = "prey_data_processing")
 fish_growth_data_2019 <- read_csv(path)
 
 #2020
-path <- system.file("extdata", "cordoleani", "DailyCageFish_data_2020.csv", package = "DSMprey")
+path <- system.file("extdata", "cordoleani", "DailyCageFish_data_2020.csv", package = "prey_data_processing")
 fish_growth_data_2020 <- read_csv(path)
 
 # combine 2019, 2020 data
@@ -221,7 +221,7 @@ total_fish_growth <- bind_rows(fish_growth_data_2019, fish_growth_data_2020)
 kable(head(total_fish_growth, 5))
 
 # read in fork length data 
-path <- system.file("extdata", "cordoleani", "CageSalmon_Growth.csv", package = "DSMprey")
+path <- system.file("extdata", "cordoleani", "CageSalmon_Growth.csv", package = "prey_data_processing")
 fork_length <- read_csv(path)
 
 ```
@@ -231,7 +231,7 @@ fork_length <- read_csv(path)
 ##### Raw Prey Data
 
 ```{r message=FALSE, warning=FALSE}
-path <- system.file("extdata", "cordoleani", "tidy_zoop_density.csv", package = "DSMprey")
+path <- system.file("extdata", "cordoleani", "tidy_zoop_density.csv", package = "prey_data_processing")
 cord_prey_new <- read_csv(path)
 
 ```
@@ -242,7 +242,7 @@ cord_prey_new <- read_csv(path)
 
 ```{r}
 
-path <- system.file("extdata", "cordoleani", "Cage_Locations.csv", package = "DSMprey")
+path <- system.file("extdata", "cordoleani", "Cage_Locations.csv", package = "prey_data_processing")
 cordoleani_locations_raw <- read_csv(path)
 
 kable(head(cordoleani_locations_raw, 5 ))
@@ -252,7 +252,7 @@ kable(head(cordoleani_locations_raw, 5 ))
 
 ```{r}
 
-path <- system.file("extdata", "cordoleani", "doboall.csv", package = "DSMprey")
+path <- system.file("extdata", "cordoleani", "doboall.csv", package = "prey_data_processing")
 cordoleani_do_raw <- read_csv(path)
 
 kable(head(cordoleani_do_raw, 5))
@@ -482,7 +482,7 @@ ggplot(cordoleani_enviro, aes(x = temperature))+
 #### Load Raw Data
 
 ```{r}
-path <- system.file("extdata", "zeug", "san_joaquin", "summary_zooplankton_10_19_17.xlsx", package = "DSMprey")
+path <- system.file("extdata", "zeug", "san_joaquin", "summary_zooplankton_10_19_17.xlsx", package = "prey_data_processing")
 raw_zoops <- readxl::read_excel(path, sheet = "CountLiter2016", range = "A1:H56")
 
 kable(head(raw_zoops, 5))
@@ -559,7 +559,7 @@ ggplot(zeug_zoop, aes(x = habitat_type, y = prey_density)) +
 
 ```{r}
 
-path <- system.file("extdata", "zeug", "merced", "Merced invert data_environment.xls", package = "DSMprey")
+path <- system.file("extdata", "zeug", "merced", "Merced invert data_environment.xls", package = "prey_data_processing")
 raw_df <- readxl::read_excel(path, .name_repair = 'minimal', sheet = "erin_modified",  col_names = FALSE)
 
 dates <- janitor::excel_numeric_to_date(as.numeric(raw_df[1,3:ncol(raw_df)]), date_system = 'mac pre-2011') %>% as.character()
@@ -583,7 +583,7 @@ kable(head(raw_df, 10))
 ##### Raw Fish Data
 
 ```{r}
-path <- system.file("extdata", "zeug", "merced", "salmon data_final(Josie).xlsx", package = "DSMprey")
+path <- system.file("extdata", "zeug", "merced", "salmon data_final(Josie).xlsx", package = "prey_data_processing")
 raw_salmon <- readxl::read_excel(path, skip = 2)
 
 kable(head(raw_salmon, 5))
@@ -594,7 +594,7 @@ kable(head(raw_salmon, 5))
 ##### Raw Temperature Data
 
 ```{r}
-path <- system.file("extdata", "zeug", "merced", "Temperature.xlsx", package = "DSMprey")
+path <- system.file("extdata", "zeug", "merced", "Temperature.xlsx", package = "prey_data_processing")
 raw_temps <- readxl::read_excel(path, sheet = "Sheet1", range = "A1:U212") %>% 
   mutate(date = as.Date(`date/time`)) %>%
   select(-difference, -`date/time`) 
@@ -645,7 +645,7 @@ merced_steve_zeug_zoop <- raw_df[3:nrow(raw_df),] %>%
   glimpse
 
 # # Load in volumns sampled from seperate xlsx sheet and use it to calculated count/L 
-path <- system.file("extdata", "zeug", "merced", "Flow_meter_Drift.xlsx", package = "DSMprey")
+path <- system.file("extdata", "zeug", "merced", "Flow_meter_Drift.xlsx", package = "prey_data_processing")
 vols <- readxl::read_excel(path, skip = 4) %>%
   janitor::clean_names()
 
@@ -721,11 +721,11 @@ kable(head(merced_steve_zeug_temp, 5))
 -   created a modified version of the tab *Density by location, date...* to make it easier to load into R
 
 ```{r}
-path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "DSMprey")
+path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "prey_data_processing")
 stanislaus_zoop_raw <- readxl::read_excel(path, sheet = 'Density by location, date,ta_MR')
 
 
-path <- system.file("extdata", 'guignard', "Honolulu Bar data_05062022.xlsx", package = "DSMprey")
+path <- system.file("extdata", 'guignard', "Honolulu Bar data_05062022.xlsx", package = "prey_data_processing")
 stanislaus_zoop_raw_2 <- readxl::read_excel(path, sheet = 'Raw_data')
 
 kable(head(stanislaus_zoop_raw, 5))
@@ -736,7 +736,7 @@ kable(head(stanislaus_zoop_raw, 5))
 ##### Raw Temperature Data
 
 ```{r}
-path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "DSMprey")
+path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "prey_data_processing")
 stanislaus_temp_data_raw <- readxl::read_excel(path, sheet = 'FlowTemp')
 
 kable(head(stanislaus_temp_data_raw, 5))
@@ -749,7 +749,7 @@ kable(head(stanislaus_temp_data_raw, 5))
 -   Changed .kmz tile to .kml for simplified loading into R
 
 ```{r}
-path <- system.file("extdata", 'guignard', "drift net sites_to_kml.kml", package = "DSMprey")
+path <- system.file("extdata", 'guignard', "drift net sites_to_kml.kml", package = "prey_data_processing")
 locations <- st_read(dsn = path)
 
 # add lat and long columns based on geometry
@@ -851,7 +851,7 @@ stanislaus_zoop <- merge(stanislaus_zoop, locations, by = 'site') %>%
 
 ```{r, echo = TRUE, message = FALSE, warning = FALSE, include = FALSE}
 # this a script that sources the EDI data
-path <- system.file("extdata", "montgomery", "food_4_fish_data_access.R", package = "DSMprey")
+path <- system.file("extdata", "montgomery", "food_4_fish_data_access.R", package = "prey_data_processing")
 source(path)
 ```
 
@@ -919,7 +919,7 @@ kable(head(montgomery_temp, 5))
 
 ```{r}
 # write.csv(location_lookup, 'mont_locations.csv')
-path <- system.file("extdata", "montgomery",  "mont_locations.csv", package = "DSMprey")
+path <- system.file("extdata", "montgomery",  "mont_locations.csv", package = "prey_data_processing")
 montgomery_locations <- read_csv(path) %>%
   rename(site = location,
          watershed = stream) 
@@ -983,7 +983,7 @@ montgomery_fish <- merge(montgomery_fish, montgomery_locations, by = "site") %>%
 #saveRDS(zoop_data, 'zoop_data.rds')
 
 # read pre-saved rds file back in:
-path <- system.file("extdata", "zooper", "zoop_data.rds", package = "DSMprey")
+path <- system.file("extdata", "zooper", "zoop_data.rds", package = "prey_data_processing")
 zoop_data <- readRDS(path)
 
 zooper <- zoop_data %>%
@@ -999,7 +999,7 @@ zooper <- zoop_data %>%
 
 # Add in categorization of North Delta or South Delta 
 # Adds polygon for each site
-path <- system.file("extdata", "zooper", "shape_files", "delta_extents", "HabitatExtentsForCorreigh.shp", package = "DSMprey")
+path <- system.file("extdata", "zooper", "shape_files", "delta_extents", "HabitatExtentsForCorreigh.shp", package = "prey_data_processing")
 delta_extents <- rgdal::readOGR(path) %>%
   st_as_sf(coords = c("longitude", "latitude"), dim = "XY", crs = 4326) %>%
   st_transform("WGS84")
