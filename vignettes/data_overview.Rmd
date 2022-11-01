@@ -128,8 +128,6 @@ ggplot() +
   scale_y_continuous(trans='log10') +
   ylab('log(median prey density) (count/L)') +
   xlab('month') +
-  #facet_wrap(~watershed)+
-  #scale_color_brewer(palette = 'Dark2')+
   coord_flip()
 
 
