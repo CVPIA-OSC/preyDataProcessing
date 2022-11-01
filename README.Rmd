@@ -63,7 +63,6 @@ Datasets can be joined on `site`, see example below:
 
 ```{r}
 library(tidyverse)
-library(preyDataProcessing)
 
 ## All data: 
 all_prey <- preyDataProcessing::all_prey_density 
