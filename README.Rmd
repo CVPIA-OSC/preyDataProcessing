@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 
 ### Aggregated prey density across multiple watersheds
 
-*This package is for sourcing prey density across multiple watersheds and habitat types. Also included in this package are fish mass and and fork length data as well as associated environmental (temperature and dissolved oxygen) data. All data can be used in the CVPIA salmon life cycle models.*
+*This package is for sourcing prey density across multiple watersheds and habitat types. Also included in this package are fish mass and and fork length data as well as associated environmental (temperature and dissolved oxygen) data. Data can be used as inputs into bioenergetic models.*
 
 #### Installation
 
@@ -85,4 +85,4 @@ monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish)
 
 ### Dependencies
 
-The `DSMprey` data package provides data for several other packages within the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).
+The `DSMprey` data package provides data bioenergetic modeling within the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).
