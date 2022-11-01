@@ -9,12 +9,11 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>",
   fig.path = "man/figures/README-",
-  out.width = "100%",
-  echo = FALSE
+  out.width = "100%"
 )
 ```
 
-# prey_data_inputs
+# DSMprey
 
 <img src="man/figures/cvpia_logo.jpg" align="right" width="40%"/>
 
@@ -26,7 +25,7 @@ knitr::opts_chunk$set(
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("CVPIA-OSC/prey_data_inputs")
+remotes::install_github("CVPIA-OSC/DSMprey")
 ```
 
 #### Usage
@@ -35,7 +34,7 @@ This package includes aggregated prey density data from participating authors.
 
 ``` r
 # datasets within the package
-data(package = 'prey_data_inputs')
+data(package = 'DSMprey')
 ```
 
 #### About the Datasets
@@ -64,12 +63,12 @@ Datasets can be joined on `site`, see example below:
 
 ```{r}
 library(tidyverse)
-
+library(DSMprey)
 
 ## All data: 
-all_prey <- prey_data_inputs::all_prey_density 
-all_fish <- prey_data_inputs::all_fish_data
-all_enviro <- prey_data_inputs::all_enviro_data 
+all_prey <- DSMprey::all_prey_density 
+all_fish <- DSMprey::all_fish_data
+all_enviro <- DSMprey::all_enviro_data 
 
 # all prey density and fork length/mass data
 all_prey_and_fish <- all_prey %>% left_join(all_fish) 
@@ -78,12 +77,12 @@ all_prey_and_fish <- all_prey %>% left_join(all_fish)
 all_prey_and_enviro <- all_prey %>% left_join(all_enviro) 
 
 ## Monthly Data:
-monthly_prey <- prey_data_inputs::monthly_prey_density
-monthly_fish <- prey_data_inputs::monthly_fish_data
+monthly_prey <- DSMprey::monthly_prey_density
+monthly_fish <- DSMprey::monthly_fish_data
 
 monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish) 
 ```
 
 ### Dependencies
 
-The `prey_data_inputs` data package provides data for several other packages within the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).
+The `DSMprey` data package provides data for several other packages within the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).
