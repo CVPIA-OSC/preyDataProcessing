@@ -268,8 +268,6 @@ kable(head(cordoleani_do_raw, 5))
 
 -   Defined `sample_id` as `cage_id`
 
--   ~~TO DO: should likely remove the two zooplankton density columns. It is weird that those values do not add up to total prey_density.~~
-
 -   mapped `Canal channel` and `Agriculture` to `agricultural canal`
 
 -   mapped `Channel` and `River Channel` to `perennial instream`
@@ -315,8 +313,6 @@ kable(head(cordoleani_zoop, 5))
 ##### Environmental Data Standardization
 
 -   Chose to keep mean temperature and remove min and max temperature columns
-
--   
 
 ```{r}
 
@@ -773,29 +769,6 @@ locations <- locations %>%
 -   `site` = `location`
 
 ```{r}
-# stanislaus_zoop_2 <- stanislaus_zoop_raw_2 %>%
-#   rename(site = Location,
-#          species = Order, 
-#          date = Date) %>%
-#   group_by(species, site, date, `Volume sampled`) %>%
-#   summarise(sum_count = sum(Count, na.rm = TRUE)) %>%
-#             #sum_volume = sum(`Volume sampled`)) %>%
-#   mutate(prey_density = sum_count/`Volume sampled`/28.3168,
-#          species = tolower(species),
-#          watershed = 'Stanislaus',
-#          author = 'Guignard',
-#          gear_type = "net throw",
-#          mesh_size = 335,
-#          size_class = "meso/macro") %>%
-#   mutate(site = case_when("B+M Side Channel" ~ "Top Side",
-#                           "Lower Flood Plain" ~ 'Lower Flood Plain',
-#                           "Lower Side Channel /B+M" ~ "Top Side",
-#                           'Main Channel above Side Channel'))
-#   
-# %>%
-#   select(-`...1`, -c(`Flow (mean of 2)`:`# of picked subsamples`), 
-#          -Family, -Count, -Notes)
-
 
 stanislaus_zoop <- stanislaus_zoop_raw %>%
   rename(location = Location,
@@ -848,10 +821,7 @@ locations <- locations %>%
   ) %>%
   rename(site = Name)
 
-# leaflet(locations) %>%
-#   addEsriBasemapLayer(esriBasemapLayers$Imagery, 
-#                       autoLabels=TRUE, group = 'Esri Basemap') %>%
-#   addMarkers(popup = ~paste0(locations$site, ' ', locations$habitat_type )) 
+
 ```
 
 ##### Temperature Data Standardization
@@ -870,35 +840,6 @@ stanislaus_temp_data <- stanislaus_temp_data_raw %>%
 ```{r}
 stanislaus_zoop <- merge(stanislaus_zoop, locations, by = 'site') %>% 
   select(-Description) 
-
-# stanislaus_zoop_2 <- merge(stanislaus_zoop_2, locations, by = 'site') %>% 
-#   select(-Description) 
-```
-
-```{r}
-
-# stanislaus_zoop$file <-  "old"
-# stanislaus_zoop_2$author <-  "Guignard_updated"
-# 
-# all_stanislaus <- bind_rows(stanislaus_zoop, stanislaus_zoop_2)
-# 
-# all_prey <- bind_rows(cordoleani_zoop, 
-#                       corline_zoop, 
-#                       zeug_zoop, 
-#                       zooper_prey_data,
-#                       merced_steve_zeug_zoop, 
-#                       montgomery_zoop, 
-#                       stanislaus_zoop) 
-# 
-# 
-# all_prey <- bind_rows(all_prey, stanislaus_zoop_2)
-# 
-# ggplot(data = all_prey, aes(x = author, y = prey_density)) +
-#   geom_boxplot() +
-#   ylab('log(prey density) count/L') + 
-#   coord_flip() +
-#   scale_y_continuous(trans='log10') 
-
 
 ```
 
