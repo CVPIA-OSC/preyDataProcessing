@@ -1,0 +1,114 @@
+---
+title: "prey data standardization"
+author: "Maddee Rubenson (FlowWest)"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = TRUE, message = FALSE, warning = FALSE
+)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(readxl)
+library(sf)
+library(DT)
+library(preyDataProcessing)
+
+options(scipen=999)
+```
+
+# Load Datasets {.tabset .tabset-fade .tabset-pills}
+
+### Corline et al. {.tabset .tabset-fade .tabset-pills}
+
+#### Load Raw Data
+
+```{r}
+excel_path <- system.file("extdata", "corline", "Zoop2013_2016_NC.xlsx", package = "preyDataProcessing")
+corline_raw_zoop <- readxl::read_excel(excel_path) |> glimpse()
+
+#kable(head(corline_raw_zoop, 5))
+```
+
+#### Data Standardization
+
+-   Defined prey density as `Ind_per_L` which was calculated as the ratio of field volume and sample totals.
+
+-   Along with `gear_type` included in the dataset are the number of throws (`n_throws`) and mesh size (`mesh_size_microns`). Mesh size is used to determine the `size_class` variable.
+
+-   Variables Removed: `Split Fraction`, `Class`, `Subclass`, `Order`, `Genus`, `Family`
+
+-   Left `species` column
+
+-   Fixed naming conventions of the sampling locations (`sample_id`)
+
+-   TODO: reconcile inconsistent species spelling names
+
+```{r, warnings = FALSE, message=FALSE}
+corline_zoop_tmp <- corline_raw_zoop  |> 
+  rename(location = Location, 
+         gear_type = Method, 
+         life_stage = `Life Stage`) |> 
+  mutate(prey_density = Ind_per_L,
+         Date = as_date(Date)) |> 
+  select(-c(`Split Fraction`:`Volume subsampled (ml)`), -Count, -c(Phylum:Genus)) %>%
+  rename(sample_id = Field, 
+         species = Species, 
+         n_throws = Throws, 
+         mesh_size_microns = `Mesh Size (microns)`,
+         date = Date) |> 
+  select(-`Total Volume (ml)`, -`Ring Size (cm)`, -Ind_per_m3,
+         -Ind_per_L, -...25, -...26, -Field_Volume_m3, -Inverse_Fraction, 
+         -Sample_Total_Count) |> 
+  mutate(author = "Corline",
+         size_class = "meso",
+         species = tolower(species),
+         gear_type = tolower(gear_type),
+         mesh_size = mesh_size_microns) 
+
+# Numeric sample Ids must be standardized with Fields. Looks like 2015 data has 1 - 9 as sample Id while data from 2013 has Field 1 - Field 9. This is updated to have the sample_ids as follows, where the NA corresponds to the sites on the Sacramento River. 
+tmp_change_names <- corline_zoop_tmp[corline_zoop_tmp$sample_id %in% c(1:10), ] %>%
+  mutate(sample_id = paste0('Field ', sample_id))
+tmp_names_with_field <- corline_zoop_tmp[!(corline_zoop_tmp$sample_id %in% c(1:10)), ]
+corline_zoop_tmp <- bind_rows(tmp_change_names, tmp_names_with_field)
+
+# this fixes the spelling differences in species column 
+corline_zoop <- corline_zoop_tmp |> 
+  mutate(species = case_when(species %in% c("harpacticoid", "harpacticoida") ~ "harpacticoida",
+                             species %in% c("illyocryptidae", "ilyocryptidae") ~ "ilyocryptidae",
+                             species %in% c("schaploberis", "schaphloberis") ~ "schaphloberis", 
+                             species == "species" ~ NA_character_, 
+                             TRUE ~ species))  |> 
+  select(-n_throws, -mesh_size_microns) 
+
+kable(head(corline_zoop, 5))
+
+```
+
+##### Location Data Standardization
+
+-   location of the fields (Knaggs Ranch) were provided by author
+
+-   location of inlet canal (Toe Drain) was determined based on best professional judgement and the paper Corline et al.
+
+-   location of the Sacramento River sampling site was provided in the paper Corline et al. as Sherwood Harbor
+
+-   defined `habitat_type` based on best professional judgement
+
+```{r}
+
+corline_locations <- data.frame(
+  location = c('Knaggs Ranch', 'Sacramento River', 'Toe Drain'),
+  habitat_type = c('floodplain', 'perennial instream', 'agricultural canal'), # TODO update these habitat designations per recommendations from J. Montgomery
+  lat = c(38.70151, 38.52353, 38.70511),
+  lon = c( -121.66996, -121.53840, -121.67041)
+)
+
+```
+
