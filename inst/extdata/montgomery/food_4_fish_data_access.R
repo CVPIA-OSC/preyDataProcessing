@@ -77,5 +77,5 @@ location_lookup2 <- httr::content(location_lookup_response2)
 montgomery_locations <- bind_rows(location_lookup, location_lookup2)
 
 rm(caged_fish_response, get_data_package_response, get_entity_response, location_lookup_response, zoops_response,
-   zoops_response2, location_lookup_response2, location_lookup, location_lookup2, zoops_table, zoops_table2)
+   zoops_response2, location_lookup_response2)
 
