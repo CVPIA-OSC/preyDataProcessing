@@ -61,9 +61,9 @@ zoops_response2 <- httr::GET(
 )
 zoops_response2
 
-zoops_table2 <- httr::content(zoops_response) %>% janitor::clean_names() %>% glimpse
+zoops_table2 <- httr::content(zoops_response) %>% janitor::clean_names()
 
-montgomery_prey_data <- bind_rows(zoops_table, zoops_table2)
+montgomery_prey_data <- zoops_table2
 
 location_lookup_response2 <- httr::GET(
   url = "https://pasta.lternet.edu/package/data/eml/edi/996/2/552af228cbd6a24d7b152a60bc53c0dd",

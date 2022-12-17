@@ -23,12 +23,11 @@ library(preyDataProcessing)
 options(scipen=999)
 ```
 
-## Montgomery Data Standarization
+## Montgomery Data Standardization
 
 **Datasets provided:**
 
--   2019 data: [EDI link]
--   2021 data: [EDI link]
+-   [Fish Food on Floodplain Farm Fields 2019 and 2021](https://portal.edirepository.org/nis/mapbrowse?packageid=edi.996.2)
 
 **Author contact info:**
 
@@ -57,6 +56,8 @@ Final prey density dataset includes the following variables:
 # this a script that sources the EDI data
 path <- system.file("extdata", "montgomery", "food_4_fish_data_access.R", package = "preyDataProcessing")
 source(path)
+
+montgomery_prey_data |> glimpse()
 ```
 
 #### Standard format
@@ -90,7 +91,7 @@ montgomery_prey_data_process <- montgomery_prey_data %>%
          gear_type = "net throw",
          mesh_size = 150, 
          prey_density = prey_density/1000) |> #1 m^3 = 1000 L 
-  select(date, site, species:author, size_class, mesh_size, gear_type)
+  select(date, site, species:author, size_class, mesh_size, gear_type) 
 
 ```
 
@@ -163,7 +164,7 @@ ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_dens
 
 ```{r}
 
-save(corline_zoop_final, file = "../../data/corline_prey_data.rda")
+save(montgomery_prey_data_final, file = "../../data/montgomery_prey_data.rda")
 
 ```
 
