@@ -2,7 +2,7 @@
 title: "Jacob Montgomery Data"
 author: "Maddee Rubenson (FlowWest)"
 date: "`r Sys.Date()`"
-output: github_document
+output:  rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
