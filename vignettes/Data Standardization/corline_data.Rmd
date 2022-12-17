@@ -2,7 +2,8 @@
 title: "Nicholas Corline Data"
 author: "Maddee Rubenson (FlowWest)"
 date: "`r Sys.Date()`"
-output:  rmarkdown::github_document
+output:  
+  rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -17,7 +18,6 @@ library(lubridate)
 library(knitr)
 library(readxl)
 library(sf)
-library(DT)
 library(preyDataProcessing)
 
 options(scipen=999)
@@ -37,20 +37,20 @@ Nicholas Corline [njcorline\@vt.edu]
 
 ### Prey Data
 
-Final prey density dataset includes the following variables: 
+Final prey density dataset includes the following variables:
 
-* `date`: YYYY-MM-DD
-* `gear_type`: the type of gear used to collect zooplankton. 
-* `species`: species of zooplankton 
-* `life_stage`: lifestage of zooplankton species 
-* `prey_density`: density of zooplankton (count/L)
-* `size_class`: size class of zooplankton, determined by mesh size 
-* `mesh_size`: mesh size of net used to collect zooplankton
-* `habitat_type`: habitat type of location where zooplankton were collected 
-* `lat`: latitude of sampling location
-* `lon`: longitude of sampling location 
-* `site`: location description 
-* `author`: author of dataset 
+-   `date`: YYYY-MM-DD
+-   `gear_type`: the type of gear used to collect zooplankton.
+-   `species`: species of zooplankton
+-   `life_stage`: lifestage of zooplankton species
+-   `prey_density`: density of zooplankton (count/L)
+-   `size_class`: size class of zooplankton, determined by mesh size
+-   `mesh_size`: mesh size of net used to collect zooplankton
+-   `habitat_type`: habitat type of location where zooplankton were collected
+-   `lat`: latitude of sampling location
+-   `lon`: longitude of sampling location
+-   `site`: location description
+-   `author`: author of dataset
 
 #### Raw data
 
@@ -124,19 +124,17 @@ corline_zoop <- corline_zoop_tmp |>
 
 ```
 
-##### Locations Standard Format 
+##### Locations Standard Format
 
 **Notes:**
 
 -   location of the fields (Knaggs Ranch) were provided by author
 
--   location of inlet canal (Toe Drain) was determined based on best
-    professional judgement and guidance from the paper Corline et al.
+-   location of inlet canal (Toe Drain) was determined based on best professional judgement and guidance from the paper Corline et al.
 
--   location of the Sacramento River sampling site was provided in the
-    paper Corline et al. as Sherwood Harbor
+-   location of the Sacramento River sampling site was provided in the paper Corline et al. as Sherwood Harbor
 
--   defined `habitat_type` based on best professional judgement from monitoring locations 
+-   defined `habitat_type` based on best professional judgement from monitoring locations
 
 ```{r}
 corline_locations <- data.frame(
@@ -150,7 +148,7 @@ corline_locations <- data.frame(
 
 ##### Combine prey data with locations
 
-This produces the final prey density dataset. 
+This produces the final prey density dataset.
 
 ```{r}
 
@@ -169,7 +167,7 @@ kable(head(corline_zoop_final, 5))
 
 **Notes:**
 
-* all prey data was collected January through April 
+-   all prey data was collected January through April
 
 ```{r}
 summary(corline_zoop_final)

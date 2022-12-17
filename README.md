@@ -35,23 +35,41 @@ data(package = 'preyDataProcessing')
 Datasets were aggregated from multiple authors and across many
 watersheds. For each dataset, the habitat type was assigned. Specific
 methods and supporting documents for data aggregation and decisions in
-every watershed are provided on the reference tab.
+every watershed are provided by author:
+
+- [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/Data%20Standardization/montgomery_data.Rmd)
+  \# TODO: update link
+- [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/Data%20Standardization/corline_data.Rmd)
+  \# TODO: update link
+- Zeug
+  - San Joaquin River
+
+  - Merced River
+- Cordoleani
+- Guignard
+- Zooper R Library
+
+Information regarding compiled datasets is located here:
+
+- \[prey density data aggregation\]
+
+- \[habitat type definition and methodology\]
 
 ##### Prey Density Datasets
 
--   `all_prey_density`
+- `all_prey_density`
 
--   `monthly_prey_density`
+- `monthly_prey_density`
 
 ##### Fish Datasets:
 
--   `all_fish_data`
+- `all_fish_data`
 
--   `monthly_fish_data`
+- `monthly_fish_data`
 
 ##### Environmental Datasets:
 
--   `all_enviro_data`
+- `all_enviro_data`
 
 #### Joining Datasets
 
@@ -73,8 +91,6 @@ library(tidyverse)
     ## ✖ dplyr::lag()    masks stats::lag()
 
 ``` r
-library(preyDataProcessing)
-
 ## All data: 
 all_prey <- preyDataProcessing::all_prey_density 
 all_fish <- preyDataProcessing::all_fish_data
@@ -105,5 +121,6 @@ monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish)
 
 ### Dependencies
 
-The `preyDataProcessing` data package provides data bioenergetic modeling within
-the [CVPIA Open Science Collaborative](https://github.com/CVPIA-OSC).
+The `preyDataProcessing` data package provides data bioenergetic
+modeling within the [CVPIA Open Science
+Collaborative](https://github.com/CVPIA-OSC).
