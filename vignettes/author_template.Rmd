@@ -1,0 +1,61 @@
+---
+title: "author prey data template"
+author: "Maddee Rubenson (FlowWest)"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## [Author] Data Standarization 
+
+Datasets provided: 
+* 
+* 
+
+Author contact info:
+
+
+### Prey Data
+[data dictionary - overview of what the data looks like]
+
+#### Raw data
+
+#### Standard format 
+* excluded variables: 
+
+* notes:  
+
+#### QC
+
+#### Data exploration 
+
+### Fish Data 
+[data dictionary - overview of what the data looks like]
+
+#### Raw data
+
+#### Standard format 
+* excluded variables: 
+
+* notes:  
+
+#### QC
+
+#### Data exploration 
+[data dictionary - overview of what the data looks like]
+
+#### Raw data
+
+#### Standard format 
+* excluded variables: 
+
+* notes:  
+
+#### QC
+
+#### Data exploration 
+
+### Environmental Data 
