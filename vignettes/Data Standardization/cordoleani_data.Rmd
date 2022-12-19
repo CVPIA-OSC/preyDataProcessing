@@ -51,6 +51,7 @@ Final prey density dataset includes the following variables:
 -   `lon`: longitude of sampling location
 -   `site`: location description
 -   `author`: author of dataset
+-   `watershed`: unique watershed name associated with collected data
 
 #### Raw data
 
