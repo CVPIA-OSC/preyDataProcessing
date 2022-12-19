@@ -2,8 +2,9 @@
 title: "Steve Zeug Data"
 author: "Maddee Rubenson (FlowWest)"
 date: "`r Sys.Date()`"
-output:
-  rmarkdown::github_document
+output: 
+  md_document:
+    variant: markdown_github
 ---
 
 ```{r setup, include=FALSE}

@@ -2,7 +2,13 @@
 title: "Size Class Methodology"
 author: "Maddee Rubenson (FlowWest)"
 date: "`r Sys.Date()`"
-output: github_document
+output:
+  github_document:
+    fig_width: 5
+    fig_height: 5
+    dev: jpeg
+---
+
 ---
 
 ```{r setup, include=FALSE}
