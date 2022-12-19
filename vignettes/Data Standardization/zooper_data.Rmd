@@ -1,0 +1,223 @@
+---
+title: "Zooper Data"
+author: "Maddee Rubenson (FlowWest)"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE, 
+                      message = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(readxl)
+library(sf)
+library(preyDataProcessing)
+
+options(scipen=999)
+```
+
+## Zooper Data Standardization
+
+**Datasets provided:**
+
+-   Data downloaded from Zooper library [[Intergency Ecological Program](https://github.com/InteragencyEcologicalProgram/zooper)]
+
+**Author contact info:**
+
+-   NA
+
+### Prey Data
+
+Final prey density dataset includes the following variables:
+
+-   `date`: YYYY-MM-DD
+-   `species`: species of zooplankton
+-   `prey_density`: density of zooplankton (count/L)
+-   `size_class`: size class of zooplankton, determined by mesh size
+-   `habitat_type`: habitat type of location where zooplankton were collected
+-   `lat`: latitude of sampling location
+-   `lon`: longitude of sampling location
+-   `site`: location description
+-   `author`: author of dataset
+-   `watershed`: unique watershed name associated with collected data
+
+#### Raw data
+
+```{r}
+
+# run the Zooper libary query: 
+# zoop_data <- Zoopsynther(Data_type = "Community", 
+#                        Sources = c("EMP", "FRP", 
+#                                    "FMWT", "STN", "20mm"), 
+#                        Size_class = c("Micro", "Meso", "Macro"), 
+#                        Date_range = c("1990-10-01", "2020-09-30"))
+
+# save the zooper results: 
+#saveRDS(zoop_data, 'zoop_data.rds')
+
+# read pre-saved rds file back in:
+path <- system.file("extdata", "zooper", "zoop_data.rds", package = "preyDataProcessing")
+zoop_data <- readRDS(path) 
+
+zoop_data |>  glimpse()
+
+```
+
+#### Standard format
+
+**excluded variables:**
+
+-   removed environmental variables
+
+-   `CPUE`
+
+-   `Phylum`
+
+-   `Class`
+
+-   `Order`
+
+-   `Family`
+
+-   `Genus`
+
+-   `Volume`
+
+-   `Undersampled`
+
+**notes:**
+
+-   convert from count/m\^3 to count/L
+-   extract `temperature` into unique environmental dataset
+-   `Taxname`= `species`
+
+```{r}
+zooper <- zoop_data %>%
+  select(date = Date, prey_per_unit_volume = CPUE, species = Taxname, life_stage = Lifestage,
+         size_class = SizeClass, author = Source, site = SampleID, 
+         temperature = Temperature, lat = Latitude, lon = Longitude) %>% 
+  mutate(author = paste0('zooper: ', author), 
+         species = tolower(species), 
+         size_class = tolower(size_class), 
+         life_stage = tolower(life_stage), 
+         prey_density = prey_per_unit_volume/1000)  # convert to count/L from count/m^3
+```
+
+##### Locations Standard Format
+
+**variables removed**
+
+**notes:**
+
+-   Yolo Bypass 2 = floodplain
+
+-   North and South Deltas = perennial instream
+
+-   Data is clipped to delta extents
+
+```{r}
+path <- system.file("extdata", "zooper", "shape_files", "delta_extents", "HabitatExtentsForCorreigh.shp", package = "preyDataProcessing")
+delta_extents <- rgdal::readOGR(path) %>%
+  st_as_sf(coords = c("longitude", "latitude"), dim = "XY", crs = 4326) %>%
+  st_transform("WGS84")
+
+sf_zooper_points <- st_as_sf(zooper %>% filter(!is.na(lon), !is.na(lat)), coords = c('lon', 'lat'), crs = 4326, remove = FALSE)
+
+zooper_with_watershed <- st_join(delta_extents, sf_zooper_points) %>%
+  st_set_geometry(NULL) %>%
+  glimpse()
+
+
+```
+
+##### Combine prey data with locations
+
+This produces the final prey density dataset.
+
+```{r}
+
+zooper_prey_data <- zooper_with_watershed %>%
+    select(-Id, -prey_per_unit_volume, -temperature) %>%
+    mutate(habitat_type = ifelse(watershed == 'Yolo Bypass 2', 'floodplain', 'perennial instream')) %>%
+    filter(!is.na(author)) # filter out watershed designations with no intersection
+
+kable(head(zooper_prey_data, 5))
+
+```
+
+#### QC
+
+**Notes:**
+
+-   Data collected between 1990 and 2020
+
+```{r}
+summary(zooper_prey_data)
+```
+
+#### Data exploration
+
+```{r}
+ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point() + 
+  facet_wrap(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years collected', 
+          subtitle = "data provided by Zooper Library") 
+
+ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) +
+  geom_point() +
+  facet_wrap(~habitat_type) +
+  xlab('month') +
+  ylab('prey density (count/L)') +
+  ggtitle('Distrubtion of prey density across habitat types',
+          subtitle = "data provided by Zooper Library") +
+  theme(legend.position = "top")
+
+```
+
+#### Save final dataset
+
+```{r}
+
+save(zooper_prey_data, file = "../../data/zooper_prey_data.rda")
+
+```
+
+### Fish Data
+
+[data dictionary - overview of what the data looks like]
+
+#### Raw data
+
+#### Standard format
+
+-   excluded variables:
+
+-   notes:
+
+#### QC
+
+#### Data exploration
+
+[data dictionary - overview of what the data looks like]
+
+#### Raw data
+
+#### Standard format
+
+-   excluded variables:
+
+-   notes:
+
+#### QC
+
+#### Data exploration
+
+### Environmental Data

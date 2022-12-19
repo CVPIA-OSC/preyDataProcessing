@@ -287,6 +287,7 @@ zeug_prey_data_san_joaquin_final <- zeug_prey_data_san_joaquin |>
 kable(head(zeug_prey_data_san_joaquin_final, 5))
 
 ```
+
 ### Zeug - Merced River {.tabset .tabset-fade .tabset-pills}
 
 #### Load Raw Data
@@ -320,9 +321,10 @@ zeug_merced_prey_data_raw |> glimpse()
 
 -   `gear_type` was extracted from column name
 
--   TODO: check units for prey density. Currently using No. m-2 (subsam) and dividing by provided volume (m\^3) and converting to count/L.
+-   TODO: check units for prey density. Currently using No. m-2 (subsam)
+    and dividing by provided volume (m\^3) and converting to count/L.
 
-- TODO: do not have location data for Merced sites 
+-   TODO: do not have location data for Merced sites
 
 ```{r}
 
@@ -382,7 +384,8 @@ kable(head(zeug_merced_prey_data_final, 5))
 
 #### Load Raw Data
 
--   created a modified version of the tab *Density by location, date...* to make it easier to load into R
+-   created a modified version of the tab *Density by location, date...*
+    to make it easier to load into R
 
 ```{r}
 path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "preyDataProcessing")
@@ -411,8 +414,10 @@ geometry <- sf::st_coordinates(locations_raw) |> cbind(locations_raw)
 
 ##### Prey Data Standardization
 
--   Used `Total Drift Density` column as prey density value which needed to be converted from cubic feet to liters
--   removed the total prey density and left the prey density disaggregated by species
+-   Used `Total Drift Density` column as prey density value which needed
+    to be converted from cubic feet to liters
+-   removed the total prey density and left the prey density
+    disaggregated by species
 -   `site` = `location`
 
 ```{r}
@@ -439,7 +444,8 @@ stanislaus_zoop <- stanislaus_zoop_raw %>%
 
 ##### Location Data Standardization
 
--   Match names of locations to the `stanislaus_zoop` table and merge them
+-   Match names of locations to the `stanislaus_zoop` table and merge
+    them
 -   Manually assign `habitat_type` using best professional judgement
 
 ```{r}
@@ -477,7 +483,8 @@ kable(head(guignard_prey_data_final, 5))
 
 #### Load Raw Data
 
--   Data is currently located on EDI repository and downloaded directly into R
+-   Data is currently located on EDI repository and downloaded directly
+    into R
 
 ```{r, echo = TRUE, message = FALSE, warning = FALSE, include = FALSE}
 # this a script that sources the EDI data
@@ -493,9 +500,11 @@ source(path)
 
 kable(head(montogomery_prey_data, 5))
 ```
+
 ##### Prey Data Standardization
 
--   extracted temperature and dissolved oxygen from zooplankton data. `site` should link the two datasets.
+-   extracted temperature and dissolved oxygen from zooplankton data.
+    `site` should link the two datasets.
 -   Converted from count/m\^3 to count/L
 
 ```{r message = FALSE, warning = FALSE}
@@ -520,7 +529,8 @@ montgomery_prey_data_process <- montgomery_prey_data %>%
 
 ##### Raw Locations Data
 
--   downloaded locations data from EDI and manually assigned each habitat type based on best professional judgement
+-   downloaded locations data from EDI and manually assigned each
+    habitat type based on best professional judgement
 
 ```{r}
 # write.csv(location_lookup, 'mont_locations.csv')
