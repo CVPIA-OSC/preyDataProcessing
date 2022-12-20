@@ -38,36 +38,35 @@ Final prey density dataset includes the following variables:
 #### Raw data
 
 ``` r
-excel_path <- system.file("extdata", "corline", "Zoop2013_2016_NC.xlsx", package = "preyDataProcessing")
-corline_raw_zoop <- readxl::read_excel(excel_path) |> glimpse()
+corline_raw_zoop <- readxl::read_excel('../corline/Zoop2013_2016_NC.xlsx') |> glimpse()
 #> Rows: 2,270
 #> Columns: 26
-#> $ Date                     <dttm> 2013-02-13, 2013-02-13, 2013-02-13, 2013-02-13, 2013-02-13, 2013-02-13, 2013-02-13, 2013-02-13, 2013-02-13, …
-#> $ Location                 <chr> "Knaggs Ranch", "Knaggs Ranch", "Knaggs Ranch", "Knaggs Ranch", "Knaggs Ranch", "Knaggs Ranch", "Knaggs Ranch…
-#> $ Field                    <chr> "Field 1", "Field 1", "Field 1", "Field 1", "Field 1", "Field 1", "Field 1", "Field 1", "Field 1", "Field 1",…
-#> $ Method                   <chr> "Net Throw", "Net Throw", "Net Throw", "Net Throw", "Net Throw", "Net Throw", "Net Throw", "Net Throw", "Net …
-#> $ Throws                   <dbl> 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4…
-#> $ `Mesh Size (microns)`    <dbl> 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153, 153,…
-#> $ `Ring Size (cm)`         <dbl> 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 3…
-#> $ `Total Volume (ml)`      <dbl> 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 100, 250, 250, 250, 250, 250,…
-#> $ `Split Fraction`         <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1…
-#> $ `Volume subsampled (ml)` <dbl> 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 1.5, 1.…
-#> $ Phylum                   <chr> "Arthopoda", "Arthopoda", "Arthopoda", "Arthopoda", "Arthopoda", "Arthopoda", "Arthopoda", "Arthopoda", "Arth…
-#> $ Class                    <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, "Ostracoda", "Ostracoda", "Ostracoda", "Ostracoda", "Rotifera", N…
-#> $ Subclass                 <chr> NA, NA, NA, NA, NA, NA, NA, NA, "Copepoda", "Copepoda", "Copepoda", "Podacopa", "Podacopa", "Podacopa", "Poda…
-#> $ Order                    <chr> "Cladocera", "Cladocera", "Cladocera", "Cladocera", "Cladocera", "Cladocera", "Cladocera", "Cladocera", "Cycl…
-#> $ Family                   <chr> "Bosmina", "Chydoridae", "Daphniidae", "Daphniidae", "Daphniidae", "Daphniidae", "Daphniidae", "Sididae", "Cy…
-#> $ Genus                    <chr> "Bosmina", "chydorus", "Ceriodaphnia", "Daphnia", "Daphnia", "Daphnia", "Simocephalus", "Sida", "Acanthocyclo…
-#> $ Species                  <chr> "Bosmina", "chydorus", "Ceriodaphnia", "pulex", "laevis", "miona", "mixtus", "Sida", "Acanthocyclops", "Cyclo…
-#> $ `Life Stage`             <chr> "adult", "adult", "adult", "adult", "adult", "adult", "adult", "adult", "adult", "adult", "nauplii", "adult",…
-#> $ Count                    <dbl> 12, 38, 13, 30, 7, 1, 348, 5, 56, 384, 19, 21, 9, 326, 2, 64, 1, 9, 27, 362, 3, 1, 1, 383, 6, 39, 3, 47, 2, 1…
-#> $ Field_Volume_m3          <dbl> 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1…
-#> $ Inverse_Fraction         <dbl> 4.761905, 4.761905, 4.761905, 4.761905, 4.761905, 4.761905, 4.761905, 4.761905, 4.761905, 4.761905, 4.761905,…
-#> $ Sample_Total_Count       <dbl> 57.142857, 180.952381, 61.904762, 142.857143, 33.333333, 4.761905, 1657.142857, 23.809524, 266.666667, 1828.5…
-#> $ Ind_per_m3               <dbl> 40.526849, 128.335022, 43.904086, 101.317123, 23.640662, 3.377237, 1175.278622, 16.886187, 189.125296, 1296.8…
-#> $ Ind_per_L                <dbl> 0.040526849, 0.128335022, 0.043904086, 0.101317123, 0.023640662, 0.003377237, 1.175278622, 0.016886187, 0.189…
-#> $ ...25                    <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
-#> $ ...26                    <chr> "Volume of a cylinder based on net ring diameter, number of throws, and rope length. Here the rope was 5 mete…
+#> $ Date                     <dttm> 2013-02-13, 2013-02-13, 2013-02-13, 2013-02-…
+#> $ Location                 <chr> "Knaggs Ranch", "Knaggs Ranch", "Knaggs Ranch…
+#> $ Field                    <chr> "Field 1", "Field 1", "Field 1", "Field 1", "…
+#> $ Method                   <chr> "Net Throw", "Net Throw", "Net Throw", "Net T…
+#> $ Throws                   <dbl> 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, …
+#> $ `Mesh Size (microns)`    <dbl> 153, 153, 153, 153, 153, 153, 153, 153, 153, …
+#> $ `Ring Size (cm)`         <dbl> 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 30, 3…
+#> $ `Total Volume (ml)`      <dbl> 100, 100, 100, 100, 100, 100, 100, 100, 100, …
+#> $ `Split Fraction`         <dbl> 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, …
+#> $ `Volume subsampled (ml)` <dbl> 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.…
+#> $ Phylum                   <chr> "Arthopoda", "Arthopoda", "Arthopoda", "Artho…
+#> $ Class                    <chr> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, "…
+#> $ Subclass                 <chr> NA, NA, NA, NA, NA, NA, NA, NA, "Copepoda", "…
+#> $ Order                    <chr> "Cladocera", "Cladocera", "Cladocera", "Clado…
+#> $ Family                   <chr> "Bosmina", "Chydoridae", "Daphniidae", "Daphn…
+#> $ Genus                    <chr> "Bosmina", "chydorus", "Ceriodaphnia", "Daphn…
+#> $ Species                  <chr> "Bosmina", "chydorus", "Ceriodaphnia", "pulex…
+#> $ `Life Stage`             <chr> "adult", "adult", "adult", "adult", "adult", …
+#> $ Count                    <dbl> 12, 38, 13, 30, 7, 1, 348, 5, 56, 384, 19, 21…
+#> $ Field_Volume_m3          <dbl> 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.41, 1.4…
+#> $ Inverse_Fraction         <dbl> 4.761905, 4.761905, 4.761905, 4.761905, 4.761…
+#> $ Sample_Total_Count       <dbl> 57.142857, 180.952381, 61.904762, 142.857143,…
+#> $ Ind_per_m3               <dbl> 40.526849, 128.335022, 43.904086, 101.317123,…
+#> $ Ind_per_L                <dbl> 0.040526849, 0.128335022, 0.043904086, 0.1013…
+#> $ ...25                    <lgl> NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…
+#> $ ...26                    <chr> "Volume of a cylinder based on net ring diame…
 ```
 
 #### Standard format
@@ -193,27 +192,41 @@ kable(head(corline_zoop_final, 5))
 
 ``` r
 summary(corline_zoop_final)
-#>       date             gear_type           species           life_stage         prey_density         author           size_class       
-#>  Min.   :2013-02-13   Length:2270        Length:2270        Length:2270        Min.   :  0.0000   Length:2270        Length:2270       
-#>  1st Qu.:2013-03-13   Class :character   Class :character   Class :character   1st Qu.:  0.1135   Class :character   Class :character  
-#>  Median :2014-03-12   Mode  :character   Mode  :character   Mode  :character   Median :  0.5532   Mode  :character   Mode  :character  
-#>  Mean   :2014-09-30                                                            Mean   :  3.5631                                        
-#>  3rd Qu.:2016-02-22                                                            3rd Qu.:  2.3626                                        
-#>  Max.   :2016-04-18                                                            Max.   :108.5106                                        
-#>    mesh_size     habitat_type            lat             lon          watershed             site          
-#>  Min.   :153.0   Length:2270        Min.   :38.52   Min.   :-121.7   Length:2270        Length:2270       
-#>  1st Qu.:153.0   Class :character   1st Qu.:38.70   1st Qu.:-121.7   Class :character   Class :character  
-#>  Median :153.0   Mode  :character   Median :38.70   Median :-121.7   Mode  :character   Mode  :character  
-#>  Mean   :153.5                      Mean   :38.69   Mean   :-121.7                                        
-#>  3rd Qu.:154.0                      3rd Qu.:38.70   3rd Qu.:-121.7                                        
-#>  Max.   :154.0                      Max.   :38.71   Max.   :-121.5
+#>       date             gear_type           species           life_stage       
+#>  Min.   :2013-02-13   Length:2270        Length:2270        Length:2270       
+#>  1st Qu.:2013-03-13   Class :character   Class :character   Class :character  
+#>  Median :2014-03-12   Mode  :character   Mode  :character   Mode  :character  
+#>  Mean   :2014-09-30                                                           
+#>  3rd Qu.:2016-02-22                                                           
+#>  Max.   :2016-04-18                                                           
+#>   prey_density         author           size_class          mesh_size    
+#>  Min.   :  0.0000   Length:2270        Length:2270        Min.   :153.0  
+#>  1st Qu.:  0.1135   Class :character   Class :character   1st Qu.:153.0  
+#>  Median :  0.5532   Mode  :character   Mode  :character   Median :153.0  
+#>  Mean   :  3.5631                                         Mean   :153.5  
+#>  3rd Qu.:  2.3626                                         3rd Qu.:154.0  
+#>  Max.   :108.5106                                         Max.   :154.0  
+#>  habitat_type            lat             lon          watershed        
+#>  Length:2270        Min.   :38.52   Min.   :-121.7   Length:2270       
+#>  Class :character   1st Qu.:38.70   1st Qu.:-121.7   Class :character  
+#>  Mode  :character   Median :38.70   Median :-121.7   Mode  :character  
+#>                     Mean   :38.69   Mean   :-121.7                     
+#>                     3rd Qu.:38.70   3rd Qu.:-121.7                     
+#>                     Max.   :38.71   Max.   :-121.5                     
+#>      site          
+#>  Length:2270       
+#>  Class :character  
+#>  Mode  :character  
+#>                    
+#>                    
+#> 
 ```
 
 #### Data exploration
 
 ``` r
 ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) + 
-  geom_point() + 
+  geom_point(alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -221,12 +234,12 @@ ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) +
           subtitle = "data provided by Nicholas Corline") 
 ```
 
-![](corline_data_files/figure-gfm/unnamed-chunk-10-1.png)<!-- -->
+![](corline_data_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
 
 ``` r
 
 ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) + 
-  geom_point() + 
+  geom_point(alpha = 0.4) + 
   facet_grid(~habitat_type + year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -234,7 +247,7 @@ ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) +
           subtitle = "data provided by Nicholas Corline") 
 ```
 
-![](corline_data_files/figure-gfm/unnamed-chunk-10-2.png)<!-- -->
+![](corline_data_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
 #### Save final dataset
 
@@ -246,34 +259,7 @@ corline_prey_data <- corline_zoop_final
 usethis::use_data(corline_prey_data, overwrite = TRUE)
 ```
 
-### Fish Data
+## Upcoming Updates
 
-\[data dictionary - overview of what the data looks like\]
-
-#### Raw data
-
-#### Standard format
-
-- excluded variables:
-
-- notes:
-
-#### QC
-
-#### Data exploration
-
-\[data dictionary - overview of what the data looks like\]
-
-#### Raw data
-
-#### Standard format
-
-- excluded variables:
-
-- notes:
-
-#### QC
-
-#### Data exploration
-
-### Environmental Data
+- include fish weight metrics
+- include environmental datasets
