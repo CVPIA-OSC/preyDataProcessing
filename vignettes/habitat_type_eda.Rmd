@@ -1,0 +1,51 @@
+---
+output: html_document
+---
+
+```{r eval=TRUE, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  out.width = "100%"
+)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(sf)
+library(leaflet)
+library(preyDataProcessing)
+```
+
+### Habitat Types
+
+```{r, include = FALSE}
+
+hab_and_author <- all_prey_density |> 
+  select(author, lat, lon, habitat_type) |> 
+  distinct() |> 
+  mutate(author2 = ifelse(grepl("zooper", author), "Zooper", author), 
+         color = case_when(author == "Cordoleani" ~ "#f6eff7", 
+                           author == "Corline" ~ "#bdc9e1",
+                           author == "Zeug" ~ "#67a9cf", 
+                           author == "Montgomery" ~ "#1c9099", 
+                           author == "Guignard" ~ "#016c59",
+                           grepl("zooper", author) ~ "darkblue"))
+
+```
+
+
+```{r}
+leaflet(data = hab_and_author) %>%
+  addProviderTiles(providers$Esri.WorldTopoMap, group = "Map") %>% 
+  addProviderTiles(providers$Esri.WorldImagery, group = "Satellite") %>%
+  addCircleMarkers(data = hab_and_author, 
+                   color = ~color,
+                   lng = ~lon, 
+                   lat = ~lat,
+                   popup = ~paste0("habitat type: ", habitat_type, "<br>",
+                                   "author: ", author)) %>%
+   addLegend(colors = ~unique(color), labels = ~unique(author2),
+                position = 'topleft', title = 'author')
+
+```
