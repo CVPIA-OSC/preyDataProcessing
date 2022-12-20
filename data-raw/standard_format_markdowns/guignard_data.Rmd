@@ -1,0 +1,227 @@
+---
+title: "Jason Guignard Data"
+author: "Maddee Rubenson (FlowWest)"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE, 
+                      message = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(readxl)
+library(sf)
+library(preyDataProcessing)
+
+options(scipen=999)
+```
+
+## Guignard Data Standardization
+
+**Datasets provided:**
+
+-   `drift net sites_to_kml.kml`
+-   `Honolulu Bar data.xlsx`
+
+**Author contact info:**
+
+Jason Guignard [jasonguignard\@fishbio.com]
+
+### Prey Data
+
+Final prey density dataset includes the following variables:
+
+-   `date`: YYYY-MM-DD
+-   `gear_type`: the type of gear used to collect zooplankton.
+-   `species`: species of zooplankton
+-   `prey_density`: density of zooplankton (count/L)
+-   `size_class`: size class of zooplankton, determined by mesh size
+-   `mesh_size`: mesh size of net used to collect zooplankton
+-   `habitat_type`: habitat type of location where zooplankton were collected
+-   `lat`: latitude of sampling location
+-   `lon`: longitude of sampling location
+-   `site`: location description
+-   `author`: author of dataset
+-   `watershed`: unique watershed name associated with collected data
+
+#### Raw data
+
+```{r}
+
+path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "preyDataProcessing")
+stanislaus_zoop_raw <- readxl::read_excel(path, sheet = 'Density by location, date,ta_MR')
+
+stanislaus_zoop_raw |> glimpse()
+
+```
+
+#### Standard format
+
+**excluded variables:**
+
+-   `prey_density_total` - chose to remove this and use the `prey_density` disaggregated by species
+
+**notes:**
+
+-   Used `Total Drift Density` column as prey density value which needed to be converted from cubic feet to liters
+
+-   `site` = `location`
+
+```{r}
+stanislaus_zoop <- stanislaus_zoop_raw %>%
+  rename(location = Location,
+         prey_density_total = `Total  Drift Density`,# units are cubic feet
+         other_taxa = `Other Taxa`) %>%
+  mutate(prey_density_total = prey_density_total/28.3168) %>%  #1ft^3 = 28.3168 Liters  # this is the sum of all species     
+  gather(!c('location', 'prey_density_total', 'Date'), key = species, value = value )%>%
+  mutate(author = 'Guignard',
+         watershed = 'Stanislaus',
+         species = tolower(species)) %>%
+  rename(prey_density = value,
+         date = Date) %>%
+  mutate(prey_density = prey_density/0.0283168, 
+         site = location,
+         gear_type = "net throw",
+         mesh_size = 335,
+         size_class = "meso/macro") %>% # size class is 335 micrometer mesh. 
+  select(-prey_density_total, -location) 
+```
+
+##### Locations Standard Format
+
+**variables removed**
+
+**notes:**
+
+-   Match names of locations to the `stanislaus_zoop` table and merge them
+-   Manually assign `habitat_type` using best professional judgement
+
+```{r}
+path <- system.file("extdata", 'guignard', "drift net sites_to_kml.kml", package = "preyDataProcessing")
+locations_raw <- st_read(dsn = path) 
+geometry <- sf::st_coordinates(locations_raw) |> 
+  cbind(locations_raw) |> 
+  rename(lon = X, 
+         lat = Y) |> 
+  select(-Z, -geometry, -Description) |> 
+  sf::st_drop_geometry()
+
+# locaton names of zoop data
+unique(stanislaus_zoop$site)
+
+# location names in .kmz 
+unique(geometry$Name)
+
+# change the names of the locations dataset to match those in in the zoops table 
+geometry[geometry$Name == "H Bar Main Channel", 'Name'] <- 'Main Channel'
+geometry[geometry$Name == "Side Channel Upper", 'Name'] <- 'Top Side'
+geometry[geometry$Name == "Side Channel Lower", 'Name'] <- 'Lower Side'
+geometry[geometry$Name == "Floodplain Upper", 'Name'] <- 'Upper Flood Plain'
+geometry[geometry$Name == "Middle Floodplain", 'Name'] <- 'Middle Flood Plain' 
+geometry[geometry$Name == "Floodplain Lower", 'Name'] <- 'Lower Flood Plain'
+
+locations <- geometry %>%
+  mutate(habitat_type = ifelse(Name %in% c('Main Channel'), 'perennial instream', 
+                               ifelse(Name %in% c('Top Side', 'Lower Side'), 'side channel',
+                                      ifelse(Name %in% c('Upper Flood Plain', 'Middle Flood Plain', 'Lower Flood Plain'), 'floodplain', NA)))
+  ) %>%
+  rename(site = Name)
+
+
+
+
+```
+
+##### Combine prey data with locations
+
+This produces the final prey density dataset.
+
+```{r}
+
+guignard_prey_data_final <- stanislaus_zoop |> 
+  left_join(locations) 
+
+kable(head(guignard_prey_data_final, 5))
+
+```
+
+#### QC
+
+**Notes:**
+
+-   Data collected in April, May, and June of 2014
+
+```{r}
+summary(guignard_prey_data_final)
+```
+
+#### Data exploration
+
+```{r}
+ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point() + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years collected', 
+          subtitle = "data provided by Jason Guignard") 
+
+ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point(aes(color = as.factor(year(date)))) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years and habitat types', 
+          subtitle = "data provided by Jason Guignard") +  
+  scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred")) + 
+  theme(legend.position = "top")
+
+```
+
+#### Save final dataset
+
+```{r}
+
+#save(guignard_prey_data_final, file = "../../data/guignard_prey_data.rda")
+
+guignard_prey_data <- guignard_prey_data_final
+usethis::use_data(guignard_prey_data, overwrite = TRUE)
+
+```
+
+### Fish Data
+
+[data dictionary - overview of what the data looks like]
+
+#### Raw data
+
+#### Standard format
+
+-   excluded variables:
+
+-   notes:
+
+#### QC
+
+#### Data exploration
+
+[data dictionary - overview of what the data looks like]
+
+#### Raw data
+
+#### Standard format
+
+-   excluded variables:
+
+-   notes:
+
+#### QC
+
+#### Data exploration
+
+### Environmental Data

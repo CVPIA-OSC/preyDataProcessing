@@ -1,0 +1,78 @@
+---
+title: "Zooper Data"
+author: "Erin Cain"
+date: '2022-05-02'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(zooper)
+```
+
+## Zooper Data
+
+The following Rmarkdown explores adding [Zooper data](https://github.com/InteragencyEcologicalProgram/zooper) into preyData package.
+
+We pull the following datasets using the `zoopsynther()` function
+
+```{r}
+zoop_data <- Zoopsynther(Data_type = "Community", 
+                       Sources = c("EMP", "FRP", 
+                                   "FMWT", "STN", "20mm"), 
+                       Size_class = c("Micro", "Meso", "Macro"), 
+                       Date_range = c("1990-10-01", "2020-09-30"))
+```
+
+### Prey Data
+
+CPUE = count/m\^3 (this is consistent with out prey_per_unit_volume)
+
+```{r}
+selected_zoop <- zoop_data %>% 
+  select(date = Date, prey_per_unit_volume = CPUE, taxon = Taxname, life_stage = Lifestage, size_class = SizeClass, source = Source, sample_id = SampleID) %>% 
+  glimpse
+```
+
+### Environmental Data: 
+
+We selected environmental data from the full zooper dataset. Environmental data can be joined to prey data using the `sample_id` column.
+
+```{r}
+selected_environmental <- zoop_data %>% 
+  select(date = Date, sample_id = SampleID, 
+         disolved_oxygen = DO, temperature = Temperature, 
+         salinity = SalSurf) %>% glimpse
+```
+
+### Map Sites: 
+
+Questions: What sections are we interested in keeping? We can then assign to the corresponding DSM location if applicable.
+
+```{r}
+selected_sites <- zoop_data %>% 
+  select(Source, Station, Latitude, Longitude) %>% 
+  mutate(color = case_when(Source == "EMP" ~ "#f6eff7", 
+                           Source == "FRP" ~ "#bdc9e1",
+                           Source == "FMWT" ~ "#67a9cf", 
+                           Source == "STN" ~ "#1c9099", 
+                           Source == "20mm" ~ "#016c59")) %>%
+  distinct()
+
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%
+  addCircleMarkers(data = selected_sites, 
+             color = ~color,
+             lng = ~Longitude, 
+             lat = ~Latitude,
+             popup = ~Station)
+```
+
+## Save Data Objects as Rds
+
+```{r, eval = FALSE}
+write_rds(selected_zoop, "../data/zooper_prey.rds")
+write_rds(selected_environmental, "../data/zooper_environmental.rds")
+```

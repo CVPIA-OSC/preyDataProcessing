@@ -1,0 +1,2637 @@
+year,report_id,habitat_type,region,sample_date,taxa,value
+2019,BSC1,Canal channel,Butte Sink,1/7/2019,Aquatic insect,127.3239545
+2019,BSC1,Canal channel,Butte Sink,1/7/2019,Copepoda,650.7668784
+2019,BSC1,Canal channel,Butte Sink,1/7/2019,Large cladocera,756.8701738
+2019,BSC1,Canal channel,Butte Sink,1/7/2019,Ostracoda,7.073553026
+2019,BSC1,Canal channel,Butte Sink,1/7/2019,Rare,183.9123787
+2019,BSC1,Canal channel,Butte Sink,1/7/2019,Rotifera,113.1768484
+2019,BSC1,Canal channel,Butte Sink,1/7/2019,Small cladocera,353.6776513
+2019,BSC1,Canal channel,Butte Sink,1/7/2019,Terrestrial insect,28.29421211
+2019,FRC1,River channel,Feather River,1/7/2019,Aquatic insect,16.97652726
+2019,FRC1,River channel,Feather River,1/7/2019,Copepoda,26.1721462
+2019,FRC1,River channel,Feather River,1/7/2019,Large cladocera,3.536776513
+2019,FRC1,River channel,Feather River,1/7/2019,Ostracoda,1.414710605
+2019,FRC1,River channel,Feather River,1/7/2019,Rare,6.366197724
+2019,FRC1,River channel,Feather River,1/7/2019,Rotifera,0.707355303
+2019,FRC1,River channel,Feather River,1/7/2019,Small cladocera,23.34272499
+2019,FRC1,River channel,Feather River,1/7/2019,Terrestrial insect,4.244131816
+2019,LBA2,Agriculture,Lower Bypass,1/7/2019,Aquatic insect,3.536776513
+2019,LBA2,Agriculture,Lower Bypass,1/7/2019,Copepoda,385.5086399
+2019,LBA2,Agriculture,Lower Bypass,1/7/2019,Large cladocera,56.58842421
+2019,LBA2,Agriculture,Lower Bypass,1/7/2019,Rare,14.14710605
+2019,LBA2,Agriculture,Lower Bypass,1/7/2019,Rotifera,60.12520072
+2019,LBA2,Agriculture,Lower Bypass,1/7/2019,Small cladocera,495.1487118
+2019,LBA2,Agriculture,Lower Bypass,1/7/2019,Terrestrial insect,7.073553026
+2019,SRC2,River channel,Sacramento River,1/7/2019,Aquatic insect,2.122065908
+2019,SRC2,River channel,Sacramento River,1/7/2019,Copepoda,103.2738742
+2019,SRC2,River channel,Sacramento River,1/7/2019,Large cladocera,58.71049012
+2019,SRC2,River channel,Sacramento River,1/7/2019,Rare,1.414710605
+2019,SRC2,River channel,Sacramento River,1/7/2019,Rotifera,3.536776513
+2019,SRC2,River channel,Sacramento River,1/7/2019,Small cladocera,159.1549431
+2019,SRC2,River channel,Sacramento River,1/7/2019,Terrestrial insect,0.707355303
+2019,SRC4,River channel,Sacramento River,1/7/2019,Aquatic insect,2.829421211
+2019,SRC4,River channel,Sacramento River,1/7/2019,Copepoda,92.30986699
+2019,SRC4,River channel,Sacramento River,1/7/2019,Large cladocera,36.07512043
+2019,SRC4,River channel,Sacramento River,1/7/2019,Ostracoda,1.414710605
+2019,SRC4,River channel,Sacramento River,1/7/2019,Rare,7.780908329
+2019,SRC4,River channel,Sacramento River,1/7/2019,Rotifera,4.951487118
+2019,SRC4,River channel,Sacramento River,1/7/2019,Small cladocera,84.88263632
+2019,SRC4,River channel,Sacramento River,1/7/2019,Terrestrial insect,1.414710605
+2019,UBC1,Canal channel,Upper Bypass,1/7/2019,Copepoda,686.1346436
+2019,UBC1,Canal channel,Upper Bypass,1/7/2019,Large cladocera,721.5024087
+2019,UBC1,Canal channel,Upper Bypass,1/7/2019,Ostracoda,14.14710605
+2019,UBC1,Canal channel,Upper Bypass,1/7/2019,Rare,21.22065908
+2019,UBC1,Canal channel,Upper Bypass,1/7/2019,Rotifera,28.29421211
+2019,UBC1,Canal channel,Upper Bypass,1/7/2019,Small cladocera,2475.743559
+2019,UBW1,Wetland,Upper Bypass,1/7/2019,Aquatic insect,42.44131816
+2019,UBW1,Wetland,Upper Bypass,1/7/2019,Copepoda,643.6933254
+2019,UBW1,Wetland,Upper Bypass,1/7/2019,Large cladocera,389.0454164
+2019,UBW1,Wetland,Upper Bypass,1/7/2019,Ostracoda,28.29421211
+2019,UBW1,Wetland,Upper Bypass,1/7/2019,Rare,28.29421211
+2019,UBW1,Wetland,Upper Bypass,1/7/2019,Rotifera,141.4710605
+2019,UBW1,Wetland,Upper Bypass,1/7/2019,Small cladocera,1322.754416
+2019,BSC1,Canal channel,Butte Sink,1/14/2019,Aquatic insect,17.68388257
+2019,BSC1,Canal channel,Butte Sink,1/14/2019,Copepoda,2970.892271
+2019,BSC1,Canal channel,Butte Sink,1/14/2019,Large cladocera,1273.239545
+2019,BSC1,Canal channel,Butte Sink,1/14/2019,Rotifera,618.9358898
+2019,BSC1,Canal channel,Butte Sink,1/14/2019,Small cladocera,1184.820132
+2019,FRC1,River channel,Feather River,1/14/2019,Aquatic insect,7.780908329
+2019,FRC1,River channel,Feather River,1/14/2019,Copepoda,168.350562
+2019,FRC1,River channel,Feather River,1/14/2019,Large cladocera,16.26917196
+2019,FRC1,River channel,Feather River,1/14/2019,Rare,3.536776513
+2019,FRC1,River channel,Feather River,1/14/2019,Rotifera,21.22065908
+2019,FRC1,River channel,Feather River,1/14/2019,Small cladocera,41.02660755
+2019,FRC1,River channel,Feather River,1/14/2019,Terrestrial insect,1.414710605
+2019,LBA2,Agriculture,Lower Bypass,1/14/2019,Aquatic insect,9.645754127
+2019,LBA2,Agriculture,Lower Bypass,1/14/2019,Copepoda,511.2249687
+2019,LBA2,Agriculture,Lower Bypass,1/14/2019,Large cladocera,173.6235743
+2019,LBA2,Agriculture,Lower Bypass,1/14/2019,Ostracoda,22.50675963
+2019,LBA2,Agriculture,Lower Bypass,1/14/2019,Rare,25.722011
+2019,LBA2,Agriculture,Lower Bypass,1/14/2019,Rotifera,340.8166458
+2019,LBA2,Agriculture,Lower Bypass,1/14/2019,Small cladocera,363.3234054
+2019,SRC2,River channel,Sacramento River,1/14/2019,Aquatic insect,18.61461323
+2019,SRC2,River channel,Sacramento River,1/14/2019,Copepoda,234.5441267
+2019,SRC2,River channel,Sacramento River,1/14/2019,Large cladocera,53.98237836
+2019,SRC2,River channel,Sacramento River,1/14/2019,Rare,9.307306614
+2019,SRC2,River channel,Sacramento River,1/14/2019,Rotifera,33.50630381
+2019,SRC2,River channel,Sacramento River,1/14/2019,Small cladocera,141.4710605
+2019,SRC2,River channel,Sacramento River,1/14/2019,Terrestrial insect,9.307306614
+2019,SRC4,River channel,Sacramento River,1/14/2019,Aquatic insect,8.084060601
+2019,SRC4,River channel,Sacramento River,1/14/2019,Copepoda,280.9211059
+2019,SRC4,River channel,Sacramento River,1/14/2019,Large cladocera,165.7232423
+2019,SRC4,River channel,Sacramento River,1/14/2019,Ostracoda,6.063045451
+2019,SRC4,River channel,Sacramento River,1/14/2019,Rare,10.10507575
+2019,SRC4,River channel,Sacramento River,1/14/2019,Rotifera,56.58842421
+2019,SRC4,River channel,Sacramento River,1/14/2019,Small cladocera,119.2398939
+2019,SRC4,River channel,Sacramento River,1/14/2019,Terrestrial insect,2.02101515
+2019,UBC1,Canal channel,Upper Bypass,1/14/2019,Aquatic insect,14.14710605
+2019,UBC1,Canal channel,Upper Bypass,1/14/2019,Copepoda,844.1106611
+2019,UBC1,Canal channel,Upper Bypass,1/14/2019,Large cladocera,466.8544997
+2019,UBC1,Canal channel,Upper Bypass,1/14/2019,Ostracoda,9.431404035
+2019,UBC1,Canal channel,Upper Bypass,1/14/2019,Rare,14.14710605
+2019,UBC1,Canal channel,Upper Bypass,1/14/2019,Rotifera,75.45123228
+2019,UBC1,Canal channel,Upper Bypass,1/14/2019,Small cladocera,712.0710046
+2019,UBW1,Wetland,Upper Bypass,1/14/2019,Copepoda,433.2551229
+2019,UBW1,Wetland,Upper Bypass,1/14/2019,Large cladocera,183.9123787
+2019,UBW1,Wetland,Upper Bypass,1/14/2019,Rare,28.29421211
+2019,UBW1,Wetland,Upper Bypass,1/14/2019,Rotifera,35.36776513
+2019,UBW1,Wetland,Upper Bypass,1/14/2019,Small cladocera,633.0829959
+2019,BSC1,Canal channel,Butte Sink,1/21/2019,Copepoda,1510.708825
+2019,BSC1,Canal channel,Butte Sink,1/21/2019,Large cladocera,818.5111359
+2019,BSC1,Canal channel,Butte Sink,1/21/2019,Ostracoda,40.42030301
+2019,BSC1,Canal channel,Butte Sink,1/21/2019,Rare,30.31522726
+2019,BSC1,Canal channel,Butte Sink,1/21/2019,Rotifera,131.3659848
+2019,BSC1,Canal channel,Butte Sink,1/21/2019,Small cladocera,474.9385603
+2019,FRC1,River channel,Feather River,1/21/2019,Aquatic insect,18.18913635
+2019,FRC1,River channel,Feather River,1/21/2019,Copepoda,268.795015
+2019,FRC1,River channel,Feather River,1/21/2019,Large cladocera,99.02974237
+2019,FRC1,River channel,Feather River,1/21/2019,Ostracoda,2.02101515
+2019,FRC1,River channel,Feather River,1/21/2019,Rare,2.02101515
+2019,FRC1,River channel,Feather River,1/21/2019,Rotifera,99.02974237
+2019,FRC1,River channel,Feather River,1/21/2019,Small cladocera,151.5761363
+2019,FRC1,River channel,Feather River,1/21/2019,Terrestrial insect,4.042030301
+2019,LBA2,Agriculture,Lower Bypass,1/21/2019,Aquatic insect,9.645754127
+2019,LBA2,Agriculture,Lower Bypass,1/21/2019,Copepoda,234.7133504
+2019,LBA2,Agriculture,Lower Bypass,1/21/2019,Large cladocera,102.888044
+2019,LBA2,Agriculture,Lower Bypass,1/21/2019,Rare,6.430502751
+2019,LBA2,Agriculture,Lower Bypass,1/21/2019,Rotifera,334.3861431
+2019,LBA2,Agriculture,Lower Bypass,1/21/2019,Small cladocera,315.0946348
+2019,SRC2,River channel,Sacramento River,1/21/2019,Aquatic insect,10.61032954
+2019,SRC2,River channel,Sacramento River,1/21/2019,Copepoda,27.5868568
+2019,SRC2,River channel,Sacramento River,1/21/2019,Large cladocera,4.951487118
+2019,SRC2,River channel,Sacramento River,1/21/2019,Rare,8.488263632
+2019,SRC2,River channel,Sacramento River,1/21/2019,Rotifera,33.24569922
+2019,SRC2,River channel,Sacramento River,1/21/2019,Small cladocera,12.73239545
+2019,SRC2,River channel,Sacramento River,1/21/2019,Terrestrial insect,1.414710605
+2019,SRC4,River channel,Sacramento River,1/21/2019,Aquatic insect,11.31768484
+2019,SRC4,River channel,Sacramento River,1/21/2019,Copepoda,253.2331983
+2019,SRC4,River channel,Sacramento River,1/21/2019,Large cladocera,205.1330378
+2019,SRC4,River channel,Sacramento River,1/21/2019,Ostracoda,1.414710605
+2019,SRC4,River channel,Sacramento River,1/21/2019,Rare,4.244131816
+2019,SRC4,River channel,Sacramento River,1/21/2019,Rotifera,42.44131816
+2019,SRC4,River channel,Sacramento River,1/21/2019,Small cladocera,234.8419605
+2019,SRC4,River channel,Sacramento River,1/21/2019,Terrestrial insect,2.829421211
+2019,UBA1,Agriculture,Upper Bypass,1/21/2019,Aquatic insect,9.431404035
+2019,UBA1,Agriculture,Upper Bypass,1/21/2019,Copepoda,905.4147874
+2019,UBA1,Agriculture,Upper Bypass,1/21/2019,Large cladocera,518.7272219
+2019,UBA1,Agriculture,Upper Bypass,1/21/2019,Ostracoda,4.715702018
+2019,UBA1,Agriculture,Upper Bypass,1/21/2019,Rotifera,94.31404035
+2019,UBA1,Agriculture,Upper Bypass,1/21/2019,Small cladocera,1612.77009
+2019,UBC1,Canal channel,Upper Bypass,1/21/2019,Aquatic insect,17.68388257
+2019,UBC1,Canal channel,Upper Bypass,1/21/2019,Copepoda,884.1941283
+2019,UBC1,Canal channel,Upper Bypass,1/21/2019,Large cladocera,530.516477
+2019,UBC1,Canal channel,Upper Bypass,1/21/2019,Ostracoda,5.894627522
+2019,UBC1,Canal channel,Upper Bypass,1/21/2019,Rotifera,100.2086679
+2019,UBC1,Canal channel,Upper Bypass,1/21/2019,Small cladocera,2004.173357
+2019,UBC1,Canal channel,Upper Bypass,1/21/2019,Terrestrial insect,5.894627522
+2019,UBC2,Canal channel,Upper Bypass,1/21/2019,Aquatic insect,16.64365418
+2019,UBC2,Canal channel,Upper Bypass,1/21/2019,Copepoda,540.9187608
+2019,UBC2,Canal channel,Upper Bypass,1/21/2019,Large cladocera,486.8268848
+2019,UBC2,Canal channel,Upper Bypass,1/21/2019,Ostracoda,37.4482219
+2019,UBC2,Canal channel,Upper Bypass,1/21/2019,Rare,4.160913545
+2019,UBC2,Canal channel,Upper Bypass,1/21/2019,Rotifera,99.86192508
+2019,UBC2,Canal channel,Upper Bypass,1/21/2019,Small cladocera,1140.090311
+2019,UBC2,Canal channel,Upper Bypass,1/21/2019,Terrestrial insect,4.160913545
+2019,UBW1,Wetland,Upper Bypass,1/21/2019,Aquatic insect,8.32182709
+2019,UBW1,Wetland,Upper Bypass,1/21/2019,Copepoda,542.9992176
+2019,UBW1,Wetland,Upper Bypass,1/21/2019,Large cladocera,332.8730836
+2019,UBW1,Wetland,Upper Bypass,1/21/2019,Ostracoda,29.12639481
+2019,UBW1,Wetland,Upper Bypass,1/21/2019,Rare,16.64365418
+2019,UBW1,Wetland,Upper Bypass,1/21/2019,Rotifera,224.6893314
+2019,UBW1,Wetland,Upper Bypass,1/21/2019,Small cladocera,977.814683
+2019,UBW1,Wetland,Upper Bypass,1/21/2019,Terrestrial insect,12.48274063
+2019,BSC1,Canal channel,Butte Sink,1/28/2019,Copepoda,887.141442
+2019,BSC1,Canal channel,Butte Sink,1/28/2019,Large cladocera,565.8842421
+2019,BSC1,Canal channel,Butte Sink,1/28/2019,Rare,11.78925504
+2019,BSC1,Canal channel,Butte Sink,1/28/2019,Rotifera,17.68388257
+2019,BSC1,Canal channel,Butte Sink,1/28/2019,Small cladocera,725.0391852
+2019,BSC1,Canal channel,Butte Sink,1/28/2019,Terrestrial insect,5.894627522
+2019,BSW1,Wetland,Butte Sink,1/28/2019,Copepoda,5588.106891
+2019,BSW1,Wetland,Butte Sink,1/28/2019,Large cladocera,5128.325944
+2019,BSW1,Wetland,Butte Sink,1/28/2019,Rotifera,70.73553026
+2019,BSW1,Wetland,Butte Sink,1/28/2019,Small cladocera,424.4131816
+2019,FRC1,River channel,Feather River,1/28/2019,Aquatic insect,4.244131816
+2019,FRC1,River channel,Feather River,1/28/2019,Copepoda,124.4945333
+2019,FRC1,River channel,Feather River,1/28/2019,Large cladocera,7.780908329
+2019,FRC1,River channel,Feather River,1/28/2019,Rare,1.414710605
+2019,FRC1,River channel,Feather River,1/28/2019,Rotifera,5.658842421
+2019,FRC1,River channel,Feather River,1/28/2019,Small cladocera,50.92958179
+2019,FRC1,River channel,Feather River,1/28/2019,Terrestrial insect,2.829421211
+2019,LBA2,Agriculture,Lower Bypass,1/28/2019,Copepoda,603.7782762
+2019,LBA2,Agriculture,Lower Bypass,1/28/2019,Large cladocera,65.68299239
+2019,LBA2,Agriculture,Lower Bypass,1/28/2019,Ostracoda,5.052537876
+2019,LBA2,Agriculture,Lower Bypass,1/28/2019,Rare,5.052537876
+2019,LBA2,Agriculture,Lower Bypass,1/28/2019,Rotifera,65.68299239
+2019,LBA2,Agriculture,Lower Bypass,1/28/2019,Small cladocera,298.0997347
+2019,SRC2,River channel,Sacramento River,1/28/2019,Aquatic insect,2.122065908
+2019,SRC2,River channel,Sacramento River,1/28/2019,Copepoda,110.7011049
+2019,SRC2,River channel,Sacramento River,1/28/2019,Large cladocera,35.36776513
+2019,SRC2,River channel,Sacramento River,1/28/2019,Ostracoda,0.707355303
+2019,SRC2,River channel,Sacramento River,1/28/2019,Rare,3.536776513
+2019,SRC2,River channel,Sacramento River,1/28/2019,Rotifera,9.195618934
+2019,SRC2,River channel,Sacramento River,1/28/2019,Small cladocera,49.51487118
+2019,SRC2,River channel,Sacramento River,1/28/2019,Terrestrial insect,0.707355303
+2019,SRC4,River channel,Sacramento River,1/28/2019,Aquatic insect,8.32182709
+2019,SRC4,River channel,Sacramento River,1/28/2019,Copepoda,572.1256124
+2019,SRC4,River channel,Sacramento River,1/28/2019,Large cladocera,220.5284179
+2019,SRC4,River channel,Sacramento River,1/28/2019,Ostracoda,8.32182709
+2019,SRC4,River channel,Sacramento River,1/28/2019,Rare,4.160913545
+2019,SRC4,River channel,Sacramento River,1/28/2019,Rotifera,41.60913545
+2019,SRC4,River channel,Sacramento River,1/28/2019,Small cladocera,257.9766398
+2019,UBA1,Agriculture,Upper Bypass,1/28/2019,Aquatic insect,10.10507575
+2019,UBA1,Agriculture,Upper Bypass,1/28/2019,Copepoda,1505.656287
+2019,UBA1,Agriculture,Upper Bypass,1/28/2019,Large cladocera,525.4639391
+2019,UBA1,Agriculture,Upper Bypass,1/28/2019,Ostracoda,40.42030301
+2019,UBA1,Agriculture,Upper Bypass,1/28/2019,Rare,20.2101515
+2019,UBA1,Agriculture,Upper Bypass,1/28/2019,Rotifera,141.4710605
+2019,UBA1,Agriculture,Upper Bypass,1/28/2019,Small cladocera,1798.703484
+2019,UBC1,Canal channel,Upper Bypass,1/28/2019,Copepoda,1076.751961
+2019,UBC1,Canal channel,Upper Bypass,1/28/2019,Large cladocera,605.1817589
+2019,UBC1,Canal channel,Upper Bypass,1/28/2019,Ostracoda,7.859503363
+2019,UBC1,Canal channel,Upper Bypass,1/28/2019,Rotifera,31.43801345
+2019,UBC1,Canal channel,Upper Bypass,1/28/2019,Small cladocera,1320.396565
+2019,UBC1,Canal channel,Upper Bypass,1/28/2019,Terrestrial insect,7.859503363
+2019,UBC2,Canal channel,Upper Bypass,1/28/2019,Aquatic insect,11.78925504
+2019,UBC2,Canal channel,Upper Bypass,1/28/2019,Copepoda,890.0887558
+2019,UBC2,Canal channel,Upper Bypass,1/28/2019,Large cladocera,919.5618934
+2019,UBC2,Canal channel,Upper Bypass,1/28/2019,Ostracoda,5.894627522
+2019,UBC2,Canal channel,Upper Bypass,1/28/2019,Rotifera,106.1032954
+2019,UBC2,Canal channel,Upper Bypass,1/28/2019,Small cladocera,966.7189136
+2019,UBC2,Canal channel,Upper Bypass,1/28/2019,Terrestrial insect,5.894627522
+2019,UBW1,Wetland,Upper Bypass,1/28/2019,Aquatic insect,5.894627522
+2019,UBW1,Wetland,Upper Bypass,1/28/2019,Copepoda,524.6218495
+2019,UBW1,Wetland,Upper Bypass,1/28/2019,Large cladocera,141.4710605
+2019,UBW1,Wetland,Upper Bypass,1/28/2019,Rare,5.894627522
+2019,UBW1,Wetland,Upper Bypass,1/28/2019,Rotifera,41.26239265
+2019,UBW1,Wetland,Upper Bypass,1/28/2019,Small cladocera,996.1920512
+2019,BSC1,Canal channel,Butte Sink,2/4/2019,Aquatic insect,8.841941283
+2019,BSC1,Canal channel,Butte Sink,2/4/2019,Copepoda,205.5751348
+2019,BSC1,Canal channel,Butte Sink,2/4/2019,Large cladocera,333.7832834
+2019,BSC1,Canal channel,Butte Sink,2/4/2019,Rare,30.94679449
+2019,BSC1,Canal channel,Butte Sink,2/4/2019,Rotifera,11.0524266
+2019,BSC1,Canal channel,Butte Sink,2/4/2019,Small cladocera,302.8364889
+2019,BSC1,Canal channel,Butte Sink,2/4/2019,Terrestrial insect,2.210485321
+2019,FRC1,River channel,Feather River,2/4/2019,Aquatic insect,4.244131816
+2019,FRC1,River channel,Feather River,2/4/2019,Copepoda,212.9139461
+2019,FRC1,River channel,Feather River,2/4/2019,Large cladocera,72.15024087
+2019,FRC1,River channel,Feather River,2/4/2019,Ostracoda,1.414710605
+2019,FRC1,River channel,Feather River,2/4/2019,Rare,8.488263632
+2019,FRC1,River channel,Feather River,2/4/2019,Rotifera,36.78247574
+2019,FRC1,River channel,Feather River,2/4/2019,Small cladocera,297.0892271
+2019,FRC1,River channel,Feather River,2/4/2019,Terrestrial insect,11.31768484
+2019,LBA2,Agriculture,Lower Bypass,2/4/2019,Copepoda,1626.917196
+2019,LBA2,Agriculture,Lower Bypass,2/4/2019,Large cladocera,94.31404035
+2019,LBA2,Agriculture,Lower Bypass,2/4/2019,Ostracoda,11.78925504
+2019,LBA2,Agriculture,Lower Bypass,2/4/2019,Rare,11.78925504
+2019,LBA2,Agriculture,Lower Bypass,2/4/2019,Rotifera,58.94627522
+2019,LBA2,Agriculture,Lower Bypass,2/4/2019,Small cladocera,1249.661035
+2019,LBA2,Agriculture,Lower Bypass,2/4/2019,Terrestrial insect,11.78925504
+2019,SRC2,River channel,Sacramento River,2/4/2019,Aquatic insect,21.22065908
+2019,SRC2,River channel,Sacramento River,2/4/2019,Copepoda,21.92801438
+2019,SRC2,River channel,Sacramento River,2/4/2019,Large cladocera,5.658842421
+2019,SRC2,River channel,Sacramento River,2/4/2019,Ostracoda,0.707355303
+2019,SRC2,River channel,Sacramento River,2/4/2019,Rare,15.56181666
+2019,SRC2,River channel,Sacramento River,2/4/2019,Rotifera,0.707355303
+2019,SRC2,River channel,Sacramento River,2/4/2019,Small cladocera,2.829421211
+2019,SRC2,River channel,Sacramento River,2/4/2019,Terrestrial insect,4.244131816
+2019,SRC4,River channel,Sacramento River,2/4/2019,Aquatic insect,14.85446136
+2019,SRC4,River channel,Sacramento River,2/4/2019,Copepoda,84.52895866
+2019,SRC4,River channel,Sacramento River,2/4/2019,Large cladocera,55.17371361
+2019,SRC4,River channel,Sacramento River,2/4/2019,Ostracoda,0.707355303
+2019,SRC4,River channel,Sacramento River,2/4/2019,Rare,63.66197724
+2019,SRC4,River channel,Sacramento River,2/4/2019,Rotifera,7.073553026
+2019,SRC4,River channel,Sacramento River,2/4/2019,Small cladocera,24.75743559
+2019,SRC4,River channel,Sacramento River,2/4/2019,Terrestrial insect,11.31768484
+2019,UBA1,Agriculture,Upper Bypass,2/4/2019,Copepoda,754.5123228
+2019,UBA1,Agriculture,Upper Bypass,2/4/2019,Large cladocera,459.7809467
+2019,UBA1,Agriculture,Upper Bypass,2/4/2019,Rotifera,106.1032954
+2019,UBA1,Agriculture,Upper Bypass,2/4/2019,Small cladocera,2298.904734
+2019,UBC1,Canal channel,Upper Bypass,2/4/2019,Aquatic insect,20.2101515
+2019,UBC1,Canal channel,Upper Bypass,2/4/2019,Copepoda,479.9910982
+2019,UBC1,Canal channel,Upper Bypass,2/4/2019,Large cladocera,1162.083711
+2019,UBC1,Canal channel,Upper Bypass,2/4/2019,Ostracoda,10.10507575
+2019,UBC1,Canal channel,Upper Bypass,2/4/2019,Rotifera,10.10507575
+2019,UBC1,Canal channel,Upper Bypass,2/4/2019,Small cladocera,1111.558333
+2019,UBC1,Canal channel,Upper Bypass,2/4/2019,Terrestrial insect,30.31522726
+2019,UBW1,Wetland,Upper Bypass,2/4/2019,Copepoda,518.7272219
+2019,UBW1,Wetland,Upper Bypass,2/4/2019,Large cladocera,282.9421211
+2019,UBW1,Wetland,Upper Bypass,2/4/2019,Rare,117.8925504
+2019,UBW1,Wetland,Upper Bypass,2/4/2019,Rotifera,23.57851009
+2019,UBW1,Wetland,Upper Bypass,2/4/2019,Small cladocera,1361.658958
+2019,UBW1,Wetland,Upper Bypass,2/4/2019,Terrestrial insect,29.47313761
+2019,BSC1,Canal channel,Butte Sink,2/11/2019,Copepoda,589.4627522
+2019,BSC1,Canal channel,Butte Sink,2/11/2019,Large cladocera,361.5371547
+2019,BSC1,Canal channel,Butte Sink,2/11/2019,Ostracoda,15.71900673
+2019,BSC1,Canal channel,Butte Sink,2/11/2019,Rare,15.71900673
+2019,BSC1,Canal channel,Butte Sink,2/11/2019,Rotifera,23.57851009
+2019,BSC1,Canal channel,Butte Sink,2/11/2019,Small cladocera,1155.346994
+2019,BSC1,Canal channel,Butte Sink,2/11/2019,Terrestrial insect,7.859503363
+2019,BSW1,Wetland,Butte Sink,2/11/2019,Copepoda,1317.449251
+2019,BSW1,Wetland,Butte Sink,2/11/2019,Large cladocera,247.5743559
+2019,BSW1,Wetland,Butte Sink,2/11/2019,Ostracoda,5.894627522
+2019,BSW1,Wetland,Butte Sink,2/11/2019,Rotifera,5.894627522
+2019,BSW1,Wetland,Butte Sink,2/11/2019,Small cladocera,495.1487118
+2019,FRC1,River channel,Feather River,2/11/2019,Copepoda,377.2561614
+2019,FRC1,River channel,Feather River,2/11/2019,Large cladocera,87.24048732
+2019,FRC1,River channel,Feather River,2/11/2019,Rare,2.357851009
+2019,FRC1,River channel,Feather River,2/11/2019,Rotifera,40.08346715
+2019,FRC1,River channel,Feather River,2/11/2019,Small cladocera,157.9760176
+2019,FRC1,River channel,Feather River,2/11/2019,Terrestrial insect,2.357851009
+2019,LBA2,Agriculture,Lower Bypass,2/11/2019,Copepoda,336.4990225
+2019,LBA2,Agriculture,Lower Bypass,2/11/2019,Large cladocera,198.0594847
+2019,LBA2,Agriculture,Lower Bypass,2/11/2019,Ostracoda,6.063045451
+2019,LBA2,Agriculture,Lower Bypass,2/11/2019,Rare,4.042030301
+2019,LBA2,Agriculture,Lower Bypass,2/11/2019,Rotifera,121.260909
+2019,LBA2,Agriculture,Lower Bypass,2/11/2019,Small cladocera,297.0892271
+2019,SRC2,River channel,Sacramento River,2/11/2019,Aquatic insect,6.366197724
+2019,SRC2,River channel,Sacramento River,2/11/2019,Copepoda,45.27073937
+2019,SRC2,River channel,Sacramento River,2/11/2019,Large cladocera,20.51330378
+2019,SRC2,River channel,Sacramento River,2/11/2019,Rare,0.707355303
+2019,SRC2,River channel,Sacramento River,2/11/2019,Rotifera,5.658842421
+2019,SRC2,River channel,Sacramento River,2/11/2019,Small cladocera,28.29421211
+2019,SRC2,River channel,Sacramento River,2/11/2019,Terrestrial insect,1.414710605
+2019,SRC4,River channel,Sacramento River,2/11/2019,Aquatic insect,7.073553026
+2019,SRC4,River channel,Sacramento River,2/11/2019,Copepoda,290.0156741
+2019,SRC4,River channel,Sacramento River,2/11/2019,Large cladocera,169.7652726
+2019,SRC4,River channel,Sacramento River,2/11/2019,Ostracoda,7.073553026
+2019,SRC4,River channel,Sacramento River,2/11/2019,Rare,12.3787178
+2019,SRC4,River channel,Sacramento River,2/11/2019,Rotifera,53.0516477
+2019,SRC4,River channel,Sacramento River,2/11/2019,Small cladocera,171.5336609
+2019,SRC4,River channel,Sacramento River,2/11/2019,Terrestrial insect,3.536776513
+2019,UBA1,Agriculture,Upper Bypass,2/11/2019,Copepoda,530.516477
+2019,UBA1,Agriculture,Upper Bypass,2/11/2019,Large cladocera,206.3119633
+2019,UBA1,Agriculture,Upper Bypass,2/11/2019,Ostracoda,29.47313761
+2019,UBA1,Agriculture,Upper Bypass,2/11/2019,Rare,47.15702018
+2019,UBA1,Agriculture,Upper Bypass,2/11/2019,Rotifera,76.63015778
+2019,UBA1,Agriculture,Upper Bypass,2/11/2019,Small cladocera,1320.396565
+2019,UBA1,Agriculture,Upper Bypass,2/11/2019,Terrestrial insect,11.78925504
+2019,UBC1,Canal channel,Upper Bypass,2/11/2019,Copepoda,204.4698922
+2019,UBC1,Canal channel,Upper Bypass,2/11/2019,Large cladocera,183.4702816
+2019,UBC1,Canal channel,Upper Bypass,2/11/2019,Rare,17.68388257
+2019,UBC1,Canal channel,Upper Bypass,2/11/2019,Rotifera,55.26213302
+2019,UBC1,Canal channel,Upper Bypass,2/11/2019,Small cladocera,389.0454164
+2019,UBW1,Wetland,Upper Bypass,2/11/2019,Copepoda,324.5512565
+2019,UBW1,Wetland,Upper Bypass,2/11/2019,Large cladocera,195.5629366
+2019,UBW1,Wetland,Upper Bypass,2/11/2019,Ostracoda,12.48274063
+2019,UBW1,Wetland,Upper Bypass,2/11/2019,Rare,12.48274063
+2019,UBW1,Wetland,Upper Bypass,2/11/2019,Rotifera,41.60913545
+2019,UBW1,Wetland,Upper Bypass,2/11/2019,Small cladocera,615.8152046
+2019,BSC1,Canal channel,Butte Sink,2/18/2019,Aquatic insect,9.195618934
+2019,BSC1,Canal channel,Butte Sink,2/18/2019,Copepoda,172.5946938
+2019,BSC1,Canal channel,Butte Sink,2/18/2019,Large cladocera,128.7386651
+2019,BSC1,Canal channel,Butte Sink,2/18/2019,Rare,31.83098862
+2019,BSC1,Canal channel,Butte Sink,2/18/2019,Rotifera,1.414710605
+2019,BSC1,Canal channel,Butte Sink,2/18/2019,Small cladocera,111.7621378
+2019,BSC1,Canal channel,Butte Sink,2/18/2019,Terrestrial insect,5.658842421
+2019,FRC1,River channel,Feather River,2/18/2019,Aquatic insect,2.829421211
+2019,FRC1,River channel,Feather River,2/18/2019,Copepoda,466.8544997
+2019,FRC1,River channel,Feather River,2/18/2019,Large cladocera,166.9358514
+2019,FRC1,River channel,Feather River,2/18/2019,Rare,8.488263632
+2019,FRC1,River channel,Feather River,2/18/2019,Rotifera,73.56495147
+2019,FRC1,River channel,Feather River,2/18/2019,Small cladocera,212.2065908
+2019,LBA2,Agriculture,Lower Bypass,2/18/2019,Copepoda,29.70892271
+2019,LBA2,Agriculture,Lower Bypass,2/18/2019,Large cladocera,48.10016058
+2019,LBA2,Agriculture,Lower Bypass,2/18/2019,Ostracoda,0.707355303
+2019,LBA2,Agriculture,Lower Bypass,2/18/2019,Rare,0.707355303
+2019,LBA2,Agriculture,Lower Bypass,2/18/2019,Rotifera,9.902974237
+2019,LBA2,Agriculture,Lower Bypass,2/18/2019,Small cladocera,38.90454164
+2019,LBA2,Agriculture,Lower Bypass,2/18/2019,Terrestrial insect,2.122065908
+2019,SRC1,River channel,Sacramento River,2/18/2019,Aquatic insect,7.780908329
+2019,SRC1,River channel,Sacramento River,2/18/2019,Copepoda,50.22222649
+2019,SRC1,River channel,Sacramento River,2/18/2019,Large cladocera,12.02504014
+2019,SRC1,River channel,Sacramento River,2/18/2019,Rare,11.31768484
+2019,SRC1,River channel,Sacramento River,2/18/2019,Rotifera,2.829421211
+2019,SRC1,River channel,Sacramento River,2/18/2019,Small cladocera,10.61032954
+2019,SRC1,River channel,Sacramento River,2/18/2019,Terrestrial insect,2.829421211
+2019,SRC2,River channel,Sacramento River,2/18/2019,Aquatic insect,4.244131816
+2019,SRC2,River channel,Sacramento River,2/18/2019,Copepoda,33.24569922
+2019,SRC2,River channel,Sacramento River,2/18/2019,Large cladocera,9.902974237
+2019,SRC2,River channel,Sacramento River,2/18/2019,Rare,9.195618934
+2019,SRC2,River channel,Sacramento River,2/18/2019,Rotifera,4.951487118
+2019,SRC2,River channel,Sacramento River,2/18/2019,Small cladocera,12.02504014
+2019,SRC3,River channel,Sacramento River,2/18/2019,Aquatic insect,4.951487118
+2019,SRC3,River channel,Sacramento River,2/18/2019,Copepoda,79.9311492
+2019,SRC3,River channel,Sacramento River,2/18/2019,Large cladocera,62.95462193
+2019,SRC3,River channel,Sacramento River,2/18/2019,Ostracoda,1.414710605
+2019,SRC3,River channel,Sacramento River,2/18/2019,Rare,4.951487118
+2019,SRC3,River channel,Sacramento River,2/18/2019,Rotifera,7.073553026
+2019,SRC3,River channel,Sacramento River,2/18/2019,Small cladocera,66.49139845
+2019,SRC3,River channel,Sacramento River,2/18/2019,Terrestrial insect,3.536776513
+2019,SRC4,River channel,Sacramento River,2/18/2019,Aquatic insect,3.536776513
+2019,SRC4,River channel,Sacramento River,2/18/2019,Copepoda,289.13148
+2019,SRC4,River channel,Sacramento River,2/18/2019,Large cladocera,111.4084602
+2019,SRC4,River channel,Sacramento River,2/18/2019,Rare,8.841941283
+2019,SRC4,River channel,Sacramento River,2/18/2019,Rotifera,24.75743559
+2019,SRC4,River channel,Sacramento River,2/18/2019,Small cladocera,302.3943919
+2019,SRC4,River channel,Sacramento River,2/18/2019,Terrestrial insect,5.30516477
+2019,UBA1,Agriculture,Upper Bypass,2/18/2019,Aquatic insect,4.160913545
+2019,UBA1,Agriculture,Upper Bypass,2/18/2019,Copepoda,322.4707997
+2019,UBA1,Agriculture,Upper Bypass,2/18/2019,Large cladocera,282.9421211
+2019,UBA1,Agriculture,Upper Bypass,2/18/2019,Ostracoda,16.64365418
+2019,UBA1,Agriculture,Upper Bypass,2/18/2019,Rotifera,112.3446657
+2019,UBA1,Agriculture,Upper Bypass,2/18/2019,Small cladocera,865.4700173
+2019,UBA1,Agriculture,Upper Bypass,2/18/2019,Terrestrial insect,29.12639481
+2019,UBC1,Canal channel,Upper Bypass,2/18/2019,Copepoda,264.079313
+2019,UBC1,Canal channel,Upper Bypass,2/18/2019,Large cladocera,391.4032675
+2019,UBC1,Canal channel,Upper Bypass,2/18/2019,Rare,14.14710605
+2019,UBC1,Canal channel,Upper Bypass,2/18/2019,Rotifera,33.00991412
+2019,UBC1,Canal channel,Upper Bypass,2/18/2019,Small cladocera,664.9139845
+2019,UBC1,Canal channel,Upper Bypass,2/18/2019,Terrestrial insect,4.715702018
+2019,BSC1,Canal channel,Butte Sink,2/25/2019,Copepoda,495.1487118
+2019,BSC1,Canal channel,Butte Sink,2/25/2019,Large cladocera,229.8904734
+2019,BSC1,Canal channel,Butte Sink,2/25/2019,Rare,17.68388257
+2019,BSC1,Canal channel,Butte Sink,2/25/2019,Rotifera,35.36776513
+2019,BSC1,Canal channel,Butte Sink,2/25/2019,Small cladocera,1013.875934
+2019,BSW1,Wetland,Butte Sink,2/25/2019,Aquatic insect,5.894627522
+2019,BSW1,Wetland,Butte Sink,2/25/2019,Copepoda,984.4027962
+2019,BSW1,Wetland,Butte Sink,2/25/2019,Large cladocera,141.4710605
+2019,BSW1,Wetland,Butte Sink,2/25/2019,Rotifera,235.7851009
+2019,BSW1,Wetland,Butte Sink,2/25/2019,Small cladocera,306.5206311
+2019,BSW2,Wetland,Butte Sink,2/25/2019,Aquatic insect,70.73553026
+2019,BSW2,Wetland,Butte Sink,2/25/2019,Copepoda,2546.479089
+2019,BSW2,Wetland,Butte Sink,2/25/2019,Large cladocera,3006.260036
+2019,BSW2,Wetland,Butte Sink,2/25/2019,Ostracoda,35.36776513
+2019,BSW2,Wetland,Butte Sink,2/25/2019,Rare,176.8388257
+2019,BSW2,Wetland,Butte Sink,2/25/2019,Rotifera,141.4710605
+2019,BSW2,Wetland,Butte Sink,2/25/2019,Small cladocera,5835.681247
+2019,BSW2,Wetland,Butte Sink,2/25/2019,Terrestrial insect,35.36776513
+2019,FRC1,River channel,Feather River,2/25/2019,Aquatic insect,1.414710605
+2019,FRC1,River channel,Feather River,2/25/2019,Copepoda,113.1768484
+2019,FRC1,River channel,Feather River,2/25/2019,Large cladocera,6.366197724
+2019,FRC1,River channel,Feather River,2/25/2019,Ostracoda,0.707355303
+2019,FRC1,River channel,Feather River,2/25/2019,Rare,5.658842421
+2019,FRC1,River channel,Feather River,2/25/2019,Rotifera,4.244131816
+2019,FRC1,River channel,Feather River,2/25/2019,Small cladocera,39.61189695
+2019,FRC1,River channel,Feather River,2/25/2019,Terrestrial insect,1.414710605
+2019,LBA1,Agriculture,Lower Bypass,2/25/2019,Aquatic insect,12.8610055
+2019,LBA1,Agriculture,Lower Bypass,2/25/2019,Copepoda,445.3123155
+2019,LBA1,Agriculture,Lower Bypass,2/25/2019,Large cladocera,176.8388257
+2019,LBA1,Agriculture,Lower Bypass,2/25/2019,Ostracoda,3.215251376
+2019,LBA1,Agriculture,Lower Bypass,2/25/2019,Rare,414.7674275
+2019,LBA1,Agriculture,Lower Bypass,2/25/2019,Rotifera,16.07625688
+2019,LBA1,Agriculture,Lower Bypass,2/25/2019,Small cladocera,35.36776513
+2019,LBW1,Wetland,Lower Bypass,2/25/2019,Aquatic insect,106.1032954
+2019,LBW1,Wetland,Lower Bypass,2/25/2019,Copepoda,13793.4284
+2019,LBW1,Wetland,Lower Bypass,2/25/2019,Large cladocera,3395.305453
+2019,LBW1,Wetland,Lower Bypass,2/25/2019,Ostracoda,106.1032954
+2019,LBW1,Wetland,Lower Bypass,2/25/2019,Rotifera,318.3098862
+2019,LBW1,Wetland,Lower Bypass,2/25/2019,Small cladocera,18992.48988
+2019,SRC1,River channel,Sacramento River,2/25/2019,Aquatic insect,2.122065908
+2019,SRC1,River channel,Sacramento River,2/25/2019,Copepoda,40.31925225
+2019,SRC1,River channel,Sacramento River,2/25/2019,Large cladocera,4.244131816
+2019,SRC1,River channel,Sacramento River,2/25/2019,Rare,3.536776513
+2019,SRC1,River channel,Sacramento River,2/25/2019,Rotifera,7.780908329
+2019,SRC1,River channel,Sacramento River,2/25/2019,Small cladocera,15.56181666
+2019,SRC1,River channel,Sacramento River,2/25/2019,Terrestrial insect,0.707355303
+2019,SRC2,River channel,Sacramento River,2/25/2019,Aquatic insect,7.073553026
+2019,SRC2,River channel,Sacramento River,2/25/2019,Copepoda,47.39280528
+2019,SRC2,River channel,Sacramento River,2/25/2019,Large cladocera,14.85446136
+2019,SRC2,River channel,Sacramento River,2/25/2019,Ostracoda,0.707355303
+2019,SRC2,River channel,Sacramento River,2/25/2019,Rare,7.073553026
+2019,SRC2,River channel,Sacramento River,2/25/2019,Rotifera,3.536776513
+2019,SRC2,River channel,Sacramento River,2/25/2019,Small cladocera,6.366197724
+2019,SRC3,River channel,Sacramento River,2/25/2019,Aquatic insect,2.829421211
+2019,SRC3,River channel,Sacramento River,2/25/2019,Copepoda,66.8450761
+2019,SRC3,River channel,Sacramento River,2/25/2019,Large cladocera,64.36933254
+2019,SRC3,River channel,Sacramento River,2/25/2019,Rare,10.61032954
+2019,SRC3,River channel,Sacramento River,2/25/2019,Rotifera,0.707355303
+2019,SRC3,River channel,Sacramento River,2/25/2019,Small cladocera,51.63693709
+2019,SRC3,River channel,Sacramento River,2/25/2019,Terrestrial insect,2.829421211
+2019,SRC4,River channel,Sacramento River,2/25/2019,Copepoda,313.0047214
+2019,SRC4,River channel,Sacramento River,2/25/2019,Large cladocera,143.2394488
+2019,SRC4,River channel,Sacramento River,2/25/2019,Ostracoda,5.30516477
+2019,SRC4,River channel,Sacramento River,2/25/2019,Rare,5.30516477
+2019,SRC4,River channel,Sacramento River,2/25/2019,Rotifera,2.652582385
+2019,SRC4,River channel,Sacramento River,2/25/2019,Small cladocera,214.8591732
+2019,UBC1,Canal channel,Upper Bypass,2/25/2019,Aquatic insect,3.536776513
+2019,UBC1,Canal channel,Upper Bypass,2/25/2019,Copepoda,331.5727981
+2019,UBC1,Canal channel,Upper Bypass,2/25/2019,Large cladocera,145.007837
+2019,UBC1,Canal channel,Upper Bypass,2/25/2019,Rare,14.14710605
+2019,UBC1,Canal channel,Upper Bypass,2/25/2019,Rotifera,53.0516477
+2019,UBC1,Canal channel,Upper Bypass,2/25/2019,Small cladocera,318.3098862
+2019,FRC1,River channel,Feather River,3/4/2019,Aquatic insect,2.357851009
+2019,FRC1,River channel,Feather River,3/4/2019,Copepoda,292.3735251
+2019,FRC1,River channel,Feather River,3/4/2019,Large cladocera,51.87272219
+2019,FRC1,River channel,Feather River,3/4/2019,Ostracoda,2.357851009
+2019,FRC1,River channel,Feather River,3/4/2019,Rare,9.431404035
+2019,FRC1,River channel,Feather River,3/4/2019,Rotifera,18.86280807
+2019,FRC1,River channel,Feather River,3/4/2019,Small cladocera,216.9222928
+2019,FRC1,River channel,Feather River,3/4/2019,Terrestrial insect,2.357851009
+2019,LBA1,Agriculture,Lower Bypass,3/4/2019,Aquatic insect,0.707355303
+2019,LBA1,Agriculture,Lower Bypass,3/4/2019,Copepoda,39.61189695
+2019,LBA1,Agriculture,Lower Bypass,3/4/2019,Large cladocera,19.80594847
+2019,LBA1,Agriculture,Lower Bypass,3/4/2019,Rare,1.414710605
+2019,LBA1,Agriculture,Lower Bypass,3/4/2019,Rotifera,24.75743559
+2019,LBA1,Agriculture,Lower Bypass,3/4/2019,Small cladocera,110.3474272
+2019,LBA2,Agriculture,Lower Bypass,3/4/2019,Aquatic insect,17.68388257
+2019,LBA2,Agriculture,Lower Bypass,3/4/2019,Copepoda,161.9843643
+2019,LBA2,Agriculture,Lower Bypass,3/4/2019,Large cladocera,40.31925225
+2019,LBA2,Agriculture,Lower Bypass,3/4/2019,Ostracoda,6.366197724
+2019,LBA2,Agriculture,Lower Bypass,3/4/2019,Rare,14.14710605
+2019,LBA2,Agriculture,Lower Bypass,3/4/2019,Rotifera,1.414710605
+2019,LBA2,Agriculture,Lower Bypass,3/4/2019,Small cladocera,32.53834392
+2019,LBA2,Agriculture,Lower Bypass,3/4/2019,Terrestrial insect,11.31768484
+2019,LBW1,Wetland,Lower Bypass,3/4/2019,Aquatic insect,0.707355303
+2019,LBW1,Wetland,Lower Bypass,3/4/2019,Copepoda,39.61189695
+2019,LBW1,Wetland,Lower Bypass,3/4/2019,Large cladocera,19.80594847
+2019,LBW1,Wetland,Lower Bypass,3/4/2019,Rare,1.414710605
+2019,LBW1,Wetland,Lower Bypass,3/4/2019,Rotifera,24.75743559
+2019,LBW1,Wetland,Lower Bypass,3/4/2019,Small cladocera,110.3474272
+2019,SRC1,River channel,Sacramento River,3/4/2019,Aquatic insect,4.244131816
+2019,SRC1,River channel,Sacramento River,3/4/2019,Copepoda,97.61503176
+2019,SRC1,River channel,Sacramento River,3/4/2019,Large cladocera,5.658842421
+2019,SRC1,River channel,Sacramento River,3/4/2019,Ostracoda,0.707355303
+2019,SRC1,River channel,Sacramento River,3/4/2019,Rare,14.14710605
+2019,SRC1,River channel,Sacramento River,3/4/2019,Small cladocera,16.97652726
+2019,SRC1,River channel,Sacramento River,3/4/2019,Terrestrial insect,3.536776513
+2019,SRC2,River channel,Sacramento River,3/4/2019,Aquatic insect,6.366197724
+2019,SRC2,River channel,Sacramento River,3/4/2019,Copepoda,77.10172799
+2019,SRC2,River channel,Sacramento River,3/4/2019,Large cladocera,4.244131816
+2019,SRC2,River channel,Sacramento River,3/4/2019,Rare,11.31768484
+2019,SRC2,River channel,Sacramento River,3/4/2019,Rotifera,4.244131816
+2019,SRC2,River channel,Sacramento River,3/4/2019,Small cladocera,5.658842421
+2019,SRC2,River channel,Sacramento River,3/4/2019,Terrestrial insect,8.488263632
+2019,SRC3,River channel,Sacramento River,3/4/2019,Aquatic insect,4.244131816
+2019,SRC3,River channel,Sacramento River,3/4/2019,Copepoda,66.49139845
+2019,SRC3,River channel,Sacramento River,3/4/2019,Large cladocera,40.31925225
+2019,SRC3,River channel,Sacramento River,3/4/2019,Rare,1.414710605
+2019,SRC3,River channel,Sacramento River,3/4/2019,Rotifera,2.122065908
+2019,SRC3,River channel,Sacramento River,3/4/2019,Small cladocera,34.66040983
+2019,SRC3,River channel,Sacramento River,3/4/2019,Terrestrial insect,0.707355303
+2019,SRC4,River channel,Sacramento River,3/4/2019,Copepoda,221.0485321
+2019,SRC4,River channel,Sacramento River,3/4/2019,Large cladocera,201.5962612
+2019,SRC4,River channel,Sacramento River,3/4/2019,Ostracoda,3.536776513
+2019,SRC4,River channel,Sacramento River,3/4/2019,Rare,3.536776513
+2019,SRC4,River channel,Sacramento River,3/4/2019,Rotifera,7.073553026
+2019,SRC4,River channel,Sacramento River,3/4/2019,Small cladocera,258.1846855
+2019,SRC4,River channel,Sacramento River,3/4/2019,Terrestrial insect,5.30516477
+2019,UBA1,Agriculture,Upper Bypass,3/4/2019,Aquatic insect,2.829421211
+2019,UBA1,Agriculture,Upper Bypass,3/4/2019,Copepoda,89.12676813
+2019,UBA1,Agriculture,Upper Bypass,3/4/2019,Large cladocera,29.00156741
+2019,UBA1,Agriculture,Upper Bypass,3/4/2019,Ostracoda,2.122065908
+2019,UBA1,Agriculture,Upper Bypass,3/4/2019,Rare,0.707355303
+2019,UBA1,Agriculture,Upper Bypass,3/4/2019,Rotifera,13.43975075
+2019,UBA1,Agriculture,Upper Bypass,3/4/2019,Small cladocera,168.350562
+2019,UBC1,Canal channel,Upper Bypass,3/4/2019,Aquatic insect,2.122065908
+2019,UBC1,Canal channel,Upper Bypass,3/4/2019,Copepoda,48.10016058
+2019,UBC1,Canal channel,Upper Bypass,3/4/2019,Large cladocera,57.29577951
+2019,UBC1,Canal channel,Upper Bypass,3/4/2019,Ostracoda,0.707355303
+2019,UBC1,Canal channel,Upper Bypass,3/4/2019,Rare,5.658842421
+2019,UBC1,Canal channel,Upper Bypass,3/4/2019,Rotifera,4.244131816
+2019,UBC1,Canal channel,Upper Bypass,3/4/2019,Small cladocera,19.80594847
+2019,UBC1,Canal channel,Upper Bypass,3/4/2019,Terrestrial insect,5.658842421
+2019,UBW1,Wetland,Upper Bypass,3/4/2019,Copepoda,228.850245
+2019,UBW1,Wetland,Upper Bypass,3/4/2019,Large cladocera,208.0456772
+2019,UBW1,Wetland,Upper Bypass,3/4/2019,Ostracoda,8.32182709
+2019,UBW1,Wetland,Upper Bypass,3/4/2019,Rare,20.80456772
+2019,UBW1,Wetland,Upper Bypass,3/4/2019,Rotifera,66.57461672
+2019,UBW1,Wetland,Upper Bypass,3/4/2019,Small cladocera,611.6542911
+2019,BSC1,Canal channel,Butte Sink,3/5/2019,Aquatic insect,2.829421211
+2019,BSC1,Canal channel,Butte Sink,3/5/2019,Copepoda,248.9890665
+2019,BSC1,Canal channel,Butte Sink,3/5/2019,Large cladocera,50.92958179
+2019,BSC1,Canal channel,Butte Sink,3/5/2019,Ostracoda,8.488263632
+2019,BSC1,Canal channel,Butte Sink,3/5/2019,Rare,25.46479089
+2019,BSC1,Canal channel,Butte Sink,3/5/2019,Rotifera,45.27073937
+2019,BSC1,Canal channel,Butte Sink,3/5/2019,Small cladocera,393.2895483
+2019,BSC1,Canal channel,Butte Sink,3/5/2019,Terrestrial insect,2.829421211
+2019,BSW1,Wetland,Butte Sink,3/5/2019,Aquatic insect,2.829421211
+2019,BSW1,Wetland,Butte Sink,3/5/2019,Copepoda,85.58999162
+2019,BSW1,Wetland,Butte Sink,3/5/2019,Large cladocera,38.90454164
+2019,BSW1,Wetland,Butte Sink,3/5/2019,Ostracoda,0.707355303
+2019,BSW1,Wetland,Butte Sink,3/5/2019,Rare,2.829421211
+2019,BSW1,Wetland,Butte Sink,3/5/2019,Rotifera,4.951487118
+2019,BSW1,Wetland,Butte Sink,3/5/2019,Small cladocera,151.3740348
+2019,BSW1,Wetland,Butte Sink,3/5/2019,Terrestrial insect,0.707355303
+2019,FRC1,River channel,Feather River,3/11/2019,Copepoda,149.9593242
+2019,FRC1,River channel,Feather River,3/11/2019,Large cladocera,16.97652726
+2019,FRC1,River channel,Feather River,3/11/2019,Ostracoda,0.707355303
+2019,FRC1,River channel,Feather River,3/11/2019,Rare,1.414710605
+2019,FRC1,River channel,Feather River,3/11/2019,Rotifera,12.02504014
+2019,FRC1,River channel,Feather River,3/11/2019,Small cladocera,70.02817496
+2019,FRC1,River channel,Feather River,3/11/2019,Terrestrial insect,0.707355303
+2019,LBA1,Agriculture,Lower Bypass,3/11/2019,Copepoda,400.8346715
+2019,LBA1,Agriculture,Lower Bypass,3/11/2019,Large cladocera,88.41941283
+2019,LBA1,Agriculture,Lower Bypass,3/11/2019,Ostracoda,5.894627522
+2019,LBA1,Agriculture,Lower Bypass,3/11/2019,Rare,76.63015778
+2019,LBA1,Agriculture,Lower Bypass,3/11/2019,Rotifera,265.2582385
+2019,LBA1,Agriculture,Lower Bypass,3/11/2019,Small cladocera,854.7209907
+2019,LBA1,Agriculture,Lower Bypass,3/11/2019,Terrestrial insect,5.894627522
+2019,LBA2,Agriculture,Lower Bypass,3/11/2019,Aquatic insect,1.414710605
+2019,LBA2,Agriculture,Lower Bypass,3/11/2019,Copepoda,49.86854884
+2019,LBA2,Agriculture,Lower Bypass,3/11/2019,Large cladocera,14.14710605
+2019,LBA2,Agriculture,Lower Bypass,3/11/2019,Ostracoda,1.414710605
+2019,LBA2,Agriculture,Lower Bypass,3/11/2019,Rare,6.366197724
+2019,LBA2,Agriculture,Lower Bypass,3/11/2019,Rotifera,2.475743559
+2019,LBA2,Agriculture,Lower Bypass,3/11/2019,Small cladocera,67.19875375
+2019,LBA2,Agriculture,Lower Bypass,3/11/2019,Terrestrial insect,1.768388257
+2019,LBW1,Wetland,Lower Bypass,3/11/2019,Copepoda,225.0675963
+2019,LBW1,Wetland,Lower Bypass,3/11/2019,Large cladocera,141.4710605
+2019,LBW1,Wetland,Lower Bypass,3/11/2019,Ostracoda,6.430502751
+2019,LBW1,Wetland,Lower Bypass,3/11/2019,Rare,6.430502751
+2019,LBW1,Wetland,Lower Bypass,3/11/2019,Rotifera,54.65927339
+2019,LBW1,Wetland,Lower Bypass,3/11/2019,Small cladocera,421.1979302
+2019,SRC1,River channel,Sacramento River,3/11/2019,Copepoda,86.29734692
+2019,SRC1,River channel,Sacramento River,3/11/2019,Large cladocera,8.488263632
+2019,SRC1,River channel,Sacramento River,3/11/2019,Rotifera,2.829421211
+2019,SRC1,River channel,Sacramento River,3/11/2019,Small cladocera,0.707355303
+2019,SRC1,River channel,Sacramento River,3/11/2019,Terrestrial insect,4.951487118
+2019,SRC2,River channel,Sacramento River,3/11/2019,Aquatic insect,1.414710605
+2019,SRC2,River channel,Sacramento River,3/11/2019,Copepoda,38.90454164
+2019,SRC2,River channel,Sacramento River,3/11/2019,Large cladocera,7.073553026
+2019,SRC2,River channel,Sacramento River,3/11/2019,Rare,5.658842421
+2019,SRC2,River channel,Sacramento River,3/11/2019,Rotifera,2.829421211
+2019,SRC2,River channel,Sacramento River,3/11/2019,Small cladocera,7.780908329
+2019,SRC2,River channel,Sacramento River,3/11/2019,Terrestrial insect,12.02504014
+2019,SRC3,River channel,Sacramento River,3/11/2019,Aquatic insect,0.707355303
+2019,SRC3,River channel,Sacramento River,3/11/2019,Copepoda,77.80908329
+2019,SRC3,River channel,Sacramento River,3/11/2019,Large cladocera,84.17528101
+2019,SRC3,River channel,Sacramento River,3/11/2019,Rare,1.414710605
+2019,SRC3,River channel,Sacramento River,3/11/2019,Rotifera,0.707355303
+2019,SRC3,River channel,Sacramento River,3/11/2019,Small cladocera,53.0516477
+2019,SRC4,River channel,Sacramento River,3/11/2019,Aquatic insect,2.357851009
+2019,SRC4,River channel,Sacramento River,3/11/2019,Copepoda,285.2999721
+2019,SRC4,River channel,Sacramento River,3/11/2019,Large cladocera,117.8925504
+2019,SRC4,River channel,Sacramento River,3/11/2019,Ostracoda,4.715702018
+2019,SRC4,River channel,Sacramento River,3/11/2019,Rare,11.78925504
+2019,SRC4,River channel,Sacramento River,3/11/2019,Rotifera,18.86280807
+2019,SRC4,River channel,Sacramento River,3/11/2019,Small cladocera,429.1288836
+2019,UBC1,Canal channel,Upper Bypass,3/11/2019,Copepoda,53.0516477
+2019,UBC1,Canal channel,Upper Bypass,3/11/2019,Large cladocera,4.244131816
+2019,UBC1,Canal channel,Upper Bypass,3/11/2019,Rare,2.829421211
+2019,UBC1,Canal channel,Upper Bypass,3/11/2019,Rotifera,1.414710605
+2019,UBC1,Canal channel,Upper Bypass,3/11/2019,Small cladocera,21.92801438
+2019,UBC1,Canal channel,Upper Bypass,3/11/2019,Terrestrial insect,2.829421211
+2019,BSC1,Canal channel,Butte Sink,3/12/2019,Aquatic insect,2.210485321
+2019,BSC1,Canal channel,Butte Sink,3/12/2019,Copepoda,328.2570701
+2019,BSC1,Canal channel,Butte Sink,3/12/2019,Large cladocera,165.7863991
+2019,BSC1,Canal channel,Butte Sink,3/12/2019,Ostracoda,4.420970641
+2019,BSC1,Canal channel,Butte Sink,3/12/2019,Rare,15.47339725
+2019,BSC1,Canal channel,Butte Sink,3/12/2019,Rotifera,41.99922109
+2019,BSC1,Canal channel,Butte Sink,3/12/2019,Small cladocera,488.5172559
+2019,BSC1,Canal channel,Butte Sink,3/12/2019,Terrestrial insect,2.210485321
+2019,BSW1,Wetland,Butte Sink,3/12/2019,Copepoda,121.3974641
+2019,BSW1,Wetland,Butte Sink,3/12/2019,Large cladocera,61.17667482
+2019,BSW1,Wetland,Butte Sink,3/12/2019,Rare,1.911771088
+2019,BSW1,Wetland,Butte Sink,3/12/2019,Rotifera,1.911771088
+2019,BSW1,Wetland,Butte Sink,3/12/2019,Small cladocera,277.2068078
+2019,BSW1,Wetland,Butte Sink,3/12/2019,Terrestrial insect,3.823542176
+2019,BSW2,Wetland,Butte Sink,3/12/2019,Aquatic insect,2.357851009
+2019,BSW2,Wetland,Butte Sink,3/12/2019,Copepoda,80.55990947
+2019,BSW2,Wetland,Butte Sink,3/12/2019,Large cladocera,5.265867253
+2019,BSW2,Wetland,Butte Sink,3/12/2019,Ostracoda,4.55851195
+2019,BSW2,Wetland,Butte Sink,3/12/2019,Rare,1.571900673
+2019,BSW2,Wetland,Butte Sink,3/12/2019,Rotifera,4.244131816
+2019,BSW2,Wetland,Butte Sink,3/12/2019,Small cladocera,973.5566815
+2019,BSW2,Wetland,Butte Sink,3/12/2019,Terrestrial insect,1.414710605
+2019,FRC1,River channel,Feather River,3/18/2019,Aquatic insect,2.829421211
+2019,FRC1,River channel,Feather River,3/18/2019,Copepoda,191.693287
+2019,FRC1,River channel,Feather River,3/18/2019,Large cladocera,8.488263632
+2019,FRC1,River channel,Feather River,3/18/2019,Rare,2.829421211
+2019,FRC1,River channel,Feather River,3/18/2019,Rotifera,6.366197724
+2019,FRC1,River channel,Feather River,3/18/2019,Small cladocera,41.02660755
+2019,FRC1,River channel,Feather River,3/18/2019,Terrestrial insect,1.414710605
+2019,LBA1,Agriculture,Lower Bypass,3/18/2019,Aquatic insect,4.951487118
+2019,LBA1,Agriculture,Lower Bypass,3/18/2019,Copepoda,114.591559
+2019,LBA1,Agriculture,Lower Bypass,3/18/2019,Large cladocera,7.780908329
+2019,LBA1,Agriculture,Lower Bypass,3/18/2019,Ostracoda,11.31768484
+2019,LBA1,Agriculture,Lower Bypass,3/18/2019,Rare,96.20032116
+2019,LBA1,Agriculture,Lower Bypass,3/18/2019,Rotifera,24.05008029
+2019,LBA1,Agriculture,Lower Bypass,3/18/2019,Small cladocera,167.6432067
+2019,LBA1,Agriculture,Lower Bypass,3/18/2019,Terrestrial insect,1.414710605
+2019,LBA2,Agriculture,Lower Bypass,3/18/2019,Aquatic insect,0.707355303
+2019,LBA2,Agriculture,Lower Bypass,3/18/2019,Copepoda,45.62441702
+2019,LBA2,Agriculture,Lower Bypass,3/18/2019,Ostracoda,1.414710605
+2019,LBA2,Agriculture,Lower Bypass,3/18/2019,Rare,4.951487118
+2019,LBA2,Agriculture,Lower Bypass,3/18/2019,Rotifera,4.244131816
+2019,LBA2,Agriculture,Lower Bypass,3/18/2019,Small cladocera,13.43975075
+2019,LBW1,Wetland,Lower Bypass,3/18/2019,Aquatic insect,4.951487118
+2019,LBW1,Wetland,Lower Bypass,3/18/2019,Copepoda,114.591559
+2019,LBW1,Wetland,Lower Bypass,3/18/2019,Large cladocera,7.780908329
+2019,LBW1,Wetland,Lower Bypass,3/18/2019,Ostracoda,11.31768484
+2019,LBW1,Wetland,Lower Bypass,3/18/2019,Rare,96.20032116
+2019,LBW1,Wetland,Lower Bypass,3/18/2019,Rotifera,24.05008029
+2019,LBW1,Wetland,Lower Bypass,3/18/2019,Small cladocera,167.6432067
+2019,LBW1,Wetland,Lower Bypass,3/18/2019,Terrestrial insect,1.414710605
+2019,SRC1,River channel,Sacramento River,3/18/2019,Aquatic insect,2.122065908
+2019,SRC1,River channel,Sacramento River,3/18/2019,Copepoda,393.8621692
+2019,SRC1,River channel,Sacramento River,3/18/2019,Large cladocera,24.28586539
+2019,SRC1,River channel,Sacramento River,3/18/2019,Rare,7.780908329
+2019,SRC1,River channel,Sacramento River,3/18/2019,Rotifera,5.658842421
+2019,SRC1,River channel,Sacramento River,3/18/2019,Small cladocera,28.058427
+2019,SRC1,River channel,Sacramento River,3/18/2019,Terrestrial insect,2.829421211
+2019,SRC2,River channel,Sacramento River,3/18/2019,Aquatic insect,3.536776513
+2019,SRC2,River channel,Sacramento River,3/18/2019,Copepoda,594.1784542
+2019,SRC2,River channel,Sacramento River,3/18/2019,Large cladocera,31.83098862
+2019,SRC2,River channel,Sacramento River,3/18/2019,Rotifera,14.14710605
+2019,SRC2,River channel,Sacramento River,3/18/2019,Small cladocera,127.3239545
+2019,SRC2,River channel,Sacramento River,3/18/2019,Terrestrial insect,3.536776513
+2019,SRC3,River channel,Sacramento River,3/18/2019,Aquatic insect,8.488263632
+2019,SRC3,River channel,Sacramento River,3/18/2019,Copepoda,343.7746771
+2019,SRC3,River channel,Sacramento River,3/18/2019,Large cladocera,16.97652726
+2019,SRC3,River channel,Sacramento River,3/18/2019,Rare,5.658842421
+2019,SRC3,River channel,Sacramento River,3/18/2019,Rotifera,5.658842421
+2019,SRC3,River channel,Sacramento River,3/18/2019,Small cladocera,42.44131816
+2019,SRC4,River channel,Sacramento River,3/18/2019,Aquatic insect,4.160913545
+2019,SRC4,River channel,Sacramento River,3/18/2019,Copepoda,343.2753675
+2019,SRC4,River channel,Sacramento River,3/18/2019,Large cladocera,16.64365418
+2019,SRC4,River channel,Sacramento River,3/18/2019,Ostracoda,20.80456772
+2019,SRC4,River channel,Sacramento River,3/18/2019,Rare,6.241370317
+2019,SRC4,River channel,Sacramento River,3/18/2019,Rotifera,22.8850245
+2019,SRC4,River channel,Sacramento River,3/18/2019,Small cladocera,162.2756283
+2019,SRC4,River channel,Sacramento River,3/18/2019,Terrestrial insect,2.080456772
+2019,UBA1,Agriculture,Upper Bypass,3/18/2019,Copepoda,318.3098862
+2019,UBA1,Agriculture,Upper Bypass,3/18/2019,Large cladocera,21.22065908
+2019,UBA1,Agriculture,Upper Bypass,3/18/2019,Rare,2.357851009
+2019,UBA1,Agriculture,Upper Bypass,3/18/2019,Rotifera,195.7016337
+2019,UBA1,Agriculture,Upper Bypass,3/18/2019,Small cladocera,99.02974237
+2019,UBC1,Canal channel,Upper Bypass,3/18/2019,Aquatic insect,6.430502751
+2019,UBC1,Canal channel,Upper Bypass,3/18/2019,Copepoda,462.9961981
+2019,UBC1,Canal channel,Upper Bypass,3/18/2019,Large cladocera,70.73553026
+2019,UBC1,Canal channel,Upper Bypass,3/18/2019,Rare,16.07625688
+2019,UBC1,Canal channel,Upper Bypass,3/18/2019,Rotifera,83.59653577
+2019,UBC1,Canal channel,Upper Bypass,3/18/2019,Small cladocera,83.59653577
+2019,UBC1,Canal channel,Upper Bypass,3/18/2019,Terrestrial insect,3.215251376
+2019,UBW1,Wetland,Upper Bypass,3/18/2019,Aquatic insect,2.02101515
+2019,UBW1,Wetland,Upper Bypass,3/18/2019,Copepoda,325.3834392
+2019,UBW1,Wetland,Upper Bypass,3/18/2019,Large cladocera,36.37827271
+2019,UBW1,Wetland,Upper Bypass,3/18/2019,Rare,12.1260909
+2019,UBW1,Wetland,Upper Bypass,3/18/2019,Rotifera,145.5130908
+2019,UBW1,Wetland,Upper Bypass,3/18/2019,Small cladocera,181.8913635
+2019,BSC1,Canal channel,Butte Sink,3/19/2019,Copepoda,742.7230678
+2019,BSC1,Canal channel,Butte Sink,3/19/2019,Large cladocera,265.2582385
+2019,BSC1,Canal channel,Butte Sink,3/19/2019,Rotifera,70.73553026
+2019,BSC1,Canal channel,Butte Sink,3/19/2019,Small cladocera,3713.615339
+2019,BSW1,Wetland,Butte Sink,3/19/2019,Copepoda,13165.65057
+2019,BSW1,Wetland,Butte Sink,3/19/2019,Large cladocera,11.78925504
+2019,BSW1,Wetland,Butte Sink,3/19/2019,Rotifera,518.7272219
+2019,BSW1,Wetland,Butte Sink,3/19/2019,Small cladocera,602.3237577
+2019,BSW2,Wetland,Butte Sink,3/19/2019,Copepoda,6012.520072
+2019,BSW2,Wetland,Butte Sink,3/19/2019,Large cladocera,3607.512043
+2019,BSW2,Wetland,Butte Sink,3/19/2019,Rare,70.73553026
+2019,BSW2,Wetland,Butte Sink,3/19/2019,Rotifera,707.3553026
+2019,BSW2,Wetland,Butte Sink,3/19/2019,Small cladocera,64157.12595
+2019,BSC1,Canal channel,Butte Sink,3/25/2019,Copepoda,1237.87178
+2019,BSC1,Canal channel,Butte Sink,3/25/2019,Large cladocera,88.41941283
+2019,BSC1,Canal channel,Butte Sink,3/25/2019,Rare,17.68388257
+2019,BSC1,Canal channel,Butte Sink,3/25/2019,Rotifera,35.36776513
+2019,BSC1,Canal channel,Butte Sink,3/25/2019,Small cladocera,3218.466627
+2019,BSW1,Wetland,Butte Sink,3/25/2019,Copepoda,92628.17688
+2019,BSW1,Wetland,Butte Sink,3/25/2019,Large cladocera,212.2065908
+2019,BSW1,Wetland,Butte Sink,3/25/2019,Rotifera,12201.87897
+2019,BSW1,Wetland,Butte Sink,3/25/2019,Small cladocera,5199.061474
+2019,BSW2,Wetland,Butte Sink,3/25/2019,Copepoda,37348.35998
+2019,BSW2,Wetland,Butte Sink,3/25/2019,Large cladocera,12520.18886
+2019,BSW2,Wetland,Butte Sink,3/25/2019,Rotifera,424.4131816
+2019,BSW2,Wetland,Butte Sink,3/25/2019,Small cladocera,49444.13565
+2019,FRC1,River channel,Feather River,3/25/2019,Copepoda,462.501544
+2019,FRC1,River channel,Feather River,3/25/2019,Large cladocera,32.64716781
+2019,FRC1,River channel,Feather River,3/25/2019,Ostracoda,2.720597318
+2019,FRC1,River channel,Feather River,3/25/2019,Rare,8.161791953
+2019,FRC1,River channel,Feather River,3/25/2019,Rotifera,329.1922755
+2019,FRC1,River channel,Feather River,3/25/2019,Small cladocera,367.2806379
+2019,FRC1,River channel,Feather River,3/25/2019,Terrestrial insect,10.88238927
+2019,SRC1,River channel,Sacramento River,3/25/2019,Aquatic insect,2.122065908
+2019,SRC1,River channel,Sacramento River,3/25/2019,Copepoda,148.5446136
+2019,SRC1,River channel,Sacramento River,3/25/2019,Large cladocera,8.488263632
+2019,SRC1,River channel,Sacramento River,3/25/2019,Rare,3.536776513
+2019,SRC1,River channel,Sacramento River,3/25/2019,Rotifera,19.80594847
+2019,SRC1,River channel,Sacramento River,3/25/2019,Small cladocera,25.46479089
+2019,SRC1,River channel,Sacramento River,3/25/2019,Terrestrial insect,1.414710605
+2019,SRC2,River channel,Sacramento River,3/25/2019,Aquatic insect,1.414710605
+2019,SRC2,River channel,Sacramento River,3/25/2019,Copepoda,152.4350677
+2019,SRC2,River channel,Sacramento River,3/25/2019,Large cladocera,7.073553026
+2019,SRC2,River channel,Sacramento River,3/25/2019,Rare,5.658842421
+2019,SRC2,River channel,Sacramento River,3/25/2019,Rotifera,16.97652726
+2019,SRC2,River channel,Sacramento River,3/25/2019,Small cladocera,9.902974237
+2019,SRC2,River channel,Sacramento River,3/25/2019,Terrestrial insect,0.707355303
+2019,SRC3,River channel,Sacramento River,3/25/2019,Aquatic insect,1.414710605
+2019,SRC3,River channel,Sacramento River,3/25/2019,Copepoda,116.7136249
+2019,SRC3,River channel,Sacramento River,3/25/2019,Large cladocera,4.951487118
+2019,SRC3,River channel,Sacramento River,3/25/2019,Rare,4.951487118
+2019,SRC3,River channel,Sacramento River,3/25/2019,Rotifera,25.46479089
+2019,SRC3,River channel,Sacramento River,3/25/2019,Small cladocera,17.68388257
+2019,SRC3,River channel,Sacramento River,3/25/2019,Terrestrial insect,0.707355303
+2019,SRC4,River channel,Sacramento River,3/25/2019,Copepoda,369.0549405
+2019,SRC4,River channel,Sacramento River,3/25/2019,Large cladocera,26.14139162
+2019,SRC4,River channel,Sacramento River,3/25/2019,Rare,7.560500517
+2019,SRC4,River channel,Sacramento River,3/25/2019,Rotifera,3.075457838
+2019,SRC4,River channel,Sacramento River,3/25/2019,Small cladocera,69.08130673
+2019,SRC4,River channel,Sacramento River,3/25/2019,Terrestrial insect,9.109878898
+2019,UBC1,Canal channel,Upper Bypass,3/25/2019,Copepoda,3819.718634
+2019,UBC1,Canal channel,Upper Bypass,3/25/2019,Large cladocera,813.458598
+2019,UBC1,Canal channel,Upper Bypass,3/25/2019,Rotifera,1414.710605
+2019,UBC1,Canal channel,Upper Bypass,3/25/2019,Small cladocera,5729.577951
+2019,UBW1,Wetland,Upper Bypass,3/25/2019,Copepoda,3200.782744
+2019,UBW1,Wetland,Upper Bypass,3/25/2019,Large cladocera,247.5743559
+2019,UBW1,Wetland,Upper Bypass,3/25/2019,Rare,35.36776513
+2019,UBW1,Wetland,Upper Bypass,3/25/2019,Rotifera,141.4710605
+2019,UBW1,Wetland,Upper Bypass,3/25/2019,Small cladocera,4739.280528
+2019,FRC1,River channel,Feather River,4/1/2019,Aquatic insect,14.14710605
+2019,FRC1,River channel,Feather River,4/1/2019,Copepoda,332.4569922
+2019,FRC1,River channel,Feather River,4/1/2019,Large cladocera,63.66197724
+2019,FRC1,River channel,Feather River,4/1/2019,Rare,25.9363611
+2019,FRC1,River channel,Feather River,4/1/2019,Rotifera,99.02974237
+2019,FRC1,River channel,Feather River,4/1/2019,Small cladocera,219.2801438
+2019,FRC1,River channel,Feather River,4/1/2019,Terrestrial insect,7.073553026
+2019,LBA2,Agriculture,Lower Bypass,4/1/2019,Aquatic insect,30.31522726
+2019,LBA2,Agriculture,Lower Bypass,4/1/2019,Copepoda,1106.393516
+2019,LBA2,Agriculture,Lower Bypass,4/1/2019,Large cladocera,121.260909
+2019,LBA2,Agriculture,Lower Bypass,4/1/2019,Ostracoda,20.2101515
+2019,LBA2,Agriculture,Lower Bypass,4/1/2019,Rare,35.36776513
+2019,LBA2,Agriculture,Lower Bypass,4/1/2019,Rotifera,50.52537876
+2019,LBA2,Agriculture,Lower Bypass,4/1/2019,Small cladocera,3511.513824
+2019,LBA2,Agriculture,Lower Bypass,4/1/2019,Terrestrial insect,35.36776513
+2019,SRC1,River channel,Sacramento River,4/1/2019,Aquatic insect,7.073553026
+2019,SRC1,River channel,Sacramento River,4/1/2019,Copepoda,209.0627894
+2019,SRC1,River channel,Sacramento River,4/1/2019,Large cladocera,14.14710605
+2019,SRC1,River channel,Sacramento River,4/1/2019,Ostracoda,2.357851009
+2019,SRC1,River channel,Sacramento River,4/1/2019,Rare,4.715702018
+2019,SRC1,River channel,Sacramento River,4/1/2019,Rotifera,35.36776513
+2019,SRC1,River channel,Sacramento River,4/1/2019,Small cladocera,63.66197724
+2019,SRC1,River channel,Sacramento River,4/1/2019,Terrestrial insect,7.073553026
+2019,SRC2,River channel,Sacramento River,4/1/2019,Copepoda,196.9984518
+2019,SRC2,River channel,Sacramento River,4/1/2019,Large cladocera,12.02504014
+2019,SRC2,River channel,Sacramento River,4/1/2019,Rare,2.829421211
+2019,SRC2,River channel,Sacramento River,4/1/2019,Rotifera,16.97652726
+2019,SRC2,River channel,Sacramento River,4/1/2019,Small cladocera,16.97652726
+2019,SRC3,River channel,Sacramento River,4/1/2019,Aquatic insect,10.25665189
+2019,SRC3,River channel,Sacramento River,4/1/2019,Copepoda,384.0349831
+2019,SRC3,River channel,Sacramento River,4/1/2019,Large cladocera,21.75117556
+2019,SRC3,River channel,Sacramento River,4/1/2019,Rare,5.128325944
+2019,SRC3,River channel,Sacramento River,4/1/2019,Rotifera,26.8795015
+2019,SRC3,River channel,Sacramento River,4/1/2019,Small cladocera,31.65414979
+2019,SRC3,River channel,Sacramento River,4/1/2019,Terrestrial insect,2.652582385
+2019,SRC4,River channel,Sacramento River,4/1/2019,Aquatic insect,11.78925504
+2019,SRC4,River channel,Sacramento River,4/1/2019,Copepoda,884.1941283
+2019,SRC4,River channel,Sacramento River,4/1/2019,Large cladocera,11.78925504
+2019,SRC4,River channel,Sacramento River,4/1/2019,Rotifera,58.94627522
+2019,SRC4,River channel,Sacramento River,4/1/2019,Small cladocera,1733.020491
+2019,UBA1,Agriculture,Upper Bypass,4/1/2019,Aquatic insect,35.36776513
+2019,UBA1,Agriculture,Upper Bypass,4/1/2019,Copepoda,1234.335003
+2019,UBA1,Agriculture,Upper Bypass,4/1/2019,Large cladocera,73.09338127
+2019,UBA1,Agriculture,Upper Bypass,4/1/2019,Rare,21.22065908
+2019,UBA1,Agriculture,Upper Bypass,4/1/2019,Rotifera,88.41941283
+2019,UBA1,Agriculture,Upper Bypass,4/1/2019,Small cladocera,5529.160616
+2019,UBA1,Agriculture,Upper Bypass,4/1/2019,Terrestrial insect,11.78925504
+2019,UBC1,Canal channel,Upper Bypass,4/1/2019,Copepoda,1520.813901
+2019,UBC1,Canal channel,Upper Bypass,4/1/2019,Large cladocera,247.5743559
+2019,UBC1,Canal channel,Upper Bypass,4/1/2019,Rotifera,477.4648293
+2019,UBC1,Canal channel,Upper Bypass,4/1/2019,Small cladocera,2192.801438
+2019,UBC1,Canal channel,Upper Bypass,4/1/2019,Terrestrial insect,17.68388257
+2019,UBW1,Wetland,Upper Bypass,4/1/2019,Aquatic insect,28.29421211
+2019,UBW1,Wetland,Upper Bypass,4/1/2019,Copepoda,604.28353
+2019,UBW1,Wetland,Upper Bypass,4/1/2019,Large cladocera,155.6181666
+2019,UBW1,Wetland,Upper Bypass,4/1/2019,Ostracoda,35.36776513
+2019,UBW1,Wetland,Upper Bypass,4/1/2019,Rare,85.89314389
+2019,UBW1,Wetland,Upper Bypass,4/1/2019,Rotifera,131.3659848
+2019,UBW1,Wetland,Upper Bypass,4/1/2019,Small cladocera,4703.912762
+2019,BSC1,Canal channel,Butte Sink,4/2/2019,Copepoda,559.3159429
+2019,BSC1,Canal channel,Butte Sink,4/2/2019,Large cladocera,56.98139938
+2019,BSC1,Canal channel,Butte Sink,4/2/2019,Rare,14.14710605
+2019,BSC1,Canal channel,Butte Sink,4/2/2019,Rotifera,15.71900673
+2019,BSC1,Canal channel,Butte Sink,4/2/2019,Small cladocera,2481.638187
+2019,BSW1,Wetland,Butte Sink,4/2/2019,Copepoda,24828.17112
+2019,BSW1,Wetland,Butte Sink,4/2/2019,Large cladocera,11671.36249
+2019,BSW1,Wetland,Butte Sink,4/2/2019,Rotifera,1273.239545
+2019,BSW1,Wetland,Butte Sink,4/2/2019,Small cladocera,32043.19521
+2019,BSW2,Wetland,Butte Sink,4/2/2019,Copepoda,28541.78646
+2019,BSW2,Wetland,Butte Sink,4/2/2019,Large cladocera,8488.263632
+2019,BSW2,Wetland,Butte Sink,4/2/2019,Rotifera,1273.239545
+2019,BSW2,Wetland,Butte Sink,4/2/2019,Small cladocera,38621.59952
+2019,BSC1,Canal channel,Butte Sink,4/8/2019,Copepoda,291.7840623
+2019,BSC1,Canal channel,Butte Sink,4/8/2019,Large cladocera,5.894627522
+2019,BSC1,Canal channel,Butte Sink,4/8/2019,Rare,23.57851009
+2019,BSC1,Canal channel,Butte Sink,4/8/2019,Rotifera,23.57851009
+2019,BSC1,Canal channel,Butte Sink,4/8/2019,Small cladocera,1143.557739
+2019,BSW1,Wetland,Butte Sink,4/8/2019,Copepoda,59842.2586
+2019,BSW1,Wetland,Butte Sink,4/8/2019,Large cladocera,5517.371361
+2019,BSW1,Wetland,Butte Sink,4/8/2019,Ostracoda,212.2065908
+2019,BSW1,Wetland,Butte Sink,4/8/2019,Small cladocera,86155.87586
+2019,BSW1,Wetland,Butte Sink,4/8/2019,Terrestrial insect,212.2065908
+2019,BSW2,Wetland,Butte Sink,4/8/2019,Copepoda,13369.01522
+2019,BSW2,Wetland,Butte Sink,4/8/2019,Large cladocera,4986.854884
+2019,BSW2,Wetland,Butte Sink,4/8/2019,Small cladocera,22069.48544
+2019,FRC1,River channel,Feather River,4/8/2019,Aquatic insect,7.073553026
+2019,FRC1,River channel,Feather River,4/8/2019,Copepoda,521.6745357
+2019,FRC1,River channel,Feather River,4/8/2019,Large cladocera,35.36776513
+2019,FRC1,River channel,Feather River,4/8/2019,Rare,17.68388257
+2019,FRC1,River channel,Feather River,4/8/2019,Rotifera,169.7652726
+2019,FRC1,River channel,Feather River,4/8/2019,Small cladocera,169.7652726
+2019,LBA1,Agriculture,Lower Bypass,4/8/2019,Copepoda,393.8682935
+2019,LBA1,Agriculture,Lower Bypass,4/8/2019,Large cladocera,3.536776513
+2019,LBA1,Agriculture,Lower Bypass,4/8/2019,Rare,45.97809467
+2019,LBA1,Agriculture,Lower Bypass,4/8/2019,Rotifera,28.93726238
+2019,LBA1,Agriculture,Lower Bypass,4/8/2019,Small cladocera,3626.482027
+2019,LBA2,Agriculture,Lower Bypass,4/8/2019,Copepoda,979.1818404
+2019,LBA2,Agriculture,Lower Bypass,4/8/2019,Large cladocera,495.1487118
+2019,LBA2,Agriculture,Lower Bypass,4/8/2019,Rare,55.57791664
+2019,LBA2,Agriculture,Lower Bypass,4/8/2019,Rotifera,56.58842421
+2019,LBA2,Agriculture,Lower Bypass,4/8/2019,Small cladocera,6901.766739
+2019,LBA2,Agriculture,Lower Bypass,4/8/2019,Terrestrial insect,14.14710605
+2019,SRC1,River channel,Sacramento River,4/8/2019,Aquatic insect,4.951487118
+2019,SRC1,River channel,Sacramento River,4/8/2019,Copepoda,366.4100468
+2019,SRC1,River channel,Sacramento River,4/8/2019,Large cladocera,15.56181666
+2019,SRC1,River channel,Sacramento River,4/8/2019,Rare,2.652582385
+2019,SRC1,River channel,Sacramento River,4/8/2019,Rotifera,11.31768484
+2019,SRC1,River channel,Sacramento River,4/8/2019,Small cladocera,23.34272499
+2019,SRC2,River channel,Sacramento River,4/8/2019,Aquatic insect,11.78925504
+2019,SRC2,River channel,Sacramento River,4/8/2019,Copepoda,308.8784821
+2019,SRC2,River channel,Sacramento River,4/8/2019,Large cladocera,11.78925504
+2019,SRC2,River channel,Sacramento River,4/8/2019,Ostracoda,2.357851009
+2019,SRC2,River channel,Sacramento River,4/8/2019,Rare,2.357851009
+2019,SRC2,River channel,Sacramento River,4/8/2019,Rotifera,30.65206311
+2019,SRC2,River channel,Sacramento River,4/8/2019,Small cladocera,18.86280807
+2019,SRC2,River channel,Sacramento River,4/8/2019,Terrestrial insect,2.357851009
+2019,SRC3,River channel,Sacramento River,4/8/2019,Aquatic insect,12.3787178
+2019,SRC3,River channel,Sacramento River,4/8/2019,Copepoda,419.1080168
+2019,SRC3,River channel,Sacramento River,4/8/2019,Large cladocera,12.3787178
+2019,SRC3,River channel,Sacramento River,4/8/2019,Ostracoda,3.536776513
+2019,SRC3,River channel,Sacramento River,4/8/2019,Rare,3.536776513
+2019,SRC3,River channel,Sacramento River,4/8/2019,Rotifera,22.98904734
+2019,SRC3,River channel,Sacramento River,4/8/2019,Small cladocera,107.8716837
+2019,SRC3,River channel,Sacramento River,4/8/2019,Terrestrial insect,7.073553026
+2019,SRC4,River channel,Sacramento River,4/8/2019,Aquatic insect,14.14710605
+2019,SRC4,River channel,Sacramento River,4/8/2019,Copepoda,431.4867346
+2019,SRC4,River channel,Sacramento River,4/8/2019,Large cladocera,99.02974237
+2019,SRC4,River channel,Sacramento River,4/8/2019,Rare,21.22065908
+2019,SRC4,River channel,Sacramento River,4/8/2019,Rotifera,106.1032954
+2019,SRC4,River channel,Sacramento River,4/8/2019,Small cladocera,1365.195734
+2019,SRC4,River channel,Sacramento River,4/8/2019,Terrestrial insect,7.073553026
+2019,UBA1,Agriculture,Upper Bypass,4/8/2019,Copepoda,1980.594847
+2019,UBA1,Agriculture,Upper Bypass,4/8/2019,Ostracoda,35.36776513
+2019,UBA1,Agriculture,Upper Bypass,4/8/2019,Rotifera,247.5743559
+2019,UBA1,Agriculture,Upper Bypass,4/8/2019,Small cladocera,5482.003595
+2019,UBA1,Agriculture,Upper Bypass,4/8/2019,Terrestrial insect,35.36776513
+2019,UBC1,Canal channel,Upper Bypass,4/8/2019,Aquatic insect,10.10507575
+2019,UBC1,Canal channel,Upper Bypass,4/8/2019,Copepoda,1500.603749
+2019,UBC1,Canal channel,Upper Bypass,4/8/2019,Large cladocera,434.5182573
+2019,UBC1,Canal channel,Upper Bypass,4/8/2019,Rare,10.10507575
+2019,UBC1,Canal channel,Upper Bypass,4/8/2019,Rotifera,70.73553026
+2019,UBC1,Canal channel,Upper Bypass,4/8/2019,Small cladocera,1313.659848
+2019,UBW1,Wetland,Upper Bypass,4/8/2019,Copepoda,1485.446136
+2019,UBW1,Wetland,Upper Bypass,4/8/2019,Large cladocera,165.0495706
+2019,UBW1,Wetland,Upper Bypass,4/8/2019,Rare,117.8925504
+2019,UBW1,Wetland,Upper Bypass,4/8/2019,Rotifera,188.6280807
+2019,UBW1,Wetland,Upper Bypass,4/8/2019,Small cladocera,4550.652447
+2020,SRC4,River channel,Sacramento River,1/8/2020,Aquatic insect,6.274643586
+2020,SRC4,River channel,Sacramento River,1/8/2020,Copepoda,334.6476579
+2020,SRC4,River channel,Sacramento River,1/8/2020,Large cladocera,66.92953158
+2020,SRC4,River channel,Sacramento River,1/8/2020,Ostracoda,2.091547862
+2020,SRC4,River channel,Sacramento River,1/8/2020,Rare,2.091547862
+2020,SRC4,River channel,Sacramento River,1/8/2020,Rotifera,60.654888
+2020,SRC4,River channel,Sacramento River,1/8/2020,Small cladocera,351.3800408
+2020,SRC4,River channel,Sacramento River,1/8/2020,Terrestrial insect,2.091547862
+2020,BSC1,Canal channel,Butte Sink,1/13/2020,Aquatic insect,52.47633541
+2020,BSC1,Canal channel,Butte Sink,1/13/2020,Copepoda,675.1955156
+2020,BSC1,Canal channel,Butte Sink,1/13/2020,Large cladocera,388.3248821
+2020,BSC1,Canal channel,Butte Sink,1/13/2020,Rotifera,129.4416274
+2020,BSC1,Canal channel,Butte Sink,1/13/2020,Small cladocera,934.0787704
+2020,BSW1,Wetland,Butte Sink,1/13/2020,Copepoda,10113.92181
+2020,BSW1,Wetland,Butte Sink,1/13/2020,Large cladocera,12534.34754
+2020,BSW1,Wetland,Butte Sink,1/13/2020,Small cladocera,43394.77564
+2020,BSW2,Wetland,Butte Sink,1/13/2020,Copepoda,7718.519277
+2020,BSW2,Wetland,Butte Sink,1/13/2020,Large cladocera,144633.1766
+2020,BSW2,Wetland,Butte Sink,1/13/2020,Rotifera,9262.223133
+2020,BSW2,Wetland,Butte Sink,1/13/2020,Small cladocera,4749.858017
+2020,FRC1,River channel,Feather River,1/13/2020,Aquatic insect,64.24709288
+2020,FRC1,River channel,Feather River,1/13/2020,Copepoda,12.46585384
+2020,FRC1,River channel,Feather River,1/13/2020,Large cladocera,4.79455917
+2020,FRC1,River channel,Feather River,1/13/2020,Rare,0.958911834
+2020,FRC1,River channel,Feather River,1/13/2020,Rotifera,2.876735502
+2020,FRC1,River channel,Feather River,1/13/2020,Small cladocera,46.02776803
+2020,FRC1,River channel,Feather River,1/13/2020,Terrestrial insect,3.835647336
+2020,LBC1,Canal channel,Lower Bypass,1/13/2020,Aquatic insect,119.6460447
+2020,LBC1,Canal channel,Lower Bypass,1/13/2020,Copepoda,1222.098886
+2020,LBC1,Canal channel,Lower Bypass,1/13/2020,Large cladocera,418.7611566
+2020,LBC1,Canal channel,Lower Bypass,1/13/2020,Rotifera,239.2920895
+2020,LBC1,Canal channel,Lower Bypass,1/13/2020,Small cladocera,623.8686619
+2020,LBC1,Canal channel,Lower Bypass,1/13/2020,Terrestrial insect,17.09229211
+2020,LBC2,Canal channel,Lower Bypass,1/13/2020,Aquatic insect,52.8792787
+2020,LBC2,Canal channel,Lower Bypass,1/13/2020,Copepoda,428.909705
+2020,LBC2,Canal channel,Lower Bypass,1/13/2020,Large cladocera,111.6340328
+2020,LBC2,Canal channel,Lower Bypass,1/13/2020,Rotifera,47.00380329
+2020,LBC2,Canal channel,Lower Bypass,1/13/2020,Small cladocera,699.181574
+2020,LBC2,Canal channel,Lower Bypass,1/13/2020,Terrestrial insect,5.875475411
+2020,LBW1,Wetland,Lower Bypass,1/13/2020,Aquatic insect,123.9855386
+2020,LBW1,Wetland,Lower Bypass,1/13/2020,Copepoda,1115.869847
+2020,LBW1,Wetland,Lower Bypass,1/13/2020,Large cladocera,1215.058278
+2020,LBW1,Wetland,Lower Bypass,1/13/2020,Rare,49.59421544
+2020,LBW1,Wetland,Lower Bypass,1/13/2020,Rotifera,74.39132316
+2020,LBW1,Wetland,Lower Bypass,1/13/2020,Small cladocera,2603.69631
+2020,SRC2,River channel,Sacramento River,1/13/2020,Aquatic insect,306.5441146
+2020,SRC2,River channel,Sacramento River,1/13/2020,Copepoda,62.56002339
+2020,SRC2,River channel,Sacramento River,1/13/2020,Large cladocera,53.17601989
+2020,SRC2,River channel,Sacramento River,1/13/2020,Rotifera,78.20002924
+2020,SRC2,River channel,Sacramento River,1/13/2020,Small cladocera,259.6240971
+2020,SRC2,River channel,Sacramento River,1/13/2020,Terrestrial insect,12.51200468
+2020,SRC3,River channel,Sacramento River,1/13/2020,Aquatic insect,548.0133345
+2020,SRC3,River channel,Sacramento River,1/13/2020,Copepoda,326.4760291
+2020,SRC3,River channel,Sacramento River,1/13/2020,Large cladocera,40.80950363
+2020,SRC3,River channel,Sacramento River,1/13/2020,Rare,11.65985818
+2020,SRC3,River channel,Sacramento River,1/13/2020,Rotifera,34.97957454
+2020,SRC3,River channel,Sacramento River,1/13/2020,Small cladocera,285.6665254
+2020,SRC4,River channel,Sacramento River,1/13/2020,Aquatic insect,275.6243963
+2020,SRC4,River channel,Sacramento River,1/13/2020,Copepoda,199.9627973
+2020,SRC4,River channel,Sacramento River,1/13/2020,Large cladocera,72.95939901
+2020,SRC4,River channel,Sacramento River,1/13/2020,Ostracoda,2.702199963
+2020,SRC4,River channel,Sacramento River,1/13/2020,Rotifera,45.93739938
+2020,SRC4,River channel,Sacramento River,1/13/2020,Small cladocera,305.3485959
+2020,SRC4,River channel,Sacramento River,1/13/2020,Terrestrial insect,2.702199963
+2020,UBC1,Canal channel,Upper Bypass,1/13/2020,Aquatic insect,99.9574551
+2020,UBC1,Canal channel,Upper Bypass,1/13/2020,Copepoda,666.383034
+2020,UBC1,Canal channel,Upper Bypass,1/13/2020,Large cladocera,832.9787925
+2020,UBC1,Canal channel,Upper Bypass,1/13/2020,Small cladocera,4298.170569
+2020,UBC2,Canal channel,Upper Bypass,1/13/2020,Aquatic insect,9.240698558
+2020,UBC2,Canal channel,Upper Bypass,1/13/2020,Copepoda,817.8018224
+2020,UBC2,Canal channel,Upper Bypass,1/13/2020,Large cladocera,452.7942294
+2020,UBC2,Canal channel,Upper Bypass,1/13/2020,Rotifera,619.1268034
+2020,UBC2,Canal channel,Upper Bypass,1/13/2020,Small cladocera,2652.080486
+2020,UBC2,Canal channel,Upper Bypass,1/13/2020,Terrestrial insect,9.240698558
+2020,UBW1,Wetland,Upper Bypass,1/13/2020,Aquatic insect,42.38668252
+2020,UBW1,Wetland,Upper Bypass,1/13/2020,Copepoda,169.5467301
+2020,UBW1,Wetland,Upper Bypass,1/13/2020,Large cladocera,21.19334126
+2020,UBW1,Wetland,Upper Bypass,1/13/2020,Rare,7.064447086
+2020,UBW1,Wetland,Upper Bypass,1/13/2020,Rotifera,317.9001189
+2020,UBW1,Wetland,Upper Bypass,1/13/2020,Small cladocera,1052.602616
+2020,BSC1,Canal channel,Butte Sink,1/21/2020,Aquatic insect,88.92611434
+2020,BSC1,Canal channel,Butte Sink,1/21/2020,Copepoda,413.2448843
+2020,BSC1,Canal channel,Butte Sink,1/21/2020,Large cladocera,512.6328944
+2020,BSC1,Canal channel,Butte Sink,1/21/2020,Rotifera,52.30947902
+2020,BSC1,Canal channel,Butte Sink,1/21/2020,Small cladocera,591.0971129
+2020,BSW1,Wetland,Butte Sink,1/21/2020,Copepoda,22272.57141
+2020,BSW1,Wetland,Butte Sink,1/21/2020,Large cladocera,30371.68828
+2020,BSW1,Wetland,Butte Sink,1/21/2020,Rotifera,759.292207
+2020,BSW1,Wetland,Butte Sink,1/21/2020,Small cladocera,17969.91557
+2020,BSW2,Wetland,Butte Sink,1/21/2020,Copepoda,6020.045469
+2020,BSW2,Wetland,Butte Sink,1/21/2020,Large cladocera,97026.52594
+2020,BSW2,Wetland,Butte Sink,1/21/2020,Small cladocera,7971.370552
+2020,FRC1,River channel,Feather River,1/21/2020,Aquatic insect,29.84983797
+2020,FRC1,River channel,Feather River,1/21/2020,Copepoda,2.713621633
+2020,FRC1,River channel,Feather River,1/21/2020,Large cladocera,16.2817298
+2020,FRC1,River channel,Feather River,1/21/2020,Small cladocera,14.47264871
+2020,LBC1,Canal channel,Lower Bypass,1/21/2020,Aquatic insect,91.61896917
+2020,LBC1,Canal channel,Lower Bypass,1/21/2020,Copepoda,525.2820899
+2020,LBC1,Canal channel,Lower Bypass,1/21/2020,Large cladocera,238.2093198
+2020,LBC1,Canal channel,Lower Bypass,1/21/2020,Ostracoda,6.107931278
+2020,LBC1,Canal channel,Lower Bypass,1/21/2020,Rotifera,67.18724406
+2020,LBC1,Canal channel,Lower Bypass,1/21/2020,Small cladocera,702.412097
+2020,LBC2,Canal channel,Lower Bypass,1/21/2020,Aquatic insect,92.35835033
+2020,LBC2,Canal channel,Lower Bypass,1/21/2020,Copepoda,562.5463156
+2020,LBC2,Canal channel,Lower Bypass,1/21/2020,Large cladocera,167.9242733
+2020,LBC2,Canal channel,Lower Bypass,1/21/2020,Rotifera,8.396213666
+2020,LBC2,Canal channel,Lower Bypass,1/21/2020,Small cladocera,1066.319136
+2020,LBC2,Canal channel,Lower Bypass,1/21/2020,Terrestrial insect,16.79242733
+2020,LBW1,Wetland,Lower Bypass,1/21/2020,Copepoda,654.0650446
+2020,LBW1,Wetland,Lower Bypass,1/21/2020,Large cladocera,3062.938745
+2020,LBW1,Wetland,Lower Bypass,1/21/2020,Small cladocera,1308.130089
+2020,SRC2,River channel,Sacramento River,1/21/2020,Aquatic insect,412.4317583
+2020,SRC2,River channel,Sacramento River,1/21/2020,Copepoda,65.33572409
+2020,SRC2,River channel,Sacramento River,1/21/2020,Large cladocera,65.33572409
+2020,SRC2,River channel,Sacramento River,1/21/2020,Rotifera,44.91831031
+2020,SRC2,River channel,Sacramento River,1/21/2020,Small cladocera,232.7585171
+2020,SRC2,River channel,Sacramento River,1/21/2020,Terrestrial insect,4.083482756
+2020,SRC3,River channel,Sacramento River,1/21/2020,Aquatic insect,428.6170568
+2020,SRC3,River channel,Sacramento River,1/21/2020,Copepoda,345.7751047
+2020,SRC3,River channel,Sacramento River,1/21/2020,Large cladocera,43.22188808
+2020,SRC3,River channel,Sacramento River,1/21/2020,Rotifera,50.4255361
+2020,SRC3,River channel,Sacramento River,1/21/2020,Small cladocera,172.8875523
+2020,SRC4,River channel,Sacramento River,1/21/2020,Aquatic insect,57.95451015
+2020,SRC4,River channel,Sacramento River,1/21/2020,Copepoda,214.2969096
+2020,SRC4,River channel,Sacramento River,1/21/2020,Large cladocera,64.69340668
+2020,SRC4,River channel,Sacramento River,1/21/2020,Ostracoda,1.347779306
+2020,SRC4,River channel,Sacramento River,1/21/2020,Rotifera,14.82557236
+2020,SRC4,River channel,Sacramento River,1/21/2020,Small cladocera,97.04011002
+2020,UBC1,Canal channel,Upper Bypass,1/21/2020,Aquatic insect,17.78522287
+2020,UBC1,Canal channel,Upper Bypass,1/21/2020,Copepoda,569.1271317
+2020,UBC1,Canal channel,Upper Bypass,1/21/2020,Large cladocera,1405.032606
+2020,UBC1,Canal channel,Upper Bypass,1/21/2020,Rotifera,71.14089147
+2020,UBC1,Canal channel,Upper Bypass,1/21/2020,Small cladocera,3859.393362
+2020,UBC3,Canal channel,Upper Bypass,1/21/2020,Copepoda,92.85758465
+2020,UBC3,Canal channel,Upper Bypass,1/21/2020,Large cladocera,56.91271317
+2020,UBC3,Canal channel,Upper Bypass,1/21/2020,Rotifera,92.85758465
+2020,UBC3,Canal channel,Upper Bypass,1/21/2020,Small cladocera,966.018421
+2020,UBW1,Wetland,Upper Bypass,1/21/2020,Aquatic insect,174.1827115
+2020,UBW1,Wetland,Upper Bypass,1/21/2020,Copepoda,450.2458768
+2020,UBW1,Wetland,Upper Bypass,1/21/2020,Large cladocera,374.6571529
+2020,UBW1,Wetland,Upper Bypass,1/21/2020,Rare,13.14586502
+2020,UBW1,Wetland,Upper Bypass,1/21/2020,Rotifera,13.14586502
+2020,UBW1,Wetland,Upper Bypass,1/21/2020,Small cladocera,151.1774477
+2020,UBW1,Wetland,Upper Bypass,1/21/2020,Terrestrial insect,13.14586502
+2020,BSC1,Canal channel,Butte Sink,1/27/2020,Aquatic insect,956.3242941
+2020,BSC1,Canal channel,Butte Sink,1/27/2020,Copepoda,654.5714829
+2020,BSC1,Canal channel,Butte Sink,1/27/2020,Large cladocera,287.8257584
+2020,BSC1,Canal channel,Butte Sink,1/27/2020,Ostracoda,9.284701885
+2020,BSC1,Canal channel,Butte Sink,1/27/2020,Rotifera,37.13880754
+2020,BSC1,Canal channel,Butte Sink,1/27/2020,Small cladocera,947.0395922
+2020,BSC1,Canal channel,Butte Sink,1/27/2020,Terrestrial insect,9.284701885
+2020,BSW1,Wetland,Butte Sink,1/27/2020,Copepoda,19228.82862
+2020,BSW1,Wetland,Butte Sink,1/27/2020,Large cladocera,86914.30536
+2020,BSW1,Wetland,Butte Sink,1/27/2020,Rotifera,256.3843816
+2020,BSW1,Wetland,Butte Sink,1/27/2020,Small cladocera,71018.4737
+2020,BSW1,Wetland,Butte Sink,1/27/2020,Terrestrial insect,256.3843816
+2020,FRC1,River channel,Feather River,1/27/2020,Aquatic insect,40.56815711
+2020,FRC1,River channel,Feather River,1/27/2020,Copepoda,18.86891028
+2020,FRC1,River channel,Feather River,1/27/2020,Large cladocera,2.830336542
+2020,FRC1,River channel,Feather River,1/27/2020,Rare,1.886891028
+2020,FRC1,River channel,Feather River,1/27/2020,Rotifera,0.943445514
+2020,FRC1,River channel,Feather River,1/27/2020,Small cladocera,34.90748402
+2020,FRC1,River channel,Feather River,1/27/2020,Terrestrial insect,0.943445514
+2020,LBC1,Canal channel,Lower Bypass,1/27/2020,Aquatic insect,141.3720529
+2020,LBC1,Canal channel,Lower Bypass,1/27/2020,Copepoda,942.4803524
+2020,LBC1,Canal channel,Lower Bypass,1/27/2020,Large cladocera,215.4240806
+2020,LBC1,Canal channel,Lower Bypass,1/27/2020,Ostracoda,6.732002517
+2020,LBC1,Canal channel,Lower Bypass,1/27/2020,Rare,6.732002517
+2020,LBC1,Canal channel,Lower Bypass,1/27/2020,Rotifera,74.05202769
+2020,LBC1,Canal channel,Lower Bypass,1/27/2020,Small cladocera,484.7041813
+2020,LBC1,Canal channel,Lower Bypass,1/27/2020,Terrestrial insect,13.46400503
+2020,LBC2,Canal channel,Lower Bypass,1/27/2020,Aquatic insect,144.099251
+2020,LBC2,Canal channel,Lower Bypass,1/27/2020,Copepoda,1268.073409
+2020,LBC2,Canal channel,Lower Bypass,1/27/2020,Large cladocera,67.24631712
+2020,LBC2,Canal channel,Lower Bypass,1/27/2020,Ostracoda,9.606616731
+2020,LBC2,Canal channel,Lower Bypass,1/27/2020,Rotifera,57.63970039
+2020,LBC2,Canal channel,Lower Bypass,1/27/2020,Small cladocera,999.08814
+2020,LBC2,Canal channel,Lower Bypass,1/27/2020,Terrestrial insect,19.21323346
+2020,LBW1,Wetland,Lower Bypass,1/27/2020,Copepoda,9681.190129
+2020,LBW1,Wetland,Lower Bypass,1/27/2020,Large cladocera,9993.486585
+2020,LBW1,Wetland,Lower Bypass,1/27/2020,Rotifera,356.9102352
+2020,LBW1,Wetland,Lower Bypass,1/27/2020,Small cladocera,5889.01888
+2020,SRC2,River channel,Sacramento River,1/27/2020,Aquatic insect,618.88341
+2020,SRC2,River channel,Sacramento River,1/27/2020,Copepoda,90.09062298
+2020,SRC2,River channel,Sacramento River,1/27/2020,Large cladocera,23.50190165
+2020,SRC2,River channel,Sacramento River,1/27/2020,Ostracoda,3.916983608
+2020,SRC2,River channel,Sacramento River,1/27/2020,Rotifera,19.58491804
+2020,SRC2,River channel,Sacramento River,1/27/2020,Small cladocera,215.4340984
+2020,SRC2,River channel,Sacramento River,1/27/2020,Terrestrial insect,15.66793443
+2020,SRC3,River channel,Sacramento River,1/27/2020,Aquatic insect,1397.988687
+2020,SRC3,River channel,Sacramento River,1/27/2020,Copepoda,419.396606
+2020,SRC3,River channel,Sacramento River,1/27/2020,Large cladocera,79.88506781
+2020,SRC3,River channel,Sacramento River,1/27/2020,Rotifera,19.97126695
+2020,SRC3,River channel,Sacramento River,1/27/2020,Small cladocera,309.5546378
+2020,SRC3,River channel,Sacramento River,1/27/2020,Terrestrial insect,19.97126695
+2020,SRC4,River channel,Sacramento River,1/27/2020,Aquatic insect,373.937697
+2020,SRC4,River channel,Sacramento River,1/27/2020,Copepoda,204.3164736
+2020,SRC4,River channel,Sacramento River,1/27/2020,Large cladocera,77.10055607
+2020,SRC4,River channel,Sacramento River,1/27/2020,Ostracoda,7.710055607
+2020,SRC4,River channel,Sacramento River,1/27/2020,Small cladocera,265.9969185
+2020,UBC1,Canal channel,Upper Bypass,1/27/2020,Aquatic insect,269.2395953
+2020,UBC1,Canal channel,Upper Bypass,1/27/2020,Copepoda,847.3128439
+2020,UBC1,Canal channel,Upper Bypass,1/27/2020,Large cladocera,760.205916
+2020,UBC1,Canal channel,Upper Bypass,1/27/2020,Ostracoda,15.83762325
+2020,UBC1,Canal channel,Upper Bypass,1/27/2020,Rotifera,95.02573951
+2020,UBC1,Canal channel,Upper Bypass,1/27/2020,Small cladocera,2534.01972
+2020,UBC2,Canal channel,Upper Bypass,1/27/2020,Aquatic insect,127.072351
+2020,UBC2,Canal channel,Upper Bypass,1/27/2020,Copepoda,580.9021758
+2020,UBC2,Canal channel,Upper Bypass,1/27/2020,Large cladocera,471.9830179
+2020,UBC2,Canal channel,Upper Bypass,1/27/2020,Ostracoda,36.30638599
+2020,UBC2,Canal channel,Upper Bypass,1/27/2020,Rotifera,726.1277198
+2020,UBC2,Canal channel,Upper Bypass,1/27/2020,Small cladocera,2650.366177
+2020,UBC3,Canal channel,Upper Bypass,1/27/2020,Aquatic insect,24.7504747
+2020,UBC3,Canal channel,Upper Bypass,1/27/2020,Copepoda,358.8818831
+2020,UBC3,Canal channel,Upper Bypass,1/27/2020,Large cladocera,99.0018988
+2020,UBC3,Canal channel,Upper Bypass,1/27/2020,Rotifera,173.2533229
+2020,UBC3,Canal channel,Upper Bypass,1/27/2020,Small cladocera,3823.948341
+2020,UBC3,Canal channel,Upper Bypass,1/27/2020,Terrestrial insect,24.7504747
+2020,UBW1,Wetland,Upper Bypass,1/27/2020,Aquatic insect,43.9434555
+2020,UBW1,Wetland,Upper Bypass,1/27/2020,Copepoda,307.6041885
+2020,UBW1,Wetland,Upper Bypass,1/27/2020,Large cladocera,3932.939267
+2020,UBW1,Wetland,Upper Bypass,1/27/2020,Small cladocera,483.3780105
+2020,BSC1,Canal channel,Butte Sink,2/3/2020,Aquatic insect,210.5770387
+2020,BSC1,Canal channel,Butte Sink,2/3/2020,Copepoda,962.6378914
+2020,BSC1,Canal channel,Butte Sink,2/3/2020,Large cladocera,441.2090336
+2020,BSC1,Canal channel,Butte Sink,2/3/2020,Rotifera,80.21982428
+2020,BSC1,Canal channel,Butte Sink,2/3/2020,Small cladocera,1744.781178
+2020,BSW1,Wetland,Butte Sink,2/3/2020,Copepoda,28113.12012
+2020,BSW1,Wetland,Butte Sink,2/3/2020,Large cladocera,29741.2931
+2020,BSW1,Wetland,Butte Sink,2/3/2020,Rotifera,217.0897307
+2020,BSW1,Wetland,Butte Sink,2/3/2020,Small cladocera,15956.0952
+2020,BSW2,Wetland,Butte Sink,2/3/2020,Aquatic insect,104.660556
+2020,BSW2,Wetland,Butte Sink,2/3/2020,Copepoda,21769.39566
+2020,BSW2,Wetland,Butte Sink,2/3/2020,Large cladocera,18106.27619
+2020,BSW2,Wetland,Butte Sink,2/3/2020,Rotifera,3767.780017
+2020,BSW2,Wetland,Butte Sink,2/3/2020,Small cladocera,14652.47785
+2020,FRC1,River channel,Feather River,2/3/2020,Aquatic insect,22.24405339
+2020,FRC1,River channel,Feather River,2/3/2020,Copepoda,73.08760399
+2020,FRC1,River channel,Feather River,2/3/2020,Large cladocera,9.533165738
+2020,FRC1,River channel,Feather River,2/3/2020,Rotifera,10.59240638
+2020,FRC1,River channel,Feather River,2/3/2020,Small cladocera,41.31038486
+2020,LBC1,Canal channel,Lower Bypass,2/3/2020,Aquatic insect,116.7513824
+2020,LBC1,Canal channel,Lower Bypass,2/3/2020,Copepoda,1496.540447
+2020,LBC1,Canal channel,Lower Bypass,2/3/2020,Large cladocera,275.9578129
+2020,LBC1,Canal channel,Lower Bypass,2/3/2020,Ostracoda,10.61376203
+2020,LBC1,Canal channel,Lower Bypass,2/3/2020,Rare,10.61376203
+2020,LBC1,Canal channel,Lower Bypass,2/3/2020,Rotifera,201.6614786
+2020,LBC1,Canal channel,Lower Bypass,2/3/2020,Small cladocera,1432.857875
+2020,LBC2,Canal channel,Lower Bypass,2/3/2020,Aquatic insect,41.19269146
+2020,LBC2,Canal channel,Lower Bypass,2/3/2020,Copepoda,426.6385901
+2020,LBC2,Canal channel,Lower Bypass,2/3/2020,Large cladocera,223.6174679
+2020,LBC2,Canal channel,Lower Bypass,2/3/2020,Ostracoda,5.884670209
+2020,LBC2,Canal channel,Lower Bypass,2/3/2020,Rotifera,70.6160425
+2020,LBC2,Canal channel,Lower Bypass,2/3/2020,Small cladocera,870.9311909
+2020,LBC2,Canal channel,Lower Bypass,2/3/2020,Terrestrial insect,5.884670209
+2020,LBW1,Wetland,Lower Bypass,2/3/2020,Copepoda,5559.415355
+2020,LBW1,Wetland,Lower Bypass,2/3/2020,Large cladocera,8471.490064
+2020,LBW1,Wetland,Lower Bypass,2/3/2020,Small cladocera,8093.298544
+2020,SRC1,River channel,Sacramento River,2/3/2020,Aquatic insect,359.9715454
+2020,SRC1,River channel,Sacramento River,2/3/2020,Copepoda,72.6258381
+2020,SRC1,River channel,Sacramento River,2/3/2020,Large cladocera,2.105096756
+2020,SRC1,River channel,Sacramento River,2/3/2020,Rotifera,39.99683837
+2020,SRC1,River channel,Sacramento River,2/3/2020,Small cladocera,44.20703189
+2020,SRC1,River channel,Sacramento River,2/3/2020,Terrestrial insect,12.63058054
+2020,SRC2,River channel,Sacramento River,2/3/2020,Aquatic insect,1200.783701
+2020,SRC2,River channel,Sacramento River,2/3/2020,Copepoda,451.7800063
+2020,SRC2,River channel,Sacramento River,2/3/2020,Large cladocera,71.33368521
+2020,SRC2,River channel,Sacramento River,2/3/2020,Rotifera,166.4452655
+2020,SRC2,River channel,Sacramento River,2/3/2020,Small cladocera,618.2252718
+2020,SRC3,River channel,Sacramento River,2/3/2020,Aquatic insect,1343.668932
+2020,SRC3,River channel,Sacramento River,2/3/2020,Copepoda,815.3888389
+2020,SRC3,River channel,Sacramento River,2/3/2020,Large cladocera,34.45304953
+2020,SRC3,River channel,Sacramento River,2/3/2020,Rotifera,103.3591486
+2020,SRC3,River channel,Sacramento River,2/3/2020,Small cladocera,367.499195
+2020,SRC3,River channel,Sacramento River,2/3/2020,Terrestrial insect,45.93739938
+2020,SRC4,River channel,Sacramento River,2/3/2020,Aquatic insect,446.2987383
+2020,SRC4,River channel,Sacramento River,2/3/2020,Copepoda,346.593701
+2020,SRC4,River channel,Sacramento River,2/3/2020,Large cladocera,90.20931945
+2020,SRC4,River channel,Sacramento River,2/3/2020,Rotifera,33.23501243
+2020,SRC4,River channel,Sacramento River,2/3/2020,Small cladocera,379.8287135
+2020,UBC1,Canal channel,Upper Bypass,2/3/2020,Aquatic insect,61.64433219
+2020,UBC1,Canal channel,Upper Bypass,2/3/2020,Copepoda,1582.204526
+2020,UBC1,Canal channel,Upper Bypass,2/3/2020,Large cladocera,780.8282077
+2020,UBC1,Canal channel,Upper Bypass,2/3/2020,Rotifera,123.2886644
+2020,UBC1,Canal channel,Upper Bypass,2/3/2020,Small cladocera,3369.890159
+2020,UBC2,Canal channel,Upper Bypass,2/3/2020,Aquatic insect,162.1486438
+2020,UBC2,Canal channel,Upper Bypass,2/3/2020,Copepoda,1162.065281
+2020,UBC2,Canal channel,Upper Bypass,2/3/2020,Large cladocera,378.3468355
+2020,UBC2,Canal channel,Upper Bypass,2/3/2020,Rotifera,351.3220616
+2020,UBC2,Canal channel,Upper Bypass,2/3/2020,Small cladocera,2972.725136
+2020,UBC2,Canal channel,Upper Bypass,2/3/2020,Terrestrial insect,27.02477397
+2020,UBC3,Canal channel,Upper Bypass,2/3/2020,Aquatic insect,60.32573684
+2020,UBC3,Canal channel,Upper Bypass,2/3/2020,Copepoda,603.2573684
+2020,UBC3,Canal channel,Upper Bypass,2/3/2020,Large cladocera,60.32573684
+2020,UBC3,Canal channel,Upper Bypass,2/3/2020,Ostracoda,10.05428947
+2020,UBC3,Canal channel,Upper Bypass,2/3/2020,Rotifera,40.2171579
+2020,UBC3,Canal channel,Upper Bypass,2/3/2020,Small cladocera,3227.426921
+2020,UBW1,Wetland,Upper Bypass,2/3/2020,Aquatic insect,30.53611351
+2020,UBW1,Wetland,Upper Bypass,2/3/2020,Copepoda,259.5569648
+2020,UBW1,Wetland,Upper Bypass,2/3/2020,Large cladocera,4824.705934
+2020,UBW1,Wetland,Upper Bypass,2/3/2020,Ostracoda,30.53611351
+2020,UBW1,Wetland,Upper Bypass,2/3/2020,Rotifera,91.60834052
+2020,UBW1,Wetland,Upper Bypass,2/3/2020,Small cladocera,1526.805675
+2020,SRC2,River channel,Sacramento River,2/11/2020,Aquatic insect,505.6691611
+2020,SRC2,River channel,Sacramento River,2/11/2020,Copepoda,120.7228177
+2020,SRC2,River channel,Sacramento River,2/11/2020,Large cladocera,86.55598252
+2020,SRC2,River channel,Sacramento River,2/11/2020,Rotifera,18.22231211
+2020,SRC2,River channel,Sacramento River,2/11/2020,Small cladocera,268.7791036
+2020,SRC2,River channel,Sacramento River,2/11/2020,Terrestrial insect,13.66673408
+2020,BSC1,Canal channel,Butte Sink,2/12/2020,Aquatic insect,104.4528962
+2020,BSC1,Canal channel,Butte Sink,2/12/2020,Copepoda,1005.359126
+2020,BSC1,Canal channel,Butte Sink,2/12/2020,Large cladocera,1044.528962
+2020,BSC1,Canal channel,Butte Sink,2/12/2020,Ostracoda,26.11322405
+2020,BSC1,Canal channel,Butte Sink,2/12/2020,Rotifera,156.6793443
+2020,BSC1,Canal channel,Butte Sink,2/12/2020,Small cladocera,5797.135739
+2020,BSW1,Wetland,Butte Sink,2/12/2020,Copepoda,18911.04474
+2020,BSW1,Wetland,Butte Sink,2/12/2020,Large cladocera,79221.94419
+2020,BSW1,Wetland,Butte Sink,2/12/2020,Small cladocera,44466.51061
+2020,BSW2,Wetland,Butte Sink,2/12/2020,Copepoda,10918.18248
+2020,BSW2,Wetland,Butte Sink,2/12/2020,Large cladocera,34531.92597
+2020,BSW2,Wetland,Butte Sink,2/12/2020,Rotifera,634.7780509
+2020,BSW2,Wetland,Butte Sink,2/12/2020,Small cladocera,6601.691729
+2020,FRC1,River channel,Feather River,2/12/2020,Aquatic insect,33.56787943
+2020,FRC1,River channel,Feather River,2/12/2020,Copepoda,108.0721972
+2020,FRC1,River channel,Feather River,2/12/2020,Large cladocera,56.49228489
+2020,FRC1,River channel,Feather River,2/12/2020,Small cladocera,67.13575885
+2020,FRC1,River channel,Feather River,2/12/2020,Terrestrial insect,7.368558899
+2020,LBC1,Canal channel,Lower Bypass,2/12/2020,Copepoda,12106.34543
+2020,LBC1,Canal channel,Lower Bypass,2/12/2020,Large cladocera,6878.60536
+2020,LBC1,Canal channel,Lower Bypass,2/12/2020,Rotifera,733.717905
+2020,LBC1,Canal channel,Lower Bypass,2/12/2020,Small cladocera,15224.64653
+2020,LBC2,Canal channel,Lower Bypass,2/12/2020,Aquatic insect,110.5971842
+2020,LBC2,Canal channel,Lower Bypass,2/12/2020,Copepoda,3019.303129
+2020,LBC2,Canal channel,Lower Bypass,2/12/2020,Large cladocera,1327.166211
+2020,LBC2,Canal channel,Lower Bypass,2/12/2020,Rotifera,66.35831053
+2020,LBC2,Canal channel,Lower Bypass,2/12/2020,Small cladocera,2831.287916
+2020,LBW1,Wetland,Lower Bypass,2/12/2020,Copepoda,824.5185428
+2020,LBW1,Wetland,Lower Bypass,2/12/2020,Large cladocera,11805.60641
+2020,LBW1,Wetland,Lower Bypass,2/12/2020,Small cladocera,1049.387236
+2020,SRC1,River channel,Sacramento River,2/12/2020,Aquatic insect,180.0145658
+2020,SRC1,River channel,Sacramento River,2/12/2020,Copepoda,44.61899494
+2020,SRC1,River channel,Sacramento River,2/12/2020,Large cladocera,16.92444636
+2020,SRC1,River channel,Sacramento River,2/12/2020,Rotifera,10.77010223
+2020,SRC1,River channel,Sacramento River,2/12/2020,Small cladocera,47.69616701
+2020,SRC1,River channel,Sacramento River,2/12/2020,Terrestrial insect,7.692930162
+2020,SRC2,River channel,Sacramento River,2/12/2020,Aquatic insect,69.12727417
+2020,SRC2,River channel,Sacramento River,2/12/2020,Copepoda,190.100004
+2020,SRC2,River channel,Sacramento River,2/12/2020,Large cladocera,126.733336
+2020,SRC2,River channel,Sacramento River,2/12/2020,Rotifera,26.88282884
+2020,SRC2,River channel,Sacramento River,2/12/2020,Small cladocera,357.1575832
+2020,SRC3,River channel,Sacramento River,2/12/2020,Aquatic insect,318.8738015
+2020,SRC3,River channel,Sacramento River,2/12/2020,Copepoda,448.2282682
+2020,SRC3,River channel,Sacramento River,2/12/2020,Large cladocera,309.8490713
+2020,SRC3,River channel,Sacramento River,2/12/2020,Rotifera,57.1566248
+2020,SRC3,River channel,Sacramento River,2/12/2020,Small cladocera,595.6321953
+2020,SRC3,River channel,Sacramento River,2/12/2020,Terrestrial insect,3.008243411
+2020,SRC4,River channel,Sacramento River,2/12/2020,Aquatic insect,20.17021444
+2020,SRC4,River channel,Sacramento River,2/12/2020,Copepoda,1095.914985
+2020,SRC4,River channel,Sacramento River,2/12/2020,Large cladocera,416.8510984
+2020,SRC4,River channel,Sacramento River,2/12/2020,Ostracoda,6.723404813
+2020,SRC4,River channel,Sacramento River,2/12/2020,Rotifera,168.0851203
+2020,SRC4,River channel,Sacramento River,2/12/2020,Small cladocera,618.5532428
+2020,UBC1,Canal channel,Upper Bypass,2/12/2020,Copepoda,1154.09001
+2020,UBC1,Canal channel,Upper Bypass,2/12/2020,Large cladocera,1265.060203
+2020,UBC1,Canal channel,Upper Bypass,2/12/2020,Small cladocera,3506.658107
+2020,UBC2,Canal channel,Upper Bypass,2/12/2020,Aquatic insect,63.27435058
+2020,UBC2,Canal channel,Upper Bypass,2/12/2020,Copepoda,1075.66396
+2020,UBC2,Canal channel,Upper Bypass,2/12/2020,Large cladocera,253.0974023
+2020,UBC2,Canal channel,Upper Bypass,2/12/2020,Rotifera,63.27435058
+2020,UBC2,Canal channel,Upper Bypass,2/12/2020,Small cladocera,2868.437226
+2020,UBC3,Canal channel,Upper Bypass,2/12/2020,Aquatic insect,15.12766083
+2020,UBC3,Canal channel,Upper Bypass,2/12/2020,Copepoda,688.3085677
+2020,UBC3,Canal channel,Upper Bypass,2/12/2020,Large cladocera,52.9468129
+2020,UBC3,Canal channel,Upper Bypass,2/12/2020,Ostracoda,7.563830415
+2020,UBC3,Canal channel,Upper Bypass,2/12/2020,Rotifera,22.69149124
+2020,UBC3,Canal channel,Upper Bypass,2/12/2020,Small cladocera,2480.936376
+2020,UBC3,Canal channel,Upper Bypass,2/12/2020,Terrestrial insect,15.12766083
+2020,UBW1,Wetland,Upper Bypass,2/12/2020,Aquatic insect,21.43495916
+2020,UBW1,Wetland,Upper Bypass,2/12/2020,Copepoda,157.7000566
+2020,UBW1,Wetland,Upper Bypass,2/12/2020,Large cladocera,91.86411067
+2020,UBW1,Wetland,Upper Bypass,2/12/2020,Ostracoda,3.062137022
+2020,UBW1,Wetland,Upper Bypass,2/12/2020,Small cladocera,520.5632938
+2020,UBW1,Wetland,Upper Bypass,2/12/2020,Terrestrial insect,12.24854809
+2020,BSC1,Canal channel,Butte Sink,2/19/2020,Aquatic insect,104.1223491
+2020,BSC1,Canal channel,Butte Sink,2/19/2020,Copepoda,562.2606849
+2020,BSC1,Canal channel,Butte Sink,2/19/2020,Large cladocera,624.7340944
+2020,BSC1,Canal channel,Butte Sink,2/19/2020,Rotifera,41.64893963
+2020,BSC1,Canal channel,Butte Sink,2/19/2020,Small cladocera,6518.059051
+2020,BSC1,Canal channel,Butte Sink,2/19/2020,Terrestrial insect,104.1223491
+2020,BSW1,Wetland,Butte Sink,2/19/2020,Copepoda,12386.88463
+2020,BSW1,Wetland,Butte Sink,2/19/2020,Large cladocera,22868.09471
+2020,BSW1,Wetland,Butte Sink,2/19/2020,Rotifera,952.8372794
+2020,BSW1,Wetland,Butte Sink,2/19/2020,Small cladocera,14888.08249
+2020,BSW2,Wetland,Butte Sink,2/19/2020,Copepoda,26112.89193
+2020,BSW2,Wetland,Butte Sink,2/19/2020,Large cladocera,29125.91792
+2020,BSW2,Wetland,Butte Sink,2/19/2020,Rotifera,2008.683994
+2020,BSW2,Wetland,Butte Sink,2/19/2020,Small cladocera,44442.13338
+2020,FRC1,River channel,Feather River,2/19/2020,Aquatic insect,41.47216599
+2020,FRC1,River channel,Feather River,2/19/2020,Copepoda,29.62297571
+2020,FRC1,River channel,Feather River,2/19/2020,Large cladocera,8.463707345
+2020,FRC1,River channel,Feather River,2/19/2020,Rotifera,3.385482938
+2020,FRC1,River channel,Feather River,2/19/2020,Small cladocera,56.70683921
+2020,LBC1,Canal channel,Lower Bypass,2/19/2020,Copepoda,21487.45293
+2020,LBC1,Canal channel,Lower Bypass,2/19/2020,Large cladocera,179.0621078
+2020,LBC1,Canal channel,Lower Bypass,2/19/2020,Ostracoda,89.53105389
+2020,LBC1,Canal channel,Lower Bypass,2/19/2020,Rotifera,3670.773209
+2020,LBC1,Canal channel,Lower Bypass,2/19/2020,Small cladocera,4118.428479
+2020,LBC2,Canal channel,Lower Bypass,2/19/2020,Aquatic insect,90.9227283
+2020,LBC2,Canal channel,Lower Bypass,2/19/2020,Copepoda,818.3045547
+2020,LBC2,Canal channel,Lower Bypass,2/19/2020,Large cladocera,116.9006507
+2020,LBC2,Canal channel,Lower Bypass,2/19/2020,Ostracoda,12.98896119
+2020,LBC2,Canal channel,Lower Bypass,2/19/2020,Rotifera,38.96688356
+2020,LBC2,Canal channel,Lower Bypass,2/19/2020,Small cladocera,1571.664303
+2020,LBW1,Wetland,Lower Bypass,2/19/2020,Copepoda,20185.94202
+2020,LBW1,Wetland,Lower Bypass,2/19/2020,Large cladocera,18662.4747
+2020,LBW1,Wetland,Lower Bypass,2/19/2020,Rotifera,634.7780509
+2020,LBW1,Wetland,Lower Bypass,2/19/2020,Small cladocera,4570.401966
+2020,SRC1,River channel,Sacramento River,2/19/2020,Aquatic insect,98.23569989
+2020,SRC1,River channel,Sacramento River,2/19/2020,Copepoda,3.358485466
+2020,SRC1,River channel,Sacramento River,2/19/2020,Large cladocera,3.358485466
+2020,SRC1,River channel,Sacramento River,2/19/2020,Small cladocera,9.235835033
+2020,SRC1,River channel,Sacramento River,2/19/2020,Terrestrial insect,2.5188641
+2020,SRC3,River channel,Sacramento River,2/19/2020,Aquatic insect,409.9168892
+2020,SRC3,River channel,Sacramento River,2/19/2020,Copepoda,688.6603738
+2020,SRC3,River channel,Sacramento River,2/19/2020,Large cladocera,437.2446818
+2020,SRC3,River channel,Sacramento River,2/19/2020,Ostracoda,5.465558522
+2020,SRC3,River channel,Sacramento River,2/19/2020,Rotifera,814.3682198
+2020,SRC3,River channel,Sacramento River,2/19/2020,Small cladocera,1196.957316
+2020,UBC1,Canal channel,Upper Bypass,2/19/2020,Aquatic insect,21.78984259
+2020,UBC1,Canal channel,Upper Bypass,2/19/2020,Copepoda,1263.81087
+2020,UBC1,Canal channel,Upper Bypass,2/19/2020,Large cladocera,1372.760083
+2020,UBC1,Canal channel,Upper Bypass,2/19/2020,Rotifera,130.7390555
+2020,UBC1,Canal channel,Upper Bypass,2/19/2020,Small cladocera,3355.635758
+2020,UBC2,Canal channel,Upper Bypass,2/19/2020,Aquatic insect,81.87287665
+2020,UBC2,Canal channel,Upper Bypass,2/19/2020,Copepoda,219.5681692
+2020,UBC2,Canal channel,Upper Bypass,2/19/2020,Large cladocera,96.75885422
+2020,UBC2,Canal channel,Upper Bypass,2/19/2020,Rotifera,81.87287665
+2020,UBC2,Canal channel,Upper Bypass,2/19/2020,Small cladocera,1347.18097
+2020,UBC3,Canal channel,Upper Bypass,2/19/2020,Aquatic insect,43.9434555
+2020,UBC3,Canal channel,Upper Bypass,2/19/2020,Copepoda,966.756021
+2020,UBC3,Canal channel,Upper Bypass,2/19/2020,Large cladocera,32.95759162
+2020,UBC3,Canal channel,Upper Bypass,2/19/2020,Rotifera,54.92931937
+2020,UBC3,Canal channel,Upper Bypass,2/19/2020,Small cladocera,6415.744503
+2020,UBC3,Canal channel,Upper Bypass,2/19/2020,Terrestrial insect,32.95759162
+2020,UBW1,Wetland,Upper Bypass,2/19/2020,Copepoda,1614.854592
+2020,UBW1,Wetland,Upper Bypass,2/19/2020,Large cladocera,45781.12767
+2020,UBW1,Wetland,Upper Bypass,2/19/2020,Ostracoda,80.74272958
+2020,UBW1,Wetland,Upper Bypass,2/19/2020,Small cladocera,4117.879209
+2020,SRC4,River channel,Sacramento River,2/20/2020,Aquatic insect,10.82324418
+2020,SRC4,River channel,Sacramento River,2/20/2020,Copepoda,494.2614842
+2020,SRC4,River channel,Sacramento River,2/20/2020,Large cladocera,82.97820537
+2020,SRC4,River channel,Sacramento River,2/20/2020,Ostracoda,18.0387403
+2020,SRC4,River channel,Sacramento River,2/20/2020,Rare,21.64648836
+2020,SRC4,River channel,Sacramento River,2/20/2020,Rotifera,97.40919761
+2020,SRC4,River channel,Sacramento River,2/20/2020,Small cladocera,429.3220191
+2020,SRC4,River channel,Sacramento River,2/20/2020,Terrestrial insect,7.215496119
+2020,SRC4,River channel,Sacramento River,2/25/2020,Aquatic insect,7.863220267
+2020,SRC4,River channel,Sacramento River,2/25/2020,Copepoda,294.87076
+2020,SRC4,River channel,Sacramento River,2/25/2020,Large cladocera,43.24771147
+2020,SRC4,River channel,Sacramento River,2/25/2020,Ostracoda,7.863220267
+2020,SRC4,River channel,Sacramento River,2/25/2020,Rare,3.931610133
+2020,SRC4,River channel,Sacramento River,2/25/2020,Rotifera,15.72644053
+2020,SRC4,River channel,Sacramento River,2/25/2020,Small cladocera,172.9908459
+2020,SRC4,River channel,Sacramento River,2/25/2020,Terrestrial insect,1.965805067
+2020,BSC1,Canal channel,Butte Sink,2/26/2020,Aquatic insect,193.8041689
+2020,BSC1,Canal channel,Butte Sink,2/26/2020,Copepoda,599.0310674
+2020,BSC1,Canal channel,Butte Sink,2/26/2020,Large cladocera,123.3299256
+2020,BSC1,Canal channel,Butte Sink,2/26/2020,Rotifera,123.3299256
+2020,BSC1,Canal channel,Butte Sink,2/26/2020,Small cladocera,3012.773898
+2020,BSC1,Canal channel,Butte Sink,2/26/2020,Terrestrial insect,105.7113648
+2020,BSW1,Wetland,Butte Sink,2/26/2020,Copepoda,7695.267468
+2020,BSW1,Wetland,Butte Sink,2/26/2020,Large cladocera,26465.96662
+2020,BSW1,Wetland,Butte Sink,2/26/2020,Small cladocera,16828.90269
+2020,BSW2,Wetland,Butte Sink,2/26/2020,Copepoda,58465.49994
+2020,BSW2,Wetland,Butte Sink,2/26/2020,Large cladocera,41254.87658
+2020,BSW2,Wetland,Butte Sink,2/26/2020,Ostracoda,253.0974023
+2020,BSW2,Wetland,Butte Sink,2/26/2020,Small cladocera,79978.77914
+2020,FRC1,River channel,Feather River,2/26/2020,Aquatic insect,53.25538708
+2020,FRC1,River channel,Feather River,2/26/2020,Copepoda,36.66764356
+2020,FRC1,River channel,Feather River,2/26/2020,Large cladocera,5.238234795
+2020,FRC1,River channel,Feather River,2/26/2020,Small cladocera,35.79460443
+2020,LBC1,Canal channel,Lower Bypass,2/26/2020,Aquatic insect,104.9387236
+2020,LBC1,Canal channel,Lower Bypass,2/26/2020,Copepoda,498.4589372
+2020,LBC1,Canal channel,Lower Bypass,2/26/2020,Large cladocera,43.72446818
+2020,LBC1,Canal channel,Lower Bypass,2/26/2020,Ostracoda,17.48978727
+2020,LBC1,Canal channel,Lower Bypass,2/26/2020,Rotifera,52.46936181
+2020,LBC1,Canal channel,Lower Bypass,2/26/2020,Small cladocera,1565.335961
+2020,LBC1,Canal channel,Lower Bypass,2/26/2020,Terrestrial insect,8.744893636
+2020,LBC2,Canal channel,Lower Bypass,2/26/2020,Aquatic insect,111.8337359
+2020,LBC2,Canal channel,Lower Bypass,2/26/2020,Copepoda,364.9311383
+2020,LBC2,Canal channel,Lower Bypass,2/26/2020,Large cladocera,47.08788881
+2020,LBC2,Canal channel,Lower Bypass,2/26/2020,Rotifera,17.6579583
+2020,LBC2,Canal channel,Lower Bypass,2/26/2020,Small cladocera,700.432346
+2020,LBW1,Wetland,Lower Bypass,2/26/2020,Copepoda,19510.89424
+2020,LBW1,Wetland,Lower Bypass,2/26/2020,Large cladocera,70397.41571
+2020,LBW1,Wetland,Lower Bypass,2/26/2020,Small cladocera,7646.161257
+2020,SRC1,River channel,Sacramento River,2/26/2020,Aquatic insect,625.5326563
+2020,SRC1,River channel,Sacramento River,2/26/2020,Copepoda,42.64995384
+2020,SRC1,River channel,Sacramento River,2/26/2020,Rotifera,10.66248846
+2020,SRC1,River channel,Sacramento River,2/26/2020,Small cladocera,273.6705371
+2020,SRC1,River channel,Sacramento River,2/26/2020,Terrestrial insect,49.75827948
+2020,SRC2,River channel,Sacramento River,2/26/2020,Aquatic insect,877.4043281
+2020,SRC2,River channel,Sacramento River,2/26/2020,Copepoda,137.8121981
+2020,SRC2,River channel,Sacramento River,2/26/2020,Large cladocera,9.187479875
+2020,SRC2,River channel,Sacramento River,2/26/2020,Rare,13.78121981
+2020,SRC2,River channel,Sacramento River,2/26/2020,Rotifera,50.53113931
+2020,SRC2,River channel,Sacramento River,2/26/2020,Small cladocera,179.1558576
+2020,SRC2,River channel,Sacramento River,2/26/2020,Terrestrial insect,18.37495975
+2020,SRC3,River channel,Sacramento River,2/26/2020,Aquatic insect,106.8599898
+2020,SRC3,River channel,Sacramento River,2/26/2020,Copepoda,21.21485092
+2020,SRC3,River channel,Sacramento River,2/26/2020,Large cladocera,25.92926223
+2020,SRC3,River channel,Sacramento River,2/26/2020,Rotifera,0.785735219
+2020,SRC3,River channel,Sacramento River,2/26/2020,Small cladocera,48.71558359
+2020,SRC3,River channel,Sacramento River,2/26/2020,Terrestrial insect,6.285881754
+2020,UBC1,Canal channel,Upper Bypass,2/26/2020,Aquatic insect,98.95537535
+2020,UBC1,Canal channel,Upper Bypass,2/26/2020,Copepoda,1088.509129
+2020,UBC1,Canal channel,Upper Bypass,2/26/2020,Large cladocera,890.5983782
+2020,UBC1,Canal channel,Upper Bypass,2/26/2020,Ostracoda,32.98512512
+2020,UBC1,Canal channel,Upper Bypass,2/26/2020,Rotifera,230.8958758
+2020,UBC1,Canal channel,Upper Bypass,2/26/2020,Small cladocera,5673.44152
+2020,UBC2,Canal channel,Upper Bypass,2/26/2020,Aquatic insect,138.5375255
+2020,UBC2,Canal channel,Upper Bypass,2/26/2020,Copepoda,692.6876275
+2020,UBC2,Canal channel,Upper Bypass,2/26/2020,Large cladocera,338.6472845
+2020,UBC2,Canal channel,Upper Bypass,2/26/2020,Small cladocera,2586.033809
+2020,UBC3,Canal channel,Upper Bypass,2/26/2020,Aquatic insect,70.25479496
+2020,UBC3,Canal channel,Upper Bypass,2/26/2020,Copepoda,960.1488644
+2020,UBC3,Canal channel,Upper Bypass,2/26/2020,Large cladocera,70.25479496
+2020,UBC3,Canal channel,Upper Bypass,2/26/2020,Rotifera,93.67305994
+2020,UBC3,Canal channel,Upper Bypass,2/26/2020,Small cladocera,7915.373565
+2020,UBC3,Canal channel,Upper Bypass,2/26/2020,Terrestrial insect,23.41826499
+2020,UBW1,Wetland,Upper Bypass,2/26/2020,Aquatic insect,175.4808656
+2020,UBW1,Wetland,Upper Bypass,2/26/2020,Copepoda,526.4425969
+2020,UBW1,Wetland,Upper Bypass,2/26/2020,Large cladocera,8445.016658
+2020,UBW1,Wetland,Upper Bypass,2/26/2020,Rotifera,21.9351082
+2020,UBW1,Wetland,Upper Bypass,2/26/2020,Small cladocera,592.2479215
+2020,SRC4,River channel,Sacramento River,3/2/2020,Aquatic insect,14.45179046
+2020,SRC4,River channel,Sacramento River,3/2/2020,Copepoda,469.6831898
+2020,SRC4,River channel,Sacramento River,3/2/2020,Large cladocera,7.225895228
+2020,SRC4,River channel,Sacramento River,3/2/2020,Ostracoda,3.612947614
+2020,SRC4,River channel,Sacramento River,3/2/2020,Rare,54.19421421
+2020,SRC4,River channel,Sacramento River,3/2/2020,Rotifera,144.5179046
+2020,SRC4,River channel,Sacramento River,3/2/2020,Small cladocera,462.4572946
+2020,SRC4,River channel,Sacramento River,3/2/2020,Terrestrial insect,10.83884284
+2020,BSC1,Canal channel,Butte Sink,3/3/2020,Aquatic insect,10.40811777
+2020,BSC1,Canal channel,Butte Sink,3/3/2020,Copepoda,827.4453628
+2020,BSC1,Canal channel,Butte Sink,3/3/2020,Large cladocera,447.5490642
+2020,BSC1,Canal channel,Butte Sink,3/3/2020,Rotifera,93.67305994
+2020,BSC1,Canal channel,Butte Sink,3/3/2020,Small cladocera,2518.764501
+2020,BSC1,Canal channel,Butte Sink,3/3/2020,Terrestrial insect,10.40811777
+2020,BSW1,Wetland,Butte Sink,3/3/2020,Copepoda,6476.738573
+2020,BSW1,Wetland,Butte Sink,3/3/2020,Large cladocera,14946.31978
+2020,BSW1,Wetland,Butte Sink,3/3/2020,Small cladocera,14074.45113
+2020,BSW2,Wetland,Butte Sink,3/3/2020,Copepoda,37065.85631
+2020,BSW2,Wetland,Butte Sink,3/3/2020,Large cladocera,63470.6302
+2020,BSW2,Wetland,Butte Sink,3/3/2020,Ostracoda,247.9321492
+2020,BSW2,Wetland,Butte Sink,3/3/2020,Small cladocera,38181.55098
+2020,FRC1,River channel,Feather River,3/3/2020,Aquatic insect,4.178115848
+2020,FRC1,River channel,Feather River,3/3/2020,Copepoda,63.50736089
+2020,FRC1,River channel,Feather River,3/3/2020,Large cladocera,23.39744875
+2020,FRC1,River channel,Feather River,3/3/2020,Rotifera,2.506869509
+2020,FRC1,River channel,Feather River,3/3/2020,Small cladocera,20.05495607
+2020,FRC1,River channel,Feather River,3/3/2020,Terrestrial insect,3.342492678
+2020,LBC2,Canal channel,Lower Bypass,3/3/2020,Aquatic insect,44.3133499
+2020,LBC2,Canal channel,Lower Bypass,3/3/2020,Copepoda,853.0319857
+2020,LBC2,Canal channel,Lower Bypass,3/3/2020,Large cladocera,110.7833748
+2020,LBC2,Canal channel,Lower Bypass,3/3/2020,Ostracoda,5.539168738
+2020,LBC2,Canal channel,Lower Bypass,3/3/2020,Rare,5.539168738
+2020,LBC2,Canal channel,Lower Bypass,3/3/2020,Rotifera,66.47002486
+2020,LBC2,Canal channel,Lower Bypass,3/3/2020,Small cladocera,642.5435736
+2020,SRC1,River channel,Sacramento River,3/3/2020,Aquatic insect,506.2893322
+2020,SRC1,River channel,Sacramento River,3/3/2020,Copepoda,54.06973451
+2020,SRC1,River channel,Sacramento River,3/3/2020,Large cladocera,19.66172164
+2020,SRC1,River channel,Sacramento River,3/3/2020,Rotifera,39.32344328
+2020,SRC1,River channel,Sacramento River,3/3/2020,Small cladocera,373.5727111
+2020,SRC1,River channel,Sacramento River,3/3/2020,Terrestrial insect,34.40801287
+2020,SRC2,River channel,Sacramento River,3/3/2020,Aquatic insect,459.7958932
+2020,SRC2,River channel,Sacramento River,3/3/2020,Copepoda,109.0237685
+2020,SRC2,River channel,Sacramento River,3/3/2020,Large cladocera,66.36229386
+2020,SRC2,River channel,Sacramento River,3/3/2020,Rotifera,42.66147462
+2020,SRC2,River channel,Sacramento River,3/3/2020,Small cladocera,369.7327801
+2020,SRC3,River channel,Sacramento River,3/3/2020,Aquatic insect,1104.116185
+2020,SRC3,River channel,Sacramento River,3/3/2020,Copepoda,276.0290462
+2020,SRC3,River channel,Sacramento River,3/3/2020,Large cladocera,287.070208
+2020,SRC3,River channel,Sacramento River,3/3/2020,Ostracoda,11.04116185
+2020,SRC3,River channel,Sacramento River,3/3/2020,Rare,11.04116185
+2020,SRC3,River channel,Sacramento River,3/3/2020,Rotifera,143.535104
+2020,SRC3,River channel,Sacramento River,3/3/2020,Small cladocera,618.3050634
+2020,UBC1,Canal channel,Upper Bypass,3/3/2020,Aquatic insect,93.67305994
+2020,UBC1,Canal channel,Upper Bypass,3/3/2020,Copepoda,4636.816467
+2020,UBC1,Canal channel,Upper Bypass,3/3/2020,Large cladocera,2060.807319
+2020,UBC1,Canal channel,Upper Bypass,3/3/2020,Rotifera,281.0191798
+2020,UBC1,Canal channel,Upper Bypass,3/3/2020,Small cladocera,16861.15079
+2020,UBC2,Canal channel,Upper Bypass,3/3/2020,Aquatic insect,55.35673994
+2020,UBC2,Canal channel,Upper Bypass,3/3/2020,Copepoda,1812.933233
+2020,UBC2,Canal channel,Upper Bypass,3/3/2020,Large cladocera,608.9241394
+2020,UBC2,Canal channel,Upper Bypass,3/3/2020,Rotifera,138.3918499
+2020,UBC2,Canal channel,Upper Bypass,3/3/2020,Small cladocera,5341.925405
+2020,LBC1,Canal channel,Lower Bypass,3/4/2020,Aquatic insect,284.5635659
+2020,LBC1,Canal channel,Lower Bypass,3/4/2020,Copepoda,120654.9519
+2020,LBC1,Canal channel,Lower Bypass,3/4/2020,Large cladocera,853.6906976
+2020,LBC1,Canal channel,Lower Bypass,3/4/2020,Rotifera,569.1271317
+2020,LBC1,Canal channel,Lower Bypass,3/4/2020,Small cladocera,11097.97907
+2020,LBW1,Wetland,Lower Bypass,3/4/2020,Copepoda,41805.73563
+2020,LBW1,Wetland,Lower Bypass,3/4/2020,Large cladocera,159644.125
+2020,LBW1,Wetland,Lower Bypass,3/4/2020,Small cladocera,10512.5534
+2020,UBC3,Canal channel,Upper Bypass,3/4/2020,Copepoda,3378.241263
+2020,UBC3,Canal channel,Upper Bypass,3/4/2020,Large cladocera,175.9500658
+2020,UBC3,Canal channel,Upper Bypass,3/4/2020,Ostracoda,70.38002632
+2020,UBC3,Canal channel,Upper Bypass,3/4/2020,Rotifera,457.4701711
+2020,UBC3,Canal channel,Upper Bypass,3/4/2020,Small cladocera,7495.472803
+2020,UBC3,Canal channel,Upper Bypass,3/4/2020,Terrestrial insect,35.19001316
+2020,UBW1,Wetland,Upper Bypass,3/4/2020,Copepoda,4142.499123
+2020,UBW1,Wetland,Upper Bypass,3/4/2020,Large cladocera,45394.88622
+2020,UBW1,Wetland,Upper Bypass,3/4/2020,Rotifera,690.4165205
+2020,UBW1,Wetland,Upper Bypass,3/4/2020,Small cladocera,7939.789985
+2020,SRC4,River channel,Sacramento River,3/9/2020,Copepoda,917.1689739
+2020,SRC4,River channel,Sacramento River,3/9/2020,Large cladocera,80.5621396
+2020,SRC4,River channel,Sacramento River,3/9/2020,Ostracoda,6.197087662
+2020,SRC4,River channel,Sacramento River,3/9/2020,Rotifera,12.39417532
+2020,SRC4,River channel,Sacramento River,3/9/2020,Small cladocera,725.0592564
+2020,SRC4,River channel,Sacramento River,3/9/2020,Terrestrial insect,24.78835065
+2020,BSC1,Canal channel,Butte Sink,3/11/2020,Copepoda,890.1203329
+2020,BSC1,Canal channel,Butte Sink,3/11/2020,Large cladocera,762.9602853
+2020,BSC1,Canal channel,Butte Sink,3/11/2020,Rotifera,84.77336503
+2020,BSC1,Canal channel,Butte Sink,3/11/2020,Small cladocera,10639.05731
+2020,BSC1,Canal channel,Butte Sink,3/11/2020,Terrestrial insect,84.77336503
+2020,BSW1,Wetland,Butte Sink,3/11/2020,Copepoda,10063.12073
+2020,BSW1,Wetland,Butte Sink,3/11/2020,Large cladocera,9896.788156
+2020,BSW1,Wetland,Butte Sink,3/11/2020,Rotifera,83.16628702
+2020,BSW1,Wetland,Butte Sink,3/11/2020,Small cladocera,11310.61504
+2020,BSW2,Wetland,Butte Sink,3/11/2020,Copepoda,78006.72855
+2020,BSW2,Wetland,Butte Sink,3/11/2020,Large cladocera,111046.4853
+2020,BSW2,Wetland,Butte Sink,3/11/2020,Ostracoda,274.1888525
+2020,BSW2,Wetland,Butte Sink,3/11/2020,Rotifera,548.3777051
+2020,BSW2,Wetland,Butte Sink,3/11/2020,Small cladocera,119272.1509
+2020,FRC1,River channel,Feather River,3/11/2020,Aquatic insect,60.9472134
+2020,FRC1,River channel,Feather River,3/11/2020,Copepoda,80.37965825
+2020,FRC1,River channel,Feather River,3/11/2020,Large cladocera,10.59951537
+2020,FRC1,River channel,Feather River,3/11/2020,Ostracoda,1.766585896
+2020,FRC1,River channel,Feather River,3/11/2020,Rare,2.649878843
+2020,FRC1,River channel,Feather River,3/11/2020,Rotifera,25.61549548
+2020,FRC1,River channel,Feather River,3/11/2020,Small cladocera,99.8121031
+2020,FRC1,River channel,Feather River,3/11/2020,Terrestrial insect,4.416464739
+2020,LBC1,Canal channel,Lower Bypass,3/11/2020,Aquatic insect,242.3768862
+2020,LBC1,Canal channel,Lower Bypass,3/11/2020,Copepoda,7949.961868
+2020,LBC1,Canal channel,Lower Bypass,3/11/2020,Large cladocera,484.7537724
+2020,LBC1,Canal channel,Lower Bypass,3/11/2020,Rotifera,96.95075449
+2020,LBC1,Canal channel,Lower Bypass,3/11/2020,Small cladocera,4362.783952
+2020,LBC1,Canal channel,Lower Bypass,3/11/2020,Terrestrial insect,48.47537724
+2020,LBC2,Canal channel,Lower Bypass,3/11/2020,Aquatic insect,63.15756515
+2020,LBC2,Canal channel,Lower Bypass,3/11/2020,Copepoda,325.5043742
+2020,LBC2,Canal channel,Lower Bypass,3/11/2020,Large cladocera,92.3072106
+2020,LBC2,Canal channel,Lower Bypass,3/11/2020,Rotifera,53.44101666
+2020,LBC2,Canal channel,Lower Bypass,3/11/2020,Small cladocera,558.7015378
+2020,LBW1,Wetland,Lower Bypass,3/11/2020,Copepoda,17517.67393
+2020,LBW1,Wetland,Lower Bypass,3/11/2020,Large cladocera,134393.4047
+2020,LBW1,Wetland,Lower Bypass,3/11/2020,Small cladocera,1915.995587
+2020,SRC1,River channel,Sacramento River,3/11/2020,Aquatic insect,626.801219
+2020,SRC1,River channel,Sacramento River,3/11/2020,Copepoda,54.58100503
+2020,SRC1,River channel,Sacramento River,3/11/2020,Large cladocera,7.042710326
+2020,SRC1,River channel,Sacramento River,3/11/2020,Rotifera,10.56406549
+2020,SRC1,River channel,Sacramento River,3/11/2020,Small cladocera,165.5036927
+2020,SRC1,River channel,Sacramento River,3/11/2020,Terrestrial insect,28.1708413
+2020,SRC2,River channel,Sacramento River,3/11/2020,Aquatic insect,1401.30589
+2020,SRC2,River channel,Sacramento River,3/11/2020,Copepoda,347.5238608
+2020,SRC2,River channel,Sacramento River,3/11/2020,Large cladocera,112.1044712
+2020,SRC2,River channel,Sacramento River,3/11/2020,Rotifera,179.367154
+2020,SRC2,River channel,Sacramento River,3/11/2020,Small cladocera,672.6268273
+2020,SRC2,River channel,Sacramento River,3/11/2020,Terrestrial insect,44.84178849
+2020,SRC3,River channel,Sacramento River,3/11/2020,Aquatic insect,442.4278725
+2020,SRC3,River channel,Sacramento River,3/11/2020,Copepoda,132.7283617
+2020,SRC3,River channel,Sacramento River,3/11/2020,Large cladocera,46.57135499
+2020,SRC3,River channel,Sacramento River,3/11/2020,Small cladocera,284.0852655
+2020,SRC3,River channel,Sacramento River,3/11/2020,Terrestrial insect,13.9714065
+2020,UBC1,Canal channel,Upper Bypass,3/11/2020,Copepoda,8729.277754
+2020,UBC1,Canal channel,Upper Bypass,3/11/2020,Large cladocera,2685.931617
+2020,UBC1,Canal channel,Upper Bypass,3/11/2020,Small cladocera,27933.68881
+2020,UBC2,Canal channel,Upper Bypass,3/11/2020,Aquatic insect,41.71494428
+2020,UBC2,Canal channel,Upper Bypass,3/11/2020,Copepoda,1251.448329
+2020,UBC2,Canal channel,Upper Bypass,3/11/2020,Large cladocera,166.8597771
+2020,UBC2,Canal channel,Upper Bypass,3/11/2020,Rotifera,62.57241643
+2020,UBC2,Canal channel,Upper Bypass,3/11/2020,Small cladocera,5756.662311
+2020,UBC3,Canal channel,Upper Bypass,3/11/2020,Aquatic insect,212.9622156
+2020,UBC3,Canal channel,Upper Bypass,3/11/2020,Copepoda,5068.50073
+2020,UBC3,Canal channel,Upper Bypass,3/11/2020,Large cladocera,170.3697724
+2020,UBC3,Canal channel,Upper Bypass,3/11/2020,Small cladocera,11201.81254
+2020,UBW1,Wetland,Upper Bypass,3/11/2020,Copepoda,134.2965808
+2020,UBW1,Wetland,Upper Bypass,3/11/2020,Large cladocera,905.5426593
+2020,UBW1,Wetland,Upper Bypass,3/11/2020,Ostracoda,7.674090333
+2020,UBW1,Wetland,Upper Bypass,3/11/2020,Rotifera,15.34818067
+2020,UBW1,Wetland,Upper Bypass,3/11/2020,Small cladocera,659.9717687
+2020,BSW1,Wetland,Butte Sink,3/14/2020,Copepoda,11661.16828
+2020,BSW1,Wetland,Butte Sink,3/14/2020,Large cladocera,4309.562189
+2020,BSW1,Wetland,Butte Sink,3/14/2020,Rotifera,507.0073164
+2020,BSW1,Wetland,Butte Sink,3/14/2020,Small cladocera,47405.18408
+2020,BSC1,Canal channel,Butte Sink,3/16/2020,Aquatic insect,55.22125142
+2020,BSC1,Canal channel,Butte Sink,3/16/2020,Copepoda,1279.292325
+2020,BSC1,Canal channel,Butte Sink,3/16/2020,Large cladocera,276.1062571
+2020,BSC1,Canal channel,Butte Sink,3/16/2020,Rotifera,36.81416761
+2020,BSC1,Canal channel,Butte Sink,3/16/2020,Small cladocera,5485.310974
+2020,BSW2,Wetland,Butte Sink,3/16/2020,Copepoda,32720.16793
+2020,BSW2,Wetland,Butte Sink,3/16/2020,Large cladocera,111042.4597
+2020,BSW2,Wetland,Butte Sink,3/16/2020,Ostracoda,257.6391176
+2020,BSW2,Wetland,Butte Sink,3/16/2020,Small cladocera,145823.7405
+2020,BSW2,Wetland,Butte Sink,3/16/2020,Terrestrial insect,257.6391176
+2020,FRC1,River channel,Feather River,3/16/2020,Aquatic insect,195.9628594
+2020,FRC1,River channel,Feather River,3/16/2020,Copepoda,28.23193737
+2020,FRC1,River channel,Feather River,3/16/2020,Large cladocera,13.28561759
+2020,FRC1,River channel,Feather River,3/16/2020,Ostracoda,1.660702198
+2020,FRC1,River channel,Feather River,3/16/2020,Rotifera,1.660702198
+2020,FRC1,River channel,Feather River,3/16/2020,Small cladocera,83.03510992
+2020,FRC1,River channel,Feather River,3/16/2020,Terrestrial insect,8.303510992
+2020,SRC2,River channel,Sacramento River,3/16/2020,Aquatic insect,594.3908569
+2020,SRC2,River channel,Sacramento River,3/16/2020,Copepoda,143.9051548
+2020,SRC2,River channel,Sacramento River,3/16/2020,Large cladocera,75.08095035
+2020,SRC2,River channel,Sacramento River,3/16/2020,Rotifera,18.77023759
+2020,SRC2,River channel,Sacramento River,3/16/2020,Small cladocera,613.1610945
+2020,SRC4,River channel,Sacramento River,3/16/2020,Aquatic insect,29.18843407
+2020,SRC4,River channel,Sacramento River,3/16/2020,Copepoda,805.6007803
+2020,SRC4,River channel,Sacramento River,3/16/2020,Large cladocera,58.37686814
+2020,SRC4,River channel,Sacramento River,3/16/2020,Ostracoda,11.67537363
+2020,SRC4,River channel,Sacramento River,3/16/2020,Rare,40.8638077
+2020,SRC4,River channel,Sacramento River,3/16/2020,Rotifera,134.2667967
+2020,SRC4,River channel,Sacramento River,3/16/2020,Small cladocera,1202.563484
+2020,SRC4,River channel,Sacramento River,3/16/2020,Terrestrial insect,29.18843407
+2020,LBC1,Canal channel,Lower Bypass,3/17/2020,Copepoda,13776.06796
+2020,LBC1,Canal channel,Lower Bypass,3/17/2020,Large cladocera,246.0012135
+2020,LBC1,Canal channel,Lower Bypass,3/17/2020,Rotifera,492.002427
+2020,LBC1,Canal channel,Lower Bypass,3/17/2020,Small cladocera,3854.019011
+2020,LBC2,Canal channel,Lower Bypass,3/17/2020,Aquatic insect,10.47855487
+2020,LBC2,Canal channel,Lower Bypass,3/17/2020,Copepoda,1990.925426
+2020,LBC2,Canal channel,Lower Bypass,3/17/2020,Large cladocera,146.6997682
+2020,LBC2,Canal channel,Lower Bypass,3/17/2020,Rotifera,73.34988412
+2020,LBC2,Canal channel,Lower Bypass,3/17/2020,Small cladocera,1540.347566
+2020,LBC2,Canal channel,Lower Bypass,3/17/2020,Terrestrial insect,10.47855487
+2020,LBW1,Wetland,Lower Bypass,3/17/2020,Copepoda,56687.47085
+2020,LBW1,Wetland,Lower Bypass,3/17/2020,Large cladocera,15100.15599
+2020,LBW1,Wetland,Lower Bypass,3/17/2020,Small cladocera,11387.00288
+2020,SRC3,River channel,Sacramento River,3/17/2020,Aquatic insect,822.5665576
+2020,SRC3,River channel,Sacramento River,3/17/2020,Copepoda,374.9935777
+2020,SRC3,River channel,Sacramento River,3/17/2020,Large cladocera,114.9173867
+2020,SRC3,River channel,Sacramento River,3/17/2020,Ostracoda,12.09656702
+2020,SRC3,River channel,Sacramento River,3/17/2020,Rotifera,78.62768565
+2020,SRC3,River channel,Sacramento River,3/17/2020,Small cladocera,973.7736454
+2020,SRC3,River channel,Sacramento River,3/17/2020,Terrestrial insect,12.09656702
+2020,UBC3,Canal channel,Upper Bypass,3/17/2020,Copepoda,545.8506189
+2020,UBC3,Canal channel,Upper Bypass,3/17/2020,Large cladocera,70.75841356
+2020,UBC3,Canal channel,Upper Bypass,3/17/2020,Rotifera,50.54172397
+2020,UBC3,Canal channel,Upper Bypass,3/17/2020,Small cladocera,2405.786061
+2020,UBW1,Wetland,Upper Bypass,3/17/2020,Copepoda,984.8415928
+2020,UBW1,Wetland,Upper Bypass,3/17/2020,Large cladocera,268.5931617
+2020,UBW1,Wetland,Upper Bypass,3/17/2020,Ostracoda,44.76552694
+2020,UBW1,Wetland,Upper Bypass,3/17/2020,Small cladocera,9311.229604
+2020,SRC1,River channel,Sacramento River,3/18/2020,Aquatic insect,696.6076307
+2020,SRC1,River channel,Sacramento River,3/18/2020,Copepoda,105.1483216
+2020,SRC1,River channel,Sacramento River,3/18/2020,Large cladocera,35.04944054
+2020,SRC1,River channel,Sacramento River,3/18/2020,Rare,4.381180067
+2020,SRC1,River channel,Sacramento River,3/18/2020,Rotifera,61.33652094
+2020,SRC1,River channel,Sacramento River,3/18/2020,Small cladocera,140.1977621
+2020,SRC1,River channel,Sacramento River,3/18/2020,Terrestrial insect,26.2870804
+2020,SRC4,River channel,Sacramento River,3/18/2020,Aquatic insect,372.145392
+2020,SRC4,River channel,Sacramento River,3/18/2020,Copepoda,2218.559068
+2020,SRC4,River channel,Sacramento River,3/18/2020,Large cladocera,372.145392
+2020,SRC4,River channel,Sacramento River,3/18/2020,Rare,14.31328431
+2020,SRC4,River channel,Sacramento River,3/18/2020,Rotifera,143.1328431
+2020,SRC4,River channel,Sacramento River,3/18/2020,Small cladocera,916.0501957
+2020,SRC4,River channel,Sacramento River,3/18/2020,Terrestrial insect,28.62656862
+2020,UBC1,Canal channel,Upper Bypass,3/18/2020,Aquatic insect,266.778343
+2020,UBC1,Canal channel,Upper Bypass,3/18/2020,Copepoda,2489.931201
+2020,UBC1,Canal channel,Upper Bypass,3/18/2020,Large cladocera,1333.891715
+2020,UBC1,Canal channel,Upper Bypass,3/18/2020,Rotifera,177.8522287
+2020,UBC1,Canal channel,Upper Bypass,3/18/2020,Small cladocera,9648.483405
+2020,UBC1,Canal channel,Upper Bypass,3/18/2020,Terrestrial insect,44.46305717
+2020,UBC2,Canal channel,Upper Bypass,3/18/2020,Aquatic insect,42.86991831
+2020,UBC2,Canal channel,Upper Bypass,3/18/2020,Copepoda,764.5135432
+2020,UBC2,Canal channel,Upper Bypass,3/18/2020,Large cladocera,28.57994554
+2020,UBC2,Canal channel,Upper Bypass,3/18/2020,Rotifera,14.28997277
+2020,UBC2,Canal channel,Upper Bypass,3/18/2020,Small cladocera,4801.430851
+2020,SRC4,River channel,Sacramento River,3/23/2020,Aquatic insect,53.60922575
+2020,SRC4,River channel,Sacramento River,3/23/2020,Copepoda,1782.506756
+2020,SRC4,River channel,Sacramento River,3/23/2020,Large cladocera,375.2645802
+2020,SRC4,River channel,Sacramento River,3/23/2020,Ostracoda,93.81614506
+2020,SRC4,River channel,Sacramento River,3/23/2020,Rare,40.20691931
+2020,SRC4,River channel,Sacramento River,3/23/2020,Rotifera,1005.172983
+2020,SRC4,River channel,Sacramento River,3/23/2020,Small cladocera,2197.978256
+2020,SRC4,River channel,Sacramento River,3/23/2020,Terrestrial insect,13.40230644
+2021,BSA1,Agriculture,Butte Sink,1/25/2021,Copepoda,5074.716925
+2021,BSA1,Agriculture,Butte Sink,1/25/2021,Large cladocera,1833.854091
+2021,BSA1,Agriculture,Butte Sink,1/25/2021,Rotifera,94.85452196
+2021,BSA1,Agriculture,Butte Sink,1/25/2021,Small cladocera,1738.999569
+2021,BSC2,Canal channel,Butte Sink,1/25/2021,Copepoda,5763.832997
+2021,BSC2,Canal channel,Butte Sink,1/25/2021,Large cladocera,2628.458044
+2021,BSC2,Canal channel,Butte Sink,1/25/2021,Ostracoda,37.54940063
+2021,BSC2,Canal channel,Butte Sink,1/25/2021,Rotifera,187.7470032
+2021,BSC2,Canal channel,Butte Sink,1/25/2021,Small cladocera,4731.22448
+2021,FRC1,River channel,Feather River,1/25/2021,Aquatic insect,38.22355489
+2021,FRC1,River channel,Feather River,1/25/2021,Copepoda,23.45536323
+2021,FRC1,River channel,Feather River,1/25/2021,Large cladocera,1.737434313
+2021,FRC1,River channel,Feather River,1/25/2021,Rare,3.474868626
+2021,FRC1,River channel,Feather River,1/25/2021,Small cladocera,19.11177744
+2021,LBC1,Canal channel,Lower Bypass,1/25/2021,Aquatic insect,21.22065908
+2021,LBC1,Canal channel,Lower Bypass,1/25/2021,Copepoda,183.9123787
+2021,LBC1,Canal channel,Lower Bypass,1/25/2021,Large cladocera,120.2504014
+2021,LBC1,Canal channel,Lower Bypass,1/25/2021,Rare,14.14710605
+2021,LBC1,Canal channel,Lower Bypass,1/25/2021,Rotifera,56.58842421
+2021,LBC1,Canal channel,Lower Bypass,1/25/2021,Small cladocera,1004.44453
+2021,LBC2,Canal channel,Lower Bypass,1/25/2021,Aquatic insect,87.8746858
+2021,LBC2,Canal channel,Lower Bypass,1/25/2021,Copepoda,140.9656418
+2021,LBC2,Canal channel,Lower Bypass,1/25/2021,Large cladocera,10.98433573
+2021,LBC2,Canal channel,Lower Bypass,1/25/2021,Rare,10.98433573
+2021,LBC2,Canal channel,Lower Bypass,1/25/2021,Rotifera,25.63011669
+2021,LBC2,Canal channel,Lower Bypass,1/25/2021,Small cladocera,600.4770197
+2021,LBW1,Wetland,Lower Bypass,1/25/2021,Copepoda,863.0206506
+2021,LBW1,Wetland,Lower Bypass,1/25/2021,Large cladocera,12322.01707
+2021,LBW1,Wetland,Lower Bypass,1/25/2021,Small cladocera,5034.287128
+2021,SRC2,River channel,Sacramento River,1/25/2021,Aquatic insect,4.164893963
+2021,SRC2,River channel,Sacramento River,1/25/2021,Copepoda,48.31276997
+2021,SRC2,River channel,Sacramento River,1/25/2021,Large cladocera,9.162766718
+2021,SRC2,River channel,Sacramento River,1/25/2021,Rare,1.665957585
+2021,SRC2,River channel,Sacramento River,1/25/2021,Rotifera,1.665957585
+2021,SRC2,River channel,Sacramento River,1/25/2021,Small cladocera,93.29362476
+2021,SRC2,River channel,Sacramento River,1/25/2021,Terrestrial insect,1.665957585
+2021,SRC3,River channel,Sacramento River,1/25/2021,Aquatic insect,1.698201925
+2021,SRC3,River channel,Sacramento River,1/25/2021,Copepoda,73.44723327
+2021,SRC3,River channel,Sacramento River,1/25/2021,Large cladocera,18.68022118
+2021,SRC3,River channel,Sacramento River,1/25/2021,Rare,2.547302888
+2021,SRC3,River channel,Sacramento River,1/25/2021,Rotifera,2.547302888
+2021,SRC3,River channel,Sacramento River,1/25/2021,Small cladocera,69.62627894
+2021,SRC3,River channel,Sacramento River,1/25/2021,Terrestrial insect,0.849100963
+2021,SRC4,River channel,Sacramento River,1/25/2021,Aquatic insect,33.56191419
+2021,SRC4,River channel,Sacramento River,1/25/2021,Copepoda,127.055818
+2021,SRC4,River channel,Sacramento River,1/25/2021,Large cladocera,52.74015087
+2021,SRC4,River channel,Sacramento River,1/25/2021,Rotifera,1.917823668
+2021,SRC4,River channel,Sacramento River,1/25/2021,Small cladocera,52.74015087
+2021,SRC4,River channel,Sacramento River,1/25/2021,Terrestrial insect,2.876735502
+2021,UBC1,Canal channel,Upper Bypass,1/25/2021,Aquatic insect,15.31246646
+2021,UBC1,Canal channel,Upper Bypass,1/25/2021,Copepoda,811.5607223
+2021,UBC1,Canal channel,Upper Bypass,1/25/2021,Large cladocera,612.4986584
+2021,UBC1,Canal channel,Upper Bypass,1/25/2021,Rotifera,61.24986584
+2021,UBC1,Canal channel,Upper Bypass,1/25/2021,Small cladocera,3139.055624
+2021,UBC2,Canal channel,Upper Bypass,1/25/2021,Aquatic insect,30.23215526
+2021,UBC2,Canal channel,Upper Bypass,1/25/2021,Copepoda,1108.512359
+2021,UBC2,Canal channel,Upper Bypass,1/25/2021,Large cladocera,241.8572421
+2021,UBC2,Canal channel,Upper Bypass,1/25/2021,Rotifera,60.46431051
+2021,UBC2,Canal channel,Upper Bypass,1/25/2021,Small cladocera,1723.23285
+2021,UBC3,Canal channel,Upper Bypass,1/25/2021,Copepoda,254.5370918
+2021,UBC3,Canal channel,Upper Bypass,1/25/2021,Large cladocera,89.83662063
+2021,UBC3,Canal channel,Upper Bypass,1/25/2021,Rotifera,7.486385052
+2021,UBC3,Canal channel,Upper Bypass,1/25/2021,Small cladocera,2448.047912
+2021,UBW1,Wetland,Upper Bypass,1/25/2021,Copepoda,1441.826752
+2021,UBW1,Wetland,Upper Bypass,1/25/2021,Large cladocera,9248.791114
+2021,UBW1,Wetland,Upper Bypass,1/25/2021,Rare,70.33301227
+2021,UBW1,Wetland,Upper Bypass,1/25/2021,Small cladocera,738.4966289
+2021,BSC1,Canal channel,Butte Sink,1/27/2021,Aquatic insect,158.6795061
+2021,BSC1,Canal channel,Butte Sink,1/27/2021,Copepoda,793.3975307
+2021,BSC1,Canal channel,Butte Sink,1/27/2021,Large cladocera,1101.422454
+2021,BSC1,Canal channel,Butte Sink,1/27/2021,Rotifera,18.66817719
+2021,BSC1,Canal channel,Butte Sink,1/27/2021,Small cladocera,1222.765606
+2021,BSC1,Canal channel,Butte Sink,1/27/2021,Terrestrial insect,28.00226579
+2021,BSW1,Wetland,Butte Sink,1/27/2021,Copepoda,4478.564628
+2021,BSW1,Wetland,Butte Sink,1/27/2021,Large cladocera,1014.014633
+2021,BSW1,Wetland,Butte Sink,1/27/2021,Rotifera,9126.131695
+2021,BSW1,Wetland,Butte Sink,1/27/2021,Small cladocera,84501.2194
+2021,BSW2,Wetland,Butte Sink,1/27/2021,Copepoda,3527.25358
+2021,BSW2,Wetland,Butte Sink,1/27/2021,Large cladocera,26674.8552
+2021,BSW2,Wetland,Butte Sink,1/27/2021,Ostracoda,330.6800232
+2021,BSW2,Wetland,Butte Sink,1/27/2021,Rare,110.2266744
+2021,BSW2,Wetland,Butte Sink,1/27/2021,Rotifera,551.1333719
+2021,BSW2,Wetland,Butte Sink,1/27/2021,Small cladocera,2424.986836
+2021,BSA1,Agriculture,Butte Sink,2/1/2021,Aquatic insect,37.81915207
+2021,BSA1,Agriculture,Butte Sink,2/1/2021,Copepoda,1777.500147
+2021,BSA1,Agriculture,Butte Sink,2/1/2021,Large cladocera,416.0106728
+2021,BSA1,Agriculture,Butte Sink,2/1/2021,Rotifera,37.81915207
+2021,BSA1,Agriculture,Butte Sink,2/1/2021,Small cladocera,6467.075005
+2021,BSC2,Canal channel,Butte Sink,2/1/2021,Copepoda,3449.239562
+2021,BSC2,Canal channel,Butte Sink,2/1/2021,Large cladocera,1156.169686
+2021,BSC2,Canal channel,Butte Sink,2/1/2021,Rotifera,269.7729267
+2021,BSC2,Canal channel,Butte Sink,2/1/2021,Small cladocera,10867.99505
+2021,BSW1,Wetland,Butte Sink,2/1/2021,Copepoda,10772.09274
+2021,BSW1,Wetland,Butte Sink,2/1/2021,Large cladocera,11553.93818
+2021,BSW1,Wetland,Butte Sink,2/1/2021,Ostracoda,86.87171565
+2021,BSW1,Wetland,Butte Sink,2/1/2021,Small cladocera,37094.22258
+2021,BSW2,Wetland,Butte Sink,2/1/2021,Aquatic insect,271.8292239
+2021,BSW2,Wetland,Butte Sink,2/1/2021,Copepoda,12911.88813
+2021,BSW2,Wetland,Butte Sink,2/1/2021,Large cladocera,24736.45937
+2021,BSW2,Wetland,Butte Sink,2/1/2021,Small cladocera,1495.060731
+2021,FRC1,River channel,Feather River,2/1/2021,Aquatic insect,39.83467721
+2021,FRC1,River channel,Feather River,2/1/2021,Copepoda,62.48576817
+2021,FRC1,River channel,Feather River,2/1/2021,Large cladocera,11.71608153
+2021,FRC1,River channel,Feather River,2/1/2021,Ostracoda,1.562144204
+2021,FRC1,River channel,Feather River,2/1/2021,Rare,3.905360511
+2021,FRC1,River channel,Feather River,2/1/2021,Rotifera,0.781072102
+2021,FRC1,River channel,Feather River,2/1/2021,Small cladocera,43.74003772
+2021,FRC1,River channel,Feather River,2/1/2021,Terrestrial insect,17.18358625
+2021,LBC1,Canal channel,Lower Bypass,2/1/2021,Aquatic insect,13.46400503
+2021,LBC1,Canal channel,Lower Bypass,2/1/2021,Copepoda,511.6321913
+2021,LBC1,Canal channel,Lower Bypass,2/1/2021,Large cladocera,67.32002517
+2021,LBC1,Canal channel,Lower Bypass,2/1/2021,Rare,33.66001259
+2021,LBC1,Canal channel,Lower Bypass,2/1/2021,Rotifera,13.46400503
+2021,LBC1,Canal channel,Lower Bypass,2/1/2021,Small cladocera,807.8403021
+2021,LBC2,Canal channel,Lower Bypass,2/1/2021,Aquatic insect,141.0114099
+2021,LBC2,Canal channel,Lower Bypass,2/1/2021,Copepoda,830.4005248
+2021,LBC2,Canal channel,Lower Bypass,2/1/2021,Large cladocera,109.675541
+2021,LBC2,Canal channel,Lower Bypass,2/1/2021,Rotifera,376.0304263
+2021,LBC2,Canal channel,Lower Bypass,2/1/2021,Small cladocera,2099.503214
+2021,LBC2,Canal channel,Lower Bypass,2/1/2021,Terrestrial insect,15.66793443
+2021,LBW1,Wetland,Lower Bypass,2/1/2021,Copepoda,2152.123824
+2021,LBW1,Wetland,Lower Bypass,2/1/2021,Large cladocera,21604.01223
+2021,LBW1,Wetland,Lower Bypass,2/1/2021,Ostracoda,165.5479864
+2021,LBW1,Wetland,Lower Bypass,2/1/2021,Small cladocera,4883.6656
+2021,SRC1,River channel,Sacramento River,2/1/2021,Aquatic insect,13.67383368
+2021,SRC1,River channel,Sacramento River,2/1/2021,Copepoda,83.99640692
+2021,SRC1,River channel,Sacramento River,2/1/2021,Large cladocera,0.976702406
+2021,SRC1,River channel,Sacramento River,2/1/2021,Ostracoda,0.976702406
+2021,SRC1,River channel,Sacramento River,2/1/2021,Rare,3.906809624
+2021,SRC1,River channel,Sacramento River,2/1/2021,Rotifera,3.906809624
+2021,SRC1,River channel,Sacramento River,2/1/2021,Small cladocera,21.48745293
+2021,SRC1,River channel,Sacramento River,2/1/2021,Terrestrial insect,4.395160827
+2021,SRC2,River channel,Sacramento River,2/1/2021,Aquatic insect,6.371468646
+2021,SRC2,River channel,Sacramento River,2/1/2021,Copepoda,74.06832301
+2021,SRC2,River channel,Sacramento River,2/1/2021,Large cladocera,11.15007013
+2021,SRC2,River channel,Sacramento River,2/1/2021,Rare,5.575035065
+2021,SRC2,River channel,Sacramento River,2/1/2021,Small cladocera,88.40412746
+2021,SRC2,River channel,Sacramento River,2/1/2021,Terrestrial insect,0.796433581
+2021,SRC3,River channel,Sacramento River,2/1/2021,Aquatic insect,6.786552814
+2021,SRC3,River channel,Sacramento River,2/1/2021,Copepoda,129.914011
+2021,SRC3,River channel,Sacramento River,2/1/2021,Large cladocera,41.68882443
+2021,SRC3,River channel,Sacramento River,2/1/2021,Ostracoda,0.969507545
+2021,SRC3,River channel,Sacramento River,2/1/2021,Rare,12.60359808
+2021,SRC3,River channel,Sacramento River,2/1/2021,Rotifera,0.969507545
+2021,SRC3,River channel,Sacramento River,2/1/2021,Small cladocera,164.8162826
+2021,SRC3,River channel,Sacramento River,2/1/2021,Terrestrial insect,4.847537724
+2021,SRC4,River channel,Sacramento River,2/1/2021,Aquatic insect,28.86198448
+2021,SRC4,River channel,Sacramento River,2/1/2021,Copepoda,348.9676305
+2021,SRC4,River channel,Sacramento River,2/1/2021,Large cladocera,91.83358697
+2021,SRC4,River channel,Sacramento River,2/1/2021,Ostracoda,7.871450312
+2021,SRC4,River channel,Sacramento River,2/1/2021,Rare,10.49526708
+2021,SRC4,River channel,Sacramento River,2/1/2021,Rotifera,18.36671739
+2021,SRC4,River channel,Sacramento River,2/1/2021,Small cladocera,540.5062548
+2021,SRC4,River channel,Sacramento River,2/1/2021,Terrestrial insect,7.871450312
+2021,UBC1,Canal channel,Upper Bypass,2/1/2021,Aquatic insect,235.7205658
+2021,UBC1,Canal channel,Upper Bypass,2/1/2021,Copepoda,798.8308062
+2021,UBC1,Canal channel,Upper Bypass,2/1/2021,Large cladocera,471.4411315
+2021,UBC1,Canal channel,Upper Bypass,2/1/2021,Rotifera,340.4852617
+2021,UBC1,Canal channel,Upper Bypass,2/1/2021,Small cladocera,4504.881923
+2021,UBC2,Canal channel,Upper Bypass,2/1/2021,Aquatic insect,146.4665413
+2021,UBC2,Canal channel,Upper Bypass,2/1/2021,Copepoda,1244.965601
+2021,UBC2,Canal channel,Upper Bypass,2/1/2021,Large cladocera,523.0947902
+2021,UBC2,Canal channel,Upper Bypass,2/1/2021,Ostracoda,20.92379161
+2021,UBC2,Canal channel,Upper Bypass,2/1/2021,Rare,20.92379161
+2021,UBC2,Canal channel,Upper Bypass,2/1/2021,Small cladocera,9855.105847
+2021,UBC2,Canal channel,Upper Bypass,2/1/2021,Terrestrial insect,62.77137482
+2021,UBC3,Canal channel,Upper Bypass,2/1/2021,Aquatic insect,148.9229411
+2021,UBC3,Canal channel,Upper Bypass,2/1/2021,Copepoda,1154.152794
+2021,UBC3,Canal channel,Upper Bypass,2/1/2021,Large cladocera,74.46147056
+2021,UBC3,Canal channel,Upper Bypass,2/1/2021,Ostracoda,37.23073528
+2021,UBC3,Canal channel,Upper Bypass,2/1/2021,Rare,37.23073528
+2021,UBC3,Canal channel,Upper Bypass,2/1/2021,Rotifera,111.6922058
+2021,UBC3,Canal channel,Upper Bypass,2/1/2021,Small cladocera,8935.376467
+2021,UBW1,Wetland,Upper Bypass,2/1/2021,Aquatic insect,324.964566
+2021,UBW1,Wetland,Upper Bypass,2/1/2021,Copepoda,1762.307839
+2021,UBW1,Wetland,Upper Bypass,2/1/2021,Large cladocera,2549.721979
+2021,UBW1,Wetland,Upper Bypass,2/1/2021,Ostracoda,24.9972743
+2021,UBW1,Wetland,Upper Bypass,2/1/2021,Rare,199.9781944
+2021,UBW1,Wetland,Upper Bypass,2/1/2021,Small cladocera,1349.852812
+2021,BSA1,Agriculture,Butte Sink,2/8/2021,Aquatic insect,84.88263632
+2021,BSA1,Agriculture,Butte Sink,2/8/2021,Copepoda,891.2676813
+2021,BSA1,Agriculture,Butte Sink,2/8/2021,Large cladocera,56.58842421
+2021,BSA1,Agriculture,Butte Sink,2/8/2021,Ostracoda,84.88263632
+2021,BSA1,Agriculture,Butte Sink,2/8/2021,Rare,396.1189695
+2021,BSA1,Agriculture,Butte Sink,2/8/2021,Rotifera,198.0594847
+2021,BSA1,Agriculture,Butte Sink,2/8/2021,Small cladocera,4866.604482
+2021,BSC2,Canal channel,Butte Sink,2/8/2021,Aquatic insect,86.16081782
+2021,BSC2,Canal channel,Butte Sink,2/8/2021,Copepoda,832.8879056
+2021,BSC2,Canal channel,Butte Sink,2/8/2021,Large cladocera,1148.810904
+2021,BSC2,Canal channel,Butte Sink,2/8/2021,Small cladocera,6462.061336
+2021,BSC2,Canal channel,Butte Sink,2/8/2021,Terrestrial insect,28.72027261
+2021,BSW1,Wetland,Butte Sink,2/8/2021,Aquatic insect,182.4757701
+2021,BSW1,Wetland,Butte Sink,2/8/2021,Copepoda,8211.409656
+2021,BSW1,Wetland,Butte Sink,2/8/2021,Large cladocera,44524.08791
+2021,BSW1,Wetland,Butte Sink,2/8/2021,Ostracoda,182.4757701
+2021,BSW1,Wetland,Butte Sink,2/8/2021,Rotifera,1277.330391
+2021,BSW1,Wetland,Butte Sink,2/8/2021,Small cladocera,174629.312
+2021,BSW2,Wetland,Butte Sink,2/8/2021,Aquatic insect,1608.822877
+2021,BSW2,Wetland,Butte Sink,2/8/2021,Copepoda,2949.508607
+2021,BSW2,Wetland,Butte Sink,2/8/2021,Large cladocera,104305.3498
+2021,BSW2,Wetland,Butte Sink,2/8/2021,Ostracoda,536.2742922
+2021,BSW2,Wetland,Butte Sink,2/8/2021,Rotifera,804.4114383
+2021,BSW2,Wetland,Butte Sink,2/8/2021,Small cladocera,32980.86897
+2021,FRC1,River channel,Feather River,2/8/2021,Aquatic insect,22.74232018
+2021,FRC1,River channel,Feather River,2/8/2021,Copepoda,102.7615949
+2021,FRC1,River channel,Feather River,2/8/2021,Large cladocera,7.580773395
+2021,FRC1,River channel,Feather River,2/8/2021,Ostracoda,3.36923262
+2021,FRC1,River channel,Feather River,2/8/2021,Rare,5.896157085
+2021,FRC1,River channel,Feather River,2/8/2021,Rotifera,2.526924465
+2021,FRC1,River channel,Feather River,2/8/2021,Small cladocera,58.96157085
+2021,FRC1,River channel,Feather River,2/8/2021,Terrestrial insect,1.68461631
+2021,LBC1,Canal channel,Lower Bypass,2/8/2021,Aquatic insect,4.365195662
+2021,LBC1,Canal channel,Lower Bypass,2/8/2021,Copepoda,170.2426308
+2021,LBC1,Canal channel,Lower Bypass,2/8/2021,Large cladocera,30.55636964
+2021,LBC1,Canal channel,Lower Bypass,2/8/2021,Ostracoda,17.46078265
+2021,LBC1,Canal channel,Lower Bypass,2/8/2021,Rare,30.55636964
+2021,LBC1,Canal channel,Lower Bypass,2/8/2021,Rotifera,39.28676096
+2021,LBC1,Canal channel,Lower Bypass,2/8/2021,Small cladocera,550.0146534
+2021,LBC1,Canal channel,Lower Bypass,2/8/2021,Terrestrial insect,8.730391324
+2021,LBC2,Canal channel,Lower Bypass,2/8/2021,Aquatic insect,4.23696255
+2021,LBC2,Canal channel,Lower Bypass,2/8/2021,Copepoda,93.2131761
+2021,LBC2,Canal channel,Lower Bypass,2/8/2021,Large cladocera,11.65164701
+2021,LBC2,Canal channel,Lower Bypass,2/8/2021,Ostracoda,1.059240638
+2021,LBC2,Canal channel,Lower Bypass,2/8/2021,Small cladocera,99.56861993
+2021,LBW1,Wetland,Lower Bypass,2/8/2021,Copepoda,3037.168828
+2021,LBW1,Wetland,Lower Bypass,2/8/2021,Large cladocera,61403.63065
+2021,LBW1,Wetland,Lower Bypass,2/8/2021,Small cladocera,3829.47374
+2021,SRC1,River channel,Sacramento River,2/8/2021,Aquatic insect,9.442916536
+2021,SRC1,River channel,Sacramento River,2/8/2021,Copepoda,77.11715171
+2021,SRC1,River channel,Sacramento River,2/8/2021,Large cladocera,0.786909711
+2021,SRC1,River channel,Sacramento River,2/8/2021,Ostracoda,0.786909711
+2021,SRC1,River channel,Sacramento River,2/8/2021,Rare,7.082187402
+2021,SRC1,River channel,Sacramento River,2/8/2021,Rotifera,2.360729134
+2021,SRC1,River channel,Sacramento River,2/8/2021,Small cladocera,18.09892336
+2021,SRC1,River channel,Sacramento River,2/8/2021,Terrestrial insect,1.573819423
+2021,SRC2,River channel,Sacramento River,2/8/2021,Aquatic insect,0.856004223
+2021,SRC2,River channel,Sacramento River,2/8/2021,Copepoda,105.2885194
+2021,SRC2,River channel,Sacramento River,2/8/2021,Large cladocera,22.25610979
+2021,SRC2,River channel,Sacramento River,2/8/2021,Ostracoda,0.856004223
+2021,SRC2,River channel,Sacramento River,2/8/2021,Rare,11.98405912
+2021,SRC2,River channel,Sacramento River,2/8/2021,Rotifera,0.856004223
+2021,SRC2,River channel,Sacramento River,2/8/2021,Small cladocera,338.9776721
+2021,SRC2,River channel,Sacramento River,2/8/2021,Terrestrial insect,4.280021113
+2021,SRC3,River channel,Sacramento River,2/8/2021,Aquatic insect,9.78517838
+2021,SRC3,River channel,Sacramento River,2/8/2021,Copepoda,176.1332108
+2021,SRC3,River channel,Sacramento River,2/8/2021,Large cladocera,64.30260079
+2021,SRC3,River channel,Sacramento River,2/8/2021,Rare,19.57035676
+2021,SRC3,River channel,Sacramento River,2/8/2021,Rotifera,11.18306101
+2021,SRC3,River channel,Sacramento River,2/8/2021,Small cladocera,213.8760417
+2021,SRC3,River channel,Sacramento River,2/8/2021,Terrestrial insect,1.397882626
+2021,SRC4,River channel,Sacramento River,2/8/2021,Aquatic insect,14.3601363
+2021,SRC4,River channel,Sacramento River,2/8/2021,Copepoda,367.6194894
+2021,SRC4,River channel,Sacramento River,2/8/2021,Large cladocera,40.20838165
+2021,SRC4,River channel,Sacramento River,2/8/2021,Ostracoda,2.872027261
+2021,SRC4,River channel,Sacramento River,2/8/2021,Rare,31.59229987
+2021,SRC4,River channel,Sacramento River,2/8/2021,Rotifera,11.48810904
+2021,SRC4,River channel,Sacramento River,2/8/2021,Small cladocera,304.4348896
+2021,SRC4,River channel,Sacramento River,2/8/2021,Terrestrial insect,5.744054521
+2021,UBC1,Canal channel,Upper Bypass,2/8/2021,Copepoda,358.7343079
+2021,UBC1,Canal channel,Upper Bypass,2/8/2021,Large cladocera,235.4193896
+2021,UBC1,Canal channel,Upper Bypass,2/8/2021,Rare,100.8940241
+2021,UBC1,Canal channel,Upper Bypass,2/8/2021,Rotifera,22.42089424
+2021,UBC1,Canal channel,Upper Bypass,2/8/2021,Small cladocera,1916.986458
+2021,UBC2,Canal channel,Upper Bypass,2/8/2021,Aquatic insect,93.01105952
+2021,UBC2,Canal channel,Upper Bypass,2/8/2021,Copepoda,511.5608273
+2021,UBC2,Canal channel,Upper Bypass,2/8/2021,Large cladocera,116.2638244
+2021,UBC2,Canal channel,Upper Bypass,2/8/2021,Rotifera,46.50552976
+2021,UBC2,Canal channel,Upper Bypass,2/8/2021,Small cladocera,2325.276488
+2021,UBC3,Canal channel,Upper Bypass,2/8/2021,Aquatic insect,71.01294022
+2021,UBC3,Canal channel,Upper Bypass,2/8/2021,Copepoda,224.8743107
+2021,UBC3,Canal channel,Upper Bypass,2/8/2021,Large cladocera,59.17745019
+2021,UBC3,Canal channel,Upper Bypass,2/8/2021,Ostracoda,11.83549004
+2021,UBC3,Canal channel,Upper Bypass,2/8/2021,Rare,11.83549004
+2021,UBC3,Canal channel,Upper Bypass,2/8/2021,Rotifera,23.67098007
+2021,UBC3,Canal channel,Upper Bypass,2/8/2021,Small cladocera,1858.171936
+2021,UBC3,Canal channel,Upper Bypass,2/8/2021,Terrestrial insect,35.50647011
+2021,UBW1,Wetland,Upper Bypass,2/8/2021,Copepoda,253.4385696
+2021,UBW1,Wetland,Upper Bypass,2/8/2021,Large cladocera,2034.749659
+2021,UBW1,Wetland,Upper Bypass,2/8/2021,Ostracoda,10.13754279
+2021,UBW1,Wetland,Upper Bypass,2/8/2021,Small cladocera,1640.833711
+2021,BSA1,Agriculture,Butte Sink,2/15/2021,Aquatic insect,75.78806814
+2021,BSA1,Agriculture,Butte Sink,2/15/2021,Copepoda,293.7361792
+2021,BSA1,Agriculture,Butte Sink,2/15/2021,Large cladocera,1418.078964
+2021,BSA1,Agriculture,Butte Sink,2/15/2021,Ostracoda,117.8925504
+2021,BSA1,Agriculture,Butte Sink,2/15/2021,Small cladocera,3751.509373
+2021,BSC1,Canal channel,Butte Sink,2/15/2021,Aquatic insect,124.4700017
+2021,BSC1,Canal channel,Butte Sink,2/15/2021,Copepoda,825.4326432
+2021,BSC1,Canal channel,Butte Sink,2/15/2021,Large cladocera,694.4115887
+2021,BSC1,Canal channel,Butte Sink,2/15/2021,Rotifera,32.75526362
+2021,BSC1,Canal channel,Butte Sink,2/15/2021,Small cladocera,681.3094832
+2021,BSC1,Canal channel,Butte Sink,2/15/2021,Terrestrial insect,6.551052724
+2021,BSW1,Wetland,Butte Sink,2/15/2021,Copepoda,6578.404314
+2021,BSW1,Wetland,Butte Sink,2/15/2021,Large cladocera,6260.094428
+2021,BSW1,Wetland,Butte Sink,2/15/2021,Rotifera,106.1032954
+2021,BSW1,Wetland,Butte Sink,2/15/2021,Small cladocera,18037.56022
+2021,BSW2,Wetland,Butte Sink,2/15/2021,Copepoda,2900.156741
+2021,BSW2,Wetland,Butte Sink,2/15/2021,Large cladocera,16410.64302
+2021,BSW2,Wetland,Butte Sink,2/15/2021,Rotifera,282.9421211
+2021,BSW2,Wetland,Butte Sink,2/15/2021,Small cladocera,8346.792571
+2021,FRC1,River channel,Feather River,2/15/2021,Aquatic insect,11.34950872
+2021,FRC1,River channel,Feather River,2/15/2021,Copepoda,6.111273927
+2021,FRC1,River channel,Feather River,2/15/2021,Large cladocera,0.873039132
+2021,FRC1,River channel,Feather River,2/15/2021,Rare,0.873039132
+2021,FRC1,River channel,Feather River,2/15/2021,Small cladocera,29.6833305
+2021,FRC1,River channel,Feather River,2/15/2021,Terrestrial insect,0.873039132
+2021,LBC1,Canal channel,Lower Bypass,2/15/2021,Aquatic insect,28.21235782
+2021,LBC1,Canal channel,Lower Bypass,2/15/2021,Copepoda,476.0835382
+2021,LBC1,Canal channel,Lower Bypass,2/15/2021,Large cladocera,77.583984
+2021,LBC1,Canal channel,Lower Bypass,2/15/2021,Ostracoda,7.053089454
+2021,LBC1,Canal channel,Lower Bypass,2/15/2021,Rare,24.68581309
+2021,LBC1,Canal channel,Lower Bypass,2/15/2021,Rotifera,21.15926836
+2021,LBC1,Canal channel,Lower Bypass,2/15/2021,Small cladocera,306.8093913
+2021,LBC2,Canal channel,Lower Bypass,2/15/2021,Aquatic insect,27.41888525
+2021,LBC2,Canal channel,Lower Bypass,2/15/2021,Copepoda,309.6049127
+2021,LBC2,Canal channel,Lower Bypass,2/15/2021,Large cladocera,11.42453552
+2021,LBC2,Canal channel,Lower Bypass,2/15/2021,Ostracoda,6.854721313
+2021,LBC2,Canal channel,Lower Bypass,2/15/2021,Rare,9.139628418
+2021,LBC2,Canal channel,Lower Bypass,2/15/2021,Rotifera,93.68119128
+2021,LBC2,Canal channel,Lower Bypass,2/15/2021,Small cladocera,367.8700438
+2021,LBW1,Wetland,Lower Bypass,2/15/2021,Aquatic insect,56.58842421
+2021,LBW1,Wetland,Lower Bypass,2/15/2021,Copepoda,976.1503176
+2021,LBW1,Wetland,Lower Bypass,2/15/2021,Large cladocera,1527.887454
+2021,LBW1,Wetland,Lower Bypass,2/15/2021,Rotifera,14.14710605
+2021,LBW1,Wetland,Lower Bypass,2/15/2021,Small cladocera,2037.183272
+2021,SRC1,River channel,Sacramento River,2/15/2021,Aquatic insect,8.939591267
+2021,SRC1,River channel,Sacramento River,2/15/2021,Copepoda,73.99994994
+2021,SRC1,River channel,Sacramento River,2/15/2021,Large cladocera,65.55700263
+2021,SRC1,River channel,Sacramento River,2/15/2021,Ostracoda,1.986575837
+2021,SRC1,River channel,Sacramento River,2/15/2021,Rare,30.79192548
+2021,SRC1,River channel,Sacramento River,2/15/2021,Small cladocera,80.45632141
+2021,SRC1,River channel,Sacramento River,2/15/2021,Terrestrial insect,13.4093869
+2021,SRC2,River channel,Sacramento River,2/15/2021,Aquatic insect,6.95301543
+2021,SRC2,River channel,Sacramento River,2/15/2021,Copepoda,34.76507715
+2021,SRC2,River channel,Sacramento River,2/15/2021,Large cladocera,20.85904629
+2021,SRC2,River channel,Sacramento River,2/15/2021,Ostracoda,1.986575837
+2021,SRC2,River channel,Sacramento River,2/15/2021,Rare,6.95301543
+2021,SRC2,River channel,Sacramento River,2/15/2021,Rotifera,0.993287919
+2021,SRC2,River channel,Sacramento River,2/15/2021,Small cladocera,63.57042679
+2021,SRC2,River channel,Sacramento River,2/15/2021,Terrestrial insect,2.979863756
+2021,SRC3,River channel,Sacramento River,2/15/2021,Aquatic insect,14.13458442
+2021,SRC3,River channel,Sacramento River,2/15/2021,Copepoda,148.4131364
+2021,SRC3,River channel,Sacramento River,2/15/2021,Large cladocera,53.00469159
+2021,SRC3,River channel,Sacramento River,2/15/2021,Ostracoda,7.067292212
+2021,SRC3,River channel,Sacramento River,2/15/2021,Rare,38.87010717
+2021,SRC3,River channel,Sacramento River,2/15/2021,Rotifera,10.60093832
+2021,SRC3,River channel,Sacramento River,2/15/2021,Small cladocera,462.9076399
+2021,SRC3,River channel,Sacramento River,2/15/2021,Terrestrial insect,14.13458442
+2021,SRC4,River channel,Sacramento River,2/15/2021,Aquatic insect,18.7699189
+2021,SRC4,River channel,Sacramento River,2/15/2021,Copepoda,154.1814767
+2021,SRC4,River channel,Sacramento River,2/15/2021,Large cladocera,54.96904821
+2021,SRC4,River channel,Sacramento River,2/15/2021,Ostracoda,5.362833972
+2021,SRC4,River channel,Sacramento River,2/15/2021,Rare,10.72566794
+2021,SRC4,River channel,Sacramento River,2/15/2021,Rotifera,1.340708493
+2021,SRC4,River channel,Sacramento River,2/15/2021,Small cladocera,134.0708493
+2021,SRC4,River channel,Sacramento River,2/15/2021,Terrestrial insect,4.022125479
+2021,UBC1,Canal channel,Upper Bypass,2/15/2021,Copepoda,385.8292648
+2021,UBC1,Canal channel,Upper Bypass,2/15/2021,Large cladocera,450.1341423
+2021,UBC1,Canal channel,Upper Bypass,2/15/2021,Rare,42.86991831
+2021,UBC1,Canal channel,Upper Bypass,2/15/2021,Rotifera,10.71747958
+2021,UBC1,Canal channel,Upper Bypass,2/15/2021,Small cladocera,1779.10161
+2021,UBC2,Canal channel,Upper Bypass,2/15/2021,Copepoda,219.0265982
+2021,UBC2,Canal channel,Upper Bypass,2/15/2021,Large cladocera,87.61063927
+2021,UBC2,Canal channel,Upper Bypass,2/15/2021,Ostracoda,19.46903095
+2021,UBC2,Canal channel,Upper Bypass,2/15/2021,Rare,14.60177321
+2021,UBC2,Canal channel,Upper Bypass,2/15/2021,Rotifera,9.734515475
+2021,UBC2,Canal channel,Upper Bypass,2/15/2021,Small cladocera,1129.203795
+2021,UBC2,Canal channel,Upper Bypass,2/15/2021,Terrestrial insect,4.867257737
+2021,UBC3,Canal channel,Upper Bypass,2/15/2021,Aquatic insect,14.28997277
+2021,UBC3,Canal channel,Upper Bypass,2/15/2021,Copepoda,321.5243873
+2021,UBC3,Canal channel,Upper Bypass,2/15/2021,Large cladocera,14.28997277
+2021,UBC3,Canal channel,Upper Bypass,2/15/2021,Rotifera,7.144986385
+2021,UBC3,Canal channel,Upper Bypass,2/15/2021,Small cladocera,2515.035208
+2021,UBW1,Wetland,Upper Bypass,2/15/2021,Copepoda,50.52537876
+2021,UBW1,Wetland,Upper Bypass,2/15/2021,Large cladocera,550.7266285
+2021,UBW1,Wetland,Upper Bypass,2/15/2021,Small cladocera,581.0418557
+2021,BSA1,Agriculture,Butte Sink,2/22/2021,Aquatic insect,424.4131816
+2021,BSA1,Agriculture,Butte Sink,2/22/2021,Copepoda,2015.962612
+2021,BSA1,Agriculture,Butte Sink,2/22/2021,Large cladocera,7215.024087
+2021,BSA1,Agriculture,Butte Sink,2/22/2021,Ostracoda,848.8263632
+2021,BSA1,Agriculture,Butte Sink,2/22/2021,Rotifera,106.1032954
+2021,BSA1,Agriculture,Butte Sink,2/22/2021,Small cladocera,11353.05261
+2021,BSC1,Canal channel,Butte Sink,2/22/2021,Aquatic insect,11.62638244
+2021,BSC1,Canal channel,Butte Sink,2/22/2021,Copepoda,264.5002005
+2021,BSC1,Canal channel,Butte Sink,2/22/2021,Large cladocera,46.50552976
+2021,BSC1,Canal channel,Butte Sink,2/22/2021,Ostracoda,5.81319122
+2021,BSC1,Canal channel,Butte Sink,2/22/2021,Rare,93.01105952
+2021,BSC1,Canal channel,Butte Sink,2/22/2021,Small cladocera,997.9311594
+2021,BSC1,Canal channel,Butte Sink,2/22/2021,Terrestrial insect,11.62638244
+2021,BSC2,Canal channel,Butte Sink,2/22/2021,Aquatic insect,29.89452566
+2021,BSC2,Canal channel,Butte Sink,2/22/2021,Copepoda,717.4686158
+2021,BSC2,Canal channel,Butte Sink,2/22/2021,Large cladocera,298.9452566
+2021,BSC2,Canal channel,Butte Sink,2/22/2021,Rare,29.89452566
+2021,BSC2,Canal channel,Butte Sink,2/22/2021,Rotifera,29.89452566
+2021,BSC2,Canal channel,Butte Sink,2/22/2021,Small cladocera,5829.432504
+2021,BSW1,Wetland,Butte Sink,2/22/2021,Aquatic insect,35.36776513
+2021,BSW1,Wetland,Butte Sink,2/22/2021,Copepoda,919.5618934
+2021,BSW1,Wetland,Butte Sink,2/22/2021,Large cladocera,459.7809467
+2021,BSW1,Wetland,Butte Sink,2/22/2021,Small cladocera,6012.520072
+2021,BSW2,Wetland,Butte Sink,2/22/2021,Copepoda,5941.784542
+2021,BSW2,Wetland,Butte Sink,2/22/2021,Large cladocera,5906.416777
+2021,BSW2,Wetland,Butte Sink,2/22/2021,Rare,35.36776513
+2021,BSW2,Wetland,Butte Sink,2/22/2021,Small cladocera,1485.446136
+2021,FRC1,River channel,Feather River,2/22/2021,Aquatic insect,52.28368257
+2021,FRC1,River channel,Feather River,2/22/2021,Copepoda,12.62019924
+2021,FRC1,River channel,Feather River,2/22/2021,Large cladocera,0.901442803
+2021,FRC1,River channel,Feather River,2/22/2021,Small cladocera,21.63462727
+2021,FRC1,River channel,Feather River,2/22/2021,Terrestrial insect,28.84616969
+2021,LBC1,Canal channel,Lower Bypass,2/22/2021,Aquatic insect,29.6309154
+2021,LBC1,Canal channel,Lower Bypass,2/22/2021,Copepoda,1244.498447
+2021,LBC1,Canal channel,Lower Bypass,2/22/2021,Large cladocera,128.4006334
+2021,LBC1,Canal channel,Lower Bypass,2/22/2021,Rare,39.50788719
+2021,LBC1,Canal channel,Lower Bypass,2/22/2021,Rotifera,622.2492233
+2021,LBC1,Canal channel,Lower Bypass,2/22/2021,Small cladocera,1550.684572
+2021,LBC2,Canal channel,Lower Bypass,2/22/2021,Copepoda,155.5882979
+2021,LBC2,Canal channel,Lower Bypass,2/22/2021,Large cladocera,3.197019819
+2021,LBC2,Canal channel,Lower Bypass,2/22/2021,Rare,8.525386184
+2021,LBC2,Canal channel,Lower Bypass,2/22/2021,Rotifera,5.328366365
+2021,LBC2,Canal channel,Lower Bypass,2/22/2021,Small cladocera,79.92549548
+2021,LBC2,Canal channel,Lower Bypass,2/22/2021,Terrestrial insect,3.197019819
+2021,LBW1,Wetland,Lower Bypass,2/22/2021,Aquatic insect,47.15702018
+2021,LBW1,Wetland,Lower Bypass,2/22/2021,Copepoda,783.9854604
+2021,LBW1,Wetland,Lower Bypass,2/22/2021,Large cladocera,506.9379669
+2021,LBW1,Wetland,Lower Bypass,2/22/2021,Rare,11.78925504
+2021,LBW1,Wetland,Lower Bypass,2/22/2021,Rotifera,11.78925504
+2021,LBW1,Wetland,Lower Bypass,2/22/2021,Small cladocera,1237.87178
+2021,SRC2,River channel,Sacramento River,2/22/2021,Aquatic insect,4.189198384
+2021,SRC2,River channel,Sacramento River,2/22/2021,Copepoda,74.00917144
+2021,SRC2,River channel,Sacramento River,2/22/2021,Large cladocera,14.66219434
+2021,SRC2,River channel,Sacramento River,2/22/2021,Rare,5.585597845
+2021,SRC2,River channel,Sacramento River,2/22/2021,Small cladocera,259.7302998
+2021,SRC2,River channel,Sacramento River,2/22/2021,Terrestrial insect,3.490998653
+2021,SRC3,River channel,Sacramento River,2/22/2021,Aquatic insect,4.451945851
+2021,SRC3,River channel,Sacramento River,2/22/2021,Copepoda,182.5297799
+2021,SRC3,River channel,Sacramento River,2/22/2021,Large cladocera,60.10126899
+2021,SRC3,River channel,Sacramento River,2/22/2021,Rare,20.03375633
+2021,SRC3,River channel,Sacramento River,2/22/2021,Rotifera,37.84153973
+2021,SRC3,River channel,Sacramento River,2/22/2021,Small cladocera,331.6699659
+2021,SRC3,River channel,Sacramento River,2/22/2021,Terrestrial insect,4.451945851
+2021,SRC4,River channel,Sacramento River,2/22/2021,Aquatic insect,1.44905752
+2021,SRC4,River channel,Sacramento River,2/22/2021,Copepoda,113.0264865
+2021,SRC4,River channel,Sacramento River,2/22/2021,Large cladocera,13.04151768
+2021,SRC4,River channel,Sacramento River,2/22/2021,Rotifera,4.347172559
+2021,SRC4,River channel,Sacramento River,2/22/2021,Small cladocera,182.5812475
+2021,SRC4,River channel,Sacramento River,2/22/2021,Terrestrial insect,2.898115039
+2021,UBC1,Canal channel,Upper Bypass,2/22/2021,Copepoda,856.7374167
+2021,UBC1,Canal channel,Upper Bypass,2/22/2021,Large cladocera,608.7344803
+2021,UBC1,Canal channel,Upper Bypass,2/22/2021,Rare,22.54572149
+2021,UBC1,Canal channel,Upper Bypass,2/22/2021,Rotifera,45.09144299
+2021,UBC1,Canal channel,Upper Bypass,2/22/2021,Small cladocera,3810.226932
+2021,UBC3,Canal channel,Upper Bypass,2/22/2021,Aquatic insect,2.77075051
+2021,UBC3,Canal channel,Upper Bypass,2/22/2021,Copepoda,19.39525357
+2021,UBC3,Canal channel,Upper Bypass,2/22/2021,Large cladocera,6.465084523
+2021,UBC3,Canal channel,Upper Bypass,2/22/2021,Rare,0.923583503
+2021,UBC3,Canal channel,Upper Bypass,2/22/2021,Rotifera,3.694334013
+2021,UBC3,Canal channel,Upper Bypass,2/22/2021,Small cladocera,178.2516161
+2021,UBC3,Canal channel,Upper Bypass,2/22/2021,Terrestrial insect,1.847167007
+2021,UBW1,Wetland,Upper Bypass,2/22/2021,Aquatic insect,6.241370317
+2021,UBW1,Wetland,Upper Bypass,2/22/2021,Copepoda,66.57461672
+2021,UBW1,Wetland,Upper Bypass,2/22/2021,Large cladocera,332.8730836
+2021,UBW1,Wetland,Upper Bypass,2/22/2021,Ostracoda,6.241370317
+2021,UBW1,Wetland,Upper Bypass,2/22/2021,Rare,2.080456772
+2021,UBW1,Wetland,Upper Bypass,2/22/2021,Rotifera,6.241370317
+2021,UBW1,Wetland,Upper Bypass,2/22/2021,Small cladocera,41.60913545
+2021,BSA1,Agriculture,Butte Sink,3/1/2021,Aquatic insect,8.841941283
+2021,BSA1,Agriculture,Butte Sink,3/1/2021,Copepoda,433.2551229
+2021,BSA1,Agriculture,Butte Sink,3/1/2021,Large cladocera,229.8904734
+2021,BSA1,Agriculture,Butte Sink,3/1/2021,Ostracoda,53.0516477
+2021,BSA1,Agriculture,Butte Sink,3/1/2021,Small cladocera,1343.975075
+2021,BSC1,Canal channel,Butte Sink,3/1/2021,Aquatic insect,187.1039924
+2021,BSC1,Canal channel,Butte Sink,3/1/2021,Copepoda,195.6087194
+2021,BSC1,Canal channel,Butte Sink,3/1/2021,Large cladocera,51.02836157
+2021,BSC1,Canal channel,Butte Sink,3/1/2021,Rotifera,8.504726928
+2021,BSC1,Canal channel,Butte Sink,3/1/2021,Small cladocera,1624.402843
+2021,BSC1,Canal channel,Butte Sink,3/1/2021,Terrestrial insect,85.04726928
+2021,BSC2,Canal channel,Butte Sink,3/1/2021,Copepoda,785.7352192
+2021,BSC2,Canal channel,Butte Sink,3/1/2021,Large cladocera,1100.029307
+2021,BSC2,Canal channel,Butte Sink,3/1/2021,Rotifera,104.7646959
+2021,BSC2,Canal channel,Butte Sink,3/1/2021,Small cladocera,4635.837793
+2021,BSW1,Wetland,Butte Sink,3/1/2021,Aquatic insect,114.4440428
+2021,BSW1,Wetland,Butte Sink,3/1/2021,Copepoda,7782.19491
+2021,BSW1,Wetland,Butte Sink,3/1/2021,Large cladocera,17624.38259
+2021,BSW1,Wetland,Butte Sink,3/1/2021,Ostracoda,114.4440428
+2021,BSW1,Wetland,Butte Sink,3/1/2021,Rare,114.4440428
+2021,BSW1,Wetland,Butte Sink,3/1/2021,Small cladocera,7553.306825
+2021,BSW2,Wetland,Butte Sink,3/1/2021,Copepoda,3448.3571
+2021,BSW2,Wetland,Butte Sink,3/1/2021,Large cladocera,23873.24146
+2021,BSW2,Wetland,Butte Sink,3/1/2021,Rotifera,318.3098862
+2021,BSW2,Wetland,Butte Sink,3/1/2021,Small cladocera,4244.131816
+2021,BSW2,Wetland,Butte Sink,3/1/2021,Terrestrial insect,106.1032954
+2021,FRC1,River channel,Feather River,3/1/2021,Aquatic insect,9.898920625
+2021,FRC1,River channel,Feather River,3/1/2021,Copepoda,4.499509375
+2021,FRC1,River channel,Feather River,3/1/2021,Ostracoda,0.899901875
+2021,FRC1,River channel,Feather River,3/1/2021,Small cladocera,0.899901875
+2021,LBC1,Canal channel,Lower Bypass,3/1/2021,Copepoda,13430.50405
+2021,LBC1,Canal channel,Lower Bypass,3/1/2021,Large cladocera,2984.556455
+2021,LBC1,Canal channel,Lower Bypass,3/1/2021,Rare,62.17825947
+2021,LBC1,Canal channel,Lower Bypass,3/1/2021,Rotifera,10756.83889
+2021,LBC1,Canal channel,Lower Bypass,3/1/2021,Small cladocera,2487.130379
+2021,LBC2,Canal channel,Lower Bypass,3/1/2021,Aquatic insect,14.25591954
+2021,LBC2,Canal channel,Lower Bypass,3/1/2021,Copepoda,419.1240345
+2021,LBC2,Canal channel,Lower Bypass,3/1/2021,Large cladocera,5.702367817
+2021,LBC2,Canal channel,Lower Bypass,3/1/2021,Rare,19.95828736
+2021,LBC2,Canal channel,Lower Bypass,3/1/2021,Rotifera,205.2852414
+2021,LBC2,Canal channel,Lower Bypass,3/1/2021,Small cladocera,319.3325978
+2021,LBC2,Canal channel,Lower Bypass,3/1/2021,Terrestrial insect,2.851183908
+2021,LBW1,Wetland,Lower Bypass,3/1/2021,Copepoda,4754.217284
+2021,LBW1,Wetland,Lower Bypass,3/1/2021,Large cladocera,22843.43427
+2021,LBW1,Wetland,Lower Bypass,3/1/2021,Rotifera,1159.565191
+2021,LBW1,Wetland,Lower Bypass,3/1/2021,Small cladocera,579.7825957
+2021,SRC1,River channel,Sacramento River,3/1/2021,Aquatic insect,9.984256147
+2021,SRC1,River channel,Sacramento River,3/1/2021,Copepoda,13.61489475
+2021,SRC1,River channel,Sacramento River,3/1/2021,Rare,2.722978949
+2021,SRC1,River channel,Sacramento River,3/1/2021,Small cladocera,9.984256147
+2021,SRC1,River channel,Sacramento River,3/1/2021,Terrestrial insect,4.084468424
+2021,SRC2,River channel,Sacramento River,3/1/2021,Aquatic insect,3.575161948
+2021,SRC2,River channel,Sacramento River,3/1/2021,Copepoda,20.5571812
+2021,SRC2,River channel,Sacramento River,3/1/2021,Large cladocera,3.575161948
+2021,SRC2,River channel,Sacramento River,3/1/2021,Rare,0.893790487
+2021,SRC2,River channel,Sacramento River,3/1/2021,Rotifera,3.575161948
+2021,SRC2,River channel,Sacramento River,3/1/2021,Small cladocera,55.4150102
+2021,SRC2,River channel,Sacramento River,3/1/2021,Terrestrial insect,2.681371461
+2021,SRC3,River channel,Sacramento River,3/1/2021,Aquatic insect,8.212833024
+2021,SRC3,River channel,Sacramento River,3/1/2021,Copepoda,151.937411
+2021,SRC3,River channel,Sacramento River,3/1/2021,Large cladocera,229.9593247
+2021,SRC3,River channel,Sacramento River,3/1/2021,Ostracoda,2.053208256
+2021,SRC3,River channel,Sacramento River,3/1/2021,Rare,14.37245779
+2021,SRC3,River channel,Sacramento River,3/1/2021,Rotifera,22.58529082
+2021,SRC3,River channel,Sacramento River,3/1/2021,Small cladocera,102.6604128
+2021,SRC3,River channel,Sacramento River,3/1/2021,Terrestrial insect,2.053208256
+2021,SRC4,River channel,Sacramento River,3/1/2021,Aquatic insect,43.87021641
+2021,SRC4,River channel,Sacramento River,3/1/2021,Copepoda,848.1575172
+2021,SRC4,River channel,Sacramento River,3/1/2021,Large cladocera,555.6894078
+2021,SRC4,River channel,Sacramento River,3/1/2021,Ostracoda,21.9351082
+2021,SRC4,River channel,Sacramento River,3/1/2021,Rare,51.18191914
+2021,SRC4,River channel,Sacramento River,3/1/2021,Rotifera,65.80532461
+2021,SRC4,River channel,Sacramento River,3/1/2021,Small cladocera,219.351082
+2021,UBC1,Canal channel,Upper Bypass,3/1/2021,Aquatic insect,41.64893963
+2021,UBC1,Canal channel,Upper Bypass,3/1/2021,Copepoda,791.3298529
+2021,UBC1,Canal channel,Upper Bypass,3/1/2021,Large cladocera,874.6277321
+2021,UBC1,Canal channel,Upper Bypass,3/1/2021,Ostracoda,41.64893963
+2021,UBC1,Canal channel,Upper Bypass,3/1/2021,Rare,249.8936378
+2021,UBC1,Canal channel,Upper Bypass,3/1/2021,Rotifera,41.64893963
+2021,UBC1,Canal channel,Upper Bypass,3/1/2021,Small cladocera,6976.197387
+2021,UBC2,Canal channel,Upper Bypass,3/1/2021,Aquatic insect,7.542157548
+2021,UBC2,Canal channel,Upper Bypass,3/1/2021,Copepoda,429.9029802
+2021,UBC2,Canal channel,Upper Bypass,3/1/2021,Large cladocera,158.3853085
+2021,UBC2,Canal channel,Upper Bypass,3/1/2021,Rotifera,7.542157548
+2021,UBC2,Canal channel,Upper Bypass,3/1/2021,Small cladocera,1425.467777
+2021,UBC2,Canal channel,Upper Bypass,3/1/2021,Terrestrial insect,15.0843151
+2021,UBC3,Canal channel,Upper Bypass,3/1/2021,Copepoda,473.3775571
+2021,UBC3,Canal channel,Upper Bypass,3/1/2021,Rotifera,35.06500423
+2021,UBC3,Canal channel,Upper Bypass,3/1/2021,Small cladocera,2325.978614
+2021,UBW1,Wetland,Upper Bypass,3/1/2021,Copepoda,247.2218468
+2021,UBW1,Wetland,Upper Bypass,3/1/2021,Large cladocera,2220.332058
+2021,UBW1,Wetland,Upper Bypass,3/1/2021,Rare,9.329126296
+2021,UBW1,Wetland,Upper Bypass,3/1/2021,Rotifera,18.65825259
+2021,UBW1,Wetland,Upper Bypass,3/1/2021,Small cladocera,307.8611678
+2021,BSA1,Agriculture,Butte Sink,3/8/2021,Aquatic insect,6.430502751
+2021,BSA1,Agriculture,Butte Sink,3/8/2021,Copepoda,102.888044
+2021,BSA1,Agriculture,Butte Sink,3/8/2021,Large cladocera,282.9421211
+2021,BSA1,Agriculture,Butte Sink,3/8/2021,Ostracoda,9.645754127
+2021,BSA1,Agriculture,Butte Sink,3/8/2021,Rotifera,19.29150825
+2021,BSA1,Agriculture,Butte Sink,3/8/2021,Small cladocera,630.1892696
+2021,BSC2,Canal channel,Butte Sink,3/8/2021,Copepoda,1222.389931
+2021,BSC2,Canal channel,Butte Sink,3/8/2021,Large cladocera,1303.882593
+2021,BSC2,Canal channel,Butte Sink,3/8/2021,Rotifera,122.2389931
+2021,BSC2,Canal channel,Butte Sink,3/8/2021,Small cladocera,14913.15716
+2021,BSW1,Wetland,Butte Sink,3/8/2021,Aquatic insect,42.04813074
+2021,BSW1,Wetland,Butte Sink,3/8/2021,Copepoda,3553.067048
+2021,BSW1,Wetland,Butte Sink,3/8/2021,Large cladocera,2354.695321
+2021,BSW1,Wetland,Butte Sink,3/8/2021,Small cladocera,8451.674279
+2021,BSW2,Wetland,Butte Sink,3/8/2021,Aquatic insect,212.2065908
+2021,BSW2,Wetland,Butte Sink,3/8/2021,Copepoda,1679.968844
+2021,BSW2,Wetland,Butte Sink,3/8/2021,Large cladocera,3678.247574
+2021,BSW2,Wetland,Butte Sink,3/8/2021,Ostracoda,35.36776513
+2021,BSW2,Wetland,Butte Sink,3/8/2021,Rotifera,106.1032954
+2021,BSW2,Wetland,Butte Sink,3/8/2021,Small cladocera,1945.227082
+2021,FRC1,River channel,Feather River,3/8/2021,Aquatic insect,12.67732489
+2021,FRC1,River channel,Feather River,3/8/2021,Copepoda,7.339503885
+2021,FRC1,River channel,Feather River,3/8/2021,Large cladocera,4.670593382
+2021,FRC1,River channel,Feather River,3/8/2021,Rare,2.001682878
+2021,FRC1,River channel,Feather River,3/8/2021,Rotifera,7.339503885
+2021,FRC1,River channel,Feather River,3/8/2021,Small cladocera,7.339503885
+2021,FRC1,River channel,Feather River,3/8/2021,Terrestrial insect,2.001682878
+2021,LBC1,Canal channel,Lower Bypass,3/8/2021,Aquatic insect,73.80036405
+2021,LBC1,Canal channel,Lower Bypass,3/8/2021,Copepoda,4624.822814
+2021,LBC1,Canal channel,Lower Bypass,3/8/2021,Large cladocera,1279.20631
+2021,LBC1,Canal channel,Lower Bypass,3/8/2021,Ostracoda,24.60012135
+2021,LBC1,Canal channel,Lower Bypass,3/8/2021,Rare,24.60012135
+2021,LBC1,Canal channel,Lower Bypass,3/8/2021,Rotifera,98.4004854
+2021,LBC1,Canal channel,Lower Bypass,3/8/2021,Small cladocera,4575.622571
+2021,LBC2,Canal channel,Lower Bypass,3/8/2021,Aquatic insect,1.731719069
+2021,LBC2,Canal channel,Lower Bypass,3/8/2021,Copepoda,85.7200939
+2021,LBC2,Canal channel,Lower Bypass,3/8/2021,Large cladocera,8.658595343
+2021,LBC2,Canal channel,Lower Bypass,3/8/2021,Ostracoda,6.926876275
+2021,LBC2,Canal channel,Lower Bypass,3/8/2021,Rare,1.731719069
+2021,LBC2,Canal channel,Lower Bypass,3/8/2021,Rotifera,13.85375255
+2021,LBC2,Canal channel,Lower Bypass,3/8/2021,Small cladocera,80.52493669
+2021,LBC2,Canal channel,Lower Bypass,3/8/2021,Terrestrial insect,1.731719069
+2021,LBW1,Wetland,Lower Bypass,3/8/2021,Copepoda,14173.45453
+2021,LBW1,Wetland,Lower Bypass,3/8/2021,Large cladocera,72132.75967
+2021,LBW1,Wetland,Lower Bypass,3/8/2021,Rotifera,1518.584414
+2021,LBW1,Wetland,Lower Bypass,3/8/2021,Small cladocera,3290.26623
+2021,SRC2,River channel,Sacramento River,3/8/2021,Aquatic insect,8.296373303
+2021,SRC2,River channel,Sacramento River,3/8/2021,Copepoda,35.44814048
+2021,SRC2,River channel,Sacramento River,3/8/2021,Large cladocera,6.787941793
+2021,SRC2,River channel,Sacramento River,3/8/2021,Rare,9.050589058
+2021,SRC2,River channel,Sacramento River,3/8/2021,Rotifera,3.771078774
+2021,SRC2,River channel,Sacramento River,3/8/2021,Small cladocera,73.91314397
+2021,SRC2,River channel,Sacramento River,3/8/2021,Terrestrial insect,1.50843151
+2021,SRC3,River channel,Sacramento River,3/8/2021,Aquatic insect,8.085295856
+2021,SRC3,River channel,Sacramento River,3/8/2021,Copepoda,46.71504273
+2021,SRC3,River channel,Sacramento River,3/8/2021,Large cladocera,56.59707099
+2021,SRC3,River channel,Sacramento River,3/8/2021,Ostracoda,4.491831031
+2021,SRC3,River channel,Sacramento River,3/8/2021,Rare,7.18692965
+2021,SRC3,River channel,Sacramento River,3/8/2021,Rotifera,20.66242274
+2021,SRC3,River channel,Sacramento River,3/8/2021,Small cladocera,149.1287902
+2021,SRC3,River channel,Sacramento River,3/8/2021,Terrestrial insect,2.245915516
+2021,SRC4,River channel,Sacramento River,3/8/2021,Aquatic insect,40.24790496
+2021,SRC4,River channel,Sacramento River,3/8/2021,Copepoda,74.05614512
+2021,SRC4,River channel,Sacramento River,3/8/2021,Large cladocera,22.53882678
+2021,SRC4,River channel,Sacramento River,3/8/2021,Rotifera,4.829748595
+2021,SRC4,River channel,Sacramento River,3/8/2021,Small cladocera,47.49252785
+2021,SRC4,River channel,Sacramento River,3/8/2021,Terrestrial insect,1.609916198
+2021,UBC1,Canal channel,Upper Bypass,3/8/2021,Aquatic insect,133.3891715
+2021,UBC1,Canal channel,Upper Bypass,3/8/2021,Copepoda,489.0936288
+2021,UBC1,Canal channel,Upper Bypass,3/8/2021,Large cladocera,333.4729288
+2021,UBC1,Canal channel,Upper Bypass,3/8/2021,Ostracoda,22.23152858
+2021,UBC1,Canal channel,Upper Bypass,3/8/2021,Rotifera,22.23152858
+2021,UBC1,Canal channel,Upper Bypass,3/8/2021,Small cladocera,5068.788517
+2021,UBC1,Canal channel,Upper Bypass,3/8/2021,Terrestrial insect,22.23152858
+2021,UBC2,Canal channel,Upper Bypass,3/8/2021,Aquatic insect,108.5896446
+2021,UBC2,Canal channel,Upper Bypass,3/8/2021,Copepoda,890.4350855
+2021,UBC2,Canal channel,Upper Bypass,3/8/2021,Large cladocera,141.1665379
+2021,UBC2,Canal channel,Upper Bypass,3/8/2021,Ostracoda,10.85896446
+2021,UBC2,Canal channel,Upper Bypass,3/8/2021,Small cladocera,2139.215998
+2021,UBC3,Canal channel,Upper Bypass,3/8/2021,Aquatic insect,6.580532461
+2021,UBC3,Canal channel,Upper Bypass,3/8/2021,Copepoda,120.6430951
+2021,UBC3,Canal channel,Upper Bypass,3/8/2021,Rotifera,4.387021641
+2021,UBC3,Canal channel,Upper Bypass,3/8/2021,Small cladocera,684.3753759
+2021,UBC3,Canal channel,Upper Bypass,3/8/2021,Terrestrial insect,2.19351082
+2021,UBW1,Wetland,Upper Bypass,3/8/2021,Aquatic insect,47.68501783
+2021,UBW1,Wetland,Upper Bypass,3/8/2021,Copepoda,1716.660642
+2021,UBW1,Wetland,Upper Bypass,3/8/2021,Large cladocera,5626.832104
+2021,UBW1,Wetland,Upper Bypass,3/8/2021,Ostracoda,286.110107
+2021,UBW1,Wetland,Upper Bypass,3/8/2021,Rotifera,47.68501783
+2021,UBW1,Wetland,Upper Bypass,3/8/2021,Small cladocera,2288.880856
+2021,BSA1,Agriculture,Butte Sink,3/15/2021,Aquatic insect,3.536776513
+2021,BSA1,Agriculture,Butte Sink,3/15/2021,Copepoda,132.6291192
+2021,BSA1,Agriculture,Butte Sink,3/15/2021,Large cladocera,933.7089995
+2021,BSA1,Agriculture,Butte Sink,3/15/2021,Ostracoda,10.61032954
+2021,BSA1,Agriculture,Butte Sink,3/15/2021,Rare,10.61032954
+2021,BSA1,Agriculture,Butte Sink,3/15/2021,Rotifera,14.14710605
+2021,BSA1,Agriculture,Butte Sink,3/15/2021,Small cladocera,473.9280528
+2021,BSC1,Canal channel,Butte Sink,3/15/2021,Aquatic insect,14.0572122
+2021,BSC1,Canal channel,Butte Sink,3/15/2021,Copepoda,295.2014562
+2021,BSC1,Canal channel,Butte Sink,3/15/2021,Large cladocera,126.5149098
+2021,BSC1,Canal channel,Butte Sink,3/15/2021,Rare,7.0286061
+2021,BSC1,Canal channel,Butte Sink,3/15/2021,Rotifera,7.0286061
+2021,BSC1,Canal channel,Butte Sink,3/15/2021,Small cladocera,1932.866677
+2021,BSC1,Canal channel,Butte Sink,3/15/2021,Terrestrial insect,35.1430305
+2021,BSC2,Canal channel,Butte Sink,3/15/2021,Copepoda,990.1741634
+2021,BSC2,Canal channel,Butte Sink,3/15/2021,Large cladocera,1485.261245
+2021,BSC2,Canal channel,Butte Sink,3/15/2021,Rotifera,123.7717704
+2021,BSC2,Canal channel,Butte Sink,3/15/2021,Small cladocera,6848.70463
+2021,BSW1,Wetland,Butte Sink,3/15/2021,Copepoda,3916.732921
+2021,BSW1,Wetland,Butte Sink,3/15/2021,Large cladocera,21605.20418
+2021,BSW1,Wetland,Butte Sink,3/15/2021,Small cladocera,14150.777
+2021,FRC1,River channel,Feather River,3/15/2021,Aquatic insect,25.84354566
+2021,FRC1,River channel,Feather River,3/15/2021,Copepoda,2.871505074
+2021,FRC1,River channel,Feather River,3/15/2021,Large cladocera,0.957168358
+2021,FRC1,River channel,Feather River,3/15/2021,Small cladocera,6.700178506
+2021,FRC1,River channel,Feather River,3/15/2021,Terrestrial insect,2.871505074
+2021,LBC1,Canal channel,Lower Bypass,3/15/2021,Aquatic insect,130.9558699
+2021,LBC1,Canal channel,Lower Bypass,3/15/2021,Copepoda,5991.958579
+2021,LBC1,Canal channel,Lower Bypass,3/15/2021,Large cladocera,1981.798831
+2021,LBC1,Canal channel,Lower Bypass,3/15/2021,Ostracoda,14.55065221
+2021,LBC1,Canal channel,Lower Bypass,3/15/2021,Rare,29.10130441
+2021,LBC1,Canal channel,Lower Bypass,3/15/2021,Rotifera,226.9901744
+2021,LBC1,Canal channel,Lower Bypass,3/15/2021,Small cladocera,1999.259613
+2021,LBC2,Canal channel,Lower Bypass,3/15/2021,Aquatic insect,5.557882146
+2021,LBC2,Canal channel,Lower Bypass,3/15/2021,Copepoda,152.841759
+2021,LBC2,Canal channel,Lower Bypass,3/15/2021,Large cladocera,11.11576429
+2021,LBC2,Canal channel,Lower Bypass,3/15/2021,Ostracoda,2.778941073
+2021,LBC2,Canal channel,Lower Bypass,3/15/2021,Rare,13.89470536
+2021,LBC2,Canal channel,Lower Bypass,3/15/2021,Rotifera,8.336823219
+2021,LBC2,Canal channel,Lower Bypass,3/15/2021,Small cladocera,389.0517502
+2021,LBC2,Canal channel,Lower Bypass,3/15/2021,Terrestrial insect,5.557882146
+2021,SRC1,River channel,Sacramento River,3/15/2021,Aquatic insect,2.913888913
+2021,SRC1,River channel,Sacramento River,3/15/2021,Copepoda,12.62685195
+2021,SRC1,River channel,Sacramento River,3/15/2021,Large cladocera,0.971296304
+2021,SRC1,River channel,Sacramento River,3/15/2021,Rare,1.942592608
+2021,SRC1,River channel,Sacramento River,3/15/2021,Small cladocera,25.25370391
+2021,SRC1,River channel,Sacramento River,3/15/2021,Terrestrial insect,4.856481521
+2021,SRC2,River channel,Sacramento River,3/15/2021,Aquatic insect,8.369516643
+2021,SRC2,River channel,Sacramento River,3/15/2021,Copepoda,78.67345645
+2021,SRC2,River channel,Sacramento River,3/15/2021,Large cladocera,3.347806657
+2021,SRC2,River channel,Sacramento River,3/15/2021,Ostracoda,0.836951664
+2021,SRC2,River channel,Sacramento River,3/15/2021,Rare,9.206468308
+2021,SRC2,River channel,Sacramento River,3/15/2021,Rotifera,30.13025992
+2021,SRC2,River channel,Sacramento River,3/15/2021,Small cladocera,56.91271317
+2021,SRC2,River channel,Sacramento River,3/15/2021,Terrestrial insect,6.277137482
+2021,SRC3,River channel,Sacramento River,3/15/2021,Aquatic insect,4.164893963
+2021,SRC3,River channel,Sacramento River,3/15/2021,Copepoda,53.31064272
+2021,SRC3,River channel,Sacramento River,3/15/2021,Large cladocera,2.498936378
+2021,SRC3,River channel,Sacramento River,3/15/2021,Rare,4.164893963
+2021,SRC3,River channel,Sacramento River,3/15/2021,Small cladocera,44.9808548
+2021,SRC3,River channel,Sacramento River,3/15/2021,Terrestrial insect,3.33191517
+2021,SRC4,River channel,Sacramento River,3/15/2021,Aquatic insect,5.915085358
+2021,SRC4,River channel,Sacramento River,3/15/2021,Copepoda,17.0058704
+2021,SRC4,River channel,Sacramento River,3/15/2021,Large cladocera,6.654471028
+2021,SRC4,River channel,Sacramento River,3/15/2021,Ostracoda,2.218157009
+2021,SRC4,River channel,Sacramento River,3/15/2021,Rare,4.436314019
+2021,SRC4,River channel,Sacramento River,3/15/2021,Rotifera,0.73938567
+2021,SRC4,River channel,Sacramento River,3/15/2021,Small cladocera,18.48464174
+2021,SRC4,River channel,Sacramento River,3/15/2021,Terrestrial insect,2.957542679
+2021,UBC1,Canal channel,Upper Bypass,3/15/2021,Aquatic insect,56.24386719
+2021,UBC1,Canal channel,Upper Bypass,3/15/2021,Copepoda,1490.46248
+2021,UBC1,Canal channel,Upper Bypass,3/15/2021,Large cladocera,646.8044726
+2021,UBC1,Canal channel,Upper Bypass,3/15/2021,Rotifera,28.12193359
+2021,UBC1,Canal channel,Upper Bypass,3/15/2021,Small cladocera,6693.020195
+2021,UBC2,Canal channel,Upper Bypass,3/15/2021,Copepoda,1610.693936
+2021,UBC2,Canal channel,Upper Bypass,3/15/2021,Large cladocera,105.9667063
+2021,UBC2,Canal channel,Upper Bypass,3/15/2021,Rotifera,21.19334126
+2021,UBC2,Canal channel,Upper Bypass,3/15/2021,Small cladocera,6421.582401
+2021,UBC3,Canal channel,Upper Bypass,3/15/2021,Aquatic insect,15.18000568
+2021,UBC3,Canal channel,Upper Bypass,3/15/2021,Copepoda,1335.8405
+2021,UBC3,Canal channel,Upper Bypass,3/15/2021,Large cladocera,75.90002838
+2021,UBC3,Canal channel,Upper Bypass,3/15/2021,Ostracoda,15.18000568
+2021,UBC3,Canal channel,Upper Bypass,3/15/2021,Rotifera,212.5200795
+2021,UBC3,Canal channel,Upper Bypass,3/15/2021,Small cladocera,3157.441181
+2021,UBC3,Canal channel,Upper Bypass,3/15/2021,Terrestrial insect,30.36001135
+2021,UBW1,Wetland,Upper Bypass,3/15/2021,Aquatic insect,100.5941268
+2021,UBW1,Wetland,Upper Bypass,3/15/2021,Copepoda,754.4559509
+2021,UBW1,Wetland,Upper Bypass,3/15/2021,Large cladocera,10864.16569
+2021,UBW1,Wetland,Upper Bypass,3/15/2021,Ostracoda,150.8911902
+2021,UBW1,Wetland,Upper Bypass,3/15/2021,Rare,150.8911902
+2021,UBW1,Wetland,Upper Bypass,3/15/2021,Rotifera,50.29706339
+2021,UBW1,Wetland,Upper Bypass,3/15/2021,Small cladocera,1257.426585
+2021,BSA1,Agriculture,Butte Sink,3/22/2021,Aquatic insect,23.57851009
+2021,BSA1,Agriculture,Butte Sink,3/22/2021,Copepoda,271.152866
+2021,BSA1,Agriculture,Butte Sink,3/22/2021,Large cladocera,1226.082525
+2021,BSA1,Agriculture,Butte Sink,3/22/2021,Ostracoda,11.78925504
+2021,BSA1,Agriculture,Butte Sink,3/22/2021,Rotifera,235.7851009
+2021,BSA1,Agriculture,Butte Sink,3/22/2021,Small cladocera,1815.545277
+2021,BSC1,Canal channel,Butte Sink,3/22/2021,Aquatic insect,241.6890052
+2021,BSC1,Canal channel,Butte Sink,3/22/2021,Copepoda,379.0123037
+2021,BSC1,Canal channel,Butte Sink,3/22/2021,Large cladocera,175.773822
+2021,BSC1,Canal channel,Butte Sink,3/22/2021,Ostracoda,21.97172775
+2021,BSC1,Canal channel,Butte Sink,3/22/2021,Rotifera,32.95759162
+2021,BSC1,Canal channel,Butte Sink,3/22/2021,Small cladocera,2219.144503
+2021,BSC1,Canal channel,Butte Sink,3/22/2021,Terrestrial insect,54.92931937
+2021,BSC2,Canal channel,Butte Sink,3/22/2021,Aquatic insect,82.51451361
+2021,BSC2,Canal channel,Butte Sink,3/22/2021,Copepoda,1292.72738
+2021,BSC2,Canal channel,Butte Sink,3/22/2021,Large cladocera,687.6209468
+2021,BSC2,Canal channel,Butte Sink,3/22/2021,Small cladocera,4125.725681
+2021,BSC2,Canal channel,Butte Sink,3/22/2021,Terrestrial insect,27.50483787
+2021,BSW1,Wetland,Butte Sink,3/22/2021,Copepoda,864.4377617
+2021,BSW1,Wetland,Butte Sink,3/22/2021,Large cladocera,4667.963913
+2021,BSW1,Wetland,Butte Sink,3/22/2021,Small cladocera,17115.86768
+2021,FRC1,River channel,Feather River,3/22/2021,Aquatic insect,39.60922411
+2021,FRC1,River channel,Feather River,3/22/2021,Copepoda,3.600838556
+2021,FRC1,River channel,Feather River,3/22/2021,Large cladocera,0.720167711
+2021,FRC1,River channel,Feather River,3/22/2021,Ostracoda,1.440335422
+2021,FRC1,River channel,Feather River,3/22/2021,Rare,0.720167711
+2021,FRC1,River channel,Feather River,3/22/2021,Rotifera,0.720167711
+2021,FRC1,River channel,Feather River,3/22/2021,Small cladocera,22.32519905
+2021,FRC1,River channel,Feather River,3/22/2021,Terrestrial insect,10.08234796
+2021,LBC1,Canal channel,Lower Bypass,3/22/2021,Aquatic insect,43.15103253
+2021,LBC1,Canal channel,Lower Bypass,3/22/2021,Copepoda,3063.72331
+2021,LBC1,Canal channel,Lower Bypass,3/22/2021,Large cladocera,28.76735502
+2021,LBC1,Canal channel,Lower Bypass,3/22/2021,Rare,28.76735502
+2021,LBC1,Canal channel,Lower Bypass,3/22/2021,Rotifera,14.38367751
+2021,LBC1,Canal channel,Lower Bypass,3/22/2021,Small cladocera,1136.310523
+2021,LBC2,Canal channel,Lower Bypass,3/22/2021,Aquatic insect,22.45915516
+2021,LBC2,Canal channel,Lower Bypass,3/22/2021,Copepoda,354.8546515
+2021,LBC2,Canal channel,Lower Bypass,3/22/2021,Large cladocera,26.95098619
+2021,LBC2,Canal channel,Lower Bypass,3/22/2021,Rare,8.983662063
+2021,LBC2,Canal channel,Lower Bypass,3/22/2021,Rotifera,35.93464825
+2021,LBC2,Canal channel,Lower Bypass,3/22/2021,Small cladocera,696.2338098
+2021,LBC2,Canal channel,Lower Bypass,3/22/2021,Terrestrial insect,13.47549309
+2021,SRC1,River channel,Sacramento River,3/22/2021,Aquatic insect,5.620383596
+2021,SRC1,River channel,Sacramento River,3/22/2021,Copepoda,35.59576278
+2021,SRC1,River channel,Sacramento River,3/22/2021,Large cladocera,1.873461199
+2021,SRC1,River channel,Sacramento River,3/22/2021,Rare,7.493844795
+2021,SRC1,River channel,Sacramento River,3/22/2021,Rotifera,0.936730599
+2021,SRC1,River channel,Sacramento River,3/22/2021,Small cladocera,19.67134259
+2021,SRC1,River channel,Sacramento River,3/22/2021,Terrestrial insect,2.810191798
+2021,SRC2,River channel,Sacramento River,3/22/2021,Aquatic insect,30.01154968
+2021,SRC2,River channel,Sacramento River,3/22/2021,Copepoda,302.1162668
+2021,SRC2,River channel,Sacramento River,3/22/2021,Large cladocera,50.01924947
+2021,SRC2,River channel,Sacramento River,3/22/2021,Rare,12.00461987
+2021,SRC2,River channel,Sacramento River,3/22/2021,Rotifera,10.00384989
+2021,SRC2,River channel,Sacramento River,3/22/2021,Small cladocera,298.1147269
+2021,SRC2,River channel,Sacramento River,3/22/2021,Terrestrial insect,6.002309937
+2021,SRC3,River channel,Sacramento River,3/22/2021,Aquatic insect,13.41912502
+2021,SRC3,River channel,Sacramento River,3/22/2021,Copepoda,171.3519041
+2021,SRC3,River channel,Sacramento River,3/22/2021,Large cladocera,34.06393274
+2021,SRC3,River channel,Sacramento River,3/22/2021,Ostracoda,1.032240386
+2021,SRC3,River channel,Sacramento River,3/22/2021,Rare,11.35464425
+2021,SRC3,River channel,Sacramento River,3/22/2021,Rotifera,17.54808656
+2021,SRC3,River channel,Sacramento River,3/22/2021,Small cladocera,264.2535388
+2021,SRC3,River channel,Sacramento River,3/22/2021,Terrestrial insect,2.064480772
+2021,SRC4,River channel,Sacramento River,3/22/2021,Aquatic insect,3.495634773
+2021,SRC4,River channel,Sacramento River,3/22/2021,Copepoda,27.61551471
+2021,SRC4,River channel,Sacramento River,3/22/2021,Large cladocera,2.446944341
+2021,SRC4,River channel,Sacramento River,3/22/2021,Ostracoda,0.349563477
+2021,SRC4,River channel,Sacramento River,3/22/2021,Rare,3.146071296
+2021,SRC4,River channel,Sacramento River,3/22/2021,Rotifera,3.146071296
+2021,SRC4,River channel,Sacramento River,3/22/2021,Small cladocera,36.00503817
+2021,SRC4,River channel,Sacramento River,3/22/2021,Terrestrial insect,1.048690432
+2021,UBC1,Canal channel,Upper Bypass,3/22/2021,Aquatic insect,46.01770952
+2021,UBC1,Canal channel,Upper Bypass,3/22/2021,Copepoda,1518.584414
+2021,UBC1,Canal channel,Upper Bypass,3/22/2021,Large cladocera,966.3718998
+2021,UBC1,Canal channel,Upper Bypass,3/22/2021,Rare,46.01770952
+2021,UBC1,Canal channel,Upper Bypass,3/22/2021,Small cladocera,13713.27744
+2021,UBC2,Canal channel,Upper Bypass,3/22/2021,Aquatic insect,68.54721313
+2021,UBC2,Canal channel,Upper Bypass,3/22/2021,Copepoda,425.2103316
+2021,UBC2,Canal channel,Upper Bypass,3/22/2021,Large cladocera,309.441705
+2021,UBC2,Canal channel,Upper Bypass,3/22/2021,Ostracoda,9.139628418
+2021,UBC2,Canal channel,Upper Bypass,3/22/2021,Rotifera,26.11322405
+2021,UBC2,Canal channel,Upper Bypass,3/22/2021,Small cladocera,3203.43976
+2021,UBC2,Canal channel,Upper Bypass,3/22/2021,Terrestrial insect,9.139628418
+2021,UBC3,Canal channel,Upper Bypass,3/22/2021,Copepoda,739.1177764
+2021,UBC3,Canal channel,Upper Bypass,3/22/2021,Large cladocera,11.92125446
+2021,UBC3,Canal channel,Upper Bypass,3/22/2021,Ostracoda,11.92125446
+2021,UBC3,Canal channel,Upper Bypass,3/22/2021,Rotifera,417.243906
+2021,UBC3,Canal channel,Upper Bypass,3/22/2021,Small cladocera,4196.281569
+2021,UBW1,Wetland,Upper Bypass,3/22/2021,Copepoda,1662.450306
+2021,UBW1,Wetland,Upper Bypass,3/22/2021,Large cladocera,35003.81477
+2021,UBW1,Wetland,Upper Bypass,3/22/2021,Ostracoda,92.35835033
+2021,UBW1,Wetland,Upper Bypass,3/22/2021,Rare,277.075051
+2021,UBW1,Wetland,Upper Bypass,3/22/2021,Rotifera,1108.300204
+2021,UBW1,Wetland,Upper Bypass,3/22/2021,Small cladocera,6372.726173
+2021,BSC1,Canal channel,Butte Sink,3/29/2021,Aquatic insect,14.40729603
+2021,BSC1,Canal channel,Butte Sink,3/29/2021,Copepoda,624.3161612
+2021,BSC1,Canal channel,Butte Sink,3/29/2021,Large cladocera,9.604864019
+2021,BSC1,Canal channel,Butte Sink,3/29/2021,Ostracoda,14.40729603
+2021,BSC1,Canal channel,Butte Sink,3/29/2021,Rare,14.40729603
+2021,BSC1,Canal channel,Butte Sink,3/29/2021,Rotifera,14.40729603
+2021,BSC1,Canal channel,Butte Sink,3/29/2021,Small cladocera,600.3040012
+2021,BSC1,Canal channel,Butte Sink,3/29/2021,Terrestrial insect,12.00608002
+2021,BSC2,Canal channel,Butte Sink,3/29/2021,Copepoda,3031.868359
+2021,BSC2,Canal channel,Butte Sink,3/29/2021,Large cladocera,643.1235913
+2021,BSC2,Canal channel,Butte Sink,3/29/2021,Ostracoda,45.93739938
+2021,BSC2,Canal channel,Butte Sink,3/29/2021,Rare,45.93739938
+2021,BSC2,Canal channel,Butte Sink,3/29/2021,Rotifera,45.93739938
+2021,BSC2,Canal channel,Butte Sink,3/29/2021,Small cladocera,10519.66446
+2021,FRC1,River channel,Feather River,3/29/2021,Aquatic insect,15.80315488
+2021,FRC1,River channel,Feather River,3/29/2021,Copepoda,23.70473232
+2021,FRC1,River channel,Feather River,3/29/2021,Large cladocera,6.913880259
+2021,FRC1,River channel,Feather River,3/29/2021,Ostracoda,1.97539436
+2021,FRC1,River channel,Feather River,3/29/2021,Rare,19.7539436
+2021,FRC1,River channel,Feather River,3/29/2021,Rotifera,161.9823375
+2021,FRC1,River channel,Feather River,3/29/2021,Small cladocera,41.48328155
+2021,FRC1,River channel,Feather River,3/29/2021,Terrestrial insect,11.85236616
+2021,LBC2,Canal channel,Lower Bypass,3/29/2021,Aquatic insect,8.50347807
+2021,LBC2,Canal channel,Lower Bypass,3/29/2021,Copepoda,102.0417368
+2021,LBC2,Canal channel,Lower Bypass,3/29/2021,Large cladocera,6.957391148
+2021,LBC2,Canal channel,Lower Bypass,3/29/2021,Ostracoda,1.546086922
+2021,LBC2,Canal channel,Lower Bypass,3/29/2021,Rare,1.546086922
+2021,LBC2,Canal channel,Lower Bypass,3/29/2021,Rotifera,1.546086922
+2021,LBC2,Canal channel,Lower Bypass,3/29/2021,Small cladocera,46.38260765
+2021,LBC2,Canal channel,Lower Bypass,3/29/2021,Terrestrial insect,4.638260765
+2021,SRC1,River channel,Sacramento River,3/29/2021,Aquatic insect,8.7886911
+2021,SRC1,River channel,Sacramento River,3/29/2021,Copepoda,21.09285864
+2021,SRC1,River channel,Sacramento River,3/29/2021,Ostracoda,0.87886911
+2021,SRC1,River channel,Sacramento River,3/29/2021,Rare,4.39434555
+2021,SRC1,River channel,Sacramento River,3/29/2021,Rotifera,2.63660733
+2021,SRC1,River channel,Sacramento River,3/29/2021,Small cladocera,10.54642932
+2021,SRC1,River channel,Sacramento River,3/29/2021,Terrestrial insect,2.63660733
+2021,SRC2,River channel,Sacramento River,3/29/2021,Aquatic insect,6.235360707
+2021,SRC2,River channel,Sacramento River,3/29/2021,Copepoda,33.84910098
+2021,SRC2,River channel,Sacramento River,3/29/2021,Large cladocera,2.672297446
+2021,SRC2,River channel,Sacramento River,3/29/2021,Rare,3.563063261
+2021,SRC2,River channel,Sacramento River,3/29/2021,Small cladocera,18.70608212
+2021,SRC2,River channel,Sacramento River,3/29/2021,Terrestrial insect,3.117680354
+2021,SRC3,River channel,Sacramento River,3/29/2021,Aquatic insect,2.855927289
+2021,SRC3,River channel,Sacramento River,3/29/2021,Copepoda,122.8048734
+2021,SRC3,River channel,Sacramento River,3/29/2021,Large cladocera,32.36717594
+2021,SRC3,River channel,Sacramento River,3/29/2021,Ostracoda,19.03951526
+2021,SRC3,River channel,Sacramento River,3/29/2021,Rare,2.855927289
+2021,SRC3,River channel,Sacramento River,3/29/2021,Rotifera,6.66383034
+2021,SRC3,River channel,Sacramento River,3/29/2021,Small cladocera,201.8188617
+2021,SRC3,River channel,Sacramento River,3/29/2021,Terrestrial insect,4.759878814
+2021,SRC4,River channel,Sacramento River,3/29/2021,Aquatic insect,9.353990705
+2021,SRC4,River channel,Sacramento River,3/29/2021,Copepoda,74.83192564
+2021,SRC4,River channel,Sacramento River,3/29/2021,Large cladocera,106.635494
+2021,SRC4,River channel,Sacramento River,3/29/2021,Ostracoda,1.870798141
+2021,SRC4,River channel,Sacramento River,3/29/2021,Rare,9.353990705
+2021,SRC4,River channel,Sacramento River,3/29/2021,Rotifera,3.741596282
+2021,SRC4,River channel,Sacramento River,3/29/2021,Small cladocera,333.0020691
+2021,SRC4,River channel,Sacramento River,3/29/2021,Terrestrial insect,7.483192564
+2021,UBC1,Canal channel,Upper Bypass,3/29/2021,Copepoda,2725.388665
+2021,UBC1,Canal channel,Upper Bypass,3/29/2021,Large cladocera,116.4696011
+2021,UBC1,Canal channel,Upper Bypass,3/29/2021,Rare,349.4088032
+2021,UBC1,Canal channel,Upper Bypass,3/29/2021,Rotifera,69.88176065
+2021,UBC1,Canal channel,Upper Bypass,3/29/2021,Small cladocera,5707.010453
+2021,UBC2,Canal channel,Upper Bypass,3/29/2021,Aquatic insect,23.21175471
+2021,UBC2,Canal channel,Upper Bypass,3/29/2021,Copepoda,1218.617122
+2021,UBC2,Canal channel,Upper Bypass,3/29/2021,Large cladocera,92.84701885
+2021,UBC2,Canal channel,Upper Bypass,3/29/2021,Ostracoda,23.21175471
+2021,UBC2,Canal channel,Upper Bypass,3/29/2021,Rare,208.9057924
+2021,UBC2,Canal channel,Upper Bypass,3/29/2021,Rotifera,139.2705283
+2021,UBC2,Canal channel,Upper Bypass,3/29/2021,Small cladocera,19846.05028
+2021,UBC3,Canal channel,Upper Bypass,3/29/2021,Copepoda,824.127405
+2021,UBC3,Canal channel,Upper Bypass,3/29/2021,Large cladocera,24.97355773
+2021,UBC3,Canal channel,Upper Bypass,3/29/2021,Ostracoda,12.48677886
+2021,UBC3,Canal channel,Upper Bypass,3/29/2021,Rotifera,137.3545675
+2021,UBC3,Canal channel,Upper Bypass,3/29/2021,Small cladocera,9827.094965
+2021,UBC3,Canal channel,Upper Bypass,3/29/2021,Terrestrial insect,24.97355773
+2021,UBW1,Wetland,Upper Bypass,3/29/2021,Copepoda,821.2158736
+2021,UBW1,Wetland,Upper Bypass,3/29/2021,Large cladocera,6483.283213
+2021,UBW1,Wetland,Upper Bypass,3/29/2021,Ostracoda,86.44377617
+2021,UBW1,Wetland,Upper Bypass,3/29/2021,Rotifera,216.1094404
+2021,UBW1,Wetland,Upper Bypass,3/29/2021,Small cladocera,3630.638599

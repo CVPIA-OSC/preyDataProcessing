@@ -1,0 +1,21 @@
+Region,Name,Site,Type,Report_type,Report_ID,lat,long
+Butte Sink,Sanborn Slough,BSSS,Wetland,Wetland,BSW1,39.3481,-121.8901
+Butte Sink,Mallard Ranch,BSMR,Wetland,Wetland,BSW2,39.2858,-121.9246
+Butte Sink,Butte Creek adjacent to Sanborn Slough,BCGR,Canal,Canal channel,BSC1,39.3607,-121.8936
+Butte Sink,Laux Rd Rice,BSLR,Wetland,Agriculture,BSA1,39.235,-121.947
+Butte Sink,Butte Creek adjacent to laux rice,BCLC,Canal,Canal channel,BSC2,39.2398,-121.948
+Upper Bypass,Butte Slough at Meridian Pass Rd,BCMP,Canal,Canal channel,UBC1,39.19,-121.9092
+Upper Bypass,West borrow near Tarke bean,SBBF,Canal,Canal channel,UBC2,39.1445,-121.8422
+Upper Bypass,Bean Field,SBFR,Agriculture,Agriculture,UBA1,39.1277,-121.8147
+Upper Bypass,Refuge,SBSNWR,Wetland,Wetland,UBW1,39.0988,-121.7609
+Upper Bypass,Refuge East Borrow,SBSNWRC,Canal,Canal channel,UBC3,39.1027,-121.7592
+Lower Bypass,Rice field north of Kirkville Rd.,SBKR,Agriculture,Agriculture,LBA1,38.918,-121.6265
+Lower Bypass,Willow Slough,SBWS,Wetland,Wetland,LBW1,38.9026,-121.6242
+Lower Bypass,Willow Slough East Borrow,SBWSC,Canal,Canal channel,LBC1,38.9018,-121.6199
+Lower Bypass,Lundberg Farms,SBLF,Canal,Canal channel,LBC2,38.7859,-121.6533
+Sacramento River,Colusa Landing,SACCL,Channel,River channel,SRC1,39.2094,-121.9877
+Sacramento River,Ward's Landing,SACWL,Channel,River channel,SRC1,39.1946,-121.9387
+Sacramento River,Tisdale Weir,SACTIS,Channel,River channel,SRC2,39.0202,-121.8209
+Sacramento River,River Garden,RGSAC,Channel,River channel,SRC3,38.8054,-121.7237
+Sacramento River,Swabbies dock,XSSAC,Channel,River channel,SRC4,38.6754,-121.6298
+Feather River,Lundberg Pier,FRLF,Channel,River channel,FRC1,38.7936,-121.6305
