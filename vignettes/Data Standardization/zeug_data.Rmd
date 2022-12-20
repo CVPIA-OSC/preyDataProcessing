@@ -2,9 +2,8 @@
 title: "Steve Zeug Data"
 author: "Maddee Rubenson (FlowWest)"
 date: "`r Sys.Date()`"
-output: 
-  md_document:
-    variant: markdown_github
+output:
+  rmarkdown::github_document
 ---
 
 ```{r setup, include=FALSE}
@@ -172,6 +171,9 @@ ggplot(zeug_prey_data_san_joaquin_final, aes(x = as.factor(week), y = prey_densi
 
 save(zeug_prey_data_san_joaquin_final, file = "../../data/zeug_sanJoaquin_prey_data.rda")
 
+zeug_sanJoaquin_prey_data <- zeug_prey_data_san_joaquin_final
+usethis::use_data(zeug_sanJoaquin_prey_data, overwrite = TRUE)
+
 ```
 
 ### Merced River Dataset:
@@ -317,6 +319,9 @@ ggplot(zeug_merced_prey_data_final, aes(x = as.factor((date)), y = prey_density)
 ```{r}
 
 save(zeug_merced_prey_data_final, file = "../../data/zeug_merced_prey_data.rda")
+
+zeug_merced_prey_data <- zeug_merced_prey_data_final
+usethis::use_data(zeug_merced_prey_data, overwrite = TRUE)
 
 ```
 

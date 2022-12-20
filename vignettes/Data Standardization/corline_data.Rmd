@@ -201,6 +201,9 @@ ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) +
 
 save(corline_zoop_final, file = "../../data/corline_prey_data.rda")
 
+corline_prey_data <- corline_zoop_final
+usethis::use_data(corline_prey_data, overwrite = TRUE)
+
 ```
 
 ### Fish Data

@@ -189,6 +189,9 @@ ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density))
 
 save(cordoleani_zoop_final, file = "../../data/cordoleani_prey_data.rda")
 
+cordoleani_prey_data <- cordoleani_zoop_final
+usethis::use_data(cordoleani_prey_data, overwrite = TRUE)
+
 ```
 
 ### Fish Data

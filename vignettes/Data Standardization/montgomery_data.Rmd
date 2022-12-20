@@ -87,8 +87,8 @@ montgomery_prey_data_process <- montgomery_prey_data %>%
          site = location,
          size_class = "meso",
          gear_type = "net throw",
-         mesh_size = 150, 
-         prey_density = prey_density/1000) |> #1 m^3 = 1000 L 
+         mesh_size = 150,
+        prey_density = prey_density/1000) |> #1 m^3 = 1000 L 
   select(date, site, species:author, size_class, mesh_size, gear_type) 
 
 ```
@@ -111,7 +111,9 @@ locations <- readxl::read_excel(path) |> janitor::clean_names() |>
   select(-x3, -purpose, -habitat_type) |> 
   rename(habitat_type = habitat_type_2,
          site = location) |> 
-  mutate(habitat_type = tolower(habitat_type)) |> glimpse()
+  mutate(habitat_type = tolower(habitat_type),
+         lat = as.numeric(lat),
+         lon = as.numeric(lon)) |> glimpse()
 ```
 
 ##### Combine prey data with locations
@@ -162,7 +164,10 @@ ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_dens
 
 ```{r}
 
-save(montgomery_prey_data_final, file = "../../data/montgomery_prey_data.rda")
+# save(montgomery_prey_data_final, file = "../../data/montgomery_prey_data.rda")
+
+montgomery_prey_data <- montgomery_prey_data_final
+usethis::use_data(montgomery_prey_data, overwrite = TRUE)
 
 ```
 

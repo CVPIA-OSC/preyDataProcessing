@@ -218,3 +218,30 @@
 #'
 "monthly_prey_density"
 
+#' Steve Zeug San Joaquin Data
+#'
+"zeug_sanJoaquin_prey_data"
+
+#' Steve Zeug Merced Data
+#'
+"zeug_merced_prey_data"
+
+#' Zooper Library Data
+#'
+"zooper_prey_data"
+
+#' Jacob Montgomery Data
+#'
+"montgomery_prey_data"
+
+#' Jason Guignard Data
+#'
+"guignard_prey_data"
+
+#' Flora Cordoleani Data
+#'
+"cordoleani_prey_data"
+
+#' Nicholas Corline Data
+#'
+"corline_prey_data"

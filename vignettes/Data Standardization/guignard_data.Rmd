@@ -189,6 +189,9 @@ ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_densit
 
 save(guignard_prey_data_final, file = "../../data/guignard_prey_data.rda")
 
+guignard_prey_data <- guignard_prey_data_final
+usethis::use_data(guignard_prey_data, overwrite = TRUE)
+
 ```
 
 ### Fish Data

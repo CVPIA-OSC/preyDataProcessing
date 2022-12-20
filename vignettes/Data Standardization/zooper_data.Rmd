@@ -188,6 +188,8 @@ ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) +
 
 save(zooper_prey_data, file = "../../data/zooper_prey_data.rda")
 
+usethis::use_data(zooper_prey_data, overwrite = TRUE)
+
 ```
 
 ### Fish Data
