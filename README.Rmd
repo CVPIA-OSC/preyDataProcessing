@@ -54,7 +54,9 @@ Information regarding compiled datasets is located here:
 
 -   [prey density data aggregation](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/combine_data_and_eda.md)
 
--   [habitat type definition and methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/habitat_type_eda.Rmd)
+-   [habitat type definition and methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/habitat_type_eda.html)
+
+    -   Note: must download HTML file and open in browser
 
 -   [size class methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/size_class_methodolgy.md)
 
