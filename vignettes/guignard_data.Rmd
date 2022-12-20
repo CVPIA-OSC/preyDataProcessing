@@ -106,8 +106,8 @@ path <- system.file("extdata", 'guignard', "drift net sites_to_kml.kml", package
 locations_raw <- st_read(dsn = path) 
 geometry <- sf::st_coordinates(locations_raw) |> 
   cbind(locations_raw) |> 
-  rename(lat = X, 
-         lon = Y) |> 
+  rename(lon = X, 
+         lat = Y) |> 
   select(-Z, -geometry, -Description) |> 
   sf::st_drop_geometry()
 
@@ -187,7 +187,7 @@ ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_densit
 
 ```{r}
 
-save(guignard_prey_data_final, file = "../../data/guignard_prey_data.rda")
+#save(guignard_prey_data_final, file = "../../data/guignard_prey_data.rda")
 
 guignard_prey_data <- guignard_prey_data_final
 usethis::use_data(guignard_prey_data, overwrite = TRUE)
