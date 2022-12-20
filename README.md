@@ -38,9 +38,7 @@ methods and supporting documents for data aggregation and decisions in
 every watershed are provided by author:
 
 - [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/montgomery_data.md)
-  \# TODO: update link
 - [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/corline_data.md)
-  \# TODO: update link
 - [Zeug](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/zeug_data.md)
   - San Joaquin River
   - Merced River
