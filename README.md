@@ -37,23 +37,28 @@ watersheds. For each dataset, the habitat type was assigned. Specific
 methods and supporting documents for data aggregation and decisions in
 every watershed are provided by author:
 
-- [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/Data%20Standardization/montgomery_data.Rmd)
+- [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/montgomery_data.md)
   \# TODO: update link
-- [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/Data%20Standardization/corline_data.Rmd)
+- [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/corline_data.md)
   \# TODO: update link
-- Zeug
+- [Zeug](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/zeug_data.md)
   - San Joaquin River
-
   - Merced River
-- Cordoleani
-- Guignard
-- Zooper R Library
+- [Cordoleani](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/cordoleani_data.md)
+- [Guignard](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/guignard_data.md)
+- [Zooper R
+  Library](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/zooper_data.md)
 
 Information regarding compiled datasets is located here:
 
-- \[prey density data aggregation\]
+- [prey density data
+  aggregation](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/combine_data_and_eda.md)
 
-- \[habitat type definition and methodology\]
+- [habitat type definition and
+  methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/habitat_type_eda.Rmd)
+
+- [size class
+  methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/size_class_methodolgy.md)
 
 ##### Prey Density Datasets
 
@@ -79,13 +84,11 @@ Datasets can be joined on `site`, see example below:
 library(tidyverse)
 ```
 
-    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
-
-    ## ✔ ggplot2 3.3.5     ✔ purrr   0.3.4
-    ## ✔ tibble  3.1.7     ✔ dplyr   1.0.9
-    ## ✔ tidyr   1.2.0     ✔ stringr 1.4.0
-    ## ✔ readr   2.1.2     ✔ forcats 0.5.1
-
+    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+    ## ✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
+    ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
+    ## ✔ tidyr   1.2.1      ✔ stringr 1.5.0 
+    ## ✔ readr   2.1.3      ✔ forcats 0.5.2 
     ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
     ## ✖ dplyr::filter() masks stats::filter()
     ## ✖ dplyr::lag()    masks stats::lag()
@@ -100,14 +103,14 @@ all_enviro <- preyDataProcessing::all_enviro_data
 all_prey_and_fish <- all_prey %>% left_join(all_fish) 
 ```
 
-    ## Joining, by = c("site", "habitat_type", "date", "author", "watershed")
+    ## Joining, by = c("habitat_type", "date", "author", "watershed", "site")
 
 ``` r
 # join environmental data with prey density:
 all_prey_and_enviro <- all_prey %>% left_join(all_enviro) 
 ```
 
-    ## Joining, by = c("site", "habitat_type", "date", "author", "watershed")
+    ## Joining, by = c("habitat_type", "date", "author", "watershed", "site")
 
 ``` r
 ## Monthly Data:

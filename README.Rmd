@@ -41,21 +41,22 @@ data(package = 'preyDataProcessing')
 
 Datasets were aggregated from multiple authors and across many watersheds. For each dataset, the habitat type was assigned. Specific methods and supporting documents for data aggregation and decisions in every watershed are provided by author:
 
--   [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/Data%20Standardization/montgomery_data.Rmd) \# TODO: update link
--   [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/Data%20Standardization/corline_data.Rmd) \# TODO: update link
--   Zeug
+-   [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/montgomery_data.md) \# TODO: update link
+-   [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/corline_data.md) \# TODO: update link
+-   [Zeug](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/zeug_data.md)
     -   San Joaquin River
-
     -   Merced River
--   Cordoleani
--   Guignard
--   Zooper R Library
+-   [Cordoleani](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/cordoleani_data.md)
+-   [Guignard](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/guignard_data.md)
+-   [Zooper R Library](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/zooper_data.md)
 
 Information regarding compiled datasets is located here:
 
--   [prey density data aggregation]
+-   [prey density data aggregation](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/combine_data_and_eda.md)
 
--   [habitat type definition and methodology]
+-   [habitat type definition and methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/habitat_type_eda.Rmd)
+
+-   [size class methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/vignettes/size_class_methodolgy.md)
 
 ##### Prey Density Datasets
 
