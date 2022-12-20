@@ -128,7 +128,7 @@ delta_extents <- rgdal::readOGR(path) %>%
 
 sf_zooper_points <- st_as_sf(zooper %>% filter(!is.na(lon), !is.na(lat)), coords = c('lon', 'lat'), crs = 4326, remove = FALSE)
 
-zooper_with_watershed <- st_join(delta_extents, sf_zooper_points) %>%
+zooper_with_watershed <- sf::st_join(delta_extents, sf_zooper_points) %>%
   st_set_geometry(NULL) %>%
   glimpse()
 
@@ -186,7 +186,7 @@ ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) +
 
 ```{r}
 
-save(zooper_prey_data, file = "../../data/zooper_prey_data.rda")
+#save(zooper_prey_data, file = "../../data/zooper_prey_data.rda")
 
 usethis::use_data(zooper_prey_data, overwrite = TRUE)
 

@@ -1,5 +1,7 @@
 ---
-output: html_document
+output: 
+  html_document: 
+    keep_md: yes
 ---
 
 ```{r eval=TRUE, include=FALSE}
@@ -19,7 +21,7 @@ library(preyDataProcessing)
 
 ## Habitat Type
 
-### Types: 
+### Types:
 
 Sampling locations were assigned the following habitat types:
 
@@ -35,7 +37,7 @@ Sampling locations were assigned the following habitat types:
 
 ### Methodology
 
-Habitat types were defined for the following datasets accordingly.
+Habitat types were defined for the following datasets according to the following rulesets.
 
 -   **Cordoleani**: locations (latitude, longitude) were provided by Cordoleani as well as habitat types. The provided habitat types were mapped to a consistent format using the rules:
     -   `Agriculture` = `agricultural canal`
@@ -52,7 +54,7 @@ Habitat types were defined for the following datasets accordingly.
 
     -   Location of the Sacramento River sampling site was provided in the paper Corline et al. as Sherwood Harbor
 
-    -   The \`habitat_type\` was defined using best professional judgement from monitoring locations
+    -   The `habitat_type` was defined using best professional judgement from monitoring locations
 -   **Zeug**:
     -   The San Joaquin River sampling locations (latitude, longitude) were provided by Zeug
 
@@ -84,7 +86,7 @@ hab_and_author <- all_prey_density |>
                            author == "Zeug" ~ "#67a9cf", 
                            author == "Montgomery" ~ "#1c9099", 
                            author == "Guignard" ~ "#016c59",
-                           grepl("zooper", author) ~ "darkblue"))
+                           grepl("zooper", author) ~ "#12638e"))
 
 ```
 

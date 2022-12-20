@@ -169,7 +169,7 @@ ggplot(zeug_prey_data_san_joaquin_final, aes(x = as.factor(week), y = prey_densi
 
 ```{r}
 
-save(zeug_prey_data_san_joaquin_final, file = "../../data/zeug_sanJoaquin_prey_data.rda")
+#save(zeug_prey_data_san_joaquin_final, file = "../../data/zeug_sanJoaquin_prey_data.rda")
 
 zeug_sanJoaquin_prey_data <- zeug_prey_data_san_joaquin_final
 usethis::use_data(zeug_sanJoaquin_prey_data, overwrite = TRUE)
@@ -318,7 +318,7 @@ ggplot(zeug_merced_prey_data_final, aes(x = as.factor((date)), y = prey_density)
 
 ```{r}
 
-save(zeug_merced_prey_data_final, file = "../../data/zeug_merced_prey_data.rda")
+#save(zeug_merced_prey_data_final, file = "../../data/zeug_merced_prey_data.rda")
 
 zeug_merced_prey_data <- zeug_merced_prey_data_final
 usethis::use_data(zeug_merced_prey_data, overwrite = TRUE)
