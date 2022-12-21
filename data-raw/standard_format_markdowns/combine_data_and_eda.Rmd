@@ -34,7 +34,7 @@ all_prey_density <- bind_rows(preyDataProcessing::cordoleani_prey_data,
                       preyDataProcessing::corline_prey_data,
                       preyDataProcessing::zooper_prey_data) 
 
-# usethis::use_data(all_prey_density, overwrite = TRUE)
+usethis::use_data(all_prey_density, overwrite = TRUE)
 
 ```
 
@@ -60,7 +60,7 @@ monthly_prey_density <- all_prey_density %>%
          var_prey_density = var) |> glimpse()
 
 # save file for use in R package
-# usethis::use_data(monthly_prey_density)
+usethis::use_data(monthly_prey_density, overwrite = TRUE)
 
 ```
 
@@ -118,17 +118,18 @@ Habitat types included in the prey data package include:
 * Perennial instream
 * Side channel
 
-Many habitat types were assigned based on the sampling locations provided by authors. 
+Habitat types were assigned based on sampling locations provided by authors where available. When no habitat types were provided by authors, we assigned habitat type based on satellite imagery. Please see (https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/habitat_type_eda.html) for more details.
 
 ```{r}
 
 ggplot(all_prey_density, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point() + 
+  geom_point(alpha = 0.4) + 
   facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
   ggtitle('Distribution of all prey density across years and habitat types', 
-          subtitle = "Aggregated data across all authors") 
+          subtitle = "Aggregated data across all authors") + 
+  theme_minimal()
 
 ggplot() +
   geom_boxplot(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +

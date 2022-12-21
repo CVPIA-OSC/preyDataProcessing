@@ -191,6 +191,8 @@ summary(cordoleani_zoop_final)
 
 #### Data exploration
 
+##### All prey density data
+
 ``` r
 ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density)) + 
   geom_point(alpha = 0.4) + 
@@ -199,7 +201,7 @@ ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density))
   ylab('prey density (count/L)') + 
   ggtitle('Distrubtion of prey density across years collected', 
           subtitle = "data provided by Flora Cordoleani") +
-  theme_minimal()
+  theme_minimal() 
 ```
 
 ![](cordoleani_data_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
@@ -218,6 +220,38 @@ ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density))
 ```
 
 ![](cordoleani_data_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+
+##### Subset of prey density data with outliers removed
+
+``` r
+cordoleani_zoop_final |> 
+  filter(prey_density <= 0.44) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Flora Cordoleani") +
+  theme_minimal() 
+```
+
+![](cordoleani_data_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+cordoleani_zoop_final |> 
+  filter(prey_density <= 0.44) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across habitat types - outliers removed', 
+          subtitle = "data provided by Flora Cordoleani") +  
+  theme_minimal() 
+```
+
+![](cordoleani_data_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
 #### Save final dataset
 
