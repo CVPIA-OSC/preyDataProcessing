@@ -1,7 +1,7 @@
 Flora Cordoleani Data
 ================
 Maddee Rubenson (FlowWest)
-2022-12-20
+2022-12-21
 
 ## Cordoleani Data Standardization
 
@@ -40,7 +40,7 @@ Final prey density dataset includes the following variables:
 #### Raw data
 
 ``` r
-cordo_prey_raw <- read_csv('../cordoleani/tidy_zoop_density.csv') |> glimpse()
+cordo_prey_raw <- read_csv('data-raw//cordoleani/tidy_zoop_density.csv') |> glimpse()
 ```
 
     ## Rows: 2,636
@@ -86,10 +86,10 @@ cordoleani_zoop <- cordo_prey_raw %>%
   mutate(date = mdy(date),
          prey_density = prey_density/1000, # 1 m^3 = 1000 Liters 
          author = 'Cordoleani',
-         habitat_type = ifelse(habitat_type == "Agriculture", 'agricultural canal',
-                               ifelse(habitat_type == 'Channel', 'perennial instream',
-                                      ifelse(habitat_type == "River Channel", 'perennial instream',
-                                             ifelse(habitat_type == 'Wetland', 'floodplain', 'agricultural canal' )))),
+         habitat_type = case_when(habitat_type == "Agriculture" ~ "agricultural canal",
+                                  habitat_type == "Canal channel" ~ "perennial instream",
+                                  habitat_type == "River channel" ~ "perennial instream",
+                                  habitat_type == "Wetland" ~ "floodplain"),
          watershed = case_when(location == "Butte Sink" ~ "Butte Creek", 
                             location == "Sacramento River" ~ "Sacramento River", 
                             location == "Feather River" ~ "Feather River", 
@@ -110,7 +110,7 @@ cordoleani_zoop <- cordo_prey_raw %>%
 **notes:**
 
 ``` r
-cordoleani_locations_raw <- read_csv('../cordoleani/Cage_Locations.csv')
+cordoleani_locations_raw <- read_csv('data-raw/cordoleani/Cage_Locations.csv')
 
 cordoleani_locations <- cordoleani_locations_raw %>%
   rename(location = Region, 
@@ -118,10 +118,10 @@ cordoleani_locations <- cordoleani_locations_raw %>%
          habitat_type = Type, 
          lon = long) %>%
   select(-Name,  -Report_type) %>%
-  mutate(habitat_type = ifelse(habitat_type == "Agriculture", 'agricultural canal',
-                               ifelse(habitat_type == 'Channel', 'perennial instream',
-                                      ifelse(habitat_type == "River Channel", 'perennial instream',
-                                             ifelse(habitat_type == 'Wetland', 'floodplain', 'agricultural canal' ))))) %>%
+  mutate(habitat_type = case_when(habitat_type == "Agriculture" ~ "agricultural canal",
+                                  habitat_type == "Canal" ~ "agricultural canal",
+                                  habitat_type == "Channel" ~ "perennial instream",
+                                  habitat_type == "Wetland" ~ "floodplain")) %>%
   mutate(site = paste0(location, "-", sample_id)) %>%
   mutate(site_for_fish = paste0(location, "-", Site)) %>%
   select(-location, -sample_id, -habitat_type) %>%
@@ -150,11 +150,11 @@ kable(head(cordoleani_zoop_final, 5))
 
 | habitat_type       | date       | species         | prey_density | author     | watershed   | site            | size_class | gear_type | mesh_size |     lat |       lon |
 |:-------------------|:-----------|:----------------|-------------:|:-----------|:------------|:----------------|:-----------|:----------|----------:|--------:|----------:|
-| agricultural canal | 2019-01-07 | aquatic insect  |    0.1273240 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
-| agricultural canal | 2019-01-07 | copepoda        |    0.6507669 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
-| agricultural canal | 2019-01-07 | large cladocera |    0.7568702 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
-| agricultural canal | 2019-01-07 | ostracoda       |    0.0070736 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
-| agricultural canal | 2019-01-07 | rare            |    0.1839124 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
+| perennial instream | 2019-01-07 | aquatic insect  |    0.1273240 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
+| perennial instream | 2019-01-07 | copepoda        |    0.6507669 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
+| perennial instream | 2019-01-07 | large cladocera |    0.7568702 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
+| perennial instream | 2019-01-07 | ostracoda       |    0.0070736 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
+| perennial instream | 2019-01-07 | rare            |    0.1839124 | Cordoleani | Butte Creek | Butte Sink-BSC1 | meso       | net throw |       150 | 39.3607 | -121.8936 |
 
 #### QC
 
@@ -198,7 +198,8 @@ ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density))
   xlab('month') +
   ylab('prey density (count/L)') + 
   ggtitle('Distrubtion of prey density across years collected', 
-          subtitle = "data provided by Flora Cordoleani") 
+          subtitle = "data provided by Flora Cordoleani") +
+  theme_minimal()
 ```
 
 ![](cordoleani_data_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->
@@ -206,13 +207,14 @@ ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density))
 ``` r
 ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density)) + 
   geom_point(aes(color = as.factor(year(date))), alpha = 0.4) + 
-  facet_wrap(~habitat_type + year(date)) + 
+  facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
   ggtitle('Distrubtion of prey density across years and habitat types', 
           subtitle = "data provided by Flora Cordoleani") +  
   scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred")) + 
-  theme(legend.position = "top")
+  theme_minimal() + 
+  theme(legend.position = "top") 
 ```
 
 ![](cordoleani_data_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
