@@ -261,5 +261,4 @@ usethis::use_data(corline_prey_data, overwrite = TRUE)
 
 ## Upcoming Updates
 
-- include fish weight metrics
-- include environmental datasets
+NA

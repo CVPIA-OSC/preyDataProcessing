@@ -52,8 +52,7 @@ Final prey density dataset includes the following variables:
 
 ```{r}
 # this a script that sources the EDI data
-path <- system.file("extdata", "montgomery", "food_4_fish_data_access.R", package = "preyDataProcessing")
-source(path)
+source('../montgomery/food_4_fish_data_access.R')
 
 montgomery_prey_data |> glimpse()
 ```
@@ -104,9 +103,8 @@ montgomery_prey_data_process <- montgomery_prey_data %>%
 **notes:**
 
 ```{r}
-path <- system.file("extdata", "montgomery",  "F4F2021_LocationLookupTable_20221108.xlsx", package = "preyDataProcessing")
 
-locations <- readxl::read_excel(path) |> janitor::clean_names() |> 
+locations <- readxl::read_excel('../montgomery/F4F2021_LocationLookupTable_20221108.xlsx') |> janitor::clean_names() |> 
   separate(lat_lon_utm, sep = ", ", c("lat", "lon")) |> 
   select(-x3, -purpose, -habitat_type) |> 
   rename(habitat_type = habitat_type_2,
@@ -141,7 +139,7 @@ summary(montgomery_prey_data_final)
 
 ```{r}
 ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point() + 
+  geom_point(alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -149,7 +147,7 @@ ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_dens
           subtitle = "data provided by Jacob Montgomery") 
 
 ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point(aes(color = as.factor(year(date)))) + 
+  geom_point(aes(color = as.factor(year(date))), alpha = 0.4) + 
   facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -171,34 +169,7 @@ usethis::use_data(montgomery_prey_data, overwrite = TRUE)
 
 ```
 
-### Fish Data
+## Upcoming Updates
 
-[data dictionary - overview of what the data looks like]
-
-#### Raw data
-
-#### Standard format
-
--   excluded variables:
-
--   notes:
-
-#### QC
-
-#### Data exploration
-
-[data dictionary - overview of what the data looks like]
-
-#### Raw data
-
-#### Standard format
-
--   excluded variables:
-
--   notes:
-
-#### QC
-
-#### Data exploration
-
-### Environmental Data
+* include fish weight metrics
+* include environmental datasets

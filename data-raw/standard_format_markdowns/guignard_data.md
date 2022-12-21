@@ -35,23 +35,20 @@ Final prey density dataset includes the following variables:
 #### Raw data
 
 ``` r
-path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "preyDataProcessing")
-stanislaus_zoop_raw <- readxl::read_excel(path, sheet = 'Density by location, date,ta_MR')
-
-stanislaus_zoop_raw |> glimpse()
+stanislaus_zoop_raw <- readxl::read_excel('../guignard/Honolulu Bar data.xlsx', sheet = 'Density by location, date,ta_MR') |> glimpse()
 ```
 
     ## Rows: 26
     ## Columns: 9
-    ## $ Location               <chr> "Main Channel", "Main Channel", "Main Channel", "Main Channel", "Main Channel", "Main Channel", "Main Channel",…
-    ## $ Date                   <dttm> 2014-04-04, 2014-04-14, 2014-05-01, 2014-05-09, 2014-05-13, 2014-05-15, 2014-06-30, 2014-04-04, 2014-04-09, 20…
-    ## $ `Total  Drift Density` <dbl> 0.6680000, 0.3470000, 0.8180000, 0.9700000, 0.7420000, 0.3600000, 0.5090000, 0.3680556, 0.2860314, 0.1433589, 0…
-    ## $ Ephemeroptera          <dbl> 0.0841750842, 0.0157331655, 0.0200706487, 0.0480584391, 0.0428873054, 0.0168628894, 0.0066137566, 0.0263888889,…
-    ## $ Plecoptera             <dbl> 0.0000000000, 0.0043703238, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000, 0.0000000000,…
-    ## $ Tricoptera             <dbl> 0.0026304714, 0.0034962590, 0.0000000000, 0.0240292195, 0.0098970705, 0.0015329899, 0.0132275132, 0.0013888889,…
-    ## $ Diptera                <dbl> 0.423505892, 0.033214461, 0.044155427, 0.245098039, 0.171549221, 0.078182487, 0.354938272, 0.279166667, 0.01252…
-    ## $ Microcrustacea         <dbl> 0.08943603, 0.08259912, 0.65430315, 0.28835063, 0.35629454, 0.08431445, 0.01322751, 0.01250000, 0.05407559, 0.0…
-    ## $ `Other Taxa`           <dbl> 0.06825253, 0.20758667, 0.09947078, 0.36446367, 0.16137187, 0.17910719, 0.12099295, 0.04861111, 0.20235656, 0.0…
+    ## $ Location               <chr> "Main Channel", "Main Channel", "Main Channel",…
+    ## $ Date                   <dttm> 2014-04-04, 2014-04-14, 2014-05-01, 2014-05-09…
+    ## $ `Total  Drift Density` <dbl> 0.6680000, 0.3470000, 0.8180000, 0.9700000, 0.7…
+    ## $ Ephemeroptera          <dbl> 0.0841750842, 0.0157331655, 0.0200706487, 0.048…
+    ## $ Plecoptera             <dbl> 0.0000000000, 0.0043703238, 0.0000000000, 0.000…
+    ## $ Tricoptera             <dbl> 0.0026304714, 0.0034962590, 0.0000000000, 0.024…
+    ## $ Diptera                <dbl> 0.423505892, 0.033214461, 0.044155427, 0.245098…
+    ## $ Microcrustacea         <dbl> 0.08943603, 0.08259912, 0.65430315, 0.28835063,…
+    ## $ `Other Taxa`           <dbl> 0.06825253, 0.20758667, 0.09947078, 0.36446367,…
 
 #### Standard format
 
@@ -97,12 +94,11 @@ stanislaus_zoop <- stanislaus_zoop_raw %>%
 - Manually assign `habitat_type` using best professional judgement
 
 ``` r
-path <- system.file("extdata", 'guignard', "drift net sites_to_kml.kml", package = "preyDataProcessing")
-locations_raw <- st_read(dsn = path) 
+locations_raw <- st_read(dsn = '../guignard/drift net sites_to_kml.kml') 
 ```
 
     ## Reading layer `Points' from data source 
-    ##   `/Library/Frameworks/R.framework/Versions/4.1/Resources/library/preyDataProcessing/extdata/guignard/drift net sites_to_kml.kml' 
+    ##   `/Users/maddeerubenson/Documents/git/CVPIA/preyDataProcessing/data-raw/guignard/drift net sites_to_kml.kml' 
     ##   using driver `KML'
     ## Simple feature collection with 7 features and 2 fields
     ## Geometry type: POINT
@@ -123,15 +119,18 @@ geometry <- sf::st_coordinates(locations_raw) |>
 unique(stanislaus_zoop$site)
 ```
 
-    ## [1] "Main Channel"       "Top Side"           "Lower Side"         "Lower Flood Plain"  "Middle Flood Plain" "Upper Flood Plain"
+    ## [1] "Main Channel"       "Top Side"           "Lower Side"        
+    ## [4] "Lower Flood Plain"  "Middle Flood Plain" "Upper Flood Plain"
 
 ``` r
 # location names in .kmz 
 unique(geometry$Name)
 ```
 
-    ## [1] "H Bar Main Channel"           "Floodplain Lower"             "Floodplain Upper"             "Side Channel Lower"          
-    ## [5] "Side Channel Upper"           "Middle Floodplain"            "H Bar main abv. side channel"
+    ## [1] "H Bar Main Channel"           "Floodplain Lower"            
+    ## [3] "Floodplain Upper"             "Side Channel Lower"          
+    ## [5] "Side Channel Upper"           "Middle Floodplain"           
+    ## [7] "H Bar main abv. side channel"
 
 ``` r
 # change the names of the locations dataset to match those in in the zoops table 
@@ -179,26 +178,40 @@ kable(head(guignard_prey_data_final, 5))
 summary(guignard_prey_data_final)
 ```
 
-    ##       date                       species           prey_density        author           watershed             site            gear_type        
-    ##  Min.   :2014-04-04 00:00:00   Length:156         Min.   : 0.0000   Length:156         Length:156         Length:156         Length:156        
-    ##  1st Qu.:2014-04-14 00:00:00   Class :character   1st Qu.: 0.1001   Class :character   Class :character   Class :character   Class :character  
-    ##  Median :2014-05-09 00:00:00   Mode  :character   Median : 0.8421   Mode  :character   Mode  :character   Mode  :character   Mode  :character  
-    ##  Mean   :2014-05-08 07:23:04                      Mean   : 2.2665                                                                              
-    ##  3rd Qu.:2014-05-15 00:00:00                      3rd Qu.: 2.6661                                                                              
-    ##  Max.   :2014-06-30 00:00:00                      Max.   :26.6621                                                                              
-    ##    mesh_size    size_class             lon              lat       habitat_type      
-    ##  Min.   :335   Length:156         Min.   :-120.7   Min.   :37.8   Length:156        
-    ##  1st Qu.:335   Class :character   1st Qu.:-120.7   1st Qu.:37.8   Class :character  
-    ##  Median :335   Mode  :character   Median :-120.7   Median :37.8   Mode  :character  
-    ##  Mean   :335                      Mean   :-120.7   Mean   :37.8                     
-    ##  3rd Qu.:335                      3rd Qu.:-120.7   3rd Qu.:37.8                     
-    ##  Max.   :335                      Max.   :-120.7   Max.   :37.8
+    ##       date                       species           prey_density    
+    ##  Min.   :2014-04-04 00:00:00   Length:156         Min.   : 0.0000  
+    ##  1st Qu.:2014-04-14 00:00:00   Class :character   1st Qu.: 0.1001  
+    ##  Median :2014-05-09 00:00:00   Mode  :character   Median : 0.8421  
+    ##  Mean   :2014-05-08 07:23:04                      Mean   : 2.2665  
+    ##  3rd Qu.:2014-05-15 00:00:00                      3rd Qu.: 2.6661  
+    ##  Max.   :2014-06-30 00:00:00                      Max.   :26.6621  
+    ##     author           watershed             site            gear_type        
+    ##  Length:156         Length:156         Length:156         Length:156        
+    ##  Class :character   Class :character   Class :character   Class :character  
+    ##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+    ##                                                                             
+    ##                                                                             
+    ##                                                                             
+    ##    mesh_size    size_class             lon              lat      
+    ##  Min.   :335   Length:156         Min.   :-120.7   Min.   :37.8  
+    ##  1st Qu.:335   Class :character   1st Qu.:-120.7   1st Qu.:37.8  
+    ##  Median :335   Mode  :character   Median :-120.7   Median :37.8  
+    ##  Mean   :335                      Mean   :-120.7   Mean   :37.8  
+    ##  3rd Qu.:335                      3rd Qu.:-120.7   3rd Qu.:37.8  
+    ##  Max.   :335                      Max.   :-120.7   Max.   :37.8  
+    ##  habitat_type      
+    ##  Length:156        
+    ##  Class :character  
+    ##  Mode  :character  
+    ##                    
+    ##                    
+    ## 
 
 #### Data exploration
 
 ``` r
 ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point() + 
+  geom_point(alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -210,7 +223,7 @@ ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_densit
 
 ``` r
 ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point(aes(color = as.factor(year(date)))) + 
+  geom_point(aes(color = as.factor(year(date))), alpha = 0.4) + 
   facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -225,40 +238,10 @@ ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_densit
 #### Save final dataset
 
 ``` r
-#save(guignard_prey_data_final, file = "../../data/guignard_prey_data.rda")
-
 guignard_prey_data <- guignard_prey_data_final
 usethis::use_data(guignard_prey_data, overwrite = TRUE)
 ```
 
-### Fish Data
+## Upcoming Updates
 
-\[data dictionary - overview of what the data looks like\]
-
-#### Raw data
-
-#### Standard format
-
-- excluded variables:
-
-- notes:
-
-#### QC
-
-#### Data exploration
-
-\[data dictionary - overview of what the data looks like\]
-
-#### Raw data
-
-#### Standard format
-
-- excluded variables:
-
-- notes:
-
-#### QC
-
-#### Data exploration
-
-### Environmental Data
+NA

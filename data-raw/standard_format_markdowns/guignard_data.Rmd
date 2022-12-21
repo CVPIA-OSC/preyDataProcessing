@@ -53,10 +53,7 @@ Final prey density dataset includes the following variables:
 
 ```{r}
 
-path <- system.file("extdata", 'guignard', "Honolulu Bar data.xlsx", package = "preyDataProcessing")
-stanislaus_zoop_raw <- readxl::read_excel(path, sheet = 'Density by location, date,ta_MR')
-
-stanislaus_zoop_raw |> glimpse()
+stanislaus_zoop_raw <- readxl::read_excel('../guignard/Honolulu Bar data.xlsx', sheet = 'Density by location, date,ta_MR') |> glimpse()
 
 ```
 
@@ -102,8 +99,7 @@ stanislaus_zoop <- stanislaus_zoop_raw %>%
 -   Manually assign `habitat_type` using best professional judgement
 
 ```{r}
-path <- system.file("extdata", 'guignard', "drift net sites_to_kml.kml", package = "preyDataProcessing")
-locations_raw <- st_read(dsn = path) 
+locations_raw <- st_read(dsn = '../guignard/drift net sites_to_kml.kml') 
 geometry <- sf::st_coordinates(locations_raw) |> 
   cbind(locations_raw) |> 
   rename(lon = X, 
@@ -164,7 +160,7 @@ summary(guignard_prey_data_final)
 
 ```{r}
 ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point() + 
+  geom_point(alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -172,7 +168,7 @@ ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_densit
           subtitle = "data provided by Jason Guignard") 
 
 ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point(aes(color = as.factor(year(date)))) + 
+  geom_point(aes(color = as.factor(year(date))), alpha = 0.4) + 
   facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -187,41 +183,11 @@ ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_densit
 
 ```{r}
 
-#save(guignard_prey_data_final, file = "../../data/guignard_prey_data.rda")
-
 guignard_prey_data <- guignard_prey_data_final
 usethis::use_data(guignard_prey_data, overwrite = TRUE)
 
 ```
 
-### Fish Data
+## Upcoming Updates
 
-[data dictionary - overview of what the data looks like]
-
-#### Raw data
-
-#### Standard format
-
--   excluded variables:
-
--   notes:
-
-#### QC
-
-#### Data exploration
-
-[data dictionary - overview of what the data looks like]
-
-#### Raw data
-
-#### Standard format
-
--   excluded variables:
-
--   notes:
-
-#### QC
-
-#### Data exploration
-
-### Environmental Data
+NA

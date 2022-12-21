@@ -61,10 +61,7 @@ Final prey density dataset includes the following variables:
 #saveRDS(zoop_data, 'zoop_data.rds')
 
 # read pre-saved rds file back in:
-path <- system.file("extdata", "zooper", "zoop_data.rds", package = "preyDataProcessing")
-zoop_data <- readRDS(path) 
-
-zoop_data |>  glimpse()
+zoop_data <- readRDS('../zooper/zoop_data.rds') |> glimpse()
 
 ```
 
@@ -121,8 +118,7 @@ zooper <- zoop_data %>%
 -   Data is clipped to delta extents
 
 ```{r}
-path <- system.file("extdata", "zooper", "shape_files", "delta_extents", "HabitatExtentsForCorreigh.shp", package = "preyDataProcessing")
-delta_extents <- rgdal::readOGR(path) %>%
+delta_extents <- rgdal::readOGR('../zooper/shape_files/delta_extents/HabitatExtentsForCorreigh.shp') %>%
   st_as_sf(coords = c("longitude", "latitude"), dim = "XY", crs = 4326) %>%
   st_transform("WGS84")
 
@@ -164,7 +160,7 @@ summary(zooper_prey_data)
 
 ```{r}
 ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point() + 
+  geom_point(alpha = 0.4) + 
   facet_wrap(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -172,7 +168,7 @@ ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) +
           subtitle = "data provided by Zooper Library") 
 
 ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) +
-  geom_point() +
+  geom_point(alpha = 0.4) +
   facet_wrap(~habitat_type) +
   xlab('month') +
   ylab('prey density (count/L)') +
@@ -186,40 +182,10 @@ ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) +
 
 ```{r}
 
-#save(zooper_prey_data, file = "../../data/zooper_prey_data.rda")
-
 usethis::use_data(zooper_prey_data, overwrite = TRUE)
 
 ```
 
-### Fish Data
+## Upcoming Updates
 
-[data dictionary - overview of what the data looks like]
-
-#### Raw data
-
-#### Standard format
-
--   excluded variables:
-
--   notes:
-
-#### QC
-
-#### Data exploration
-
-[data dictionary - overview of what the data looks like]
-
-#### Raw data
-
-#### Standard format
-
--   excluded variables:
-
--   notes:
-
-#### QC
-
-#### Data exploration
-
-### Environmental Data
+* include environmental datasets

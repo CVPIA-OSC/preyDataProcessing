@@ -59,19 +59,19 @@ includes the following variables:
 #### Raw data
 
 ``` r
-path <- system.file("extdata", "zeug", "san_joaquin", "summary_zooplankton_10_19_17.xlsx", package = "preyDataProcessing")
-zeug_prey_data_raw <- readxl::read_excel(path, sheet = "CountLiter2016", range = "A1:H56") |> glimpse()
-#> Rows: 55
-#> Columns: 8
-#> $ Year            <dbl> 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016…
-#> $ Week            <dbl> 1, 1, 2, 4, 4, 5, 5, 6, 7, 8, 9, 9, 10, 10, 1, 1, 4, 4, 4, 5, 5, 5, 6, 6, 7, 7, 8, 8, 8, 9, 9, 9, 9, 10, 10, 1, 2, 3, …
-#> $ Reach           <chr> "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", "2A", "2A", "2A", "2A", "2A", "2A"…
-#> $ TaxGrp_1        <chr> "Microcrustacea", "Insecta-Diptera", "Microcrustacea", "Microcrustacea", "Insecta-Diptera", "Microcrustacea", "Insecta…
-#> $ TotalTaxbyReach <dbl> 559, 136, 35, 2568, 141, 1939, 106, 5169, 2702, 3926, 12, 10, 370, 375, 68, 29, 96, 12, 21, 277, 263, 34, 26, 259, 68,…
-#> $ ConcReachWeek   <chr> "1A-1", "1A-1", "1A-2", "1A-4", "1A-4", "1A-5", "1A-5", "1A-6", "1A-7", "1A-8", "1A-9", "1A-9", "1A-10", "1A-10", "2A-…
-#> $ `Sum of Volume` <dbl> 80.00, 80.00, 10.00, 73.75, 73.75, 30.50, 30.50, 70.50, 39.25, 44.75, 41.75, 41.75, 31.25, 31.25, 80.00, 80.00, 65.20,…
-#> $ CountperVolume  <dbl> 6.9875000, 1.7000000, 3.5000000, 34.8203390, 1.9118644, 63.5737705, 3.4754098, 73.3191489, 68.8407643, 87.7318436, 0.2…
+zeug_prey_data_raw <- readxl::read_excel('../zeug/san_joaquin/summary_zooplankton_10_19_17.xlsx', sheet = "CountLiter2016", range = "A1:H56") |> glimpse()
 ```
+
+    ## Rows: 55
+    ## Columns: 8
+    ## $ Year            <dbl> 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, 2016, …
+    ## $ Week            <dbl> 1, 1, 2, 4, 4, 5, 5, 6, 7, 8, 9, 9, 10, 10, 1, 1, 4, 4…
+    ## $ Reach           <chr> "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", "1A", …
+    ## $ TaxGrp_1        <chr> "Microcrustacea", "Insecta-Diptera", "Microcrustacea",…
+    ## $ TotalTaxbyReach <dbl> 559, 136, 35, 2568, 141, 1939, 106, 5169, 2702, 3926, …
+    ## $ ConcReachWeek   <chr> "1A-1", "1A-1", "1A-2", "1A-4", "1A-4", "1A-5", "1A-5"…
+    ## $ `Sum of Volume` <dbl> 80.00, 80.00, 10.00, 73.75, 73.75, 30.50, 30.50, 70.50…
+    ## $ CountperVolume  <dbl> 6.9875000, 1.7000000, 3.5000000, 34.8203390, 1.9118644…
 
 #### Standard format
 
@@ -129,7 +129,6 @@ sj_locations <- data.frame(
 This produces the final prey density dataset.
 
 ``` r
-
 zeug_prey_data_san_joaquin_final <- zeug_prey_data_san_joaquin |> 
   left_join(sj_locations) 
 
@@ -150,27 +149,42 @@ kable(head(zeug_prey_data_san_joaquin_final, 5))
 
 ``` r
 summary(zeug_prey_data_san_joaquin_final)
-#>    species           prey_density          year           week           author           watershed             site          
-#>  Length:55          Min.   :  0.184   Min.   :2016   Min.   : 1.000   Length:55          Length:55          Length:55         
-#>  Class :character   1st Qu.:  1.263   1st Qu.:2016   1st Qu.: 4.000   Class :character   Class :character   Class :character  
-#>  Mode  :character   Median :  6.987   Median :2016   Median : 6.000   Mode  :character   Mode  :character   Mode  :character  
-#>                     Mean   : 58.886   Mean   :2016   Mean   : 5.927                                                           
-#>                     3rd Qu.:102.596   3rd Qu.:2016   3rd Qu.: 8.500                                                           
-#>                     Max.   :376.250   Max.   :2016   Max.   :10.000                                                           
-#>   size_class         gear_type           mesh_size  habitat_type            lat             lon        
-#>  Length:55          Length:55          Min.   :64   Length:55          Min.   :36.80   Min.   :-120.6  
-#>  Class :character   Class :character   1st Qu.:64   Class :character   1st Qu.:36.80   1st Qu.:-120.6  
-#>  Mode  :character   Mode  :character   Median :64   Mode  :character   Median :36.86   Median :-120.2  
-#>                                        Mean   :64                      Mean   :36.95   Mean   :-120.2  
-#>                                        3rd Qu.:64                      3rd Qu.:37.17   3rd Qu.:-120.0  
-#>                                        Max.   :64                      Max.   :37.17   Max.   :-119.8
 ```
+
+    ##    species           prey_density          year           week       
+    ##  Length:55          Min.   :  0.184   Min.   :2016   Min.   : 1.000  
+    ##  Class :character   1st Qu.:  1.263   1st Qu.:2016   1st Qu.: 4.000  
+    ##  Mode  :character   Median :  6.987   Median :2016   Median : 6.000  
+    ##                     Mean   : 58.886   Mean   :2016   Mean   : 5.927  
+    ##                     3rd Qu.:102.596   3rd Qu.:2016   3rd Qu.: 8.500  
+    ##                     Max.   :376.250   Max.   :2016   Max.   :10.000  
+    ##     author           watershed             site            size_class       
+    ##  Length:55          Length:55          Length:55          Length:55         
+    ##  Class :character   Class :character   Class :character   Class :character  
+    ##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+    ##                                                                             
+    ##                                                                             
+    ##                                                                             
+    ##   gear_type           mesh_size  habitat_type            lat       
+    ##  Length:55          Min.   :64   Length:55          Min.   :36.80  
+    ##  Class :character   1st Qu.:64   Class :character   1st Qu.:36.80  
+    ##  Mode  :character   Median :64   Mode  :character   Median :36.86  
+    ##                     Mean   :64                      Mean   :36.95  
+    ##                     3rd Qu.:64                      3rd Qu.:37.17  
+    ##                     Max.   :64                      Max.   :37.17  
+    ##       lon        
+    ##  Min.   :-120.6  
+    ##  1st Qu.:-120.6  
+    ##  Median :-120.2  
+    ##  Mean   :-120.2  
+    ##  3rd Qu.:-120.0  
+    ##  Max.   :-119.8
 
 #### Data exploration
 
 ``` r
 ggplot(zeug_prey_data_san_joaquin_final, aes(x = as.factor(week), y = prey_density)) + 
-  geom_point(aes(color = habitat_type)) + 
+  geom_point(aes(color = habitat_type), alpha = 0.4) + 
   facet_grid(~year) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -185,7 +199,6 @@ ggplot(zeug_prey_data_san_joaquin_final, aes(x = as.factor(week), y = prey_densi
 #### Save final dataset
 
 ``` r
-
 #save(zeug_prey_data_san_joaquin_final, file = "../../data/zeug_sanJoaquin_prey_data.rda")
 
 zeug_sanJoaquin_prey_data <- zeug_prey_data_san_joaquin_final
@@ -219,8 +232,7 @@ includes the following variables:
 #### Raw data
 
 ``` r
-path <- system.file("extdata", "zeug", "merced", "Merced invert data_environment.xls", package = "preyDataProcessing")
-zeug_merced_prey_data_raw <- readxl::read_excel(path, .name_repair = 'minimal', sheet = "erin_modified",  col_names = FALSE)
+zeug_merced_prey_data_raw <- readxl::read_excel('../zeug/merced/Merced invert data_environment.xls', .name_repair = 'minimal', sheet = "erin_modified",  col_names = FALSE)
 
 dates <- janitor::excel_numeric_to_date(as.numeric(zeug_merced_prey_data_raw[1,3:ncol(zeug_merced_prey_data_raw)]), date_system = 'mac pre-2011') %>% as.character()
 
@@ -235,23 +247,24 @@ names(zeug_merced_prey_data_raw) <- col_names
 
 # view subset of data
 zeug_merced_prey_data_raw |> glimpse()
-#> Rows: 284
-#> Columns: 14
-#> $ Species                      <chr> NA, NA, NA, NA, "Mayfly Adult", NA, NA, NA, NA, NA, NA, NA, "Chironomidae Adult", NA, NA, NA, NA, NA, NA,…
-#> $ Measurement                  <chr> "Date", "Site", "Subs", "Mfactor", "No. subsam", "No. scan", "No. m-2 (subsam)", "Tin", "Pre", "Post", "g…
-#> $ `2009-04-04__21 Drift`       <chr> "38445", "21 Drift", "1", "30", "12", "0", "360", "1", "0.99665999999999999", "0.99990999999999997", "0.0…
-#> $ `2009-04-04__21 Benthic #1`  <chr> "38445", "21 Benthic #1", "2", "15", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0"…
-#> $ `2009-04-04__21 Benthic #2`  <chr> "38445", "21 Benthic #2", "1", "30", "0", "0", "0", "0", "0", "0", "0", "0", "2", "0", "60", "42", "0.995…
-#> $ `2009-04-04__UN4 Benthic #2` <chr> "38445", "UN4 Benthic #2", "1", "30", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0…
-#> $ `2009-04-04__Drift UN4`      <chr> "38445", "Drift UN4", "1", "30", "4", "0", "120", "111", "1.0088699999999999", "1.0101199999999999", "0.0…
-#> $ `2009-04-04__Drift 6`        <chr> "38445", "Drift 6", "1", "30", "18", "0", "540", "118", "1.01973", "1.02475", "0.0050200000000000244", "0…
-#> $ `2009-04-04__Drift UN1`      <chr> "38445", "Drift UN1", "1", "30", "1", "0", "30", "109", "0.99556999999999995", "0.99575000000000002", "0.…
-#> $ `2009-04-09__6 Benthic #1`   <chr> "38450", "6 Benthic #1", "2", "15", "8", "0", "120", "123", "1.00701", "1.0113700000000001", "0.004360000…
-#> $ `2009-04-09__6 Benthic #2`   <chr> "38450", "6 Benthic #2", "1", "30", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0",…
-#> $ `2009-04-09__UN4 Benthic #1` <chr> "38450", "UN4 Benthic #1", "1", "30", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0…
-#> $ `2009-04-04__UN1 Benthic #1` <chr> "38445", "UN1 Benthic #1", "2", "15", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0…
-#> $ `2009-04-09__UN1 Benthic #2` <chr> "38450", "UN1 Benthic #2", "2", "15", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0", "0…
 ```
+
+    ## Rows: 284
+    ## Columns: 14
+    ## $ Species                      <chr> NA, NA, NA, NA, "Mayfly Adult", NA, NA, N…
+    ## $ Measurement                  <chr> "Date", "Site", "Subs", "Mfactor", "No. s…
+    ## $ `2009-04-04__21 Drift`       <chr> "38445", "21 Drift", "1", "30", "12", "0"…
+    ## $ `2009-04-04__21 Benthic #1`  <chr> "38445", "21 Benthic #1", "2", "15", "0",…
+    ## $ `2009-04-04__21 Benthic #2`  <chr> "38445", "21 Benthic #2", "1", "30", "0",…
+    ## $ `2009-04-04__UN4 Benthic #2` <chr> "38445", "UN4 Benthic #2", "1", "30", "0"…
+    ## $ `2009-04-04__Drift UN4`      <chr> "38445", "Drift UN4", "1", "30", "4", "0"…
+    ## $ `2009-04-04__Drift 6`        <chr> "38445", "Drift 6", "1", "30", "18", "0",…
+    ## $ `2009-04-04__Drift UN1`      <chr> "38445", "Drift UN1", "1", "30", "1", "0"…
+    ## $ `2009-04-09__6 Benthic #1`   <chr> "38450", "6 Benthic #1", "2", "15", "8", …
+    ## $ `2009-04-09__6 Benthic #2`   <chr> "38450", "6 Benthic #2", "1", "30", "0", …
+    ## $ `2009-04-09__UN4 Benthic #1` <chr> "38450", "UN4 Benthic #1", "1", "30", "0"…
+    ## $ `2009-04-04__UN1 Benthic #1` <chr> "38445", "UN1 Benthic #1", "2", "15", "0"…
+    ## $ `2009-04-09__UN1 Benthic #2` <chr> "38450", "UN1 Benthic #2", "2", "15", "0"…
 
 #### Standard format
 
@@ -338,27 +351,35 @@ Zeug.
 
 ``` r
 summary(zeug_merced_prey_data_final)
-#>    species               date                site            prey_density           author           life_stage         gear_type        
-#>  Length:140         Min.   :2009-04-04   Length:140         Min.   :0.00000000   Length:140         Length:140         Length:140        
-#>  Class :character   1st Qu.:2009-04-04   Class :character   1st Qu.:0.00000000   Class :character   Class :character   Class :character  
-#>  Mode  :character   Median :2009-04-04   Mode  :character   Median :0.00000000   Mode  :character   Mode  :character   Mode  :character  
-#>                     Mean   :2009-04-04                      Mean   :0.00026269                                                           
-#>                     3rd Qu.:2009-04-04                      3rd Qu.:0.00004744                                                           
-#>                     Max.   :2009-04-04                      Max.   :0.00607376                                                           
-#>   size_class         watershed         habitat_type         mesh_size  
-#>  Length:140         Length:140         Length:140         Min.   :500  
-#>  Class :character   Class :character   Class :character   1st Qu.:500  
-#>  Mode  :character   Mode  :character   Mode  :character   Median :500  
-#>                                                           Mean   :500  
-#>                                                           3rd Qu.:500  
-#>                                                           Max.   :500
 ```
+
+    ##    species               date                site          
+    ##  Length:140         Min.   :2009-04-04   Length:140        
+    ##  Class :character   1st Qu.:2009-04-04   Class :character  
+    ##  Mode  :character   Median :2009-04-04   Mode  :character  
+    ##                     Mean   :2009-04-04                     
+    ##                     3rd Qu.:2009-04-04                     
+    ##                     Max.   :2009-04-04                     
+    ##   prey_density           author           life_stage         gear_type        
+    ##  Min.   :0.00000000   Length:140         Length:140         Length:140        
+    ##  1st Qu.:0.00000000   Class :character   Class :character   Class :character  
+    ##  Median :0.00000000   Mode  :character   Mode  :character   Mode  :character  
+    ##  Mean   :0.00026269                                                           
+    ##  3rd Qu.:0.00004744                                                           
+    ##  Max.   :0.00607376                                                           
+    ##   size_class         watershed         habitat_type         mesh_size  
+    ##  Length:140         Length:140         Length:140         Min.   :500  
+    ##  Class :character   Class :character   Class :character   1st Qu.:500  
+    ##  Mode  :character   Mode  :character   Mode  :character   Median :500  
+    ##                                                           Mean   :500  
+    ##                                                           3rd Qu.:500  
+    ##                                                           Max.   :500
 
 #### Data exploration
 
 ``` r
 ggplot(zeug_merced_prey_data_final, aes(x = as.factor((date)), y = prey_density)) + 
-  geom_point(aes(color = habitat_type)) + 
+  geom_point(aes(color = habitat_type), alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -373,41 +394,13 @@ ggplot(zeug_merced_prey_data_final, aes(x = as.factor((date)), y = prey_density)
 #### Save final dataset
 
 ``` r
-
 #save(zeug_merced_prey_data_final, file = "../../data/zeug_merced_prey_data.rda")
 
 zeug_merced_prey_data <- zeug_merced_prey_data_final
 usethis::use_data(zeug_merced_prey_data, overwrite = TRUE)
 ```
 
-### Fish Data
+## Upcoming Updates
 
-\[data dictionary - overview of what the data looks like\]
-
-#### Raw data
-
-#### Standard format
-
-- excluded variables:
-
-- notes:
-
-#### QC
-
-#### Data exploration
-
-\[data dictionary - overview of what the data looks like\]
-
-#### Raw data
-
-#### Standard format
-
-- excluded variables:
-
-- notes:
-
-#### QC
-
-#### Data exploration
-
-### Environmental Data
+- include fish weight metrics
+- include environmental datasets
