@@ -18,6 +18,8 @@ library(sf)
 library(preyDataProcessing)
 
 options(scipen=999)
+
+theme_set(theme_minimal())
 ```
 
 ## Prey Density 
@@ -128,18 +130,18 @@ ggplot(all_prey_density, aes(x = as.factor(month(date)), y = prey_density)) +
   xlab('month') +
   ylab('prey density (count/L)') + 
   ggtitle('Distribution of all prey density across years and habitat types', 
-          subtitle = "Aggregated data across all authors") + 
-  theme_minimal()
+          subtitle = "Aggregated data across all authors") 
 
+monthly_prey_density |> 
+  filter(median_prey_density > 0) |> 
 ggplot() +
-  geom_boxplot(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
-  geom_jitter(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density, color = habitat_type)) +
+  geom_boxplot(aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
+  geom_jitter(aes(x = as.factor(month), y = median_prey_density, color = habitat_type)) +
   scale_y_continuous(trans='log10') +
   xlab('month') +
   ylab('log(median prey density) (count/L)') +
   scale_color_brewer(palette = 'Dark2') +
-  coord_flip() +
-  theme_minimal()
+  coord_flip() 
 
 preyDataProcessing::all_prey_density %>%
   group_by(habitat_type) %>%
@@ -167,32 +169,35 @@ There are `r length(unique(monthly_prey_density$watershed))` watersheds included
 * Stanislaus
 * Sutter Bypass
 * Yolo Bypass
-* Yolo Bypass 2 #TODO: aggregate Yolo and Yolo Bypass 2
+* Yolo Bypass 2
 
 ```{r}
+
+all_prey_density |> 
+  filter(prey_density > 0 & prey_density <= 0.0131) |> 
 ggplot() +
-  geom_boxplot(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
-  geom_jitter(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density, color = watershed)) +
-  scale_y_continuous(trans='log10') +
-  ylab('log(median prey density) (count/L)') +
+  geom_boxplot(aes(x = as.factor(month(date)), y = prey_density)) +
+  facet_wrap(~watershed) +
+  ylab('prey density (count/L)') +
   xlab('month') +
-  #facet_wrap(~watershed)+
-  scale_color_brewer(palette = 'Dark2')+
-  coord_flip()
+  ggtitle('Distribution of prey density across watersheds collected - outliers removed',
+          subtitle = "All authors")
 
 ```
 
 ## Temporal Variation 
 
 ```{r}
-ggplot() +
-  geom_boxplot(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
-  geom_jitter(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density, color = year)) +
-  scale_colour_continuous(type = 'viridis')+
-  scale_y_continuous(trans='log10') +
-  ylab('log(median prey density) (count/L)') +
+all_prey_density |> 
+  filter(!is.na(year(date))) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point(alpha = 0.4) +
+  facet_wrap(~year(date)) +  
   xlab('month') +
-  coord_flip()
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of all prey density across years', 
+          subtitle = "Aggregated data across all authors") 
+  
 
 
 ```

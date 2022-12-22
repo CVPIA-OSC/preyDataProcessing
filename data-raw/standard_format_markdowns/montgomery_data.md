@@ -1,7 +1,7 @@
 Jacob Montgomery Data
 ================
 Maddee Rubenson (FlowWest)
-2022-12-20
+2022-12-22
 
 ## Montgomery Data Standardization
 
@@ -36,7 +36,7 @@ Final prey density dataset includes the following variables:
 
 ``` r
 # this a script that sources the EDI data
-source('../montgomery/food_4_fish_data_access.R')
+source('data-raw//montgomery/food_4_fish_data_access.R')
 
 montgomery_prey_data |> glimpse()
 ```
@@ -162,7 +162,7 @@ montgomery_prey_data_process <- montgomery_prey_data %>%
 **notes:**
 
 ``` r
-locations <- readxl::read_excel('../montgomery/F4F2021_LocationLookupTable_20221108.xlsx') |> janitor::clean_names() |> 
+locations <- readxl::read_excel('data-raw/montgomery/F4F2021_LocationLookupTable_20221108.xlsx') |> janitor::clean_names() |> 
   separate(lat_lon_utm, sep = ", ", c("lat", "lon")) |> 
   select(-x3, -purpose, -habitat_type) |> 
   rename(habitat_type = habitat_type_2,
@@ -185,18 +185,20 @@ This produces the final prey density dataset.
 
 ``` r
 montgomery_prey_data_final <- montgomery_prey_data_process |> 
-  left_join(locations)
+  left_join(locations) |> 
+  filter(!is.na(habitat_type)) |> # filters out site MNT3ASource which has a prey_density of 0 and no site location or habitat type
+  filter(prey_density > 0) 
 
 kable(head(montgomery_prey_data_final, 5))
 ```
 
-| date       | site        | species        | life_stage | prey_density | author     | size_class | mesh_size | gear_type |      lat |       lon | habitat_type       |
-|:-----------|:------------|:---------------|:-----------|-------------:|:-----------|:-----------|----------:|:----------|---------:|----------:|:-------------------|
-| 2018-10-01 | MNT3ASource | pseudodiptomus | adult      |            0 | Montgomery | meso       |       150 | net throw |       NA |        NA | NA                 |
-| 2019-04-08 | MNTNEWCAN   | pseudodiptomus | adult      |            0 | Montgomery | meso       |       150 | net throw | 38.94108 | -121.6344 | agricultural canal |
-| 2018-11-05 | ACCSAC2     | pseudodiptomus | adult      |            0 | Montgomery | meso       |       150 | net throw | 38.77818 | -121.6020 | perennial instream |
-| 2019-04-08 | ELDCAN      | pseudodiptomus | adult      |            0 | Montgomery | meso       |       150 | net throw | 38.85624 | -121.7862 | agricultural canal |
-| 2019-04-01 | MNTNEWCAN   | pseudodiptomus | adult      |            0 | Montgomery | meso       |       150 | net throw | 38.94108 | -121.6344 | agricultural canal |
+| date       | site       | species        | life_stage | prey_density | author     | size_class | mesh_size | gear_type |      lat |       lon | habitat_type       |
+|:-----------|:-----------|:---------------|:-----------|-------------:|:-----------|:-----------|----------:|:----------|---------:|----------:|:-------------------|
+| 2019-04-15 | MNTNEWCAN  | pseudodiptomus | adult      |    0.0056588 | Montgomery | meso       |       150 | net throw | 38.94108 | -121.6344 | agricultural canal |
+| 2019-04-15 | KNG6       | pseudodiptomus | adult      |    0.2829421 | Montgomery | meso       |       150 | net throw | 38.70057 | -121.6694 | floodplain         |
+| 2018-11-05 | MNTNEWCAN2 | pseudodiptomus | adult      |    0.4951487 | Montgomery | meso       |       150 | net throw | 38.94821 | -121.6345 | agricultural canal |
+| 2019-02-04 | ACCSAC4    | pseudodiptomus | adult      |    0.0032153 | Montgomery | meso       |       150 | net throw | 38.76663 | -121.5936 | perennial instream |
+| 2019-03-10 | KNGCAN     | pseudodiptomus | adult      |    0.1768388 | Montgomery | meso       |       150 | net throw | 38.70160 | -121.6706 | agricultural canal |
 
 #### QC
 
@@ -207,31 +209,30 @@ summary(montgomery_prey_data_final)
 ```
 
     ##       date                site             species           life_stage       
-    ##  Min.   :2018-10-01   Length:32538       Length:32538       Length:32538      
-    ##  1st Qu.:2019-01-02   Class :character   Class :character   Class :character  
+    ##  Min.   :2018-10-30   Length:9353        Length:9353        Length:9353       
+    ##  1st Qu.:2019-01-07   Class :character   Class :character   Class :character  
     ##  Median :2019-02-11   Mode  :character   Mode  :character   Mode  :character  
     ##  Mean   :2019-02-07                                                           
     ##  3rd Qu.:2019-03-20                                                           
     ##  Max.   :2019-05-07                                                           
-    ##                                                                               
     ##   prey_density          author           size_class          mesh_size  
-    ##  Min.   :  0.00000   Length:32538       Length:32538       Min.   :150  
-    ##  1st Qu.:  0.00000   Class :character   Class :character   1st Qu.:150  
-    ##  Median :  0.00000   Mode  :character   Mode  :character   Median :150  
-    ##  Mean   :  0.23770                                         Mean   :150  
-    ##  3rd Qu.:  0.00378                                         3rd Qu.:150  
+    ##  Min.   :  0.00068   Length:9353        Length:9353        Min.   :150  
+    ##  1st Qu.:  0.00874   Class :character   Class :character   1st Qu.:150  
+    ##  Median :  0.04171   Mode  :character   Mode  :character   Median :150  
+    ##  Mean   :  0.82691                                         Mean   :150  
+    ##  3rd Qu.:  0.22635                                         3rd Qu.:150  
     ##  Max.   :160.28995                                         Max.   :150  
-    ##                                                                         
     ##   gear_type              lat             lon         habitat_type      
-    ##  Length:32538       Min.   :38.70   Min.   :-122.0   Length:32538      
+    ##  Length:9353        Min.   :38.70   Min.   :-122.0   Length:9353       
     ##  Class :character   1st Qu.:38.78   1st Qu.:-121.7   Class :character  
     ##  Mode  :character   Median :38.80   Median :-121.7   Mode  :character  
-    ##                     Mean   :38.84   Mean   :-121.7                     
-    ##                     3rd Qu.:38.87   3rd Qu.:-121.6                     
-    ##                     Max.   :39.14   Max.   :-121.6                     
-    ##                     NA's   :51      NA's   :51
+    ##                     Mean   :38.83   Mean   :-121.7                     
+    ##                     3rd Qu.:38.86   3rd Qu.:-121.6                     
+    ##                     Max.   :39.14   Max.   :-121.6
 
 #### Data exploration
+
+##### All prey density data
 
 ``` r
 ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
@@ -258,6 +259,38 @@ ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_dens
 ```
 
 ![](montgomery_data_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+
+##### Subset of prey density data with outliers removed
+
+``` r
+montgomery_prey_data_final |> 
+  filter(prey_density <= 0.22635 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Jacob Montgomery") 
+```
+
+![](montgomery_data_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+montgomery_prey_data_final |> 
+  filter(prey_density <= 0.22635 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(aes(color = as.factor(year(date))), alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years and habitat types - outliers removed', 
+          subtitle = "data provided by Jacob Montgomery") +  
+  scale_color_manual('sample year', values=c('darkgreen', 'darkblue')) +
+  theme(legend.position = "top")
+```
+
+![](montgomery_data_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
 #### Save final dataset
 

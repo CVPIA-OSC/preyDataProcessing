@@ -164,7 +164,7 @@ summary(cordoleani_zoop_final)
 
 ```{r}
 ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point(alpha = 0.4) + 
+  geom_boxplot(alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -190,7 +190,7 @@ ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density))
 ```{r}
 
 cordoleani_zoop_final |> 
-  filter(prey_density <= 0.44) |> 
+  filter(prey_density <= 0.43588) |> 
 ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
   geom_boxplot(alpha = 0.4) + 
   facet_grid(~year(date)) + 

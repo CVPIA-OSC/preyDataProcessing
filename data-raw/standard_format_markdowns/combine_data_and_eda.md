@@ -1,7 +1,7 @@
 Prey Data Overview
 ================
 Maddee Rubenson (FlowWest)
-2022-12-21
+2022-12-22
 
 ## Prey Density
 
@@ -41,16 +41,16 @@ monthly_prey_density <- all_prey_density %>%
          var_prey_density = var) |> glimpse()
 ```
 
-    ## Rows: 915
+    ## Rows: 921
     ## Columns: 8
     ## $ watershed           <chr> "Butte Creek", "Butte Creek", "Butte Creek", "Butt…
     ## $ habitat_type        <chr> "agricultural canal", "agricultural canal", "agric…
-    ## $ year                <dbl> 2019, 2019, 2019, 2019, 2020, 2020, 2020, 2021, 20…
-    ## $ month               <dbl> 1, 2, 3, 4, 1, 2, 3, 1, 2, 3, 1, 2, 3, 4, 1, 2, 3,…
-    ## $ min_prey_density    <dbl> 0.0058946275, 0.0014147106, 0.0022104853, 0.005894…
-    ## $ max_prey_density    <dbl> 2.97089227, 1.15534699, 3.71361534, 2.48163819, 0.…
-    ## $ median_prey_density <dbl> 0.353677651, 0.033599377, 0.050929582, 0.040279955…
-    ## $ var_prey_density    <dbl> 0.4564077656, 0.0944235745, 0.9118003674, 0.637571…
+    ## $ year                <dbl> 2021, 2021, 2021, 2019, 2019, 2019, 2019, 2020, 20…
+    ## $ month               <dbl> 1, 2, 3, 1, 2, 3, 4, 1, 2, 3, 1, 2, 3, 1, 2, 3, 4,…
+    ## $ min_prey_density    <dbl> 0.0948545220, 0.0378191521, 0.0035367765, 0.070735…
+    ## $ max_prey_density    <dbl> 5.0747169, 11.3530526, 1.8155453, 5.5881069, 5.835…
+    ## $ median_prey_density <dbl> 1.786426830, 0.416010673, 0.117758582, 2.776369563…
+    ## $ var_prey_density    <dbl> 4.347130130, 8.718954614, 0.248814527, 8.762301827…
 
 ``` r
 # save file for use in R package
@@ -115,12 +115,15 @@ Habitat types included in the prey data package include:
 - Perennial instream
 - Side channel
 
-Many habitat types were assigned based on the sampling locations
-provided by authors.
+Habitat types were assigned based on sampling locations provided by
+authors where available. When no habitat types were provided by authors,
+we assigned habitat type based on satellite imagery. Please see
+(<https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/habitat_type_eda.html>)
+for more details.
 
 ``` r
 ggplot(all_prey_density, aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_point() + 
+  geom_point(alpha = 0.4) + 
   facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
@@ -131,15 +134,16 @@ ggplot(all_prey_density, aes(x = as.factor(month(date)), y = prey_density)) +
 ![](combine_data_and_eda_files/figure-gfm/unnamed-chunk-4-1.png)<!-- -->
 
 ``` r
+monthly_prey_density |> 
+  filter(median_prey_density > 0) |> 
 ggplot() +
-  geom_boxplot(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
-  geom_jitter(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density, color = habitat_type)) +
+  geom_boxplot(aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
+  geom_jitter(aes(x = as.factor(month), y = median_prey_density, color = habitat_type)) +
   scale_y_continuous(trans='log10') +
   xlab('month') +
   ylab('log(median prey density) (count/L)') +
   scale_color_brewer(palette = 'Dark2') +
-  coord_flip() +
-  theme_minimal()
+  coord_flip() 
 ```
 
 ![](combine_data_and_eda_files/figure-gfm/unnamed-chunk-4-2.png)<!-- -->
@@ -169,30 +173,30 @@ all_prey_density %>%
 
 | habitat_type       | author       |  mean |  min |     max |     var |
 |:-------------------|:-------------|------:|-----:|--------:|--------:|
-| agricultural canal | Cordoleani   |   0.5 |  0.0 |   120.7 |     8.9 |
+| agricultural canal | Cordoleani   |   0.5 |  0.0 |    11.4 |     1.9 |
 | agricultural canal | Corline      |   0.3 |  0.0 |     5.4 |     0.6 |
-| agricultural canal | Montgomery   |   0.5 |  0.0 |   160.3 |    25.8 |
+| agricultural canal | Montgomery   |   2.0 |  0.0 |   160.3 |    96.9 |
 | floodplain         | Cordoleani   |  10.1 |  0.0 |   174.6 |   555.5 |
 | floodplain         | Corline      |   3.9 |  0.0 |   108.5 |    87.4 |
 | floodplain         | Guignard     |   1.0 |  0.0 |     5.3 |     1.7 |
-| floodplain         | Montgomery   |   0.3 |  0.0 |    67.9 |     5.3 |
+| floodplain         | Montgomery   |   1.2 |  0.0 |    67.9 |    18.3 |
 | floodplain         | zooper: 20mm |   0.2 |  0.0 |    14.3 |     0.8 |
 | floodplain         | zooper: FMWT |   0.5 |  0.0 |    20.7 |     1.8 |
 | floodplain         | zooper: FRP  |   0.2 |  0.0 |    11.3 |     0.8 |
 | floodplain         | zooper: STN  |   1.1 |  0.0 |    43.9 |     6.5 |
+| perennial instream | Cordoleani   |   0.5 |  0.0 |   120.7 |     9.7 |
 | perennial instream | Corline      |   0.0 |  0.0 |     0.3 |     0.0 |
 | perennial instream | Guignard     |   3.7 |  0.0 |    23.1 |    26.7 |
-| perennial instream | Montgomery   |   0.1 |  0.0 |   104.3 |     1.2 |
+| perennial instream | Montgomery   |   0.3 |  0.0 |   104.3 |     4.1 |
 | perennial instream | Zeug         |   8.8 |  0.0 |   376.2 | 1,399.6 |
 | perennial instream | zooper: 20mm |   0.3 |  0.0 |   757.6 |     8.5 |
 | perennial instream | zooper: EMP  |   0.9 |  0.0 | 1,298.8 |   106.4 |
 | perennial instream | zooper: FMWT |   0.4 |  0.0 |    47.5 |     2.9 |
 | perennial instream | zooper: FRP  |   0.4 |  0.0 |   239.3 |    20.1 |
 | perennial instream | zooper: STN  |   1.0 |  0.0 |   147.3 |    16.1 |
-| rice field         | Montgomery   |   1.0 |  0.0 |   150.0 |    50.2 |
+| rice field         | Montgomery   |   4.5 |  0.0 |   150.0 |   203.5 |
 | side channel       | Guignard     |   2.5 |  0.0 |    26.7 |    18.6 |
 | side channel       | Zeug         | 147.4 | 15.9 |   278.0 | 6,690.6 |
-| NA                 | Montgomery   |   0.0 |  0.0 |     0.0 |     0.0 |
 
 ## Watersheds
 
@@ -209,18 +213,18 @@ including:
 - Stanislaus
 - Sutter Bypass
 - Yolo Bypass
-- Yolo Bypass 2 \#TODO: aggregate Yolo and Yolo Bypass 2
+- Yolo Bypass 2
 
 ``` r
+all_prey_density |> 
+  filter(prey_density > 0 & prey_density <= 0.0131) |> 
 ggplot() +
-  geom_boxplot(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
-  geom_jitter(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density, color = watershed)) +
-  scale_y_continuous(trans='log10') +
-  ylab('log(median prey density) (count/L)') +
+  geom_boxplot(aes(x = as.factor(month(date)), y = prey_density)) +
+  facet_wrap(~watershed) +
+  ylab('prey density (count/L)') +
   xlab('month') +
-  #facet_wrap(~watershed)+
-  scale_color_brewer(palette = 'Dark2')+
-  coord_flip()
+  ggtitle('Distribution of prey density across watersheds collected - outliers removed',
+          subtitle = "All authors")
 ```
 
 ![](combine_data_and_eda_files/figure-gfm/unnamed-chunk-5-1.png)<!-- -->
@@ -228,14 +232,15 @@ ggplot() +
 ## Temporal Variation
 
 ``` r
-ggplot() +
-  geom_boxplot(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
-  geom_jitter(data = monthly_prey_density, aes(x = as.factor(month), y = median_prey_density, color = year)) +
-  scale_colour_continuous(type = 'viridis')+
-  scale_y_continuous(trans='log10') +
-  ylab('log(median prey density) (count/L)') +
+all_prey_density |> 
+  filter(!is.na(year(date))) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point(alpha = 0.4) +
+  facet_wrap(~year(date)) +  
   xlab('month') +
-  coord_flip()
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of all prey density across years', 
+          subtitle = "Aggregated data across all authors") 
 ```
 
 ![](combine_data_and_eda_files/figure-gfm/unnamed-chunk-6-1.png)<!-- -->

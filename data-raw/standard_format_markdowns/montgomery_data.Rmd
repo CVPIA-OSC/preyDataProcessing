@@ -19,6 +19,8 @@ library(sf)
 library(preyDataProcessing)
 
 options(scipen=999)
+
+theme_set(theme_minimal())
 ```
 
 ## Montgomery Data Standardization
@@ -52,7 +54,7 @@ Final prey density dataset includes the following variables:
 
 ```{r}
 # this a script that sources the EDI data
-source('../montgomery/food_4_fish_data_access.R')
+source('data-raw//montgomery/food_4_fish_data_access.R')
 
 montgomery_prey_data |> glimpse()
 ```
@@ -104,7 +106,7 @@ montgomery_prey_data_process <- montgomery_prey_data %>%
 
 ```{r}
 
-locations <- readxl::read_excel('../montgomery/F4F2021_LocationLookupTable_20221108.xlsx') |> janitor::clean_names() |> 
+locations <- readxl::read_excel('data-raw/montgomery/F4F2021_LocationLookupTable_20221108.xlsx') |> janitor::clean_names() |> 
   separate(lat_lon_utm, sep = ", ", c("lat", "lon")) |> 
   select(-x3, -purpose, -habitat_type) |> 
   rename(habitat_type = habitat_type_2,
@@ -121,7 +123,9 @@ This produces the final prey density dataset.
 ```{r}
 
 montgomery_prey_data_final <- montgomery_prey_data_process |> 
-  left_join(locations)
+  left_join(locations) |> 
+  filter(!is.na(habitat_type)) |> # filters out site MNT3ASource which has a prey_density of 0 and no site location or habitat type
+  filter(prey_density > 0) 
 
 kable(head(montgomery_prey_data_final, 5))
 
@@ -137,6 +141,8 @@ summary(montgomery_prey_data_final)
 
 #### Data exploration
 
+##### All prey density data
+
 ```{r}
 ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
   geom_point(alpha = 0.4) + 
@@ -146,6 +152,7 @@ ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_dens
   ggtitle('Distrubtion of prey density across years collected', 
           subtitle = "data provided by Jacob Montgomery") 
 
+
 ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
   geom_point(aes(color = as.factor(year(date))), alpha = 0.4) + 
   facet_wrap(~habitat_type) + 
@@ -154,6 +161,34 @@ ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_dens
   ggtitle('Distrubtion of prey density across years and habitat types', 
           subtitle = "data provided by Jacob Montgomery") +  
   scale_color_manual('sample year', values=c('darkgreen', 'darkblue')) + 
+  theme(legend.position = "top")
+
+```
+
+##### Subset of prey density data with outliers removed
+
+```{r}
+montgomery_prey_data_final |> 
+  filter(prey_density <= 0.22635 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Jacob Montgomery") 
+
+
+montgomery_prey_data_final |> 
+  filter(prey_density <= 0.22635 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(aes(color = as.factor(year(date))), alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years and habitat types - outliers removed', 
+          subtitle = "data provided by Jacob Montgomery") +  
+  scale_color_manual('sample year', values=c('darkgreen', 'darkblue')) +
   theme(legend.position = "top")
 
 ```
