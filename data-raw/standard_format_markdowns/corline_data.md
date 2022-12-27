@@ -1,7 +1,7 @@
 Nicholas Corline Data
 ================
 Maddee Rubenson (FlowWest)
-2022-12-20
+2022-12-22
 
 ## Corline Data Standarization
 
@@ -38,7 +38,7 @@ Final prey density dataset includes the following variables:
 #### Raw data
 
 ``` r
-corline_raw_zoop <- readxl::read_excel('../corline/Zoop2013_2016_NC.xlsx') |> glimpse()
+corline_raw_zoop <- readxl::read_excel('data-raw/corline/Zoop2013_2016_NC.xlsx') |> glimpse()
 #> Rows: 2,270
 #> Columns: 26
 #> $ Date                     <dttm> 2013-02-13, 2013-02-13, 2013-02-13, 2013-02-…
@@ -224,13 +224,15 @@ summary(corline_zoop_final)
 
 #### Data exploration
 
+##### All prey density data
+
 ``` r
 ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) + 
   geom_point(alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years collected', 
+  ggtitle('Distribution of prey density across years collected', 
           subtitle = "data provided by Nicholas Corline") 
 ```
 
@@ -240,20 +242,49 @@ ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) +
 
 ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) + 
   geom_point(alpha = 0.4) + 
-  facet_grid(~habitat_type + year(date)) + 
+  facet_grid(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years and habitat types', 
+  ggtitle('Distribution of prey density across habitat types', 
           subtitle = "data provided by Nicholas Corline") 
 ```
 
-![](corline_data_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+![](corline_data_files/figure-gfm/unnamed-chunk-6-2.png)<!-- --> \#####
+Subset of prey density data with outliers removed
+
+``` r
+
+corline_zoop_final |> 
+  filter(prey_density <= 2.3626 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Nicholas Corline") 
+```
+
+![](corline_data_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+
+corline_zoop_final |> 
+  filter(prey_density <= 2.3626 & prey_density > 0) |> 
+ggplot(aes(x =as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across habitat types - outliers removed', 
+          subtitle = "data provided by Nicholas Corline") 
+```
+
+![](corline_data_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
 #### Save final dataset
 
 ``` r
-
-#save(corline_zoop_final, file = "../../data/corline_prey_data.rda")
 
 corline_prey_data <- corline_zoop_final
 usethis::use_data(corline_prey_data, overwrite = TRUE)

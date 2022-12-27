@@ -5,12 +5,15 @@
 \alias{guignard_prey_data}
 \title{Jason Guignard Data}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 156 rows and 12 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 180 rows and 12 columns.
 }
 \usage{
 guignard_prey_data
 }
 \description{
-Jason Guignard Data
+Guignard et al. colllected data from 2014-04-03 to 2014-06-29 at 6 sites.
+}
+\details{
+Citation: TODO
 }
 \keyword{datasets}

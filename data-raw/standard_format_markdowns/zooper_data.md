@@ -1,13 +1,13 @@
 Zooper Data
 ================
 Maddee Rubenson (FlowWest)
-2022-12-20
+2022-12-22
 
 ## Zooper Data Standardization
 
 **Datasets provided:**
 
-- Data downloaded from Zooper library \[[Intergency Ecological
+- Data downloaded from Zooper library [Intergency Ecological
   Program](https://github.com/InteragencyEcologicalProgram/zooper)\]
 
 **Author contact info:**
@@ -44,7 +44,7 @@ Final prey density dataset includes the following variables:
 #saveRDS(zoop_data, 'zoop_data.rds')
 
 # read pre-saved rds file back in:
-zoop_data <- readRDS('../zooper/zoop_data.rds') |> glimpse()
+zoop_data <- readRDS('data-raw/zooper/zoop_data.rds') |> glimpse()
 ```
 
     ## Rows: 1,126,004
@@ -129,14 +129,14 @@ zooper <- zoop_data %>%
 
 **notes:**
 
-- Yolo Bypass 2 = floodplain
+- Yolo Bypass 2 = `floodplain`
 
-- North and South Deltas = perennial instream
+- North and South Deltas = `perennial instream`
 
 - Data is clipped to delta extents
 
 ``` r
-delta_extents <- rgdal::readOGR('../zooper/shape_files/delta_extents/HabitatExtentsForCorreigh.shp') %>%
+delta_extents <- rgdal::readOGR('data-raw/zooper/shape_files/delta_extents/HabitatExtentsForCorreigh.shp') %>%
   st_as_sf(coords = c("longitude", "latitude"), dim = "XY", crs = 4326) %>%
   st_transform("WGS84")
 ```
@@ -225,13 +225,15 @@ summary(zooper_prey_data)
 
 #### Data exploration
 
+##### All prey density data
+
 ``` r
 ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) + 
   geom_point(alpha = 0.4) + 
   facet_wrap(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years collected', 
+  ggtitle('Distribution of prey density across years collected', 
           subtitle = "data provided by Zooper Library") 
 ```
 
@@ -243,18 +245,47 @@ ggplot(zooper_prey_data, aes(x = as.factor(month(date)), y = prey_density)) +
   facet_wrap(~habitat_type) +
   xlab('month') +
   ylab('prey density (count/L)') +
-  ggtitle('Distrubtion of prey density across habitat types',
+  ggtitle('Distribution of prey density across habitat types',
           subtitle = "data provided by Zooper Library") +
   theme(legend.position = "top")
 ```
 
 ![](zooper_data_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
 
+##### Subset of prey density data with outliers removed
+
+``` r
+zooper_prey_data |> 
+  filter(prey_density <= 0.5618 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.0) + 
+  facet_wrap(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Zooper Library") 
+```
+
+![](zooper_data_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+zooper_prey_data |> 
+  filter(prey_density <= 0.5618 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) +
+  geom_boxplot(alpha = 0) +
+  facet_wrap(~habitat_type) +
+  xlab('month') +
+  ylab('prey density (count/L)') +
+  ggtitle('Distribution of prey density across habitat types - - outliers removed',
+          subtitle = "data provided by Zooper Library") +
+  theme(legend.position = "top")
+```
+
+![](zooper_data_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
+
 #### Save final dataset
 
 ``` r
-#save(zooper_prey_data, file = "../../data/zooper_prey_data.rda")
-
 usethis::use_data(zooper_prey_data, overwrite = TRUE)
 ```
 

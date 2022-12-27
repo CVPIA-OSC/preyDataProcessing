@@ -11,6 +11,11 @@ An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) w
 cordoleani_prey_data
 }
 \description{
-Flora Cordoleani Data
+Cordoleani et al. collected data from 2019-01-07 to 2021-03-29 at 19 sites. In addition to prey density, Cordoleani et al. also collected
+environmental and fish length/mass data.
+}
+\details{
+Cordoleani, Flora et al. Evaluating the role(s) of the Butte sink and Sutter
+Bypass for Butte Creek spring-run Chinook Salmon and other Central Valley juvenile salmonid populations - 2020 study year (2021). Unpublished manuscript.
 }
 \keyword{datasets}

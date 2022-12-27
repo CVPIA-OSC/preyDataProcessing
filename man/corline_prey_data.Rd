@@ -11,6 +11,10 @@ An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) w
 corline_prey_data
 }
 \description{
-Nicholas Corline Data
+Corline et al. collected data from 2013-02-13 to 2016-04-18 for 12 sites. Corline collected prey density data.
+}
+\details{
+Corline, Nicholas J., et al. "Zooplankton ecology and trophic resources for rearing native fish on an agricultural floodplain in the
+Yolo Bypass California, USA." Wetlands Ecology and Management 25.5 (2017): 533-545.
 }
 \keyword{datasets}

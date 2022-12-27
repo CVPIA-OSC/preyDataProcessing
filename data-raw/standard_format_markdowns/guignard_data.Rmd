@@ -19,6 +19,9 @@ library(sf)
 library(preyDataProcessing)
 
 options(scipen=999)
+
+theme_set(theme_minimal())
+
 ```
 
 ## Guignard Data Standardization
@@ -53,7 +56,7 @@ Final prey density dataset includes the following variables:
 
 ```{r}
 
-stanislaus_zoop_raw <- readxl::read_excel('../guignard/Honolulu Bar data.xlsx', sheet = 'Density by location, date,ta_MR') |> glimpse()
+stanislaus_zoop_raw <- readxl::read_excel('data-raw/guignard/Honolulu Bar data.xlsx', sheet = 'Density by location, date,ta_MR') |> glimpse()
 
 ```
 
@@ -99,7 +102,7 @@ stanislaus_zoop <- stanislaus_zoop_raw %>%
 -   Manually assign `habitat_type` using best professional judgement
 
 ```{r}
-locations_raw <- st_read(dsn = '../guignard/drift net sites_to_kml.kml') 
+locations_raw <- st_read(dsn = 'data-raw/guignard/drift net sites_to_kml.kml') 
 geometry <- sf::st_coordinates(locations_raw) |> 
   cbind(locations_raw) |> 
   rename(lon = X, 
@@ -120,6 +123,7 @@ geometry[geometry$Name == "Side Channel Lower", 'Name'] <- 'Lower Side'
 geometry[geometry$Name == "Floodplain Upper", 'Name'] <- 'Upper Flood Plain'
 geometry[geometry$Name == "Middle Floodplain", 'Name'] <- 'Middle Flood Plain' 
 geometry[geometry$Name == "Floodplain Lower", 'Name'] <- 'Lower Flood Plain'
+geometry[geometry$Name == "H Bar main abv. side channel", 'Name'] <- 'Lower Side'
 
 locations <- geometry %>%
   mutate(habitat_type = ifelse(Name %in% c('Main Channel'), 'perennial instream', 
@@ -158,13 +162,15 @@ summary(guignard_prey_data_final)
 
 #### Data exploration
 
+##### All prey density data
+
 ```{r}
 ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
   geom_point(alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years collected', 
+  ggtitle('Distribution of prey density across years collected', 
           subtitle = "data provided by Jason Guignard") 
 
 ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
@@ -172,11 +178,37 @@ ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_densit
   facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years and habitat types', 
+  ggtitle('Distribution of prey density across years and habitat types', 
           subtitle = "data provided by Jason Guignard") +  
   scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred")) + 
   theme(legend.position = "top")
 
+```
+
+##### Subset of prey density data with outliers removed
+
+```{r}
+guignard_prey_data_final |> 
+  filter(prey_density <= 2.9503) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Jason Guignard") 
+
+guignard_prey_data_final |> 
+  filter(prey_density <= 2.9503) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(aes(color = as.factor(year(date))), alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years and habitat types - outliers removed', 
+          subtitle = "data provided by Jason Guignard") +  
+  scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred")) + 
+  theme(legend.position = "top")
 ```
 
 #### Save final dataset

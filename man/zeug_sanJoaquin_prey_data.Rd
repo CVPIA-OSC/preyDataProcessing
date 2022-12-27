@@ -11,6 +11,15 @@ An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) w
 zeug_sanJoaquin_prey_data
 }
 \description{
-Steve Zeug San Joaquin Data
+Zeug provided prey density data from two rivers: San Joaquin River and Merced River.
+}
+\details{
+San Joaquin River: \cr
+Zeug collected data in 2016 for four sites along the San Joaquin River.
+
+Merced River: \cr
+Zeug collected data in April 2019 for four sites along the Merced River.
+
+Citation: TODO
 }
 \keyword{datasets}

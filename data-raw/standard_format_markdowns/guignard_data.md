@@ -1,7 +1,7 @@
 Jason Guignard Data
 ================
 Maddee Rubenson (FlowWest)
-2022-12-20
+2022-12-22
 
 ## Guignard Data Standardization
 
@@ -35,7 +35,7 @@ Final prey density dataset includes the following variables:
 #### Raw data
 
 ``` r
-stanislaus_zoop_raw <- readxl::read_excel('../guignard/Honolulu Bar data.xlsx', sheet = 'Density by location, date,ta_MR') |> glimpse()
+stanislaus_zoop_raw <- readxl::read_excel('data-raw/guignard/Honolulu Bar data.xlsx', sheet = 'Density by location, date,ta_MR') |> glimpse()
 ```
 
     ## Rows: 26
@@ -94,7 +94,7 @@ stanislaus_zoop <- stanislaus_zoop_raw %>%
 - Manually assign `habitat_type` using best professional judgement
 
 ``` r
-locations_raw <- st_read(dsn = '../guignard/drift net sites_to_kml.kml') 
+locations_raw <- st_read(dsn = 'data-raw/guignard/drift net sites_to_kml.kml') 
 ```
 
     ## Reading layer `Points' from data source 
@@ -140,6 +140,7 @@ geometry[geometry$Name == "Side Channel Lower", 'Name'] <- 'Lower Side'
 geometry[geometry$Name == "Floodplain Upper", 'Name'] <- 'Upper Flood Plain'
 geometry[geometry$Name == "Middle Floodplain", 'Name'] <- 'Middle Flood Plain' 
 geometry[geometry$Name == "Floodplain Lower", 'Name'] <- 'Lower Flood Plain'
+geometry[geometry$Name == "H Bar main abv. side channel", 'Name'] <- 'Lower Side'
 
 locations <- geometry %>%
   mutate(habitat_type = ifelse(Name %in% c('Main Channel'), 'perennial instream', 
@@ -179,28 +180,28 @@ summary(guignard_prey_data_final)
 ```
 
     ##       date                       species           prey_density    
-    ##  Min.   :2014-04-04 00:00:00   Length:156         Min.   : 0.0000  
-    ##  1st Qu.:2014-04-14 00:00:00   Class :character   1st Qu.: 0.1001  
-    ##  Median :2014-05-09 00:00:00   Mode  :character   Median : 0.8421  
-    ##  Mean   :2014-05-08 07:23:04                      Mean   : 2.2665  
-    ##  3rd Qu.:2014-05-15 00:00:00                      3rd Qu.: 2.6661  
+    ##  Min.   :2014-04-04 00:00:00   Length:180         Min.   : 0.0000  
+    ##  1st Qu.:2014-04-14 00:00:00   Class :character   1st Qu.: 0.1481  
+    ##  Median :2014-05-09 00:00:00   Mode  :character   Median : 0.9379  
+    ##  Mean   :2014-05-08 13:36:00                      Mean   : 2.4687  
+    ##  3rd Qu.:2014-05-15 00:00:00                      3rd Qu.: 2.9503  
     ##  Max.   :2014-06-30 00:00:00                      Max.   :26.6621  
     ##     author           watershed             site            gear_type        
-    ##  Length:156         Length:156         Length:156         Length:156        
+    ##  Length:180         Length:180         Length:180         Length:180        
     ##  Class :character   Class :character   Class :character   Class :character  
     ##  Mode  :character   Mode  :character   Mode  :character   Mode  :character  
     ##                                                                             
     ##                                                                             
     ##                                                                             
     ##    mesh_size    size_class             lon              lat      
-    ##  Min.   :335   Length:156         Min.   :-120.7   Min.   :37.8  
+    ##  Min.   :335   Length:180         Min.   :-120.7   Min.   :37.8  
     ##  1st Qu.:335   Class :character   1st Qu.:-120.7   1st Qu.:37.8  
     ##  Median :335   Mode  :character   Median :-120.7   Median :37.8  
     ##  Mean   :335                      Mean   :-120.7   Mean   :37.8  
     ##  3rd Qu.:335                      3rd Qu.:-120.7   3rd Qu.:37.8  
     ##  Max.   :335                      Max.   :-120.7   Max.   :37.8  
     ##  habitat_type      
-    ##  Length:156        
+    ##  Length:180        
     ##  Class :character  
     ##  Mode  :character  
     ##                    
@@ -209,13 +210,15 @@ summary(guignard_prey_data_final)
 
 #### Data exploration
 
+##### All prey density data
+
 ``` r
 ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
   geom_point(alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years collected', 
+  ggtitle('Distribution of prey density across years collected', 
           subtitle = "data provided by Jason Guignard") 
 ```
 
@@ -227,13 +230,45 @@ ggplot(guignard_prey_data_final, aes(x = as.factor(month(date)), y = prey_densit
   facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years and habitat types', 
+  ggtitle('Distribution of prey density across years and habitat types', 
           subtitle = "data provided by Jason Guignard") +  
   scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred")) + 
   theme(legend.position = "top")
 ```
 
 ![](guignard_data_files/figure-gfm/unnamed-chunk-6-2.png)<!-- -->
+
+##### Subset of prey density data with outliers removed
+
+``` r
+guignard_prey_data_final |> 
+  filter(prey_density <= 2.9503) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Jason Guignard") 
+```
+
+![](guignard_data_files/figure-gfm/unnamed-chunk-7-1.png)<!-- -->
+
+``` r
+guignard_prey_data_final |> 
+  filter(prey_density <= 2.9503) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(aes(color = as.factor(year(date))), alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years and habitat types - outliers removed', 
+          subtitle = "data provided by Jason Guignard") +  
+  scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred")) + 
+  theme(legend.position = "top")
+```
+
+![](guignard_data_files/figure-gfm/unnamed-chunk-7-2.png)<!-- -->
 
 #### Save final dataset
 

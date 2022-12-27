@@ -11,6 +11,10 @@ An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) w
 montgomery_prey_data
 }
 \description{
-Jacob Montgomery Data
+Montgomery collected temperature and dissolved oxygen data in 2018 and 2019.
+}
+\details{
+Montgomery, J. 2021. Fish Food on Floodplain Farm Fields 2019 ver 1.
+Environmental Data Initiative. https://doi.org/10.6073/pasta/53ab08e695503bfbbeaeee637835da0b (Accessed 2022-06-11).
 }
 \keyword{datasets}

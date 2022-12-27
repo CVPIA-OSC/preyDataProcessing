@@ -1,7 +1,7 @@
 Steve Zeug Data
 ================
 Maddee Rubenson (FlowWest)
-2022-12-20
+2022-12-22
 
 ## Zeug Data Standardization
 
@@ -59,7 +59,7 @@ includes the following variables:
 #### Raw data
 
 ``` r
-zeug_prey_data_raw <- readxl::read_excel('../zeug/san_joaquin/summary_zooplankton_10_19_17.xlsx', sheet = "CountLiter2016", range = "A1:H56") |> glimpse()
+zeug_prey_data_raw <- readxl::read_excel('data-raw/zeug/san_joaquin/summary_zooplankton_10_19_17.xlsx', sheet = "CountLiter2016", range = "A1:H56") |> glimpse()
 ```
 
     ## Rows: 55
@@ -184,11 +184,11 @@ summary(zeug_prey_data_san_joaquin_final)
 
 ``` r
 ggplot(zeug_prey_data_san_joaquin_final, aes(x = as.factor(week), y = prey_density)) + 
-  geom_point(aes(color = habitat_type), alpha = 0.4) + 
-  facet_grid(~year) + 
+  geom_boxplot(aes(color = habitat_type), alpha = 0.4) + 
+  facet_grid(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years and habitat types collected', 
+  ggtitle('Distrubtion of prey density across habitat types collected', 
           subtitle = "data provided by Steve Zeug for the San Joaquin River") +
   scale_color_manual('habitat type', values=c('darkred', 'darkblue')) + 
   theme(legend.position = "top")
@@ -232,7 +232,7 @@ includes the following variables:
 #### Raw data
 
 ``` r
-zeug_merced_prey_data_raw <- readxl::read_excel('../zeug/merced/Merced invert data_environment.xls', .name_repair = 'minimal', sheet = "erin_modified",  col_names = FALSE)
+zeug_merced_prey_data_raw <- readxl::read_excel('data-raw/zeug/merced/Merced invert data_environment.xls', .name_repair = 'minimal', sheet = "erin_modified",  col_names = FALSE)
 
 dates <- janitor::excel_numeric_to_date(as.numeric(zeug_merced_prey_data_raw[1,3:ncol(zeug_merced_prey_data_raw)]), date_system = 'mac pre-2011') %>% as.character()
 
@@ -312,8 +312,7 @@ zeug_merced_prey_data <- zeug_merced_prey_data_raw[3:nrow(zeug_merced_prey_data_
   mutate(gear_type = "net throw") 
 
 # Load in volumes sampled from separate xlsx sheet and use it to calculated count/L 
-path <- system.file("extdata", "zeug", "merced", "Flow_meter_Drift.xlsx", package = "preyDataProcessing")
-vols <- readxl::read_excel(path, skip = 4) %>%
+vols <- readxl::read_excel('data-raw/zeug/merced/Flow_meter_Drift.xlsx', skip = 4) %>%
   janitor::clean_names()
 
 vols <- vols %>% select(site, corrected_voume_m3_s_1) %>%
@@ -378,12 +377,15 @@ summary(zeug_merced_prey_data_final)
 #### Data exploration
 
 ``` r
-ggplot(zeug_merced_prey_data_final, aes(x = as.factor((date)), y = prey_density)) + 
-  geom_point(aes(color = habitat_type), alpha = 0.4) + 
+zeug_merced_prey_data_final |> 
+  filter(prey_density > 0 ) |> 
+  filter(prey_density <= 0.000807821 ) |> 
+ggplot(aes(x = as.factor((date)), y = prey_density)) + 
+  geom_boxplot(aes(color = habitat_type), alpha = 0.4) + 
   facet_grid(~year(date)) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
-  ggtitle('Distrubtion of prey density across years and habitat types collected', 
+  ggtitle('Distrubtion of prey density across years and habitat types collected - outliers removed', 
           subtitle = "data provided by Steve Zeug for the Merced River") +
   scale_color_manual('habitat type', values=c('darkred', 'darkblue')) + 
   theme(legend.position = "top")

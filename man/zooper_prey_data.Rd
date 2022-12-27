@@ -11,6 +11,18 @@ An object of class \code{data.frame} with 596828 rows and 11 columns.
 zooper_prey_data
 }
 \description{
-Zooper Library Data
+Prey density data was downloaded from the
+\href{https://github.com/CVPIA-OSC/DSMtemperature/blob/main/R/data.R}{\code{zooper library}} and integrated into
+this dataset. Data was collected from 1995-2020 for 5 Zooper sites: 20mm, EMP, FMWT, FRP, STN.
+}
+\details{
+Citations: \cr
+Bashevkin, S. M., R. Hartman, M. Thomas, A. Barros, C. E. Burdi, A. Hennessy, T. Tempel, and K. Kayfetz. 2022. Five decades (1972–2020) of
+zooplankton monitoring in the upper San Francisco Estuary. PLOS ONE 17: e0265402.
+doi:10.1371/journal.pone.0265402
+
+Bashevkin, S. M., R. Hartman, M. Thomas, A. Barros, C. Burdi, A. Hennessy, T. Tempel, and K. Kayfetz. 2022. Interagency Ecological Program:
+Zooplankton abundance in the Upper San Francisco Estuary from 1972-2020, an integration of 5 long-term monitoring programs. ver 3. Environmental Data Initiative.
+doi:10.6073/pasta/89dbadd9d9dbdfc804b160c81633db0d
 }
 \keyword{datasets}
