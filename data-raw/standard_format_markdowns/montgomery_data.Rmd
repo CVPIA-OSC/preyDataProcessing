@@ -160,7 +160,7 @@ ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_dens
   ylab('prey density (count/L)') + 
   ggtitle('Distrubtion of prey density across years and habitat types', 
           subtitle = "data provided by Jacob Montgomery") +  
-  scale_color_manual('sample year', values=c('darkgreen', 'darkblue')) + 
+  scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred", "orange")) + 
   theme(legend.position = "top")
 
 ```
@@ -182,13 +182,12 @@ ggplot(aes(x = as.factor(month(date)), y = prey_density)) +
 montgomery_prey_data_final |> 
   filter(prey_density <= 0.22635 & prey_density > 0) |> 
 ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
-  geom_boxplot(aes(color = as.factor(year(date))), alpha = 0.4) + 
+  geom_boxplot() + 
   facet_wrap(~habitat_type) + 
   xlab('month') +
   ylab('prey density (count/L)') + 
   ggtitle('Distribution of prey density across years and habitat types - outliers removed', 
           subtitle = "data provided by Jacob Montgomery") +  
-  scale_color_manual('sample year', values=c('darkgreen', 'darkblue')) +
   theme(legend.position = "top")
 
 ```

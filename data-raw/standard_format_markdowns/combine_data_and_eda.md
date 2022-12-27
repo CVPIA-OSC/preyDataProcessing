@@ -1,7 +1,7 @@
 Prey Data Overview
 ================
 Maddee Rubenson (FlowWest)
-2022-12-22
+2022-12-27
 
 ## Prey Density
 
@@ -41,7 +41,7 @@ monthly_prey_density <- all_prey_density %>%
          var_prey_density = var) |> glimpse()
 ```
 
-    ## Rows: 921
+    ## Rows: 931
     ## Columns: 8
     ## $ watershed           <chr> "Butte Creek", "Butte Creek", "Butte Creek", "Butt…
     ## $ habitat_type        <chr> "agricultural canal", "agricultural canal", "agric…
@@ -95,7 +95,7 @@ kable(prey_agg_by_author, digits = 1, caption = "summary statistics of prey dens
 | Cordoleani   |   0 |  174.6 |    0.1 |  117.5 |
 | Corline      |   0 |  108.5 |    0.6 |   80.3 |
 | Guignard     |   0 |   26.7 |    0.8 |   15.2 |
-| Montgomery   |   0 |  160.3 |    0.0 |    8.7 |
+| Montgomery   |   0 |  160.3 |    0.0 |   29.7 |
 | Zeug         |   0 |  376.2 |    0.0 | 2693.0 |
 | zooper: 20mm |   0 |  757.6 |    0.0 |    8.3 |
 | zooper: EMP  |   0 | 1298.8 |    0.0 |  106.4 |
@@ -154,14 +154,13 @@ preyDataProcessing::all_prey_density %>%
   summarise(author = paste0(unique(author), collapse = ", ")) %>% kable()
 ```
 
-| habitat_type       | author                                                                                                 |
-|:-------------------|:-------------------------------------------------------------------------------------------------------|
-| agricultural canal | Cordoleani, Montgomery, Corline                                                                        |
-| floodplain         | Cordoleani, Montgomery, Guignard, Corline, zooper: FMWT, zooper: FRP, zooper: STN, zooper: 20mm        |
-| perennial instream | Zeug, Montgomery, Guignard, Corline, zooper: EMP, zooper: FMWT, zooper: FRP, zooper: STN, zooper: 20mm |
-| rice field         | Montgomery                                                                                             |
-| side channel       | Zeug, Guignard                                                                                         |
-| NA                 | Montgomery                                                                                             |
+| habitat_type       | author                                                                                                             |
+|:-------------------|:-------------------------------------------------------------------------------------------------------------------|
+| agricultural canal | Cordoleani, Montgomery, Corline                                                                                    |
+| floodplain         | Cordoleani, Montgomery, Guignard, Corline, zooper: FMWT, zooper: FRP, zooper: STN, zooper: 20mm                    |
+| perennial instream | Cordoleani, Zeug, Montgomery, Guignard, Corline, zooper: EMP, zooper: FMWT, zooper: FRP, zooper: STN, zooper: 20mm |
+| rice field         | Montgomery                                                                                                         |
+| side channel       | Zeug, Guignard                                                                                                     |
 
 ``` r
 all_prey_density %>%
@@ -175,7 +174,7 @@ all_prey_density %>%
 |:-------------------|:-------------|------:|-----:|--------:|--------:|
 | agricultural canal | Cordoleani   |   0.5 |  0.0 |    11.4 |     1.9 |
 | agricultural canal | Corline      |   0.3 |  0.0 |     5.4 |     0.6 |
-| agricultural canal | Montgomery   |   2.0 |  0.0 |   160.3 |    96.9 |
+| agricultural canal | Montgomery   |   2.1 |  0.0 |   160.3 |    84.5 |
 | floodplain         | Cordoleani   |  10.1 |  0.0 |   174.6 |   555.5 |
 | floodplain         | Corline      |   3.9 |  0.0 |   108.5 |    87.4 |
 | floodplain         | Guignard     |   1.0 |  0.0 |     5.3 |     1.7 |
@@ -187,7 +186,7 @@ all_prey_density %>%
 | perennial instream | Cordoleani   |   0.5 |  0.0 |   120.7 |     9.7 |
 | perennial instream | Corline      |   0.0 |  0.0 |     0.3 |     0.0 |
 | perennial instream | Guignard     |   3.7 |  0.0 |    23.1 |    26.7 |
-| perennial instream | Montgomery   |   0.3 |  0.0 |   104.3 |     4.1 |
+| perennial instream | Montgomery   |   0.2 |  0.0 |   104.3 |     2.8 |
 | perennial instream | Zeug         |   8.8 |  0.0 |   376.2 | 1,399.6 |
 | perennial instream | zooper: 20mm |   0.3 |  0.0 |   757.6 |     8.5 |
 | perennial instream | zooper: EMP  |   0.9 |  0.0 | 1,298.8 |   106.4 |
@@ -195,7 +194,7 @@ all_prey_density %>%
 | perennial instream | zooper: FRP  |   0.4 |  0.0 |   239.3 |    20.1 |
 | perennial instream | zooper: STN  |   1.0 |  0.0 |   147.3 |    16.1 |
 | rice field         | Montgomery   |   4.5 |  0.0 |   150.0 |   203.5 |
-| side channel       | Guignard     |   2.5 |  0.0 |    26.7 |    18.6 |
+| side channel       | Guignard     |   2.9 |  0.0 |    26.7 |    23.2 |
 | side channel       | Zeug         | 147.4 | 15.9 |   278.0 | 6,690.6 |
 
 ## Watersheds
