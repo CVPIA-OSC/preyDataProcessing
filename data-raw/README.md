@@ -1,4 +1,4 @@
-\#### About the Datasets
+#### About the Datasets
 
 Datasets were aggregated from multiple authors and across many
 watersheds. For each dataset, the habitat type was assigned. Specific
