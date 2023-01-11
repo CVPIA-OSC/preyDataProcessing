@@ -1,12 +1,29 @@
-This prey data was provided to FlowWest by Corey Phillis on 12/09/2021. This data was shared with corey from various contacts: 
+\#### About the Datasets
 
-* Sutter Bypass: Flora Cordoleani 
-* San Joaquin: Steve Zeug 
-* Merced: steve Zeug
-* Stanislaus: Jason-guinard 
+Datasets were aggregated from multiple authors and across many
+watersheds. For each dataset, the habitat type was assigned. Specific
+methods and supporting documents for data aggregation and decisions in
+every watershed are provided by author:
 
-Corey shared this note regarding `Zoop2013_2016.xlsz` 
+- [Montgomery]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/montgomery/montgomery_data.md)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/montgomery/montgomery_data.md))
+- [Corline]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/corline/corline_data.md)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/corline/corline_data.md))
+- [Zeug]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/zeug/zeug_data.md)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/zeug/zeug_data.md))
+  - San Joaquin River
+  - Merced River
+- [Cordoleani]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/cordoleani/cordoleani_data.md)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/cordoleani/cordoleani_data.md))
+- [Guignard]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/guignard/guignard_data.md)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/guignard/guignard_data.md))
+- [Zooper R
+ Library]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/zooper/zooper_data.md)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/zooper/zooper_data.md))
 
-* "'Zoop2013_2016.csv' I believe is from Corline et al. 2017, but I don’t have access to the paper so someone should confirm.  
-Corline, Nicholas J., et al. "Zooplankton ecology and trophic resources for rearing native fish on an agricultural floodplain in the Yolo Bypass California, USA." Wetlands Ecology and Management 25.5 (2017): 533-545.
-"
+Information regarding compiled datasets is located here:
+
+- [prey density data
+ aggregation]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/combine_data_and_eda.md)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/combine_data_and_eda.md))
+
+- [habitat type definition and
+ methodology]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/habitat_type_eda.html)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/habitat_type_eda.html))
+
+  - Note: must download HTML file and open in browser
+
+- [size class
+ methodology]([https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/size_class_methodolgy.md)](https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/size_class_methodolgy.md))
