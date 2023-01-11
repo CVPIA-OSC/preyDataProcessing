@@ -1,3 +1,8 @@
+---
+editor_options: 
+  markdown: 
+    wrap: 72
+---
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
@@ -37,44 +42,44 @@ watersheds. For each dataset, the habitat type was assigned. Specific
 methods and supporting documents for data aggregation and decisions in
 every watershed are provided by author:
 
-- [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/montgomery/montgomery_data.md)
-- [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/corline/corline_data.md)
-- [Zeug](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/zeug/zeug_data.md)
-  - San Joaquin River
-  - Merced River
-- [Cordoleani](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/cordoleani/cordoleani_data.md)
-- [Guignard](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/guignard/guignard_data.md)
-- [Zooper R
-  Library](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/zooper/zooper_data.md)
+-   [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/montgomery/montgomery_data.md)
+-   [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/corline/corline_data.md)
+-   [Zeug](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/zeug/zeug_data.md)
+    -   San Joaquin River
+    -   Merced River
+-   [Cordoleani](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/cordoleani/cordoleani_data.md)
+-   [Guignard](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/guignard/guignard_data.md)
+-   [Zooper R
+    Library](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/zooper/zooper_data.md)
 
 Information regarding compiled datasets is located here:
 
-- [prey density data
-  aggregation](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/combine_data_and_eda.md)
+-   [prey density data
+    aggregation](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/combine_data_and_eda.md)
 
-- [habitat type definition and
-  methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/habitat_type_eda.html)
+-   [habitat type definition and
+    methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/habitat_type_eda.html)
 
-  - Note: must download HTML file and open in browser
+    -   Note: must download HTML file and open in browser
 
-- [size class
-  methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/size_class_methodolgy.md)
+-   [size class
+    methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/size_class_methodolgy.md)
 
 ##### Prey Density Datasets
 
-- `all_prey_density`
+-   `all_prey_density`
 
-- `monthly_prey_density`
+-   `monthly_prey_density`
 
 ##### Fish Datasets:
 
-- `all_fish_data`
+-   `all_fish_data`
 
-- `monthly_fish_data`
+-   `monthly_fish_data`
 
 ##### Environmental Datasets:
 
-- `all_enviro_data`
+-   `all_enviro_data`
 
 #### Joining Datasets
 
