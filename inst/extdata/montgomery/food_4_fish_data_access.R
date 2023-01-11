@@ -1,4 +1,4 @@
-# EDI NUMBER 
+# EDI NUMBER
 # .996.1
 
 # # Test Upload in staging area
@@ -44,8 +44,38 @@ location_lookup_response <- httr::GET(
 )
 location_lookup_response
 
-caged_fish <- httr::content(caged_fish_response) %>% glimpse
-zoops_table <- httr::content(zoops_response) %>% janitor::clean_names() %>% glimpse
-location_lookup <- httr::content(location_lookup_response) %>% glimpse
+caged_fish <- httr::content(caged_fish_response)
+zoops_table <- httr::content(zoops_response) %>% janitor::clean_names()
+location_lookup <- httr::content(location_lookup_response)
 
-rm(caged_fish_response, get_data_package_response, get_entity_response, location_lookup_response, zoops_response)
+
+# source updated montgomery data ------------------------------------------
+
+# Get 2022 data
+# edi.996.2
+
+zoops_response2 <- httr::GET(
+  url = "https://pasta.lternet.edu/package/data/eml/edi/996/2/ab7607eaec46a3c4fc683896b1319960",
+  # config = httr::authenticate(paste('uid=', user_id, ",o=EDI", ',dc=edirepository,dc=org'), password),
+  handle = httr::handle("")
+)
+zoops_response2
+
+zoops_table2 <- httr::content(zoops_response) %>% janitor::clean_names()
+
+montgomery_prey_data <- zoops_table2
+
+location_lookup_response2 <- httr::GET(
+  url = "https://pasta.lternet.edu/package/data/eml/edi/996/2/552af228cbd6a24d7b152a60bc53c0dd",
+  # config = httr::authenticate(paste('uid=', user_id, ",o=EDI", ',dc=edirepository,dc=org'), password),
+  handle = httr::handle("")
+)
+location_lookup_response2
+location_lookup2 <- httr::content(location_lookup_response2)
+
+
+montgomery_locations <- bind_rows(location_lookup, location_lookup2)
+
+rm(caged_fish_response, get_data_package_response, get_entity_response, location_lookup_response, zoops_response,
+   zoops_response2, location_lookup_response2)
+

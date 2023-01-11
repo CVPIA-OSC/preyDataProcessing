@@ -1,0 +1,209 @@
+---
+title: "Jacob Montgomery Data"
+author: "Maddee Rubenson (FlowWest)"
+date: "`r Sys.Date()`"
+output:
+  github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE, 
+                      message = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(readxl)
+library(sf)
+library(preyDataProcessing)
+
+options(scipen=999)
+
+theme_set(theme_minimal())
+```
+
+## Montgomery Data Standardization
+
+**Datasets provided:**
+
+-   [Fish Food on Floodplain Farm Fields 2019 and 2021](https://portal.edirepository.org/nis/mapbrowse?packageid=edi.996.2)
+
+**Author contact info:**
+
+Jacob Montgomery [[jacob\@caltrout.org](jacob@caltrout.org)]
+
+### Prey Data
+
+Final prey density dataset includes the following variables:
+
+-   `date`: YYYY-MM-DD
+-   `gear_type`: the type of gear used to collect zooplankton.
+-   `species`: species of zooplankton
+-   `life_stage`: lifestage of zooplankton species
+-   `prey_density`: density of zooplankton (count/L)
+-   `size_class`: size class of zooplankton, determined by mesh size
+-   `mesh_size`: mesh size of net used to collect zooplankton
+-   `habitat_type`: habitat type of location where zooplankton were collected
+-   `lat`: latitude of sampling location
+-   `lon`: longitude of sampling location
+-   `site`: location description
+-   `author`: author of dataset
+
+#### Raw data
+
+```{r}
+# this a script that sources the EDI data
+source('data-raw//montgomery/food_4_fish_data_access.R')
+
+montgomery_prey_data |> glimpse()
+```
+
+#### Standard format
+
+**excluded variables:**
+
+-   removed environmental variables like salinity, turbidity
+-   `start_rotation`
+-   `end_rotation`
+-   `notes`
+-   `zoop_score_1_10`
+-   `time`
+
+**notes:**
+
+-   converted from count/m\^3 to count/L
+-   extracted `temperature` and `dissolved oxygen` from prey density dataset but will include them in environmental dataset
+
+```{r}
+montgomery_prey_data_process <- montgomery_prey_data %>%
+  separate(id, c('location', 'Date'), '_') %>% 
+  mutate(date = mdy(Date)) %>% 
+  gather(!c('location', 'Date', 'date':'volume_sampled'), key = species, value = value) %>%
+  separate(species, c('species', 'life_stage'), '_') %>%
+  select(-c(Date, ec_s_cm:do_sat, p_h:volume_sampled)) %>%
+  rename(temperature = temp_c,
+         prey_density = value) %>%
+  mutate(author = "Montgomery", 
+         site = location,
+         size_class = "meso",
+         gear_type = "net throw",
+         mesh_size = 150,
+        prey_density = prey_density/1000) |> #1 m^3 = 1000 L 
+  select(date, site, species:author, size_class, mesh_size, gear_type) 
+
+```
+
+##### Locations Standard Format
+
+**variables removed**
+
+-   `purpose`
+
+-   `habitat_type`: this is the habitat type originally defined by Montgomery but redefined to fit this project needs
+
+**notes:**
+
+```{r}
+
+locations <- readxl::read_excel('data-raw/montgomery/F4F2021_LocationLookupTable_20221108.xlsx') |> janitor::clean_names() |> 
+  separate(lat_lon_utm, sep = ", ", c("lat", "lon")) |> 
+  select(-x3, -purpose, -habitat_type) |> 
+  rename(habitat_type = habitat_type_2,
+         site = location) |> 
+  mutate(habitat_type = tolower(habitat_type),
+         lat = as.numeric(lat),
+         lon = as.numeric(lon)) |> glimpse()
+```
+
+##### Combine prey data with locations
+
+This produces the final prey density dataset.
+
+```{r}
+
+montgomery_prey_data_final <- montgomery_prey_data_process |> 
+  left_join(locations) |> 
+  filter(!is.na(habitat_type)) |> # filters out site MNT3ASource which has a prey_density of 0 and no site location or habitat type
+  filter(prey_density > 0) 
+
+kable(head(montgomery_prey_data_final, 5))
+
+```
+
+#### QC
+
+**Notes:**
+
+```{r}
+summary(montgomery_prey_data_final)
+```
+
+#### Data exploration
+
+##### All prey density data
+
+```{r}
+ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years collected', 
+          subtitle = "data provided by Jacob Montgomery") 
+
+
+ggplot(montgomery_prey_data_final, aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point(aes(color = as.factor(year(date))), alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years and habitat types', 
+          subtitle = "data provided by Jacob Montgomery") +  
+  scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred", "orange")) + 
+  theme(legend.position = "top")
+
+```
+
+##### Subset of prey density data with outliers removed
+
+```{r}
+montgomery_prey_data_final |> 
+  filter(prey_density <= 0.22635 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Jacob Montgomery") 
+
+
+montgomery_prey_data_final |> 
+  filter(prey_density <= 0.22635 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot() + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years and habitat types - outliers removed', 
+          subtitle = "data provided by Jacob Montgomery") +  
+  theme(legend.position = "top")
+
+```
+
+#### Save final dataset
+
+```{r}
+
+# save(montgomery_prey_data_final, file = "../../data/montgomery_prey_data.rda")
+
+montgomery_prey_data <- montgomery_prey_data_final
+usethis::use_data(montgomery_prey_data, overwrite = TRUE)
+
+```
+
+## Upcoming Updates
+
+* include fish weight metrics
+* include environmental datasets

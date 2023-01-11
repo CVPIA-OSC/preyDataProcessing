@@ -5,7 +5,7 @@
 \alias{monthly_prey_density}
 \title{Monthly Prey Density Data}
 \format{
-An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 928 rows and 8 columns.
+An object of class \code{tbl_df} (inherits from \code{tbl}, \code{data.frame}) with 931 rows and 8 columns.
 }
 \usage{
 monthly_prey_density
@@ -21,10 +21,10 @@ Data dictionary:
 \item watershed; categorical; The watershed the data was collected in.
 \item year; numeric; The year the data was collected.
 \item month; numeric; The month the data was collected.
-\item min_prey_density; numeric; The minimum prey density (number of oranisms/liter)
-\item max_prey_density; numeric; The maximum prey density (number of oranisms/liter)
-\item median_prey_density; numeric; The median prey density (number of oranisms/liter)
-\item var_prey_density; numeric; The variance of prey density (number of oranisms/liter)
+\item min_prey_density; numeric; The minimum prey density (number of organisms/liter)
+\item max_prey_density; numeric; The maximum prey density (number of organisms/liter)
+\item median_prey_density; numeric; The median prey density (number of organisms/liter)
+\item var_prey_density; numeric; The variance of prey density (number of organisms/liter)
 }
 }
 \seealso{

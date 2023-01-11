@@ -1,0 +1,229 @@
+---
+title: "Flora Cordoleani Data"
+author: "Maddee Rubenson (FlowWest)"
+date: "`r Sys.Date()`"
+output:
+  rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE, 
+                      message = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(readxl)
+library(sf)
+library(preyDataProcessing)
+
+options(scipen=999)
+```
+
+## Cordoleani Data Standardization
+
+**Datasets provided:**
+
+-   `cage_locations.csv`
+-   `cagesalmon_growth.csv`
+-   `dailycagefish_data_2019.csv`
+-   `dailycagefish_data_2020.csv`
+-   `doboall.csv`
+-   `tidy_zoop_density.csv`
+
+**Author contact info:**
+
+Flora Cordoleani [[flora.cordoleani\@noaa.gov](flora.cordolean@noaa.gov)]
+
+### Prey Data
+
+Final prey density dataset includes the following variables:
+
+-   `date`: YYYY-MM-DD
+-   `gear_type`: the type of gear used to collect zooplankton.
+-   `species`: species of zooplankton
+-   `prey_density`: density of zooplankton (count/L)
+-   `size_class`: size class of zooplankton, determined by mesh size
+-   `mesh_size`: mesh size of net used to collect zooplankton
+-   `habitat_type`: habitat type of location where zooplankton were collected
+-   `lat`: latitude of sampling location
+-   `lon`: longitude of sampling location
+-   `site`: location description
+-   `author`: author of dataset
+-   `watershed`: unique watershed name associated with collected data
+
+#### Raw data
+
+```{r}
+cordo_prey_raw <- read_csv('data-raw//cordoleani/tidy_zoop_density.csv') |> glimpse()
+
+```
+
+#### Standard format
+
+**excluded variables:**
+
+-   removed temperature to include in a standalone dataset that can be mapped to this dataset using `sample_id` and `date`
+
+**notes:**
+
+-   chose to not use interpolated or filled values for prey density
+
+-   Defined `sample_id` as `cage_id`
+
+-   Defined `species` as `taxa`
+
+-   mapped `Canal channel` and `Agriculture` to `agricultural canal`
+
+-   mapped `Channel` and `River Channel` to `perennial instream`
+
+-   mapped `Wetland` to `floodplain`
+
+-   Changed units for `prey_density` from count/m\^3 to count/L
+
+```{r}
+cordoleani_zoop <- cordo_prey_raw %>% 
+  rename(prey_density = value, # units are organisms/m^3 per Sutter 2020 report 
+         sample_id = report_id,
+         date = sample_date,
+         location = region,
+         species = taxa) %>%
+  mutate(date = mdy(date),
+         prey_density = prey_density/1000, # 1 m^3 = 1000 Liters 
+         author = 'Cordoleani',
+         habitat_type = case_when(habitat_type == "Agriculture" ~ "agricultural canal",
+                                  habitat_type == "Canal channel" ~ "perennial instream",
+                                  habitat_type == "River channel" ~ "perennial instream",
+                                  habitat_type == "Wetland" ~ "floodplain"),
+         watershed = case_when(location == "Butte Sink" ~ "Butte Creek", 
+                            location == "Sacramento River" ~ "Sacramento River", 
+                            location == "Feather River" ~ "Feather River", 
+                            location %in% c("Lower Bypass", "Upper Bypass") ~ 
+                              "Sutter Bypass"), 
+         site = paste0(location, "-", sample_id),
+         size_class = "meso",
+         gear_type = "net throw",
+         mesh_size = 150,
+         species = tolower(species)) %>% 
+         select(-location, -sample_id, -year) 
+
+```
+
+##### Locations Standard Format
+
+**variables removed**
+
+**notes:**
+
+```{r}
+cordoleani_locations_raw <- read_csv('data-raw/cordoleani/Cage_Locations.csv')
+
+cordoleani_locations <- cordoleani_locations_raw %>%
+  rename(location = Region, 
+         sample_id = Report_ID, 
+         habitat_type = Type, 
+         lon = long) %>%
+  select(-Name,  -Report_type) %>%
+  mutate(habitat_type = case_when(habitat_type == "Agriculture" ~ "agricultural canal",
+                                  habitat_type == "Canal" ~ "agricultural canal",
+                                  habitat_type == "Channel" ~ "perennial instream",
+                                  habitat_type == "Wetland" ~ "floodplain")) %>%
+  mutate(site = paste0(location, "-", sample_id)) %>%
+  mutate(site_for_fish = paste0(location, "-", Site)) %>%
+  select(-location, -sample_id, -habitat_type) %>%
+  glimpse()
+
+```
+
+##### Combine prey data with locations
+
+This produces the final prey density dataset.
+
+```{r}
+
+cordoleani_zoop_final <- cordoleani_zoop |> 
+  left_join(cordoleani_locations) |> 
+  select(-site_for_fish, -Site)
+
+kable(head(cordoleani_zoop_final, 5))
+
+```
+
+#### QC
+
+**Notes:**
+
+```{r}
+summary(cordoleani_zoop_final)
+```
+
+#### Data exploration
+
+##### All prey density data
+
+```{r}
+ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years collected', 
+          subtitle = "data provided by Flora Cordoleani") +
+  theme_minimal() 
+
+ggplot(cordoleani_zoop_final, aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point(aes(color = as.factor(year(date))), alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years and habitat types', 
+          subtitle = "data provided by Flora Cordoleani") +  
+  scale_color_manual('sample year', values=c('darkgreen', 'darkblue', "darkred")) + 
+  theme_minimal() + 
+  theme(legend.position = "top") 
+
+```
+
+##### Subset of prey density data with outliers removed
+
+```{r}
+
+cordoleani_zoop_final |> 
+  filter(prey_density <= 0.43588) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Flora Cordoleani") +
+  theme_minimal() 
+
+cordoleani_zoop_final |> 
+  filter(prey_density <= 0.44) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distrubtion of prey density across habitat types - outliers removed', 
+          subtitle = "data provided by Flora Cordoleani") +  
+  theme_minimal() 
+```
+
+#### Save final dataset
+
+```{r}
+
+#save(cordoleani_zoop_final, file = "../../data/cordoleani_prey_data.rda")
+
+cordoleani_prey_data <- cordoleani_zoop_final
+usethis::use_data(cordoleani_prey_data, overwrite = TRUE)
+
+```
+
+## Upcoming Updates
+
+-   include fish weight metrics
+-   include environmental datasets

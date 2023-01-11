@@ -1,0 +1,257 @@
+---
+title: "Prey Data Overview"
+author: "Maddee Rubenson (FlowWest)"
+date: "`r Sys.Date()`"
+output: rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      warning = FALSE, 
+                      message = FALSE)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(readxl)
+library(sf)
+library(preyDataProcessing)
+
+options(scipen=999)
+
+theme_set(theme_minimal())
+```
+
+## Prey Density 
+
+### Aggregate All Prey Data 
+
+```{r}
+
+all_prey_density <- bind_rows(preyDataProcessing::cordoleani_prey_data,
+                      preyDataProcessing::zeug_merced_prey_data, 
+                      preyDataProcessing::zeug_sanJoaquin_prey_data, 
+                      preyDataProcessing::montgomery_prey_data, 
+                      preyDataProcessing::guignard_prey_data, 
+                      preyDataProcessing::corline_prey_data,
+                      preyDataProcessing::zooper_prey_data) 
+
+usethis::use_data(all_prey_density, overwrite = TRUE)
+
+```
+
+
+### Create Monthly Prey Density Dataset
+
+**Notes:**
+
+* There are two NAs associated with the month of San Joaquin data because data received was aggregated to year
+
+```{r}
+# monthly aggregation by watershed,  habitat type -------------------------
+## group by watershed, habitat type, year, month - summarize prey density (median, min, max)
+monthly_prey_density <- all_prey_density %>%
+  mutate(year = ifelse(!is.na(date), lubridate::year(date), 2016),
+         month = lubridate::month(date)) %>%
+  group_by(watershed, habitat_type, year, month) %>%
+  summarise_at(vars(prey_density), .funs = c('min', 'max', 'median', 'var'), na.rm = TRUE) %>%
+  ungroup() %>%
+  rename(min_prey_density = min,
+         max_prey_density = max,
+         median_prey_density = median,
+         var_prey_density = var) |> glimpse()
+
+# save file for use in R package
+usethis::use_data(monthly_prey_density, overwrite = TRUE)
+
+```
+
+
+<!-- ## Fish Data  -->
+
+<!-- ```{r} -->
+
+<!-- load('../data/all_fish_data.rda') -->
+
+<!-- #all_fish_data <- all_fish_data %>% select(-lat, -lon) -->
+<!-- #usethis::use_data(all_fish_data, overwrite = TRUE) -->
+
+<!-- monthly_fish_data <- all_fish_data %>% -->
+<!--   mutate(year = ifelse(!is.na(date), lubridate::year(date), 2016), -->
+<!--          month = lubridate::month(date)) %>% -->
+<!--   mutate(habitat_type = case_when(watershed == "Merced" ~ "perennial instream", -->
+<!--                                   watershed != "Merced" ~ habitat_type)) %>% -->
+<!--   group_by(watershed, habitat_type, year, month) %>% -->
+<!--   summarise_at(vars(mass, fork_length), .funs = c('min', 'max', 'median'), na.rm = TRUE) %>% -->
+<!--   ungroup() |> glimpse() -->
+
+<!-- # save file for use in R package -->
+<!-- # usethis::use_data(monthly_fish_data) -->
+
+<!-- ``` -->
+
+<!-- ## Environmental Data  -->
+
+<!-- ```{r} -->
+<!-- all_enviro <- preyDataProcessing::all_enviro_data %>% glimpse -->
+
+<!-- ``` -->
+
+# Explore Variables
+
+## Authors
+
+```{r}
+
+prey_agg_by_author <- preyDataProcessing::all_prey_density %>%
+  group_by(author) %>%
+  summarise_at(vars(prey_density), .funs = c('min', 'max', 'median', 'var'), na.rm = TRUE)
+
+kable(prey_agg_by_author, digits = 1, caption = "summary statistics of prey density values across authors included in the prey data package")
+
+```
+
+## Habitat Type
+
+Habitat types included in the prey data package include: 
+
+* Agricultural canal
+* Floodplain
+* Perennial instream
+* Side channel
+
+Habitat types were assigned based on sampling locations provided by authors where available. When no habitat types were provided by authors, we assigned habitat type based on satellite imagery. Please see (https://github.com/CVPIA-OSC/preyDataProcessing/blob/for_review/data-raw/standard_format_markdowns/habitat_type_eda.html) for more details.
+
+```{r}
+
+ggplot(all_prey_density, aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point(alpha = 0.4) + 
+  facet_wrap(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of all prey density across years and habitat types', 
+          subtitle = "Aggregated data across all authors") 
+
+monthly_prey_density |> 
+  filter(median_prey_density > 0) |> 
+ggplot() +
+  geom_boxplot(aes(x = as.factor(month), y = median_prey_density), alpha = 0.5) +
+  geom_jitter(aes(x = as.factor(month), y = median_prey_density, color = habitat_type)) +
+  scale_y_continuous(trans='log10') +
+  xlab('month') +
+  ylab('log(median prey density) (count/L)') +
+  scale_color_brewer(palette = 'Dark2') +
+  coord_flip() 
+
+preyDataProcessing::all_prey_density %>%
+  group_by(habitat_type) %>%
+  summarise(author = paste0(unique(author), collapse = ", ")) %>% kable()
+
+all_prey_density %>%
+  group_by(habitat_type, author) %>%
+  select(prey_density) %>%
+  summarise_if(is.numeric, .funs = c("mean", "min", "max", "var"), na.rm = TRUE) %>% 
+  kable(digits=1, format.args = list(big.mark = ","))
+
+```
+
+## Watersheds
+
+There are `r length(unique(monthly_prey_density$watershed))` watersheds included in the monthly prey density data, including:
+
+* Butte Creek
+* Feather River
+* Merced
+* North Delta
+* Sacramento River
+* San Joaquin River
+* South Delta
+* Stanislaus
+* Sutter Bypass
+* Yolo Bypass
+* Yolo Bypass 2
+
+```{r}
+
+all_prey_density |> 
+  filter(prey_density > 0 & prey_density <= 0.0131) |> 
+ggplot() +
+  geom_boxplot(aes(x = as.factor(month(date)), y = prey_density)) +
+  facet_wrap(~watershed) +
+  ylab('prey density (count/L)') +
+  xlab('month') +
+  ggtitle('Distribution of prey density across watersheds collected - outliers removed',
+          subtitle = "All authors")
+
+```
+
+## Temporal Variation 
+
+```{r}
+all_prey_density |> 
+  filter(!is.na(year(date))) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_point(alpha = 0.4) +
+  facet_wrap(~year(date)) +  
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of all prey density across years', 
+          subtitle = "Aggregated data across all authors") 
+  
+
+
+```
+
+<!-- ## Fish Data -->
+
+<!-- ```{r} -->
+
+<!-- # mass -->
+<!-- ggplot() + -->
+<!--   geom_boxplot(data = monthly_fish_data, aes(x = as.factor(month), y = mass_median), alpha = 0.5) + -->
+<!--   geom_jitter(data = monthly_fish_data, aes(x = as.factor(month), y = mass_median, color = habitat_type)) + -->
+<!--   ylab('mass (grams)') + -->
+<!--   xlab('month') + -->
+<!--   scale_color_brewer(palette = 'Dark2')+ -->
+<!--   coord_flip() -->
+
+<!-- # fork length (mm) -->
+<!-- ggplot() + -->
+<!--   geom_boxplot(data = monthly_fish_data, aes(x = as.factor(month), y = fork_length_median), alpha = 0.5) + -->
+<!--   geom_jitter(data = monthly_fish_data, aes(x = as.factor(month), y = fork_length_median, color = habitat_type)) + -->
+<!--   ylab('fork length (mm)') + -->
+<!--   xlab('month') + -->
+<!--   scale_color_brewer(palette = 'Dark2')+ -->
+<!--   coord_flip() -->
+
+<!-- ``` -->
+
+<!-- ## Environmental Data  -->
+
+<!-- * Not aggregated by month -->
+<!-- * Includes: dissolved oxygen, temperature and flow  -->
+
+<!-- ```{r} -->
+<!-- # temperature -->
+<!-- all_enviro %>% filter(!is.na(temperature)) %>% -->
+<!--   ggplot() + -->
+<!--   geom_line(aes(x = date, y  = temperature)) +  -->
+<!--   facet_wrap(~ author) + -->
+<!--   ylab('temperature (celcius)') -->
+
+<!-- # dissolved oxygen -->
+<!-- all_enviro %>% filter(!is.na(do_mg_l)) %>% -->
+<!--   ggplot() + -->
+<!--   geom_line(aes(x = date, y  = do_mg_l)) +  -->
+<!--   facet_wrap(~ author) + -->
+<!--   ylab('dissolved oxygen (mg/l)') -->
+
+<!-- # flow -->
+<!-- all_enviro %>% filter(!is.na(flow_cfs)) %>% -->
+<!--   ggplot() + -->
+<!--   geom_line(aes(x = date, y  = flow_cfs)) +  -->
+<!--   facet_wrap(~ author) + -->
+<!--   ylab('flow_cfs') -->
+
+
+<!-- ``` -->

@@ -1,0 +1,238 @@
+---
+title: "Nicholas Corline Data"
+author: "Maddee Rubenson (FlowWest)"
+date: "`r Sys.Date()`"
+output:  
+  rmarkdown::github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  echo = TRUE, message = FALSE, warning = FALSE
+)
+
+library(tidyverse)
+library(lubridate)
+library(knitr)
+library(readxl)
+library(sf)
+library(preyDataProcessing)
+
+options(scipen=999)
+
+theme_set(theme_minimal())
+```
+
+## Corline Data Standarization
+
+**Datasets provided:**
+
+-   Zoop2013_2016_NC.xlsx - this is the most up to date dataset used in the prey data aggregation
+-   Zoop2013_2016.xlsx
+-   Corline2017_Article_ZooplanktonEcologyAndTrophicRe.pdf
+
+**Author contact info:**
+
+Nicholas Corline [njcorline\@vt.edu]
+
+### Prey Data
+
+Final prey density dataset includes the following variables:
+
+-   `date`: YYYY-MM-DD
+-   `gear_type`: the type of gear used to collect zooplankton.
+-   `species`: species of zooplankton
+-   `life_stage`: lifestage of zooplankton species
+-   `prey_density`: density of zooplankton (count/L)
+-   `size_class`: size class of zooplankton, determined by mesh size
+-   `mesh_size`: mesh size of net used to collect zooplankton
+-   `habitat_type`: habitat type of location where zooplankton were collected
+-   `lat`: latitude of sampling location
+-   `lon`: longitude of sampling location
+-   `site`: location description
+-   `author`: author of dataset
+-   `watershed`: unique watershed name associated with collected data
+
+#### Raw data
+
+```{r}
+corline_raw_zoop <- readxl::read_excel('data-raw/corline/Zoop2013_2016_NC.xlsx') |> glimpse()
+```
+
+#### Standard format
+
+**excluded variables:**
+
+-   `Split Fraction`
+
+-   `Class`
+
+-   `Subclass`
+
+-   `Order`
+
+-   `Genus`
+
+-   `Family`
+
+**notes:**
+
+-   Kept `species` column
+
+-   Fixed naming conventions of the sampling locations (`sample_id`)
+
+-   Defined prey density as `Ind_per_L` which was calculated as the ratio of field volume and sample totals
+
+-   Along with `gear_type` included in the dataset are the number of throws (`n_throws`) and mesh size (`mesh_size_microns`). Mesh size is used to determine the `size_class` variable.
+
+```{r}
+corline_zoop_tmp <- corline_raw_zoop  |> 
+  rename(location = Location, 
+         gear_type = Method, 
+         life_stage = `Life Stage`) |> 
+  mutate(prey_density = Ind_per_L,
+         Date = as_date(Date)) |> 
+  select(-c(`Split Fraction`:`Volume subsampled (ml)`), -Count, -c(Phylum:Genus)) %>%
+  rename(sample_id = Field, 
+         species = Species, 
+         n_throws = Throws, 
+         mesh_size_microns = `Mesh Size (microns)`,
+         date = Date) |> 
+  select(-`Total Volume (ml)`, -`Ring Size (cm)`, -Ind_per_m3,
+         -Ind_per_L, -...25, -...26, -Field_Volume_m3, -Inverse_Fraction, 
+         -Sample_Total_Count) |> 
+  mutate(author = "Corline",
+         size_class = "meso",
+         species = tolower(species),
+         gear_type = tolower(gear_type),
+         mesh_size = mesh_size_microns) 
+
+# Numeric sample Ids must be standardized with Fields. Looks like 2015 data has 1 - 9 as sample Id while data from 2013 has Field 1 - Field 9. This is updated to have the sample_ids as follows, where the NA corresponds to the sites on the Sacramento River. 
+tmp_change_names <- corline_zoop_tmp[corline_zoop_tmp$sample_id %in% c(1:10), ] %>%
+  mutate(sample_id = paste0('Field ', sample_id))
+tmp_names_with_field <- corline_zoop_tmp[!(corline_zoop_tmp$sample_id %in% c(1:10)), ]
+corline_zoop_tmp <- bind_rows(tmp_change_names, tmp_names_with_field)
+
+# this fixes the spelling differences in species column 
+corline_zoop <- corline_zoop_tmp |> 
+  mutate(species = case_when(species %in% c("harpacticoid", "harpacticoida") ~ "harpacticoida",
+                             species %in% c("illyocryptidae", "ilyocryptidae") ~ "ilyocryptidae",
+                             species %in% c("schaploberis", "schaphloberis") ~ "schaphloberis", 
+                             species == "species" ~ NA_character_, 
+                             TRUE ~ species))  |> 
+  select(-n_throws, -mesh_size_microns) 
+
+```
+
+##### Locations Standard Format
+
+**Notes:**
+
+-   location of the fields (Knaggs Ranch) were provided by author
+
+-   location of inlet canal (Toe Drain) was determined based on best professional judgement and guidance from the paper Corline et al.
+
+-   location of the Sacramento River sampling site was provided in the paper Corline et al. as Sherwood Harbor
+
+-   defined `habitat_type` based on best professional judgement from monitoring locations
+
+```{r}
+corline_locations <- data.frame(
+  location = c('Knaggs Ranch', 'Sacramento River', 'Toe Drain'),
+  habitat_type = c('floodplain', 'perennial instream', 'agricultural canal'), # TODO update these habitat designations per recommendations from J. Montgomery
+  lat = c(38.70151, 38.52353, 38.70511),
+  lon = c( -121.66996, -121.53840, -121.67041)
+)
+
+```
+
+##### Combine prey data with locations
+
+This produces the final prey density dataset.
+
+```{r}
+
+corline_zoop_final <- corline_zoop |> 
+  left_join(corline_locations) |>  
+   mutate(watershed = ifelse(location == "Sacramento River", "Sacramento River", "Yolo Bypass"),
+         site = ifelse(location == "Sacramento River", "Sherwood Harbor", location)) %>%
+  mutate(site = paste0(location, "-", sample_id)) %>%
+  select(-sample_id, -location) 
+
+kable(head(corline_zoop_final, 5))
+
+```
+
+#### QC
+
+**Notes:**
+
+-   all prey data was collected January through April
+
+```{r}
+summary(corline_zoop_final)
+```
+
+#### Data exploration
+
+##### All prey density data
+
+
+```{r}
+ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) + 
+  geom_point(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected', 
+          subtitle = "data provided by Nicholas Corline") 
+
+ggplot(corline_zoop_final, aes(x = month(date), y = prey_density)) + 
+  geom_point(alpha = 0.4) + 
+  facet_grid(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across habitat types', 
+          subtitle = "data provided by Nicholas Corline") 
+
+```
+##### Subset of prey density data with outliers removed
+
+```{r}
+
+corline_zoop_final |> 
+  filter(prey_density <= 2.3626 & prey_density > 0) |> 
+ggplot(aes(x = as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~year(date)) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across years collected - outliers removed', 
+          subtitle = "data provided by Nicholas Corline") 
+
+corline_zoop_final |> 
+  filter(prey_density <= 2.3626 & prey_density > 0) |> 
+ggplot(aes(x =as.factor(month(date)), y = prey_density)) + 
+  geom_boxplot(alpha = 0.4) + 
+  facet_grid(~habitat_type) + 
+  xlab('month') +
+  ylab('prey density (count/L)') + 
+  ggtitle('Distribution of prey density across habitat types - outliers removed', 
+          subtitle = "data provided by Nicholas Corline") 
+
+```
+
+#### Save final dataset
+
+```{r}
+
+corline_prey_data <- corline_zoop_final
+usethis::use_data(corline_prey_data, overwrite = TRUE)
+
+```
+
+## Upcoming Updates
+
+NA

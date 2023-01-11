@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# DSMprey
+# preyDataProcessing
 
 <img src="man/figures/cvpia_logo.jpg" align="right" width="40%"/>
 
@@ -10,13 +10,14 @@
 *This package is for sourcing prey density across multiple watersheds
 and habitat types. Also included in this package are fish mass and and
 fork length data as well as associated environmental (temperature and
-dissolved oxygen) data.*
+dissolved oxygen) data. Data can be used as inputs into bioenergetic
+models.*
 
 #### Installation
 
 ``` r
 # install.packages("remotes")
-remotes::install_github("CVPIA-OSC/DSMprey")
+remotes::install_github("CVPIA-OSC/preyDataProcessing")
 ```
 
 #### Usage
@@ -26,7 +27,7 @@ authors.
 
 ``` r
 # datasets within the package
-data(package = 'DSMprey')
+data(package = 'preyDataProcessing')
 ```
 
 #### About the Datasets
@@ -34,7 +35,30 @@ data(package = 'DSMprey')
 Datasets were aggregated from multiple authors and across many
 watersheds. For each dataset, the habitat type was assigned. Specific
 methods and supporting documents for data aggregation and decisions in
-every watershed are provided on the reference tab.
+every watershed are provided by author:
+
+-   [Montgomery](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/montgomery/montgomery_data.md)
+-   [Corline](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/corline/corline_data.md)
+-   [Zeug](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/zeug/zeug_data.md)
+    -   San Joaquin River
+    -   Merced River
+-   [Cordoleani](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/cordoleani/cordoleani_data.md)
+-   [Guignard](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/guignard/guignard_data.md)
+-   [Zooper R
+    Library](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/zooper/zooper_data.md)
+
+Information regarding compiled datasets is located here:
+
+-   [prey density data
+    aggregation](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/combine_data_and_eda.md)
+
+-   [habitat type definition and
+    methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/habitat_type_eda.html)
+
+    -   Note: must download HTML file and open in browser
+
+-   [size class
+    methodology](https://github.com/CVPIA-OSC/preyDataProcessing/blob/main/data-raw/standard_format_markdowns/size_class_methodolgy.md)
 
 ##### Prey Density Datasets
 
@@ -58,34 +82,48 @@ Datasets can be joined on `site`, see example below:
 
 ``` r
 library(tidyverse)
-#> ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
-#> ✔ ggplot2 3.3.5     ✔ purrr   0.3.4
-#> ✔ tibble  3.1.6     ✔ dplyr   1.0.8
-#> ✔ tidyr   1.2.0     ✔ stringr 1.4.0
-#> ✔ readr   2.1.2     ✔ forcats 0.5.1
-#> ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
-#> ✖ dplyr::filter() masks stats::filter()
-#> ✖ dplyr::lag()    masks stats::lag()
+```
 
+    ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.2 ──
+    ## ✔ ggplot2 3.4.0      ✔ purrr   0.3.5 
+    ## ✔ tibble  3.1.8      ✔ dplyr   1.0.10
+    ## ✔ tidyr   1.2.1      ✔ stringr 1.5.0 
+    ## ✔ readr   2.1.3      ✔ forcats 0.5.2 
+    ## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+    ## ✖ dplyr::filter() masks stats::filter()
+    ## ✖ dplyr::lag()    masks stats::lag()
 
+``` r
 ## All data: 
-all_prey <- DSMprey::all_prey_density 
-all_fish <- DSMprey::all_fish_data
-all_enviro <- DSMprey::all_enviro_data 
+all_prey <- preyDataProcessing::all_prey_density 
+all_fish <- preyDataProcessing::all_fish_data
+all_enviro <- preyDataProcessing::all_enviro_data 
 
 # all prey density and fork length/mass data
 all_prey_and_fish <- all_prey %>% left_join(all_fish) 
-#> Joining, by = c("site", "habitat_type", "date", "author", "watershed")
-
-# join environmental data with prey density:
-all_prey_and_enviro <- all_prey %>% left_join(all_enviro) 
-#> Joining, by = c("site", "habitat_type", "date", "author", "watershed")
-
-## Monthly Data:
-monthly_prey <- DSMprey::monthly_prey_density
-monthly_fish <- DSMprey::monthly_fish_data
-
-monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish) 
-#> Joining, by = c("watershed", "habitat_type", "year", "month")
 ```
 
+    ## Joining, by = c("habitat_type", "date", "author", "watershed", "site")
+
+``` r
+# join environmental data with prey density:
+all_prey_and_enviro <- all_prey %>% left_join(all_enviro) 
+```
+
+    ## Joining, by = c("habitat_type", "date", "author", "watershed", "site")
+
+``` r
+## Monthly Data:
+monthly_prey <- preyDataProcessing::monthly_prey_density
+monthly_fish <- preyDataProcessing::monthly_fish_data
+
+monthly_prey_and_fish <- monthly_prey %>% left_join(monthly_fish) 
+```
+
+    ## Joining, by = c("watershed", "habitat_type", "year", "month")
+
+### Dependencies
+
+The `preyDataProcessing` data package provides data bioenergetic
+modeling within the [CVPIA Open Science
+Collaborative](https://github.com/CVPIA-OSC).
